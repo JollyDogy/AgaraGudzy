@@ -1,5 +1,5 @@
 proxies:
-- name: "🇸🇪SiNAVM"
+- name: "🇸🇪 SiNAVM"
   type: vless
   server: '78.40.117.185'
   port: 443
@@ -15,7 +15,85 @@ proxies:
     public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
     short-id: '50'
 
-- name: "[🇫🇮] [vl-no-ws] [251024-131807.198]"
+- name: "🇫🇮 configV2rayNG::FI"
+  type: vless
+  server: '45.12.135.7'
+  port: 8443
+  uuid: '3a4524bb-5d17-4c09-b523-6ab1e1a41d81'
+  udp: true
+  tls: true
+  servername: 'ya.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'blSlAMMTv5UdIZiQd6VtBlS7kfZJ9xpw9H95Ouohbxs'
+    short-id: '4bb9dbdad476124c'
+
+
+- name: "🇫🇮 F0rc3RunVPN"
+  type: ss
+  server: '83.147.216.70'
+  port: 64519
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'UlT89D0rvcr05tKft1NB5a'
+  udp: true
+
+- name: "@meli_proxyy"
+  type: vless
+  server: '94.131.13.181'
+  port: 8880
+  uuid: 'df0680ca-e43c-498d-ed86-8e196eedd012'
+  udp: true
+  skip-cert-verify: false
+  network: 'grpc'
+
+- name: "MCI-@IRAN_V2RAY1"
+  type: vless
+  server: '94.131.13.181'
+  port: 8880
+  uuid: 'df0680ca-e43c-498d-ed86-8e196eedd012'
+  udp: true
+  skip-cert-verify: false
+  network: 'grpc'
+
+- name: "🏴‍☠️@FreakConfig"
+  type: vless
+  server: '94.131.14.195'
+  port: 8880
+  uuid: 'df0680ca-e43c-498d-ed86-8e196eedd012'
+  udp: true
+  skip-cert-verify: false
+  network: 'grpc'
+
+- name: "🇱🇹 LT | 🔓 VLESS | @orange_vpns"
+  type: vless
+  server: '94.131.13.181'
+  port: 8880
+  uuid: 'df0680ca-e43c-498d-ed86-8e196eedd012'
+  udp: true
+  skip-cert-verify: false
+  network: 'grpc'
+
+- name: "V2rayNG3"
+  type: ss
+  server: '185.193.102.7'
+  port: 57456
+  cipher: 'chacha20-ietf-poly1305'
+  password: '360e21d21977dc11'
+  udp: true
+
+- name: "🇱🇹 openproxylist.com vless-LT"
+  type: vless
+  server: '94.131.13.163'
+  port: 8880
+  uuid: 'df0680ca-e43c-498d-ed86-8e196eedd012'
+  udp: true
+  skip-cert-verify: false
+  network: 'grpc'
+
+- name: "🇫🇮 251024-131807.198 __"
   type: vless
   server: '157.180.123.25'
   port: 443
@@ -28,7 +106,15 @@ proxies:
     headers:
       Host: '157.180.123.25'
 
-- name: "[🇳🇱] [vl-tl-ws] [251024-131641.836]"
+- name: "🇫🇮 Finland Baxet"
+  type: ss
+  server: '185.193.102.7'
+  port: 57456
+  cipher: 'chacha20-ietf-poly1305'
+  password: '360e21d21977dc11'
+  udp: true
+
+- name: "🇳🇱 251024-131641.836"
   type: vless
   server: '104.21.32.78'
   port: 8443
@@ -51,16 +137,16 @@ proxies:
   password: 'ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44='
   udp: true
 
-- name: "🇳🇱[openproxylist.com] vless-NL"
+- name: "🇳🇱 openproxylist.com vless-NL __"
   type: vless
   server: '77.91.123.207'
   port: 8880
   uuid: 'df0680ca-e43c-498d-ed86-8e196eedd012'
   udp: true
   skip-cert-verify: false
-  network: 'grpc'    
+  network: 'grpc'
 
-- name: "🇱🇻[openproxylist.com] ss-LV"
+- name: "🇱🇻 openproxylist.com ss-LV"
   type: ss
   server: '46.183.217.204'
   port: 990
@@ -68,7 +154,7 @@ proxies:
   password: 'ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44='
   udp: true
 
-- name: "🇩🇪DE-18.196.23.20-0205"
+- name: "🇩🇪 DE-18.196.23.20-0205"
   type: ss
   server: '18.196.23.20'
   port: 443
@@ -76,7 +162,7 @@ proxies:
   password: 'amazonskr05'
   udp: true    
 
-- name: "🇫🇮FI-89.35.119.87-0230"
+- name: "🇫🇮 FI-89.35.119.87-0230"
   type: ss
   server: 'fin.outlinebot1.ru'
   port: 5904
@@ -84,7 +170,7 @@ proxies:
   password: '5TZnwPb23pQS39lIucspJw'
   udp: true
 
-- name: "🇦🇪AE(AzadNet.t.me)"
+- name: "🇦🇪 AE AzadNet.t.me"
   type: vless
   server: '217.60.38.191'
   port: 2053
@@ -99,7 +185,7 @@ proxies:
     headers:
       Host: 'gaosir.unfeeling.sbs'
 
-- name: "🇩🇪DE(AzadNet.t.me)"
+- name: "🇩🇪 DE AzadNet.t.me "
   type: vless
   server: '157.180.123.25'
   port: 443
@@ -112,7 +198,7 @@ proxies:
     headers:
       Host: '157.180.123.25'
 
-- name: "🇸🇪SE-13.60.209.163-5644"
+- name: "🇸🇪 SE-13.60.209.163-5644"
   type: ss
   server: '13.60.209.163'
   port: 443
@@ -120,7 +206,7 @@ proxies:
   password: 'amazonskr05'
   udp: true
 
-- name: "🇳🇱NL-109.201.152.181-0281"
+- name: "🇳🇱 NL-109.201.152.181-0281"
   type: ss
   server: '109.201.152.181'
   port: 443
@@ -145,7 +231,7 @@ proxies:
   password: '8afc633eb63227e9'
   udp: true
 
-- name: "🇫🇮V2rayNG3"
+- name: "🇫🇮 V2rayNG3"
   type: vless
   server: '157.180.123.212'
   port: 10200
@@ -154,7 +240,7 @@ proxies:
   skip-cert-verify: false
   network: 'tcp'
 
-- name: "🇫🇮SiNAVM"
+- name: "🇫🇮 SiNAVM"
   type: vless
   server: '185.75.135.224'
   port: 443
@@ -194,7 +280,7 @@ proxies:
   password: 'pwg80CVh4UBkFY4T2HuJUj'
   udp: true
 
-- name: "🇸🇪oneclickvpnkeys"
+- name: "🇸🇪 one click vpn keys"
   type: vless
   server: '78.40.117.185'
   port: 443
@@ -275,19 +361,24 @@ proxy-groups:
   url: https://www.clickcease.com/monitor/stat.js
   interval: 1
   proxies:
-    - "🇸🇪SiNAVM"
-    - "🇸🇪oneclickvpnkeys"
+    - "🇸🇪 SiNAVM"
+    - "🇸🇪 one click vpn keys"
     - "🇸🇪 AB Sweden"
-    - "🇸🇪SE-13.60.209.163-5644"
+    - "🇸🇪 SE-13.60.209.163-5644"
+    - "🇫🇮 F0rc3RunVPN"
+    - "🇫🇮 Finland Baxet"
+    - "🇫🇮 configV2rayNG::FI"
     - "🇱🇻 Латвия - Рига"
-    - "🇱🇻[openproxylist.com] ss-LV"
+    - "🇱🇻 openproxylist.com ss-LV"
     - "🇩🇪 GovnoGerman"
-    - "🇩🇪DE-18.196.23.20-0205"
-    - "🇦🇪AE(AzadNet.t.me)"
-    - "🇳🇱[openproxylist.com] vless-NL"
-    - "[🇳🇱] [vl-tl-ws] [251024-131641.836]"
-    - "@V2rayNG3"
-    - "[🇫🇮] [vl-no-ws] [251024-131807.198]"
+    - "🇩🇪 DE-18.196.23.20-0205"
+    - "🇦🇪 AE AzadNet.t.me"
+    - "🇱🇹 openproxylist.com vless-LT"
+    - "🇱🇹 LT | 🔓 VLESS | @orange_vpns"
+    - "🏴‍☠️@FreakConfig"
+    - "V2rayNG3"
+    - "@meli_proxyy"
+    - "MCI-@IRAN_V2RAY1"
 
     
 rules:
