@@ -31,7 +31,6 @@ proxies:
     public-key: 'blSlAMMTv5UdIZiQd6VtBlS7kfZJ9xpw9H95Ouohbxs'
     short-id: '4bb9dbdad476124c'
 
-
 - name: "🇫🇮 F0rc3RunVPN"
   type: ss
   server: '83.147.216.70'
@@ -409,9 +408,9 @@ proxy-groups:
     - "WARP 1.5"
     - "WARP"
     - "WARP in WARP"
-
     
 rules:
+  - 'PROCESS-NAME,Telegram.exe,auto'
   - 'PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,auto'
   - 'PROCESS-NAME,HYP.exe,DIRECT'
   - 'PROCESS-NAME,Throne.exe,DIRECT'
