@@ -364,20 +364,10 @@ proxy-groups:
     - "🇸🇪 one click vpn keys"
     - "🇸🇪 AB Sweden"
     - "🇸🇪 SE-13.60.209.163-5644"
-    - "🇫🇮 F0rc3RunVPN"
-    - "🇫🇮 Finland Baxet"
-    - "🇫🇮 configV2rayNG::FI"
     - "🇱🇻 Латвия - Рига"
     - "🇱🇻 openproxylist.com ss-LV"
     - "🇩🇪 GovnoGerman"
     - "🇩🇪 DE-18.196.23.20-0205"
-    - "🇦🇪 AE AzadNet.t.me"
-    - "🇱🇹 openproxylist.com vless-LT"
-    - "🇱🇹 LT | 🔓 VLESS | @orange_vpns"
-    - "🏴‍☠️@FreakConfig"
-    - "V2rayNG3"
-    - "@meli_proxyy"
-    - "MCI-@IRAN_V2RAY1"
 
 rules:
   - 'PROCESS-NAME,HYP.exe,DIRECT'
