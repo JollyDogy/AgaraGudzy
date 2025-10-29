@@ -31,7 +31,6 @@ proxies:
     public-key: 'blSlAMMTv5UdIZiQd6VtBlS7kfZJ9xpw9H95Ouohbxs'
     short-id: '4bb9dbdad476124c'
 
-
 - name: "🇫🇮 F0rc3RunVPN"
   type: ss
   server: '83.147.216.70'
@@ -380,7 +379,6 @@ proxy-groups:
     - "@meli_proxyy"
     - "MCI-@IRAN_V2RAY1"
 
-    
 rules:
   - 'PROCESS-NAME,HYP.exe,DIRECT'
   - 'PROCESS-NAME,Throne.exe,DIRECT'
