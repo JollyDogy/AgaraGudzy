@@ -408,8 +408,6 @@ proxy-groups:
     
 rules:
   - 'PROCESS-NAME,Telegram.exe,auto'
-  - 'PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,auto'
-  - 'PROCESS-NAME,RobloxPlayerBeta.exe,auto'
   - 'PROCESS-NAME,HYP.exe,DIRECT'
   - 'PROCESS-NAME,Throne.exe,DIRECT'
   - 'DOMAIN-SUFFIX,ru,DIRECT'
