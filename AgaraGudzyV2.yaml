@@ -399,7 +399,7 @@ proxy-groups:
   type: url-test
   tolerance: 20
   url: https://www.clickcease.com/monitor/stat.js
-  interval: 1
+  interval: 150
   proxies:
     - "🇸🇪 SiNAVM"
     - "WARP 1.5"
