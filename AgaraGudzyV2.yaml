@@ -402,9 +402,6 @@ proxy-groups:
   interval: 1
   proxies:
     - "🇸🇪 SiNAVM"
-    - "🇸🇪 one click vpn keys"
-    - "🇸🇪 AB Sweden"
-    - "🇸🇪 SE-13.60.209.163-5644"
     - "WARP 1.5"
     - "WARP"
     - "WARP in WARP"
@@ -412,13 +409,13 @@ proxy-groups:
 rules:
   - 'PROCESS-NAME,Telegram.exe,auto'
   - 'PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,auto'
+  - 'PROCESS-NAME,RobloxPlayerBeta.exe,auto'
   - 'PROCESS-NAME,HYP.exe,DIRECT'
   - 'PROCESS-NAME,Throne.exe,DIRECT'
   - 'DOMAIN-SUFFIX,ru,DIRECT'
   - 'PROCESS-NAME,nekobox_core.exe,DIRECT'
   - 'PROCESS-NAME,uTorrent.exe,DIRECT'
   - 'DOMAIN-SUFFIX,yastatic.net,DIRECT'
-  - 'PROCESS-NAME,RobloxPlayerBeta.exe,auto'
   - 'DOMAIN-SUFFIX,yandex.net,DIRECT'
   - 'DOMAIN-SUFFIX,yandex.kz,DIRECT'
   - 'DOMAIN-SUFFIX,yandex.com,DIRECT'
