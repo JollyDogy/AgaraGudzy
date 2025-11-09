@@ -418,6 +418,7 @@ rules:
   - 'PROCESS-NAME,nekobox_core.exe,DIRECT'
   - 'PROCESS-NAME,uTorrent.exe,DIRECT'
   - 'DOMAIN-SUFFIX,yastatic.net,DIRECT'
+  - 'PROCESS-NAME,RobloxPlayerBeta.exe,auto'
   - 'DOMAIN-SUFFIX,yandex.net,DIRECT'
   - 'DOMAIN-SUFFIX,yandex.kz,DIRECT'
   - 'DOMAIN-SUFFIX,yandex.com,DIRECT'
