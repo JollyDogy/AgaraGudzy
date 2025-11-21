@@ -461,8 +461,6 @@ proxy-groups:
   url: https://www.clickcease.com/monitor/stat.js
   interval: 150
   proxies:
-    - "🇸🇪 SiNAVM"
-    - "🇩🇪 DE AzadNet.t.me "
     - "WARP 1.5"
     - "WARP"
     - "WARP in WARP"
