@@ -518,4 +518,6 @@ rules:
   - 'DOMAIN-KEYWORD,ozon,DIRECT'
   - 'DOMAIN-KEYWORD,wildberries,DIRECT'
   - 'DOMAIN-KEYWORD,aliexpress,DIRECT'
+  - 'PROCESS-NAME,yandex.exe,auto'
+  - 'PROCESS-NAME,chrome.exe,auto'
   - 'PROCESS-NAME,msedge.exe,auto'
