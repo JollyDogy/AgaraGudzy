@@ -34,8 +34,6 @@ vless://77dacbb9-eb50-487e-adc7-f1f2cb4cb19c@91.99.177.36:443?security=&type=ws&
 
 vless://74a4f351-1f64-4a24-98ac-a1a86dba7f4c@104.21.5.65:8443?security=tls&sni=dedi.besttotaldns.com&type=ws&path=/J5aKLOY1R9ONWYCM&host=dedi.besttotaldns.com&encryption=none#[%F0%9F%87%AB%F0%9F%87%AE]%20[vl-tl-ws]%20[251111-222931.164]
 
-vless://sGLzG6kUwBpZd73sW0nq@81.208.170.142:1500?security=reality&sni=www.ebay.com&fp=chrome&pbk=VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE&sid=775eb6408888248e&type=grpc&encryption=none#[%F0%9F%87%B8%F0%9F%87%A6]%20[vl-re-gr]%20[251111-223356.040]
-
 vless://199a78a5-b4d4-4064-a0db-bb37c5839134@212.192.31.146:443?security=&type=ws&path=/panika&encryption=none#[%F0%9F%87%A9%F0%9F%87%AA]%20[vl-no-ws]%20[251111-222639.114]
 
 vmess://eyJhZGQiOiJzc3Nzc3Nzc3Nzc3NmZmZmZmZmZ2guMjAzMi5wcC51YSIsImFpZCI6IjAiLCJob3N0Ijoic3Nzc3Nzc3Nzc3NzZmZmZmZmZmdoLjIwMzIucHAudWEiLCJpZCI6IjQxNzRiOTVkLTExNWUtNGQzOS1hZGQ2LTFmOGRiOTViYjg2MCIsIm5ldCI6IndzIiwicGF0aCI6Ii82V2UzVTlEZjFXR3hnRm5vRlB3MSIsInBvcnQiOiI0NDMiLCJwcyI6Ilvwn4e68J+HuF0gW3ZtLXRsLXdzXSBbMjUxMTExLTIyMzY1MC45MDFdIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9
@@ -47,3 +45,4 @@ vless://5f39f871-2fae-446e-99ad-719fa8be687c@194.61.31.126:443?security=reality&
 vless://e4cbe8b8-37db-4aaa-8469-b84f34c51ebc@104.21.90.226:443?security=tls&sni=444RRrt5.7777155.xYZ&type=ws&path=/6OWLjRc26b0nHYr5hYXD&host=444rrrt5.7777155.xyz&encryption=none#[%F0%9F%87%BA%F0%9F%87%B8]%20[vl-tl-ws]%20[251111-223308.469]
 
 vless://e0976e35-a651-4f34-b5b1-c9ac9f75cb74@172.67.133.33:8443?security=tls&sni=private.besttotaldns.com&type=ws&path=/J5aKLOY1R7ONXYCM&host=private.besttotaldns.com&encryption=none#[%F0%9F%87%AB%F0%9F%87%AE]%20[vl-tl-ws]%20[251111-223302.927]
+
