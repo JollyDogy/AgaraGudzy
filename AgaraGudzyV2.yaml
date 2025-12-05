@@ -471,6 +471,7 @@ proxy-groups:
 rules:
   - 'PROCESS-NAME,Telegram.exe,auto'
   - 'PROCESS-NAME,REPO.exe,auto'
+  - 'PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,auto'
   - 'PROCESS-NAME,uTorrent.exe,auto'
   - 'PROCESS-NAME,HYP.exe,DIRECT'
   - 'PROCESS-NAME,Throne.exe,DIRECT'
