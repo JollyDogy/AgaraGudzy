@@ -517,6 +517,7 @@ proxy-groups:
     
 rules:
   - 'PROCESS-NAME,Telegram.exe,auto'
+  - 'PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe'
   - 'PROCESS-NAME,REPO.exe,auto'
   - 'PROCESS-NAME,SlimeRancher2.exe,auto'
   - 'PROCESS-NAME,Palworld-Win64-Shipping.exe,auto'
