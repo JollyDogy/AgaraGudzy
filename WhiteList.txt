@@ -1,4 +1,291 @@
-"short_id": "43dcff53849b81e6"
+{
+  "log": {
+    "level": "warn",
+    "output": "box.log",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "address": "udp://8.8.8.8",
+        "address_resolver": "dns-direct",
+        "strategy": "ipv4_only"
+      },
+      {
+        "tag": "dns-trick-direct",
+        "address": "https://sky.rethinkdns.com/",
+        "strategy": "ipv4_only",
+        "detour": "direct-fragment"
+      },
+      {
+        "tag": "dns-direct",
+        "address": "8.8.8.8",
+        "address_resolver": "dns-local",
+        "strategy": "ipv4_only",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      }
+    ],
+    "final": "dns-remote",
+    "static_ips": {
+      "sky.rethinkdns.com": [
+        "104.17.148.22",
+        "104.17.147.22",
+        "104.18.0.48",
+        "104.18.1.48"
+      ]
+    },
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "mtu": 9000,
+      "inet4_address": "172.19.0.1/28",
+      "auto_route": true,
+      "endpoint_independent_nat": true,
+      "stack": "gvisor",
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "0.0.0.0",
+      "listen_port": 2080,
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "0.0.0.0",
+      "listen_port": 16450
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇷🇺@FREE2CONFIG  § 0",
+        "📱 Антиблок 78 | Fast, NEW, Social, Test § 1",
+        "📱 Антиблок 66 | Fast § 4",
+        "📱 Антиблок 61 | Fast § 5",
+        "📱 Антиблок 60 | Fast § 6",
+        "📱 Антиблок 65 | Fast § 7",
+        "📱 Антиблок 82 | Fast, RTK § 8",
+        "📱 Антиблок 71 | Fast § 12",
+        "📱 Антиблок 83 | Fast, RTK, Social § 15",
+        "[OpenRay] 🇳🇴 NO-5 § 17",
+        "[OpenRay] 🇷🇺 RU-162 § 18",
+        "[OpenRay] 🇷🇺 RU-164 § 19"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇷🇺@FREE2CONFIG  § 0",
+        "📱 Антиблок 78 | Fast, NEW, Social, Test § 1",
+        "📱 Антиблок 66 | Fast § 4",
+        "📱 Антиблок 61 | Fast § 5",
+        "📱 Антиблок 60 | Fast § 6",
+        "📱 Антиблок 65 | Fast § 7",
+        "📱 Антиблок 82 | Fast, RTK § 8",
+        "📱 Антиблок 71 | Fast § 12",
+        "📱 Антиблок 83 | Fast, RTK, Social § 15",
+        "[OpenRay] 🇳🇴 NO-5 § 17",
+        "[OpenRay] 🇷🇺 RU-162 § 18",
+        "[OpenRay] 🇷🇺 RU-164 § 19"
+      ],
+      "url": "http://speed.cloudflare.com/",
+      "interval": "1m0s",
+      "tolerance": 1,
+      "idle_timeout": "3m0s"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺@FREE2CONFIG  § 0",
+      "server": "51.250.83.255",
+      "server_port": 443,
+      "uuid": "abff54b1-a5a6-46a6-a202-08452fd07ae7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "short_id": "2476f063981ffd92"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 78 | Fast, NEW, Social, Test § 1",
+      "server": "109.120.189.252",
+      "server_port": 4241,
+      "uuid": "ba4b6c41-7867-4cff-94ea-fcc8e2e0dbf9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,"server_name": "eh.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA",
+          "short_id": "111111"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 66 | Fast § 4",
+      "server": "95.163.250.190",
+      "server_port": 8443,
+      "uuid": "7503171c-a602-4663-b82f-88aaf1ce9992",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sun6-21.userapi.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+          "short_id": "43dcff53849b81e6"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 61 | Fast § 5",
+      "server": "51.250.8.129",
+      "server_port": 4241,
+      "uuid": "ba4b6c41-7867-4cff-94ea-fcc8e2e0dbf9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA",
+          "short_id": "111111"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 60 | Fast § 6",
+      "server": "84.201.130.91",
+      "server_port": 4241,
+      "uuid": "ba4b6c41-7867-4cff-94ea-fcc8e2e0dbf9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA",
+          "short_id": "111111"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 65 | Fast § 7",
+      "server": "95.163.249.45",
+      "server_port": 443,
+      "uuid": "7503171c-a602-4663-b82f-88aaf1ce9992",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+          "short_id": "43dcff53849b81e6"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 82 | Fast, RTK § 8",
+      "server": "176.109.105.79",
+      "server_port": 10167,
+      "uuid": "7503171c-a602-4663-b82f-88aaf1ce9992",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+          "short_id": "43dcff53849b81e6"
+        }
+      },
+      "packet_encoding": "xudp"
+    },
+    {
+      "type": "vless",
+      "tag": "📱 Антиблок 71 | Fast § 12",
+      "server": "178.154.221.124",
+      "server_port": 443,
+      "uuid": "7503171c-a602-4663-b82f-88aaf1ce9992",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc","short_id": "43dcff53849b81e6"
         }
       },
       "packet_encoding": "xudp"
