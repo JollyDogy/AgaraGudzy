@@ -563,6 +563,7 @@ proxy-groups:
     
 rules:
   - 'PROCESS-NAME,Telegram.exe,auto'
+  - 'PROCESS-NAME,Roblox.exe,auto'
   - 'PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,auto'
   - 'PROCESS-NAME,REPO.exe,auto'
   - 'PROCESS-NAME,SlimeRancher2.exe,auto'
