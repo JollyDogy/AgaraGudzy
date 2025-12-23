@@ -106,6 +106,99 @@ proxies:
     public-key: 'mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0'
     short-id: 'd1579a8745398e34'
 
+- name: "🇷🇺@FREE2CONFIG"
+  type: vless
+  server: '51.250.83.255'
+  port: 443
+  uuid: 'abff54b1-a5a6-46a6-a202-08452fd07ae7'
+  udp: true
+  tls: true
+  servername: 'api-maps.yandex.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
+    short-id: '2476f063981ffd92'
+
+- name: "📱 Антиблок 78 | Fast, NEW, Social, Test"
+  type: vless
+  server: '109.120.189.252'
+  port: 4241
+  uuid: 'ba4b6c41-7867-4cff-94ea-fcc8e2e0dbf9'
+  udp: true
+  tls: true
+  servername: 'eh.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  network: 'tcp'
+  reality-opts:
+    public-key: 'OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA'
+    short-id: '111111'
+
+- name: "📱 Антиблок 65 | Fast"
+  type: vless
+  server: '95.163.249.45'
+  port: 443
+  uuid: '7503171c-a602-4663-b82f-88aaf1ce9992'
+  udp: true
+  tls: true
+  servername: 'api-maps.yandex.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'edge'
+  network: 'tcp'
+  reality-opts:
+    public-key: '10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc'
+    short-id: '43dcff53849b81e6'
+
+- name: "🇷🇺 VK — #6"
+  type: vless
+  server: '89.208.230.48'
+  port: 443
+  uuid: '28c69927-fc08-43c2-a09f-e9c7bb1529bb'
+  udp: true
+  tls: true
+  servername: 'm.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
+    short-id: '17802e8ff84f12df'
+
+- name: "📱 Антиблок 61 | Fast"
+  type: vless
+  server: '51.250.8.129'
+  port: 4241
+  uuid: 'ba4b6c41-7867-4cff-94ea-fcc8e2e0dbf9'
+  udp: true
+  tls: true
+  servername: 'ads.x5.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  network: 'tcp'
+  reality-opts:
+    public-key: 'OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA'
+    short-id: '111111'
+
+- name: "📱 Антиблок 60 | Fast"
+  type: vless
+  server: '84.201.130.91'
+  port: 4241
+  uuid: 'ba4b6c41-7867-4cff-94ea-fcc8e2e0dbf9'
+  udp: true
+  tls: true
+  servername: 'api-maps.yandex.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  network: 'tcp'
+  reality-opts:
+    public-key: 'OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA'
+    short-id: '111111'
+
 proxy-groups: 
 - name: auto
   type: url-test
@@ -122,6 +215,12 @@ proxy-groups:
     - "[OpenRay] 🇳🇴 NO-5"
     - "[OpenRay] 🇷🇺 RU-162"
     - "[OpenRay] 🇷🇺 RU-164"
+    - "🇷🇺@FREE2CONFIG"
+    - "📱 Антиблок 78 | Fast, NEW, Social, Test"
+    - "📱 Антиблок 65 | Fast"
+    - "🇷🇺 VK — #6"
+    - "📱 Антиблок 61 | Fast"
+    - "📱 Антиблок 60 | Fast"
         
 rules:
   - 'PROCESS-NAME,Telegram.exe,auto'
