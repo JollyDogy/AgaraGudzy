@@ -1,4 +1,11 @@
 {
+  "log": {
+    "level": "warn",
+    "output": "box.log",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [{
   "outbounds":   [
     {
       "type": "vless",
@@ -146,58 +153,7 @@
         }
       },
       "packet_encoding": "xudp"
-    }
-  ]
-}
-{
-  "log": {
-    "level": "warn",
-    "output": "box.log",
-    "timestamp": true
-  },
-  "dns": {
-    "servers": [
-      {
-        "tag": "dns-remote",
-        "address": "udp://8.8.8.8",
-        "address_resolver": "dns-direct",
-        "strategy": "ipv4_only"
-      },
-      {
-        "tag": "dns-trick-direct",
-        "address": "https://sky.rethinkdns.com/",
-        "strategy": "ipv4_only",
-        "detour": "direct-fragment"
-      },
-      {
-        "tag": "dns-direct",
-        "address": "8.8.8.8",
-        "address_resolver": "dns-local",
-        "strategy": "ipv4_only",
-        "detour": "direct"
-      },
-      {
-        "tag": "dns-local",
-        "address": "local",
-        "detour": "direct"
-      },
-      {
-        "tag": "dns-block",
-        "address": "rcode://success"
-      }
-    ],
-    "final": "dns-remote",
-    "static_ips": {
-      "sky.rethinkdns.com": [
-        "104.17.148.22",
-        "104.17.147.22",
-        "104.18.1.48",
-        "104.18.0.48"
-      ]
     },
-    "independent_cache": true
-  },
-  "inbounds": [
     {
       "type": "tun",
       "tag": "tun-in",
@@ -430,4 +386,5 @@
     }
   }
 }
+
 
