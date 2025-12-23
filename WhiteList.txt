@@ -2,7 +2,6 @@ trojan://ZyX%23rcLFldaPKHUC7NYm@217.170.194.222:13580?security=tls&sni=aspryonkt
 vless://a888c6da-33b0-480c-a40a-0e94f4eb9c48@5.129.193.147:443?security=reality&sni=eh.vk.com&fp=chrome&pbk=mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0&sid=93ae75024604f796&spx=/sinavm&type=tcp&flow=xtls-rprx-vision&encryption=none#[OpenRay]%20%F0%9F%87%B7%F0%9F%87%BA%20RU-162
 vless://2c8adcaa-e428-4cea-9c88-e88166651ab3@89.169.137.193:443?security=reality&sni=eh.vk.com&fp=chrome&pbk=mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0&sid=d1579a8745398e34&type=tcp&flow=xtls-rprx-vision&encryption=none#[OpenRay]%20%F0%9F%87%B7%F0%9F%87%BA%20RU-164
 vless://7503171c-a602-4663-b82f-88aaf1ce9992@95.163.249.45:443?security=reality&sni=api-maps.yandex.ru&fp=edge&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%93%B1%20%D0%90%D0%BD%D1%82%D0%B8%D0%B1%D0%BB%D0%BE%D0%BA%2065%20%7C%20Fast
-vless://7503171c-a602-4663-b82f-88aaf1ce9992@176.109.105.79:10167?security=reality&sni=ozon.ru&fp=qq&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%93%B1%20%D0%90%D0%BD%D1%82%D0%B8%D0%B1%D0%BB%D0%BE%D0%BA%2082%20%7C%20Fast,%20RTK
 vless://0f6c83bc-34ba-4ca1-96e6-08b3620cbce5@217.16.20.134:443?security=reality&sni=www.vk.com&fp=firefox&pbk=24lsP7iRzgT7pMhCprlmHUB6_mbR17Pxc6P0R29f-Rk&sid=35e15c94&spx=/&type=tcp&encryption=none#%F0%9F%93%B1%20%D0%90%D0%BD%D1%82%D0%B8%D0%B1%D0%BB%D0%BE%D0%BA%20128%20%7C%20Social
 
 vless://abff54b1-a5a6-46a6-a202-08452fd07ae7@78.159.131.23:443?security=reality&sni=al.cdn.stun.su&fp=chrome&pbk=su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24&sid=bbfb4f7a53e22dd3&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%B1%20Albania%20%E2%80%94%20%23130
@@ -13,3 +12,4 @@ vless://28c69927-fc08-43c2-a09f-e9c7bb1529bb@78.159.131.48:443?security=reality&
 vless://7503171c-a602-4663-b82f-88aaf1ce9992@95.163.250.190:8443?security=reality&sni=sun6-21.userapi.com&fp=qq&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%93%B1%20%D0%90%D0%BD%D1%82%D0%B8%D0%B1%D0%BB%D0%BE%D0%BA%2066%20%7C%20Fast
 
 vless://c495cf08-e046-4311-aa4b-82cc16576992@92.53.120.70:443?security=reality&sni=m.vk.com&pbk=yt24_imlgFLKEGm__E789B9pwuMXK7UKJ9ITTJuxuyo&sid=84ba23f147ad7a15&type=grpc&serviceName=m.vk.com&encryption=none#210%20%7C%20%F0%9F%8F%B3%EF%B8%8F%20VK%20%7C%20%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20VLESS%20%7C%20TG:%20@YoutubeUnBlockRu
+
