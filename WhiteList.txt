@@ -155,59 +155,6 @@
       "packet_encoding": "xudp"
     },
     {
-      "type": "tun",
-      "tag": "tun-in",
-      "mtu": 9000,
-      "inet4_address": "172.19.0.1/28",
-      "auto_route": true,
-      "endpoint_independent_nat": true,
-      "stack": "gvisor",
-      "sniff": true,
-      "sniff_override_destination": true
-    },
-    {
-      "type": "mixed",
-      "tag": "mixed-in",
-      "listen": "0.0.0.0",
-      "listen_port": 2080,
-      "sniff": true,
-      "sniff_override_destination": true
-    },
-    {
-      "type": "direct",
-      "tag": "dns-in",
-      "listen": "0.0.0.0",
-      "listen_port": 16450
-    }
-  ],
-  "outbounds": [
-    {
-      "type": "selector",
-      "tag": "select",
-      "outbounds": [
-        "auto",
-        "📱 Антиблок 78 | Fast, NEW, Social, Test § 1",
-        "📱 Антиблок 66 | Fast § 4",
-        "📱 Антиблок 61 | Fast § 5",
-        "📱 Антиблок 60 | Fast § 6"
-      ],
-      "default": "auto"
-    },
-    {
-      "type": "urltest",
-      "tag": "auto",
-      "outbounds": [
-        "📱 Антиблок 78 | Fast, NEW, Social, Test § 1",
-        "📱 Антиблок 66 | Fast § 4",
-        "📱 Антиблок 61 | Fast § 5",
-        "📱 Антиблок 60 | Fast § 6"
-      ],
-      "url": "http://speed.cloudflare.com/",
-      "interval": "1m0s",
-      "tolerance": 1,
-      "idle_timeout": "3m0s"
-    },
-    {
       "type": "vless",
       "tag": "📱 Антиблок 78 | Fast, NEW, Social, Test § 1",
       "server": "109.120.189.252",
@@ -386,5 +333,6 @@
     }
   }
 }
+
 
 
