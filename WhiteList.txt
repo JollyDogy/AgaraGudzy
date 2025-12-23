@@ -149,3 +149,11 @@
     }
   ]
 }
+
+vless://abff54b1-a5a6-46a6-a202-08452fd07ae7@51.250.83.255:443?security=reality&sni=api-maps.yandex.ru&fp=chrome&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=2476f063981ffd92&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#%F0%9F%87%B7%F0%9F%87%BA@FREE2CONFIG%20
+vless://ba4b6c41-7867-4cff-94ea-fcc8e2e0dbf9@109.120.189.252:4241?security=reality&sni=eh.vk.com&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&sid=111111&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#%F0%9F%93%B1%20%D0%90%D0%BD%D1%82%D0%B8%D0%B1%D0%BB%D0%BE%D0%BA%2078%20%7C%20Fast,%20NEW,%20Social,%20Test
+vless://7503171c-a602-4663-b82f-88aaf1ce9992@95.163.249.45:443?security=reality&sni=api-maps.yandex.ru&fp=edge&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#%F0%9F%93%B1%20%D0%90%D0%BD%D1%82%D0%B8%D0%B1%D0%BB%D0%BE%D0%BA%2065%20%7C%20Fast
+vless://28c69927-fc08-43c2-a09f-e9c7bb1529bb@89.208.230.48:443?security=reality&sni=m.vk.com&fp=chrome&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=17802e8ff84f12df&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20VK%20%E2%80%94%20%236
+vless://7503171c-a602-4663-b82f-88aaf1ce9992@95.163.250.190:8443?security=reality&sni=sun6-21.userapi.com&fp=qq&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#%F0%9F%93%B1%20%D0%90%D0%BD%D1%82%D0%B8%D0%B1%D0%BB%D0%BE%D0%BA%2066%20%7C%20Fast
+vless://ba4b6c41-7867-4cff-94ea-fcc8e2e0dbf9@51.250.8.129:4241?security=reality&sni=ads.x5.ru&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&sid=111111&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#%F0%9F%93%B1%20%D0%90%D0%BD%D1%82%D0%B8%D0%B1%D0%BB%D0%BE%D0%BA%2061%20%7C%20Fast
+vless://ba4b6c41-7867-4cff-94ea-fcc8e2e0dbf9@84.201.130.91:4241?security=reality&sni=api-maps.yandex.ru&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&sid=111111&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#%F0%9F%93%B1%20%D0%90%D0%BD%D1%82%D0%B8%D0%B1%D0%BB%D0%BE%D0%BA%2060%20%7C%20Fast
