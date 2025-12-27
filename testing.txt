@@ -1,0 +1,6 @@
+trojan://RPyW62_b9aH.ztJKeArou@83.143.87.9:18581?security=tls&sni=m.vk.com&insecure=1&allowInsecure=1&type=tcp&headerType=none#%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3
+trojan://RPyW62_b9aH.ztJKeArou@83.143.87.9:18581?security=tls&sni=m.vk.com&insecure=1&allowInsecure=1&type=tcp&headerType=none#%E2%9D%84%EF%B8%8F39%40oneclickvpnkeys
+trojan://RPyW62_b9aH.ztJKeArou@83.143.87.9:18581?security=tls&insecure=1&allowInsecure=1&type=tcp&headerType=none#NO%F0%9F%87%B3%F0%9F%87%B4
+trojan://RPyW62_b9aH.ztJKeArou@83.143.87.9:18581?security=tls&sni=m.vk.com&insecure=1&allowInsecure=1&type=tcp&headerType=none#%E2%9D%84%EF%B8%8F39%40oneclickvpnkeys
+trojan://RPyW62_b9aH.ztJKeArou@83.143.87.9:18581?security=tls&insecure=1&allowInsecure=1&type=tcp&headerType=none#NO%F0%9F%87%B3%F0%9F%87%B4
+trojan://RPyW62_b9aH.ztJKeArou@83.143.87.9:18581?security=tls&sni=m.vk.com&insecure=1&allowInsecure=1&type=tcp&headerType=none#%F0%9F%94%A5Join%2BTelegram%3A%40Farah_VPN%F0%9F%9F%A3
