@@ -219,8 +219,6 @@ proxy-groups:
     hidden: true
     url: http://speed.cloudflare.com/
     proxies:
-      - "WARP 1.5"
-      - "WARP in WARP"
       - "AWG 1.5 (1 Вариант)"
       - "AWG 1.5 (2 Вариант)"
       - "AWG 1.5 (3 Вариант)"
@@ -242,4 +240,5 @@ rules:
   - "PROCESS-NAME,yandex.exe,VPN"
   - "PROCESS-NAME,opera.exe,VPN"
   - "PROCESS-NAME,chrome.exe,VPN"
+  - "PROCESS-NAME,browser.exe,VPN"  
   - "PROCESS-NAME,msedge.exe,VPN"
