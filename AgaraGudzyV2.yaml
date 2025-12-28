@@ -230,7 +230,9 @@ proxy-groups:
       - "AWG 1.5 (9 Вариант)"
 
 rules:
+  - 'DOMAIN-KEYWORD,discord,VPN'
   - "PROCESS-NAME,discord.exe,VPN"
+  - "PROCESS-NAME,avp.exe.exe,VPN"
   - "PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,VPN"
   - "PROCESS-NAME,REPO.exe,VPN"
   - "PROCESS-NAME,SlimeRancher2.exe,VPN"
