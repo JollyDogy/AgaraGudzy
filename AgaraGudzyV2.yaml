@@ -252,7 +252,7 @@ proxy-groups:
   - name: VPN
     type: select
     tolerance: 20
-    interval: 20
+    interval: 80
     url: https://discord.com/
     icon: https://psv4.userapi.com/s/v1/d2/myYi0zo7FBs5-0OC_n9gCfGlX1fEp93vU1GXg092p-4eWEmkWcvSUKPOFtIPUL2Pbdreb4hSP5eZexSjQdK7wHda_MhypBmD-3Z_Z72m0_1K8iZ6o-BLXrIX3neC9lR-EpC2PJ8qPkqN/chebur.png
     proxies:
@@ -275,7 +275,7 @@ proxy-groups:
   - name: auto WARP
     type: url-test
     tolerance: 20
-    interval: 20
+    interval: 80
     hidden: true
     url: https://discord.com/
     proxies:
