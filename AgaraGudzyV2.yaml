@@ -310,7 +310,7 @@ proxy-groups:
   - name: VPN
     type: select
     tolerance: 40
-    interval: 200
+    interval: 300
     url: http://speed.cloudflare.com/
     icon: https://psv4.userapi.com/s/v1/d2/myYi0zo7FBs5-0OC_n9gCfGlX1fEp93vU1GXg092p-4eWEmkWcvSUKPOFtIPUL2Pbdreb4hSP5eZexSjQdK7wHda_MhypBmD-3Z_Z72m0_1K8iZ6o-BLXrIX3neC9lR-EpC2PJ8qPkqN/chebur.png
     proxies:
@@ -340,7 +340,7 @@ proxy-groups:
   - name: full WARP
     type: url-test
     tolerance: 40
-    interval: 200
+    interval: 300
     hidden: true
     url: http://speed.cloudflare.com/
     proxies:
@@ -364,7 +364,7 @@ proxy-groups:
   - name: 1 WARP
     type: url-test
     tolerance: 40
-    interval: 200
+    interval: 300
     hidden: true
     url: http://speed.cloudflare.com/
     proxies:
@@ -375,7 +375,7 @@ proxy-groups:
   - name: 2 WARP
     type: url-test
     tolerance: 40
-    interval: 200
+    interval: 300
     hidden: true
     url: http://speed.cloudflare.com/
     proxies:
@@ -386,7 +386,7 @@ proxy-groups:
   - name: 3 WARP
     type: url-test
     tolerance: 40
-    interval: 200
+    interval: 300
     hidden: true
     url: http://speed.cloudflare.com/
     proxies:
@@ -397,7 +397,7 @@ proxy-groups:
   - name: WARP fast
     type: url-test
     tolerance: 40
-    interval: 200
+    interval: 300
     hidden: true
     url: http://speed.cloudflare.com/
     proxies:
@@ -406,6 +406,7 @@ proxy-groups:
       - "AWG fast (3 Вариант)" 
 
 rules:
+  - "DOMAIN-KEYWORD,chatgpt.com,🇳🇱 NL-109.201.152.181-0281"
   - "DOMAIN-KEYWORD,yandex,DIRECT"
   - "DOMAIN-SUFFIX,yandex,DIRECT"
   - "DOMAIN-SUFFIX,ru,DIRECT"
@@ -452,6 +453,7 @@ rules:
   - "DOMAIN-KEYWORD,aliexpress,DIRECT"
   - 'DOMAIN-KEYWORD,discord,VPN'
   - "DOMAIN-SUFFIX,discord,VPN"
+  - "PROCESS-NAME,osu!.exe,VPN"
   - "PROCESS-NAME,roblox.exe,VPN"
   - "PROCESS-NAME,discord.exe,VPN"
   - "PROCESS-NAME,avp.exe.exe,VPN"
@@ -462,6 +464,7 @@ rules:
   - "PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,VPN"
   - "PROCESS-NAME,uTorrent.exe,VPN"
   - "PROCESS-NAME,yandex.exe,VPN"
+  - "PROCESS-NAME,telegram.exe,VPN"  
   - "PROCESS-NAME,opera.exe,VPN"
   - "PROCESS-NAME,chrome.exe,VPN"
   - "PROCESS-NAME,browser.exe,VPN"  
