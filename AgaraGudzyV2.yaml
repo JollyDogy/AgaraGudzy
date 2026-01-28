@@ -59,6 +59,7 @@ warp-common-fast: &warp-common-fast
   dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]  
 
 proxies:
+##zapas##
   - name: "🇳🇱 NL-109.201.152.181-0281"
     type: ss
     server: "109.201.152.181"
@@ -66,8 +67,166 @@ proxies:
     cipher: "aes-128-cfb"
     password: "shadowsocks"
     udp: true
- 
-  ##WARP##
+  
+  - name: "4Kian-848"
+    type: ss
+    server: '213.159.76.21'
+    port: 443
+    cipher: 'chacha20-ietf-poly1305'
+    password: 'pNqnYf3kHesOpCchRvUZxfwTafRsOj7g'
+    udp: true
+
+  - name: "4Kian-817"
+    type: ss
+    server: '213.159.67.124'
+    port: 443
+    cipher: 'chacha20-ietf-poly1305'
+    password: 'mbhqsStnFQT1cTZYCdsmkugGUC6GT6rp'
+    udp: true
+
+  - name: "4Kian-849"
+    type: ss
+    server: '95.164.116.33'
+    port: 443
+    cipher: 'chacha20-ietf-poly1305'
+    password: 'pQmnC03JObbPhdh5FBJHgD6jnTLchsRA'
+    udp: true
+
+  - name: "4Kian-547"
+    type: ss
+    server: '194.246.114.101'
+    port: 443
+    cipher: 'chacha20-ietf-poly1305'
+    password: 'HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk'
+    udp: true
+
+  - name: "4Kian-167"
+    type: ss
+    server: '45.14.245.2'
+    port: 443
+    cipher: 'chacha20-ietf-poly1305'
+    password: '17ZDORWIliQHuO6WRGHChXYMzdRtAYVP'
+    udp: true
+
+  - name: "🇳🇴 NO 1"
+    type: trojan
+    server: '80.173.230.196'
+    port: 26279
+    password: 'a5inYFE=JGV89+hjxIqgDp1tcWBd6'
+    udp: true
+    tls: true
+    skip-cert-verify: true
+
+  - name: "🇳🇴 Norway, Oslo (Alna District) [BL]"
+    type: trojan
+    server: '80.173.230.196'
+    port: 26279
+    password: 'a5inYFE=JGV89+hjxIqgDp1tcWBd6'
+    udp: true
+    tls: true
+    skip-cert-verify: true
+
+  - name: "🇳🇴 NO 2"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: false
+
+  - name: "⚡ b2n.ir/v2ray-configs | 756"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: false
+
+  - name: ">>@oneclickvpnkeys::NO"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: true
+
+  - name: "🇳🇴 NO 3"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: true
+
+  - name: "https://t.me/ForceRunVPN-🇳🇴-Oslo-569ms-ServeTheWorld1"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: false
+
+  - name: "https://t.me/ForceRunVPN-🇳🇴-Oslo-570ms-ServeTheWorld2"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: false
+
+  - name: "https://t.me/ForceRunVPN-🇳🇴-Oslo-571ms-ServeTheWorld3"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: true
+
+  - name: "⚡ b2n.ir/v2ray-configs | 674"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: false
+
+  - name: "🔥Join+Telegram:@Farah_VPN🟣"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: false
+
+  - name: "@Kia_Net 🤥"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: false
+
+##WARP##
   - name: "WARP 1.5"
     type: wireguard
     private-key: 73UHgLPIBi5Q5Omrii3cST3bghkfguhSSmfETEPRHtM=
@@ -335,7 +494,7 @@ proxy-groups:
       - "AWG fast (1 Вариант)"
       - "AWG fast (2 Вариант)"
       - "AWG fast (3 Вариант)"      
-      - "🇳🇱 NL-109.201.152.181-0281"
+      - "zapas"
 
   - name: full WARP
     type: url-test
@@ -360,6 +519,32 @@ proxy-groups:
       - "AWG fast (1 Вариант)"
       - "AWG fast (2 Вариант)"
       - "AWG fast (3 Вариант)"
+
+  - name: zapas
+    type: url-test
+    tolerance: 40
+    interval: 300
+    hidden: true
+    url: http://speed.cloudflare.com/
+    proxies:
+      - "🇳🇱 NL-109.201.152.181-0281"
+      - "4Kian-848"
+      - "4Kian-817"
+      - "4Kian-849"
+      - "4Kian-547"
+      - "4Kian-167"
+      - "🇳🇴 NO 1"
+      - "🇳🇴 Norway, Oslo (Alna District) [BL]"
+      - "🇳🇴 NO 2"
+      - "⚡ b2n.ir/v2ray-configs | 756"
+      - ">>@oneclickvpnkeys::NO"
+      - "🇳🇴 NO 3"
+      - "https://t.me/ForceRunVPN-🇳🇴-Oslo-569ms-ServeTheWorld1"
+      - "https://t.me/ForceRunVPN-🇳🇴-Oslo-570ms-ServeTheWorld2"
+      - "https://t.me/ForceRunVPN-🇳🇴-Oslo-571ms-ServeTheWorld3"
+      - "⚡ b2n.ir/v2ray-configs | 674"
+      - "🔥Join+Telegram:@Farah_VPN🟣"
+      - "@Kia_Net 🤥"
 
   - name: 1 WARP
     type: url-test
@@ -406,7 +591,7 @@ proxy-groups:
       - "AWG fast (3 Вариант)" 
 
 rules:
-  - "DOMAIN-KEYWORD,chatgpt.com,🇳🇱 NL-109.201.152.181-0281"
+  - "DOMAIN-KEYWORD,chatgpt.com,zapas"
   - "DOMAIN-KEYWORD,yandex,DIRECT"
   - "DOMAIN-SUFFIX,yandex,DIRECT"
   - "DOMAIN-SUFFIX,ru,DIRECT"
