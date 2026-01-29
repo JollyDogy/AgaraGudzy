@@ -1005,10 +1005,12 @@ proxy-groups:
 rules:
   - "DOMAIN-KEYWORD,rbxcdn.com,zapas"
   - "DOMAIN-KEYWORD,roblox.com,zapas"
+  - "PROCESS-NAME,roblox.exe,zapas"
+  - "PROCESS-NAME,RobloxPlayerBeta.exe,zapas"
+  - "DOMAIN-KEYWORD,chatgpt.com,zapas"
   - 'DOMAIN-KEYWORD,discord,VPN'
   - "DOMAIN-SUFFIX,discord,VPN"
   - "PROCESS-NAME,osu!.exe,VPN"
-  - "PROCESS-NAME,roblox.exe,zapas"
   - "PROCESS-NAME,discord.exe,VPN"
   - "PROCESS-NAME,avp.exe.exe,VPN"
   - "PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,VPN"
@@ -1019,7 +1021,6 @@ rules:
   - "PROCESS-NAME,uTorrent.exe,VPN"
   - "PROCESS-NAME,yandex.exe,VPN"
   - "PROCESS-NAME,telegram.exe,VPN"  
-  - "DOMAIN-KEYWORD,chatgpt.com,zapas"
   - "DOMAIN-KEYWORD,yandex,DIRECT"
   - "DOMAIN-SUFFIX,yandex,DIRECT"
   - "DOMAIN-SUFFIX,ru,DIRECT"
