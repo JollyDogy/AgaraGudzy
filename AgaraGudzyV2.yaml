@@ -60,14 +60,30 @@ warp-common-fast: &warp-common-fast
 
 proxies:
 ##zapas##
-  - name: "🇳🇱 NL-109.201.152.181-0281"
+  - name: "4Kian-593"
     type: ss
-    server: "109.201.152.181"
+    server: '95.164.10.228'
     port: 443
-    cipher: "aes-128-cfb"
-    password: "shadowsocks"
+    cipher: 'chacha20-ietf-poly1305'
+    password: 'SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo'
     udp: true
-  
+
+  - name: "4Kian-242"
+    type: ss
+    server: '178.23.190.238'
+    port: 443
+    cipher: 'chacha20-ietf-poly1305'
+    password: 'uo7EbtqIwgZXXHmMv5LbLcOxptyPlNkh'
+    udp: true
+
+  - name: "4Kian-558"
+    type: ss
+    server: '45.12.144.18'
+    port: 443
+    cipher: 'chacha20-ietf-poly1305'
+    password: 'LQyAUItafUmmO3EZZx9UbiX6IGydSBgL'
+    udp: true
+
   - name: "4Kian-848"
     type: ss
     server: '213.159.76.21'
@@ -117,7 +133,7 @@ proxies:
     tls: true
     skip-cert-verify: true
 
-  - name: "🇳🇴 Norway, Oslo (Alna District) [BL]"
+  - name: "🇳🇴 Norway, Oslo (Alna District) [BL]1"
     type: trojan
     server: '80.173.230.196'
     port: 26279
@@ -206,7 +222,7 @@ proxies:
     servername: 'www.semanticstaplegun.click'
     skip-cert-verify: false
 
-  - name: "🔥Join+Telegram:@Farah_VPN🟣"
+  - name: "🔥Join+Telegram:@Farah_VPN🟣1"
     type: trojan
     server: '80.173.231.254'
     port: 12420
@@ -225,6 +241,372 @@ proxies:
     tls: true
     servername: 'www.semanticstaplegun.click'
     skip-cert-verify: false
+
+  - name: "🔥Join+Telegram:@Farah_VPN🟣2"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: true
+
+  - name: "🇳🇴[openproxylist.com] trojan-NO"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: false
+
+  - name: "🇳🇴 Norway, Oslo (Alna District) [BL]2"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: true
+
+  - name: "🇳🇴[openproxylist.com]"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: false
+
+  - name: "NO🇳🇴"
+    type: trojan
+    server: '80.173.231.254'
+    port: 12420
+    password: 'wp9IsiY82uQhcmgNC1eoBM'
+    udp: true
+    tls: true
+    servername: 'www.semanticstaplegun.click'
+    skip-cert-verify: true
+
+  - name: "1923. TROJAN | TG: @wlrustg"
+    type: trojan
+    server: 'hl-freedom-1.undef.network'
+    port: 443
+    password: '7LBbob9IutFObLxLf9Svc1HaV'
+    udp: true
+    tls: true
+    servername: 'hl-freedom-1.undef.network'
+    skip-cert-verify: false
+    network: 'ws'
+    ws-opts:
+      path: '/f2fc2a1f'
+      headers:
+        Host: 'hl-freedom-1.undef.network'
+
+  - name: "🇫🇷 France, Paris [BL]1"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: false
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "Channel id: @ShadowProxy66 🇨🇦"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: true
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "🇺🇸 83 - US - Trojan/WS/TLS - 443"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: true
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "🇺🇸 85 - US - Trojan/WS/TLS - 443"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: true
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "https://t.me/ForceRunVPN-🇫🇷-Paris-583ms-SCALEWAY"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: false
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "[OpenRay] Dynamic-9654"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: false
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "🇺🇸 84 - US - Trojan/WS/TLS - 443"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: true
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "🇺🇸 79 - US - Trojan/WS/TLS - 443"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: false
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "Telegram: @v2node"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: false
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "🇺🇸 78 - US - Trojan/WS/TLS - 443"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: false
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "🇫🇷 France, Paris [BL]2"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: true
+    client-fingerprint: 'chrome'
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+
+  - name: "🇺🇸 82 - US - Trojan/WS/TLS/UTLS - 443"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: true
+    client-fingerprint: 'chrome'
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+
+  - name: "🇺🇸 77 - US - Trojan/WS/TLS - 443"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: false
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "@Vip_Security join us - 15"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: false
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "🇺🇸 US 14"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: true
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
+
+  - name: "🇬🇧 United Kingdom, London [BL]"
+    type: trojan
+    server: '212.192.214.46'
+    port: 18069
+    password: 'iCfh96DEJn3=QRbzF.Tdl'
+    udp: true
+    tls: true
+    servername: 'www.vk.com'
+    skip-cert-verify: true
+
+  - name: "2233. 🇬🇧 TROJAN | TG: @wlrustg"
+    type: trojan
+    server: '212.192.214.46'
+    port: 18069
+    password: 'iCfh96DEJn3=QRbzF.Tdl'
+    udp: true
+    tls: true
+    servername: 'www.vk.com'
+    skip-cert-verify: true
+
+  - name: "👉🆔 @v2ray_configs_pool 📡 🇮🇸IS 🧭 2.3MB/s"
+    type: trojan
+    server: '167.17.185.228'
+    port: 10889
+    password: 'cTv.9PDdCt-wybBrG1qlxI5UJuaEj'
+    udp: true
+    tls: true
+    servername: '🔒 [By EbraSha] b2n.ir/v2ray-configs | 274 '
+    skip-cert-verify: true
+    client-fingerprint: 'chrome'
+
+  - name: "🔥Join+Telegram:@Farah_VPN🟣3"
+    type: trojan
+    server: '167.17.185.172'
+    port: 10889
+    password: 'cTv.9PDdCt-wybBrG1qlxI5UJuaEj'
+    udp: true
+    tls: true
+    servername: 'web.max.ru'
+    skip-cert-verify: true
+
+  - name: "👉🆔 @v2ray_configs_pool 📡 🇮🇸IS 🧭 3.2MB/s"
+    type: trojan
+    server: '167.17.185.172'
+    port: 10889
+    password: 'cTv.9PDdCt-wybBrG1qlxI5UJuaEj'
+    udp: true
+    tls: true
+    servername: 'web.max.ru'
+    skip-cert-verify: true
+    client-fingerprint: 'chrome'
+
+  - name: "👉🆔 @v2ray_configs_pool 📡 🇮🇸IS 🧭 2.4MB/s"
+    type: trojan
+    server: '167.17.185.172'
+    port: 10889
+    password: 'cTv.9PDdCt-wybBrG1qlxI5UJuaEj'
+    udp: true
+    tls: true
+    servername: '🔒 [By EbraSha] '
+    skip-cert-verify: true
+    client-fingerprint: 'chrome'
+
+  - name: "🔥Join+Telegram:@Farah_VPN🟣4"
+    type: trojan
+    server: 'www.calmlunch.com'
+    port: 443
+    password: 'humanity'
+    udp: true
+    tls: true
+    servername: 'www.calmlunch.com'
+    skip-cert-verify: true
+    network: 'ws'
+    ws-opts:
+      path: '/assignment'
+      headers:
+        Host: 'www.calmlunch.com'
 
 ##WARP##
   - name: "WARP 1.5"
@@ -523,18 +905,20 @@ proxy-groups:
   - name: zapas
     type: url-test
     tolerance: 40
-    interval: 300
+    interval: 100
     hidden: true
     url: http://speed.cloudflare.com/
     proxies:
-      - "🇳🇱 NL-109.201.152.181-0281"
+      - "4Kian-593"
+      - "4Kian-242"
+      - "4Kian-558"
       - "4Kian-848"
       - "4Kian-817"
       - "4Kian-849"
       - "4Kian-547"
       - "4Kian-167"
       - "🇳🇴 NO 1"
-      - "🇳🇴 Norway, Oslo (Alna District) [BL]"
+      - "🇳🇴 Norway, Oslo (Alna District) [BL]1"
       - "🇳🇴 NO 2"
       - "⚡ b2n.ir/v2ray-configs | 756"
       - ">>@oneclickvpnkeys::NO"
@@ -543,8 +927,36 @@ proxy-groups:
       - "https://t.me/ForceRunVPN-🇳🇴-Oslo-570ms-ServeTheWorld2"
       - "https://t.me/ForceRunVPN-🇳🇴-Oslo-571ms-ServeTheWorld3"
       - "⚡ b2n.ir/v2ray-configs | 674"
-      - "🔥Join+Telegram:@Farah_VPN🟣"
+      - "🔥Join+Telegram:@Farah_VPN🟣1"
       - "@Kia_Net 🤥"
+      - "🔥Join+Telegram:@Farah_VPN🟣2"
+      - "🇳🇴[openproxylist.com] trojan-NO"
+      - "🇳🇴 Norway, Oslo (Alna District) [BL]2"
+      - "🇳🇴[openproxylist.com]"
+      - "NO🇳🇴"
+      - "1923. TROJAN | TG: @wlrustg"
+      - "🇫🇷 France, Paris [BL]1"
+      - "Channel id: @ShadowProxy66 🇨🇦"
+      - "🇺🇸 83 - US - Trojan/WS/TLS - 443"
+      - "🇺🇸 85 - US - Trojan/WS/TLS - 443"
+      - "https://t.me/ForceRunVPN-🇫🇷-Paris-583ms-SCALEWAY"
+      - "[OpenRay] Dynamic-9654"
+      - "🇺🇸 84 - US - Trojan/WS/TLS - 443"
+      - "🇺🇸 79 - US - Trojan/WS/TLS - 443"
+      - "Telegram: @v2node"
+      - "🇺🇸 78 - US - Trojan/WS/TLS - 443"
+      - "🇫🇷 France, Paris [BL]2"
+      - "🇺🇸 82 - US - Trojan/WS/TLS/UTLS - 443"
+      - "🇺🇸 77 - US - Trojan/WS/TLS - 443"
+      - "@Vip_Security join us - 15"
+      - "🇺🇸 US 14"
+      - "🇬🇧 United Kingdom, London [BL]"
+      - "2233. 🇬🇧 TROJAN | TG: @wlrustg"
+      - "👉🆔 @v2ray_configs_pool 📡 🇮🇸IS 🧭 2.3MB/s"
+      - "🔥Join+Telegram:@Farah_VPN🟣3"
+      - "👉🆔 @v2ray_configs_pool 📡 🇮🇸IS 🧭 3.2MB/s"
+      - "👉🆔 @v2ray_configs_pool 📡 🇮🇸IS 🧭 2.4MB/s"
+      - "🔥Join+Telegram:@Farah_VPN🟣4"
 
   - name: 1 WARP
     type: url-test
@@ -591,6 +1003,21 @@ proxy-groups:
       - "AWG fast (3 Вариант)" 
 
 rules:
+  - "DOMAIN-KEYWORD,roblox.com,zapas"
+  - 'DOMAIN-KEYWORD,discord,VPN'
+  - "DOMAIN-SUFFIX,discord,VPN"
+  - "PROCESS-NAME,osu!.exe,VPN"
+  - "PROCESS-NAME,roblox.exe,zapas"
+  - "PROCESS-NAME,discord.exe,VPN"
+  - "PROCESS-NAME,avp.exe.exe,VPN"
+  - "PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,VPN"
+  - "PROCESS-NAME,REPO.exe,VPN"
+  - "PROCESS-NAME,SlimeRancher2.exe,VPN"
+  - "PROCESS-NAME,Palworld-Win64-Shipping.exe,VPN"
+  - "PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,VPN"
+  - "PROCESS-NAME,uTorrent.exe,VPN"
+  - "PROCESS-NAME,yandex.exe,VPN"
+  - "PROCESS-NAME,telegram.exe,VPN"  
   - "DOMAIN-KEYWORD,chatgpt.com,zapas"
   - "DOMAIN-KEYWORD,yandex,DIRECT"
   - "DOMAIN-SUFFIX,yandex,DIRECT"
@@ -636,20 +1063,6 @@ rules:
   - "DOMAIN-KEYWORD,ozon,DIRECT"
   - "DOMAIN-KEYWORD,wildberries,DIRECT"
   - "DOMAIN-KEYWORD,aliexpress,DIRECT"
-  - 'DOMAIN-KEYWORD,discord,VPN'
-  - "DOMAIN-SUFFIX,discord,VPN"
-  - "PROCESS-NAME,osu!.exe,VPN"
-  - "PROCESS-NAME,roblox.exe,VPN"
-  - "PROCESS-NAME,discord.exe,VPN"
-  - "PROCESS-NAME,avp.exe.exe,VPN"
-  - "PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,VPN"
-  - "PROCESS-NAME,REPO.exe,VPN"
-  - "PROCESS-NAME,SlimeRancher2.exe,VPN"
-  - "PROCESS-NAME,Palworld-Win64-Shipping.exe,VPN"
-  - "PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,VPN"
-  - "PROCESS-NAME,uTorrent.exe,VPN"
-  - "PROCESS-NAME,yandex.exe,VPN"
-  - "PROCESS-NAME,telegram.exe,VPN"  
   - "PROCESS-NAME,opera.exe,VPN"
   - "PROCESS-NAME,chrome.exe,VPN"
   - "PROCESS-NAME,browser.exe,VPN"  
