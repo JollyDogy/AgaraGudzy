@@ -1003,6 +1003,7 @@ proxy-groups:
       - "AWG fast (3 Вариант)" 
 
 rules:
+  - "DOMAIN-KEYWORD,rbxcdn.com,zapas"
   - "DOMAIN-KEYWORD,roblox.com,zapas"
   - 'DOMAIN-KEYWORD,discord,VPN'
   - "DOMAIN-SUFFIX,discord,VPN"
