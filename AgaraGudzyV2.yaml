@@ -807,9 +807,9 @@ proxies:
   - name: "AWG fast (1 Вариант)"
     <<: *warp-common-fast
     amnezia-wg-option:
-      jc: 3
-      jmin: 10
-      jmax: 30
+      jc: 4
+      jmin: 30
+      jmax: 80
       s1: 0
       s2: 0
       h1: 1
@@ -820,9 +820,9 @@ proxies:
   - name: "AWG fast (2 Вариант)"
     <<: *warp-common-fast
     amnezia-wg-option:
-      jc: 4
-      jmin: 15
-      jmax: 40
+      jc: 6
+      jmin: 30
+      jmax: 80
       s1: 0
       s2: 0
       h1: 1
@@ -833,9 +833,9 @@ proxies:
   - name: "AWG fast (3 Вариант)"
     <<: *warp-common-fast
     amnezia-wg-option:
-      jc: 5
-      jmin: 21
-      jmax: 50
+      jc: 8
+      jmin: 30
+      jmax: 80
       s1: 0
       s2: 0
       h1: 1
@@ -850,7 +850,7 @@ proxies:
 proxy-groups:
   - name: VPN
     type: select
-    tolerance: 40
+    tolerance: 50
     interval: 300
     url: http://speed.cloudflare.com/
     icon: https://psv4.userapi.com/s/v1/d2/myYi0zo7FBs5-0OC_n9gCfGlX1fEp93vU1GXg092p-4eWEmkWcvSUKPOFtIPUL2Pbdreb4hSP5eZexSjQdK7wHda_MhypBmD-3Z_Z72m0_1K8iZ6o-BLXrIX3neC9lR-EpC2PJ8qPkqN/chebur.png
@@ -880,7 +880,7 @@ proxy-groups:
 
   - name: full WARP
     type: url-test
-    tolerance: 40
+    tolerance: 50
     interval: 300
     hidden: true
     url: http://speed.cloudflare.com/
@@ -904,8 +904,8 @@ proxy-groups:
 
   - name: zapas
     type: url-test
-    tolerance: 40
-    interval: 100
+    tolerance: 80
+    interval: 400
     hidden: true
     url: http://speed.cloudflare.com/
     proxies:
@@ -960,7 +960,7 @@ proxy-groups:
 
   - name: 1 WARP
     type: url-test
-    tolerance: 40
+    tolerance: 50
     interval: 300
     hidden: true
     url: http://speed.cloudflare.com/
@@ -971,7 +971,7 @@ proxy-groups:
       
   - name: 2 WARP
     type: url-test
-    tolerance: 40
+    tolerance: 50
     interval: 300
     hidden: true
     url: http://speed.cloudflare.com/
@@ -982,7 +982,7 @@ proxy-groups:
 
   - name: 3 WARP
     type: url-test
-    tolerance: 40
+    tolerance: 50
     interval: 300
     hidden: true
     url: http://speed.cloudflare.com/
@@ -993,7 +993,7 @@ proxy-groups:
 
   - name: WARP fast
     type: url-test
-    tolerance: 40
+    tolerance: 50
     interval: 300
     hidden: true
     url: http://speed.cloudflare.com/
@@ -1010,6 +1010,7 @@ rules:
   - "DOMAIN-KEYWORD,chatgpt.com,zapas"
   - 'DOMAIN-KEYWORD,discord,VPN'
   - "DOMAIN-SUFFIX,discord,VPN"
+  - "PROCESS-NAME,dontstarve_steam_x64.exe,VPN"
   - "PROCESS-NAME,osu!.exe,VPN"
   - "PROCESS-NAME,discord.exe,VPN"
   - "PROCESS-NAME,avp.exe.exe,VPN"
