@@ -1011,6 +1011,9 @@ rules:
   - 'DOMAIN-KEYWORD,discord,VPN'
   - "DOMAIN-SUFFIX,discord,VPN"
   - "PROCESS-NAME,dontstarve_steam_x64.exe,VPN"
+  - "PROCESS-NAME,dontstarve_dedicated_server_nullrenderer_x64.exe,VPN"
+  - "PROCESS-NAME,dontstarve_dedicated_server_nullrenderer.exe,VPN"
+  - "PROCESS-NAME,dedicated_server_nullrenderer.exe,VPN"
   - "PROCESS-NAME,osu!.exe,VPN"
   - "PROCESS-NAME,discord.exe,VPN"
   - "PROCESS-NAME,avp.exe.exe,VPN"
