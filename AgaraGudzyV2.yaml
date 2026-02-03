@@ -39,3 +39,6 @@ proxy-groups:
     proxies:
       - "Farewell"
 
+rules:
+  - "NETWORK,tcp,Goodbye"
+  - "NETWORK,udp,Goodbye"
