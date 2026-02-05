@@ -1024,6 +1024,7 @@ rules:
 ##WEB##
   ##- 'DOMAIN-KEYWORD,discord,VPN'
   ##- "DOMAIN-SUFFIX,discord,VPN"
+  - "DOMAIN-KEYWORD,discord.com,VPN"
   - "DOMAIN-KEYWORD,media.discordapp.net,VPN"
   - "DOMAIN-KEYWORD,images-ext-1.discordapp.net,VPN"
   - "DOMAIN-KEYWORD,gateway.discord.gg,VPN"
