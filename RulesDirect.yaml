@@ -1,5 +1,5 @@
 payload:
-##WEB##
+#WEB
   - DOMAIN-KEYWORD,yandex
   - DOMAIN-SUFFIX,yandex
   - DOMAIN-SUFFIX,ru
