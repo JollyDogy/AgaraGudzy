@@ -1,10 +1,16 @@
-
-
 proxies:
   - name: "4Kian-593"
     type: ss
-    server: '95.164.10.228'
+    server: 95.164.10.228
     port: 443
-    cipher: 'chacha20-ietf-poly1305'
-    password: 'SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo'
+    cipher: chacha20-ietf-poly1305
+    password: SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo
+    udp: true
+
+  - name: "4Kian-242"
+    type: ss
+    server: 178.23.190.238
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: uo7EbtqIwgZXXHmMv5LbLcOxptyPlNkh
     udp: true
