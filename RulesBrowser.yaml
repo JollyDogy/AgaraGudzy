@@ -1,7 +1,0 @@
-payload:
-##.EXE##
-  - PROCESS-NAME,opera.exe
-  - PROCESS-NAME,chrome.exe
-  - PROCESS-NAME,browser.exe  
-  - PROCESS-NAME,msedge.exe
-  - PROCESS-NAME,yandex.exe
