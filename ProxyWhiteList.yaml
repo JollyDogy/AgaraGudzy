@@ -1,5 +1,4 @@
 proxies:
-##zapas##
   - name: "4Kian-593"
     type: ss
     server: '95.164.10.228'
