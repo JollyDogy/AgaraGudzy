@@ -17,6 +17,7 @@ payload:
 ##WEB##
   ##- DOMAIN-KEYWORD,discord
   ##- DOMAIN-SUFFIX,discord
+  - DOMAIN-KEYWORD,discordapp.net
   - DOMAIN-KEYWORD,discord.com
   - DOMAIN-KEYWORD,media.discordapp.net
   - DOMAIN-KEYWORD,images-ext-1.discordapp.net
