@@ -1,8 +1,8 @@
 payload:
-##.EXE##
+#.EXE
   - PROCESS-NAME,roblox.exe
   - PROCESS-NAME,RobloxPlayerBeta.exe
-##WEB##
+#WEB
   - DOMAIN-KEYWORD,rbxcdn.com
   - DOMAIN-KEYWORD,roblox.com
   - DOMAIN-KEYWORD,chatgpt.com
