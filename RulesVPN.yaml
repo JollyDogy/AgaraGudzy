@@ -23,3 +23,9 @@ payload:
   - DOMAIN-KEYWORD,gateway.discord.gg
   - DOMAIN-KEYWORD,status.discord.com
   - DOMAIN-KEYWORD,updates.discord.com
+##Browser##
+  - PROCESS-NAME,opera.exe
+  - PROCESS-NAME,chrome.exe
+  - PROCESS-NAME,browser.exe  
+  - PROCESS-NAME,msedge.exe
+  - PROCESS-NAME,yandex.exe
