@@ -1,3 +1,2 @@
 payload:
-  - NETWORK,tcp
-  - NETWORK,udp
+  - PROCESS-NAME,discord.exe
