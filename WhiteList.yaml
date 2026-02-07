@@ -17,7 +17,6 @@ proxy-groups:
     tolerance: 50
     interval: 300
     url: http://speed.cloudflare.com/
-    icon: https://psv4.userapi.com/s/v1/d2/myYi0zo7FBs5-0OC_n9gCfGlX1fEp93vU1GXg092p-4eWEmkWcvSUKPOFtIPUL2Pbdreb4hSP5eZexSjQdK7wHda_MhypBmD-3Z_Z72m0_1K8iZ6o-BLXrIX3neC9lR-EpC2PJ8qPkqN/chebur.png
     proxies:
       - Full
       - WhiteList
@@ -34,7 +33,7 @@ proxy-groups:
       - zapasList
 
   - name: 1 WARP
-    type: url-test
+    type: fallback
     tolerance: 150
     interval: 300
     hidden: true
@@ -47,7 +46,6 @@ proxy-groups:
     tolerance: 150
     interval: 90
     url: http://speed.cloudflare.com/
-    icon: https://psv4.userapi.com/s/v1/d2/JzoTqn_sF-pyaVhhfrdzgNO9UJZPAHOkiY0Qtp-56c-j_TXwNjNgXaNKolcUOHEUHMnuQxWB1s8RWl9UlkD0rMpiFZVuyVx0dgPEurn2yOjdDppkKpLS3wXzAyx-7i2tqdZS2mtdRwJE/TsrsheuDshye.png
     use:
       - 'zapasList'
 
