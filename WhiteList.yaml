@@ -15,7 +15,7 @@ proxy-groups:
   - name: VPN
     type: select
     tolerance: 50
-    interval: 300
+    interval: 90
     url: http://speed.cloudflare.com/
     proxies:
       - Full
