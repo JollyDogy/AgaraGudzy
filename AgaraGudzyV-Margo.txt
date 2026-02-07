@@ -1,0 +1,142 @@
+proxy-providers:
+  zapasList:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/ProxyWhiteList.yaml
+    interval: 21600
+    path: ./providers/zapasList.yaml
+
+  WARP1List:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP1.yaml
+    interval: 21600
+    path: ./providers/WARP1List.yaml    
+
+  WARP2List:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP2.yaml
+    interval: 21600
+    path: ./providers/WARP2List.yaml     
+
+  WARP3List:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP3.yaml
+    interval: 21600
+    path: ./providers/WARP3List.yaml    
+
+  WARPFastList:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPFast.yaml
+    interval: 21600
+    path: ./providers/WARPFastList.yaml      
+
+proxy-groups:
+  - name: VPN
+    type: select
+    tolerance: 50
+    interval: 300
+    url: http://speed.cloudflare.com/
+    icon: https://psv4.userapi.com/s/v1/d2/myYi0zo7FBs5-0OC_n9gCfGlX1fEp93vU1GXg092p-4eWEmkWcvSUKPOFtIPUL2Pbdreb4hSP5eZexSjQdK7wHda_MhypBmD-3Z_Z72m0_1K8iZ6o-BLXrIX3neC9lR-EpC2PJ8qPkqN/chebur.png
+    proxies:
+      - "WARP Fast"
+      - "1 WARP"
+      - "2 WARP"
+      - "3 WARP"
+      - "Full WARP"
+      - "zapas"
+    use:
+      - WARP1List
+      - WARP2List
+      - WARP3List
+      - WARPFastList
+
+  - name: Full WARP
+    type: url-test
+    tolerance: 50
+    interval: 500
+    hidden: true
+    url: http://speed.cloudflare.com/
+    proxies:
+      - 1 WARP
+      - 2 WARP
+      - 3 WARP
+      - WARP Fast
+
+  - name: 1 WARP
+    type: url-test
+    tolerance: 50
+    interval: 400
+    hidden: true
+    url: http://speed.cloudflare.com/
+    use:
+      - WARP1List
+      
+  - name: 2 WARP
+    type: url-test
+    tolerance: 50
+    interval: 400
+    hidden: true
+    url: http://speed.cloudflare.com/
+    use:
+      - WARP2List
+
+  - name: 3 WARP
+    type: url-test
+    tolerance: 50
+    interval: 400
+    hidden: true
+    url: http://speed.cloudflare.com/
+    use:
+      - WARP3List
+
+  - name: WARP Fast
+    type: url-test
+    tolerance: 50
+    interval: 250
+    hidden: true
+    url: http://speed.cloudflare.com/
+    use:
+      - WARPFastList
+ 
+  - name: zapas
+    type: fallback
+    tolerance: 300
+    interval: 120
+    url: http://speed.cloudflare.com/
+    icon: https://psv4.userapi.com/s/v1/d2/JzoTqn_sF-pyaVhhfrdzgNO9UJZPAHOkiY0Qtp-56c-j_TXwNjNgXaNKolcUOHEUHMnuQxWB1s8RWl9UlkD0rMpiFZVuyVx0dgPEurn2yOjdDppkKpLS3wXzAyx-7i2tqdZS2mtdRwJE/TsrsheuDshye.png
+    use:
+      - 'zapasList'
+
+rule-providers:
+  RulesZapas:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesZapas.yaml
+    path: ./rules/RulesZapas.yaml
+    interval: 21600
+
+  RulesMargo:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesMargo.yaml
+    path: ./rules/RulesMargo.yaml
+    interval: 21600
+
+  RulesVPN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesVPN.yaml
+    path: ./rules/RulesVPN.yaml
+    interval: 21600
+ 
+  RulesDIRECT:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesDirect.yaml
+    path: ./rules/RulesDIRECT.yaml
+    interval: 21600
+
+rules:
+  - RULE-SET,RulesDIRECT,DIRECT
+  - RULE-SET,RulesZapas,zapas
+  - RULE-SET,RulesVPN,VPN
+  - MATCH,DIRECT
