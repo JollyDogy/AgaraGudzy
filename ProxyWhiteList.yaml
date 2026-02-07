@@ -63,15 +63,6 @@ proxies:
     password: '17ZDORWIliQHuO6WRGHChXYMzdRtAYVP'
     udp: true
 
-  - name: "🇳🇴 NO 1"
-    type: trojan
-    server: '80.173.230.196'
-    port: 26279
-    password: 'a5inYFE=JGV89+hjxIqgDp1tcWBd6'
-    udp: true
-    tls: true
-    skip-cert-verify: true
-
   - name: "🇳🇴 Norway, Oslo (Alna District) [BL]1"
     type: trojan
     server: '80.173.230.196'
