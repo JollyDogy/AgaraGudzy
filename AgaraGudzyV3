@@ -62,7 +62,7 @@ proxy-groups:
       - WARP Fast
 
   - name: 1 WARP
-    type: url-test
+    type: fallback
     tolerance: 50
     interval: 400
     hidden: true
@@ -71,7 +71,7 @@ proxy-groups:
       - WARP1List
       
   - name: 2 WARP
-    type: url-test
+    type: fallback
     tolerance: 50
     interval: 400
     hidden: true
@@ -80,7 +80,7 @@ proxy-groups:
       - WARP2List
 
   - name: 3 WARP
-    type: url-test
+    type: fallback
     tolerance: 50
     interval: 400
     hidden: true
@@ -89,7 +89,7 @@ proxy-groups:
       - WARP3List
 
   - name: WARP Fast
-    type: url-test
+    type: fallback
     tolerance: 50
     interval: 250
     hidden: true
