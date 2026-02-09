@@ -1,5 +1,6 @@
 payload:
 #WEB
+  - DOMAIN-KEYWORD,steam
   - DOMAIN-KEYWORD,parsecusercontent.com
   - DOMAIN-KEYWORD,parsec.app
   - DOMAIN-KEYWORD,ru.
