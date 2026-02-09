@@ -1,5 +1,6 @@
 payload:
 #WEB
+  - DOMAIN-KEYWORD,parsec.app
   - DOMAIN-KEYWORD,ru.
   - DOMAIN-KEYWORD,yandex
   - DOMAIN-SUFFIX,yandex
