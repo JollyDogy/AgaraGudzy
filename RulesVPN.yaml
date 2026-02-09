@@ -19,6 +19,7 @@ payload:
   #- DOMAIN-SUFFIX,discord
   - DOMAIN-KEYWORD,api.betterdiscord.app
   - DOMAIN-KEYWORD,betterdiscord.app
+  - DOMAIN-KEYWORD,discord.media
   - DOMAIN-KEYWORD,githubusercontent.com
   - DOMAIN-KEYWORD,discordapp.net
   - DOMAIN-KEYWORD,discord.com
