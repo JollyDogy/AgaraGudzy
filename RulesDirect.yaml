@@ -1,6 +1,6 @@
 payload:
 #WEB
-  - DOMAIN-KEYWORD,steam
+  - DOMAIN-SUFFIX,steam
   - DOMAIN-KEYWORD,steampowered.com
   - DOMAIN-KEYWORD,store.steampowered.com
   - DOMAIN-KEYWORD,parsecusercontent.com
