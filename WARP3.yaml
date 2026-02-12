@@ -9,7 +9,7 @@ warp-common3: &warp-common3
   allowed-ips: ['0.0.0.0/0']
   reserved: [66, 29, 126]
   udp: true
-  mtu: 1280
+  mtu: 1480
   remote-dns-resolve: true
   dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
 
