@@ -118,7 +118,7 @@ proxies:
     flow: xtls-rprx-vision
     packet-encoding: xudp
 
-  - name: 🇪🇪 VLESS @wlrustg
+  - name: 🇪🇪 VLESS @wlrustg1
     type: vless
     server: 109.120.191.92
     port: 1488
@@ -152,7 +152,7 @@ proxies:
     flow: 
     packet-encoding: xudp
 
-  - name: 🇵🇱 Poland — #479
+  - name: 🇵🇱 Poland1
     type: vless
     server: 109.120.188.227
     port: 1488
@@ -220,7 +220,7 @@ proxies:
     flow: xtls-rprx-vision
     packet-encoding: xudp    
 
-  - name: 220. 🇪🇪 VLESS | TG: @wlrustg
+  - name: 🇪🇪 VLESS @wlrustg2
     type: vless
     server: 109.120.188.227
     port: 1488
@@ -237,7 +237,7 @@ proxies:
     flow: xtls-rprx-vision
     packet-encoding: xudp    
 
-  - name: 🇭🇺 Hungary — #244
+  - name: 🇭🇺 Hungary1
     type: vless
     server: 84.23.52.70
     port: 443
@@ -271,7 +271,7 @@ proxies:
     flow: xtls-rprx-vision
     packet-encoding: xudp    
 
-  - name: 🇵🇱 Poland — #606
+  - name: 🇵🇱 Poland2
     type: vless
     server: 158.160.221.132
     port: 8443
@@ -288,7 +288,7 @@ proxies:
     flow: xtls-rprx-vision
     packet-encoding: xudp
 
-  - name: 245. 🇪🇸 VLESS | TG: @wlrustg
+  - name: 🇪🇸 VLESS @wlrustg3
     type: vless
     server: 158.160.223.36
     port: 8443
@@ -305,7 +305,7 @@ proxies:
     flow: xtls-rprx-vision
     packet-encoding: xudp
 
-  - name: 🇪🇸 Spain — #224
+  - name: 🇪🇸 Spain4
     type: vless
     server: 158.160.223.36
     port: 443
@@ -339,7 +339,7 @@ proxies:
     flow: xtls-rprx-vision
     packet-encoding: xudp    
 
-  - name: 🇵🇱 Poland — #706
+  - name: 🇵🇱 Poland5
     type: vless
     server: 158.160.221.132
     port: 443
@@ -373,7 +373,7 @@ proxies:
     flow: 
     packet-encoding: xudp   
 
-  - name: 377. 🇵🇱 VLESS | TG: @wlrustg
+  - name: 🇵🇱 VLESS @wlrustg6
     type: vless
     server: 158.160.221.132
     port: 51102
@@ -390,7 +390,7 @@ proxies:
     flow: xtls-rprx-vision
     packet-encoding: xudp    
 
-  - name: 408. 🇵🇱 VLESS | TG: @wlrustg
+  - name: 🇵🇱 VLESS @wlrustg8
     type: vless
     server: 37.139.42.234
     port: 4443
@@ -407,7 +407,7 @@ proxies:
     flow: 
     packet-encoding: xudp    
 
-  - name: 🇵🇱 Poland — #615
+  - name: 🇵🇱 Poland9
     type: vless
     server: 158.160.221.132
     port: 51102
