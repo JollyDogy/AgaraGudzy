@@ -118,7 +118,7 @@ proxies:
     flow: xtls-rprx-vision
     packet-encoding: xudp
 
-  - name: 1298. 🇪🇪 VLESS | TG: @wlrustg
+  - name: 🇪🇪 VLESS @wlrustg
     type: vless
     server: 109.120.191.92
     port: 1488
