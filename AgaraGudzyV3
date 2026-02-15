@@ -33,7 +33,7 @@ proxy-groups:
   - name: VPN
     type: select
     interval: 600
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     icon: https://psv4.userapi.com/s/v1/d2/myYi0zo7FBs5-0OC_n9gCfGlX1fEp93vU1GXg092p-4eWEmkWcvSUKPOFtIPUL2Pbdreb4hSP5eZexSjQdK7wHda_MhypBmD-3Z_Z72m0_1K8iZ6o-BLXrIX3neC9lR-EpC2PJ8qPkqN/chebur.png
     proxies:
       - Fast If
@@ -53,7 +53,7 @@ proxy-groups:
     type: fallback
     interval: 90
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     proxies:
       - WARP Fast
       - zapas
@@ -63,7 +63,7 @@ proxy-groups:
     tolerance: 60
     interval: 500
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     proxies:
       - 1 WARP
       - 2 WARP
@@ -74,7 +74,7 @@ proxy-groups:
     type: fallback
     interval: 400
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     use:
       - WARP1List
       
@@ -82,7 +82,7 @@ proxy-groups:
     type: fallback
     interval: 400
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     use:
       - WARP2List
 
@@ -90,7 +90,7 @@ proxy-groups:
     type: fallback
     interval: 400
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     use:
       - WARP3List
 
@@ -98,7 +98,7 @@ proxy-groups:
     type: fallback
     interval: 400
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     use:
       - WARPFastList
  
@@ -106,7 +106,7 @@ proxy-groups:
     type: url-test
     tolerance: 200
     interval: 120
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     icon: https://psv4.userapi.com/s/v1/d2/JzoTqn_sF-pyaVhhfrdzgNO9UJZPAHOkiY0Qtp-56c-j_TXwNjNgXaNKolcUOHEUHMnuQxWB1s8RWl9UlkD0rMpiFZVuyVx0dgPEurn2yOjdDppkKpLS3wXzAyx-7i2tqdZS2mtdRwJE/TsrsheuDshye.png
     use:
       - 'zapasList'
