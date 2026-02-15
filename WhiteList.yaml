@@ -1,3 +1,11 @@
+health-check:
+  enable: true
+  lazy: true
+  timeout: 1500
+  url: http://www.gstatic.com/generate_204
+  
+tcp-concurrent: false
+
 proxy-providers:
   zapasList:
     type: http
@@ -14,7 +22,6 @@ proxy-providers:
 proxy-groups:
   - name: VPN
     type: select
-    tolerance: 50
     interval: 90
     url: http://speed.cloudflare.com/
     proxies:
@@ -24,17 +31,15 @@ proxy-groups:
 
   - name: Full
     type: fallback
-    tolerance: 150
-    interval: 90
+    tolerance: 90
     hidden: true
     url: http://speed.cloudflare.com/
-    use:
-      - WARP1List
-      - zapasList
+    proxies:
+      - 1 WARP
+      - WhiteList
 
   - name: 1 WARP
     type: fallback
-    tolerance: 150
     interval: 300
     hidden: true
     url: http://speed.cloudflare.com/
@@ -42,9 +47,9 @@ proxy-groups:
       - WARP1List
  
   - name: WhiteList
-    type: fallback
-    tolerance: 150
-    interval: 90
+    type: url-test
+    tolerance: 200
+    interval: 120
     url: http://speed.cloudflare.com/
     use:
       - 'zapasList'
