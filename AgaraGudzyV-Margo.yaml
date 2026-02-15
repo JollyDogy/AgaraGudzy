@@ -136,6 +136,9 @@ rule-providers:
     interval: 21600
 
 rules:
+  - PROCESS-NAME,discord.exe,VPN
+  - DOMAIN-KEYWORD,discord,VPN
+  - DOMAIN-SUFFIX,discord,VPN
   - RULE-SET,RulesDIRECT,DIRECT
   - RULE-SET,RulesZapas,zapas
   - RULE-SET,RulesVPN,VPN
