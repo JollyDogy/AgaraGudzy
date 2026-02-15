@@ -1,3 +1,11 @@
+health-check:
+  enable: true
+  lazy: true
+  timeout: 1500
+  url: http://www.gstatic.com/generate_204
+  
+tcp-concurrent: false
+
 proxy-providers:
   zapasList:
     type: http
@@ -32,29 +40,37 @@ proxy-providers:
 proxy-groups:
   - name: VPN
     type: select
-    tolerance: 50
-    interval: 300
-    url: http://speed.cloudflare.com/
+    interval: 600
+    url: http://www.gstatic.com/generate_204
     icon: https://psv4.userapi.com/s/v1/d2/myYi0zo7FBs5-0OC_n9gCfGlX1fEp93vU1GXg092p-4eWEmkWcvSUKPOFtIPUL2Pbdreb4hSP5eZexSjQdK7wHda_MhypBmD-3Z_Z72m0_1K8iZ6o-BLXrIX3neC9lR-EpC2PJ8qPkqN/chebur.png
     proxies:
-      - "WARP Fast"
-      - "1 WARP"
-      - "2 WARP"
-      - "3 WARP"
-      - "Full WARP"
-      - "zapas"
+      - Fast If
+      - WARP Fast
+      - 1 WARP
+      - 2 WARP
+      - 3 WARP
+      - Full WARP
+      - zapas
     use:
       - WARP1List
       - WARP2List
       - WARP3List
       - WARPFastList
 
+  - name: Fast If
+    type: fallback
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    proxies:
+      - WARP Fast
+      - zapas
+
   - name: Full WARP
     type: url-test
-    tolerance: 50
+    tolerance: 60
     interval: 500
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     proxies:
       - 1 WARP
       - 2 WARP
@@ -62,46 +78,42 @@ proxy-groups:
       - WARP Fast
 
   - name: 1 WARP
-    type: url-test
-    tolerance: 50
+    type: fallback
     interval: 400
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     use:
       - WARP1List
       
   - name: 2 WARP
-    type: url-test
-    tolerance: 50
+    type: fallback
     interval: 400
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     use:
       - WARP2List
 
   - name: 3 WARP
-    type: url-test
-    tolerance: 50
+    type: fallback
     interval: 400
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     use:
       - WARP3List
 
   - name: WARP Fast
-    type: url-test
-    tolerance: 50
-    interval: 250
+    type: fallback
+    interval: 400
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     use:
       - WARPFastList
  
   - name: zapas
-    type: fallback
-    tolerance: 300
+    type: url-test
+    tolerance: 200
     interval: 120
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     icon: https://psv4.userapi.com/s/v1/d2/JzoTqn_sF-pyaVhhfrdzgNO9UJZPAHOkiY0Qtp-56c-j_TXwNjNgXaNKolcUOHEUHMnuQxWB1s8RWl9UlkD0rMpiFZVuyVx0dgPEurn2yOjdDppkKpLS3wXzAyx-7i2tqdZS2mtdRwJE/TsrsheuDshye.png
     use:
       - 'zapasList'
@@ -112,13 +124,6 @@ rule-providers:
     behavior: classical
     url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesZapas.yaml
     path: ./rules/RulesZapas.yaml
-    interval: 21600
-
-  RulesMargo:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesMargo.yaml
-    path: ./rules/RulesMargo.yaml
     interval: 21600
 
   RulesVPN:
