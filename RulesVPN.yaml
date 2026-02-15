@@ -15,8 +15,8 @@ payload:
   - PROCESS-NAME,uTorrent.exe
   - PROCESS-NAME,telegram.exe
 #WEB
-  #- DOMAIN-KEYWORD,discord
-  #- DOMAIN-SUFFIX,discord
+  - DOMAIN-KEYWORD,discord
+  - DOMAIN-SUFFIX,discord
   - DOMAIN-KEYWORD,api.betterdiscord.app
   - DOMAIN-KEYWORD,betterdiscord.app
   - DOMAIN-KEYWORD,discord.media
