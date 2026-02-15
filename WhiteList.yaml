@@ -23,7 +23,7 @@ proxy-groups:
   - name: VPN
     type: select
     interval: 90
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     proxies:
       - Full
       - WhiteList
@@ -33,7 +33,7 @@ proxy-groups:
     type: fallback
     tolerance: 90
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     proxies:
       - 1 WARP
       - WhiteList
@@ -42,7 +42,7 @@ proxy-groups:
     type: fallback
     interval: 300
     hidden: true
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     use:
       - WARP1List
  
@@ -50,7 +50,7 @@ proxy-groups:
     type: url-test
     tolerance: 200
     interval: 120
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
     use:
       - 'zapasList'
 
