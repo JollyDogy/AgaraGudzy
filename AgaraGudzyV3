@@ -1,3 +1,11 @@
+health-check:
+  enable: true
+  lazy: true
+  timeout: 1500
+  url: http://www.gstatic.com/generate_204
+  
+tcp-concurrent: false
+
 proxy-providers:
   zapasList:
     type: http
@@ -51,7 +59,6 @@ proxy-groups:
 
   - name: Fast If
     type: fallback
-    interval: 90
     hidden: true
     url: http://www.gstatic.com/generate_204
     proxies:
