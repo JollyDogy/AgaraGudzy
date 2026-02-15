@@ -32,26 +32,35 @@ proxy-providers:
 proxy-groups:
   - name: VPN
     type: select
-    tolerance: 50
-    interval: 300
+    interval: 600
     url: http://speed.cloudflare.com/
     icon: https://psv4.userapi.com/s/v1/d2/myYi0zo7FBs5-0OC_n9gCfGlX1fEp93vU1GXg092p-4eWEmkWcvSUKPOFtIPUL2Pbdreb4hSP5eZexSjQdK7wHda_MhypBmD-3Z_Z72m0_1K8iZ6o-BLXrIX3neC9lR-EpC2PJ8qPkqN/chebur.png
     proxies:
-      - "WARP Fast"
-      - "1 WARP"
-      - "2 WARP"
-      - "3 WARP"
-      - "Full WARP"
-      - "zapas"
+      - Fast If
+      - WARP Fast
+      - 1 WARP
+      - 2 WARP
+      - 3 WARP
+      - Full WARP
+      - zapas
     use:
       - WARP1List
       - WARP2List
       - WARP3List
       - WARPFastList
 
+  - name: Fast If
+    type: fallback
+    interval: 90
+    hidden: true
+    url: http://speed.cloudflare.com/
+    proxies:
+      - WARP Fast
+      - zapas
+
   - name: Full WARP
     type: url-test
-    tolerance: 50
+    tolerance: 60
     interval: 500
     hidden: true
     url: http://speed.cloudflare.com/
@@ -63,7 +72,6 @@ proxy-groups:
 
   - name: 1 WARP
     type: fallback
-    tolerance: 50
     interval: 400
     hidden: true
     url: http://speed.cloudflare.com/
@@ -72,7 +80,6 @@ proxy-groups:
       
   - name: 2 WARP
     type: fallback
-    tolerance: 50
     interval: 400
     hidden: true
     url: http://speed.cloudflare.com/
@@ -81,7 +88,6 @@ proxy-groups:
 
   - name: 3 WARP
     type: fallback
-    tolerance: 50
     interval: 400
     hidden: true
     url: http://speed.cloudflare.com/
@@ -90,16 +96,15 @@ proxy-groups:
 
   - name: WARP Fast
     type: fallback
-    tolerance: 50
-    interval: 250
+    interval: 400
     hidden: true
     url: http://speed.cloudflare.com/
     use:
       - WARPFastList
  
   - name: zapas
-    type: fallback
-    tolerance: 300
+    type: url-test
+    tolerance: 200
     interval: 120
     url: http://speed.cloudflare.com/
     icon: https://psv4.userapi.com/s/v1/d2/JzoTqn_sF-pyaVhhfrdzgNO9UJZPAHOkiY0Qtp-56c-j_TXwNjNgXaNKolcUOHEUHMnuQxWB1s8RWl9UlkD0rMpiFZVuyVx0dgPEurn2yOjdDppkKpLS3wXzAyx-7i2tqdZS2mtdRwJE/TsrsheuDshye.png
