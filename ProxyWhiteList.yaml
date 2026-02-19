@@ -42,14 +42,6 @@ proxies:
     password: "W74XFALLLuw6m5IA"
     udp: true
 
-  - name: "🇷🇺 Russia-24441"
-    type: ss
-    server: 212.192.14.234
-    port: 24441
-    cipher: chacha20-ietf-poly1305
-    password: "Ow8iSExQNaobZPY9bJ4EPI"
-    udp: true
-
   - name: "AES-1"
     type: ss
     server: 209.126.5.209
