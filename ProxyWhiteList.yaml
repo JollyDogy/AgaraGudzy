@@ -16,410 +16,220 @@ proxies:
     flow: 
     packet-encoding: xudp
 
-  - name: 2🇳🇱🏴 Нидерланды Амстердам 🔥
-    type: vless
-    server: osn.takovpn.ru
+    # ================== SHADOWSOCKS ==================
+
+  - name: "🇬🇧 London-1"
+    type: ss
+    server: series-a2.samanehha.co
     port: 443
-    uuid: e21cbfd0-2e8a-40d4-ab3a-dc6e3b2af8fe
+    cipher: chacha20-ietf-poly1305
+    password: "W74XFALLLuw6m5IA"
+    udp: true
+
+  - name: "🇬🇧 London-2"
+    type: ss
+    server: 20.108.15.110
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: "kaQH3hGdcP80XEDI"
+    udp: true
+
+  - name: "🏳️ ShatakVPN-859735"
+    type: ss
+    server: 51.104.204.185
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: "W74XFALLLuw6m5IA"
+    udp: true
+
+  - name: "🇷🇺 Russia-24441"
+    type: ss
+    server: 212.192.14.234
+    port: 24441
+    cipher: chacha20-ietf-poly1305
+    password: "Ow8iSExQNaobZPY9bJ4EPI"
+    udp: true
+
+  - name: "AES-1"
+    type: ss
+    server: 209.126.5.209
+    port: 80
+    cipher: aes-256-gcm
+    password: "kEVKj1xvgzeEn8AV"
+    udp: true
+
+  - name: "ShatakVPN-491582"
+    type: ss
+    server: 62.146.172.130
+    port: 80
+    cipher: aes-256-gcm
+    password: "LYXiIUJ0FutnTzBG"
+    udp: true
+
+  - name: "🇺🇸 Seattle-1"
+    type: ss
+    server: 94.72.127.58
+    port: 80
+    cipher: aes-256-gcm
+    password: "jJHq807bQ7TM0yOh"
+    udp: true
+
+  - name: "🇺🇸 Seattle-2"
+    type: ss
+    server: 94.72.127.55
+    port: 80
+    cipher: aes-256-gcm
+    password: "wlJSF0fC8uqB5Gm5"
+    udp: true
+
+
+# ================== TROJAN ==================
+
+  - name: "🇳🇴 Norway-OpenRay"
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: "wp9IsiY82uQhcmgNC1eoBM"
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: false
+
+  - name: "🇳🇴 Norway-Oslo"
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: "wp9IsiY82uQhcmgNC1eoBM"
+    sni: www.semanticstaplegun.click
+    client-fingerprint: chrome
+    skip-cert-verify: false
+
+  - name: "🇫🇷 France-WS"
+    type: trojan
+    server: 185.18.250.252
+    port: 443
+    password: "humanity"
+    sni: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.calmlunch.com
+    skip-cert-verify: false
+
+  - name: "🇵🇱 Poland-WS"
+    type: trojan
+    server: 185.18.250.252
+    port: 443
+    password: "humanity"
+    sni: www.creationlong.org
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: www.creationlong.org
+    client-fingerprint: chrome
+    skip-cert-verify: false
+
+  - name: "Trojan-ConfigJO"
+    type: trojan
+    server: 23.227.38.72
+    port: 443
+    password: "519d06a5-f3a5-41bd-8f95-519ab65e20ed"
+    sni: yss2o9nzv7hsgw2z.sggogo202510.top
+    network: ws
+    ws-opts:
+      path: "/images"
+      headers:
+        Host: yss2o9nzv7hsgw2z.sggogo202510.top
+    skip-cert-verify: false
+
+  - name: "🇮🇳 India"
+    type: trojan
+    server: hyfuuf6.wsone.icu
+    port: 443
+    password: "M7v%w11Se*"
+    sni: hyfuuf6.wsone.icu
+    skip-cert-verify: false
+
+
+# ================== VLESS ==================
+
+  - name: "🇩🇪 Germany-Reality-1"
+    type: vless
+    server: 185.254.98.164
+    port: 443
+    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
     network: tcp
-    udp: true
     tls: true
-    servername: www.google.com
+    flow: xtls-rprx-vision
+    servername: de.cdn.stun.su
     reality-opts:
-      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
-      short-id: "352e3a94"
-      spider-x: /
+      public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+      short-id: 4daa022e84f8edf2
     client-fingerprint: chrome
-    flow: 
-    packet-encoding: xudp
 
-  - name: 美国_0211002090
+  - name: "🇩🇪 Germany-WS"
     type: vless
-    server: rus66.ruslucker.org
-    port: 444
-    uuid: 28cf87d1-80b0-476f-9f6a-3286ed83a1b7
-    network: xhttp
-    udp: true
+    server: 45.86.70.198
+    port: 8443
+    uuid: 4d3b4e0b-9fa4-4bc7-a0fd-99a8d34a12e2
+    network: ws
     tls: true
-    servername: rus66.ruslucker.org
-    reality-opts:
-      public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-      short-id: ""
-      spider-x: /
-    client-fingerprint: chrome
-    flow: 
-    packet-encoding: xudp
+    servername: deu153.worldunbarred.org
+    ws-opts:
+      path: "/ws-vless/"
+      headers:
+        Host: deu153.worldunbarred.org
 
-  - name: 🇳🇱 The Netherlands [*CIDR]
+  - name: "🇩🇪 Germany-Reality-2"
     type: vless
-    server: osn.takovpn.ru
-    port: 443
-    uuid: 902c1699-290c-4491-addf-7a384a59fed2
+    server: ger118.onlinebytony.org
+    port: 29067
+    uuid: f4b8678c-f8a1-47cc-9515-571b7b2cd0d6
     network: tcp
-    udp: true
     tls: true
-    servername: google.com
+    flow: xtls-rprx-vision
+    servername: dropbox.com
     reality-opts:
-      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
-      short-id: "97"
-      spider-x: /
+      public-key: V8ErluHnGnuDfAKwUqi14WLkAs-aRJBYa6Anj2nwU3I
+      short-id: 0aa5332cb70bec77
     client-fingerprint: chrome
-    flow: 
-    packet-encoding: xudp
 
-  - name: 🇷🇺[openproxylist.com] vless-RU
+  - name: "🇵🇱 Poland-Reality"
     type: vless
-    server: 109.120.188.166
-    port: 443
+    server: 5.188.140.18
+    port: 1488
     uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
     network: tcp
-    udp: true
     tls: true
+    flow: xtls-rprx-vision
     servername: ads.x5.ru
     reality-opts:
       public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: "6ba85179e30d4fc2"
-      spider-x: /
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-    packet-encoding: xudp
-
-  - name: 113@t.me/freekesha21
-    type: vless
-    server: 72.56.71.152
-    port: 8443
-    uuid: 90c9c25c-df6c-4438-83d3-ef97166a9184
-    network: tcp
-    udp: true
-    tls: true
-    servername: sun6-22.userapi.com
-    reality-opts:
-      public-key: KBtor6ap1Ml0bjcI_8UgdHhZYVYNOLuuYsuXsQUNGj0
-      short-id: ""
-      spider-x: /
     client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp
 
-  - name: 俄罗斯联邦_021100001
-    type: vless
-    server: 158.160.221.132
-    port: 443
-    uuid: e8accc46-c511-42fb-919b-9283799a88a1
-    network: tcp
-    udp: true
-    tls: true
-    servername: yandex.ru
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: "8f222b3475800821"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp
-
-  - name: 🇪🇪 VLESS @wlrustg1
-    type: vless
-    server: 109.120.191.92
-    port: 1488
-    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
-    network: tcp
-    udp: true
-    tls: true
-    servername: ads.x5.ru
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: ""
-      spider-x: /
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-    packet-encoding: xudp
-
-  - name: 🇳🇱 The Netherlands
-    type: vless
-    server: 144.31.100.120
-    port: 443
-    uuid: 113a17ba-c307-4627-b9d7-acc76ee929ca
-    network: tcp
-    udp: true
-    tls: true
-    servername: google.com
-    reality-opts:
-      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
-      short-id: "352e3a94"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: 
-    packet-encoding: xudp
-
-  - name: 🇵🇱 Poland1
-    type: vless
-    server: 109.120.188.227
-    port: 1488
-    uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-    network: tcp
-    udp: true
-    tls: true
-    servername: ads.x5.ru
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: "6ba85179e30d4fc2"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp
-
-  - name: 🇷🇺 RU | 109.120.188.14
-    type: vless
-    server: 109.120.188.14
-    port: 1488
-    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
-    network: tcp
-    udp: true
-    tls: true
-    servername: ads.x5.ru
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: "6ba85179e30d4fc2"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp
-
-  - name: 俄罗斯联邦_021100036
-    type: vless
-    server: 158.160.221.132
-    port: 8443
-    uuid: e8accc46-c511-42fb-919b-9283799a88a1
-    network: tcp
-    udp: true
-    tls: true
-    servername: yandex.ru
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: "8f222b3475800821"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp    
-
-  - name: 俄罗斯联邦_021100003
-    type: vless
-    server: 158.160.221.132
-    port: 51102
-    uuid: e8accc46-c511-42fb-919b-9283799a88a1
-    network: tcp
-    udp: true
-    tls: true
-    servername: yandex.ru
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: "8f222b3475800821"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp    
-
-  - name: 🇪🇪 VLESS @wlrustg2
-    type: vless
-    server: 109.120.188.227
-    port: 1488
-    uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-    network: tcp
-    udp: true
-    tls: true
-    servername: ads.x5.ru
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: "6ba85179e30d4fc2"
-      spider-x: /
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-    packet-encoding: xudp    
-
-  - name: 🇭🇺 Hungary1
-    type: vless
-    server: 84.23.52.70
-    port: 443
-    uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
-    network: tcp
-    udp: true
-    tls: true
-    servername: m.vk.ru
-    reality-opts:
-      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-      short-id: "2715592069f36fe7"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp 
-
-  - name: 🇵🇱 Poland [*CIDR] YA
-    type: vless
-    server: 158.160.221.132
-    port: 51102
-    uuid: e8accc46-c511-42fb-919b-9283799a88a1
-    network: tcp
-    udp: true
-    tls: true
-    servername: yandex.ru
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: "1929ef620e9b34f5"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp    
-
-  - name: 🇵🇱 Poland2
-    type: vless
-    server: 158.160.221.132
-    port: 8443
-    uuid: 56e1592c-cae7-4ff1-b9d9-07ee111968b5
-    network: tcp
-    udp: true
-    tls: true
-    servername: yandex.ru
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: "8f222b3475800821"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp
-
-  - name: 🇪🇸 VLESS @wlrustg3
-    type: vless
-    server: 158.160.223.36
-    port: 8443
-    uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
-    network: tcp
-    udp: true
-    tls: true
-    servername: yandex.ru
-    reality-opts:
-      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
-      short-id: "48fccabc158a4c22"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp
-
-  - name: 🇪🇸 Spain4
-    type: vless
-    server: 158.160.223.36
-    port: 443
-    uuid: 636dac2e-9a58-49a6-84f5-313a03761131
-    network: tcp
-    udp: true
-    tls: true
-    servername: yandex.ru
-    reality-opts:
-      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
-      short-id: "48fccabc158a4c22"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp    
-
-  - name: 🇵🇱 Poland [*CIDR] VK
-    type: vless
-    server: 109.120.188.227
-    port: 1488
-    uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-    network: tcp
-    udp: true
-    tls: true
-    servername: ads.x5.ru
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: "6ba85179e30d4fc2"
-      spider-x: /
-    client-fingerprint: qq
-    flow: xtls-rprx-vision
-    packet-encoding: xudp    
-
-  - name: 🇵🇱 Poland5
-    type: vless
-    server: 158.160.221.132
-    port: 443
-    uuid: 56e1592c-cae7-4ff1-b9d9-07ee111968b5
-    network: tcp
-    udp: true
-    tls: true
-    servername: yandex.ru
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: "887c0d72e771a934"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp    
-
-  - name: 俄罗斯联邦_021100026
-    type: vless
-    server: 87.239.111.227
-    port: 443
-    uuid: 895f94cb-5567-4731-bc2c-2f89a54bafe4
-    network: grpc
-    udp: true
-    tls: true
-    servername: m.vk.ru
-    reality-opts:
-      public-key: kz54nOxv8IOst-C_GQO5cf6106be0UakNbCEXiDuhHA
-      short-id: "3863adb3"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: 
-    packet-encoding: xudp   
-
-  - name: 🇵🇱 VLESS @wlrustg6
-    type: vless
-    server: 158.160.221.132
-    port: 51102
-    uuid: e8accc46-c511-42fb-919b-9283799a88a1
-    network: tcp
-    udp: true
-    tls: true
-    servername: yandex.ru
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: "1929ef620e9b34f5"
-      spider-x: /
-    client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    packet-encoding: xudp    
-
-  - name: 🇵🇱 VLESS @wlrustg8
+  - name: "🇵🇱 Poland-Reality-2"
     type: vless
     server: 37.139.42.234
     port: 4443
     uuid: 9cb2d5c5-c5e0-409b-ad3b-7c057b7971b1
     network: tcp
-    udp: true
     tls: true
     servername: yandex.ru
     reality-opts:
       public-key: -kDgSQgouE56cqDIDwgCco1LNQ-8q61WllL5egDI0yI
-      short-id: "6670"
-      spider-x: /
+      short-id: 6670
     client-fingerprint: chrome
-    flow: 
-    packet-encoding: xudp    
 
-  - name: 🇵🇱 Poland9
+  - name: "🇪🇪 Estonia-Reality"
     type: vless
-    server: 158.160.221.132
-    port: 51102
-    uuid: 6d39596c-b569-4a61-86c3-28cfb83a4c95
+    server: 5.188.140.115
+    port: 1488
+    uuid: 7bc30425-1c2f-4823-b629-90f599a4cbfe
     network: tcp
-    udp: true
     tls: true
-    servername: yandex.ru
-    reality-opts:
-      public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-      short-id: "887c0d72e771a934"
-      spider-x: /
-    client-fingerprint: chrome
     flow: xtls-rprx-vision
-    packet-encoding: xudp    
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+
