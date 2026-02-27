@@ -1,0 +1,24 @@
+payload:
+#.EXE
+  #- PROCESS-NAME,discord.exe
+  - PROCESS-NAME,dontstarve_steam_x64.exe
+  - PROCESS-NAME,dontstarve_dedicated_server_nullrenderer_x64.exe
+  - PROCESS-NAME,dontstarve_dedicated_server_nullrenderer.exe
+  - PROCESS-NAME,dedicated_server_nullrenderer.exe
+  - PROCESS-NAME,osu!.exe
+  - PROCESS-NAME,avp.exe
+  - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe
+  - PROCESS-NAME,REPO.exe
+  - PROCESS-NAME,SlimeRancher2.exe
+  - PROCESS-NAME,Palworld-Win64-Shipping.exe
+  - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe
+  - PROCESS-NAME,uTorrent.exe
+  - PROCESS-NAME,telegram.exe
+  - PROCESS-NAME,EpicWebHelper.exe
+  - PROCESS-NAME,EpicGamesLauncher.exe
+#Browser
+  - PROCESS-NAME,opera.exe
+  - PROCESS-NAME,chrome.exe
+  - PROCESS-NAME,browser.exe  
+  - PROCESS-NAME,msedge.exe
+  - PROCESS-NAME,yandex.exe
