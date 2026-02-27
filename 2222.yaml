@@ -1,0 +1,182 @@
+proxies:
+- name: "📱 Антиблок 82 | Fast, RTK"
+  type: vless
+  server: '176.109.105.79'
+  port: 10167
+  uuid: '7503171c-a602-4663-b82f-88aaf1ce9992'
+  udp: true
+  tls: true
+  servername: 'ozon.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc'
+    short-id: '43dcff53849b81e6'
+
+- name: "📱 Антиблок 71 | Fast"
+  type: vless
+  server: '178.154.221.124'
+  port: 443
+  uuid: '7503171c-a602-4663-b82f-88aaf1ce9992'
+  udp: true
+  tls: true
+  servername: 'ads.x5.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'edge'
+  network: 'tcp'
+  reality-opts:
+    public-key: '10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc'
+    short-id: '43dcff53849b81e6'
+
+
+- name: "📱 Антиблок 66 | Fast"
+  type: vless
+  server: '95.163.250.190'
+  port: 8443
+  uuid: '7503171c-a602-4663-b82f-88aaf1ce9992'
+  udp: true
+  tls: true
+  servername: 'sun6-21.userapi.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc'
+    short-id: '43dcff53849b81e6'
+
+- name: "📱 Антиблок 83 | Fast, RTK, Social"
+  type: vless
+  server: '176.108.242.117'
+  port: 10167
+  uuid: '7503171c-a602-4663-b82f-88aaf1ce9992'
+  udp: true
+  tls: true
+  servername: 'eh.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc'
+    short-id: '43dcff53849b81e6'
+
+- name: "[OpenRay] 🇳🇴 NO-5"
+  type: trojan
+  server: '217.170.194.222'
+  port: 13580
+  password: 'ZyX#rcLFldaPKHUC7NYm'
+  udp: true
+  tls: true
+  servername: 'aspryonktg.mthjfbiay.click'
+  skip-cert-verify: true
+
+- name: "[OpenRay] 🇷🇺 RU-162"
+  type: vless
+  server: '5.129.193.147'
+  port: 443
+  uuid: 'a888c6da-33b0-480c-a40a-0e94f4eb9c48'
+  udp: true
+  tls: true
+  servername: 'eh.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0'
+    short-id: '93ae75024604f796'
+
+- name: "[OpenRay] 🇷🇺 RU-164"
+  type: vless
+  server: '89.169.137.193'
+  port: 443
+  uuid: '2c8adcaa-e428-4cea-9c88-e88166651ab3'
+  udp: true
+  tls: true
+  servername: 'eh.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0'
+    short-id: 'd1579a8745398e34'
+
+proxy-groups: 
+- name: auto
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  expected-status: 204
+  interval: 300
+  tolerance: 150
+  lazy: true
+  proxies:
+    - "📱 Антиблок 82 | Fast, RTK"
+    - "📱 Антиблок 71 | Fast"
+    - "📱 Антиблок 66 | Fast"
+    - "📱 Антиблок 83 | Fast, RTK, Social"
+    - "[OpenRay] 🇳🇴 NO-5"
+    - "[OpenRay] 🇷🇺 RU-162"
+    - "[OpenRay] 🇷🇺 RU-164"
+        
+rules:
+  - 'PROCESS-NAME,Telegram.exe,auto'
+  - 'PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,auto'
+  - 'PROCESS-NAME,REPO.exe,auto'
+  - 'PROCESS-NAME,SlimeRancher2.exe,auto'
+  - 'PROCESS-NAME,Palworld-Win64-Shipping.exe,auto'
+  - 'PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,auto'
+  - 'PROCESS-NAME,uTorrent.exe,auto'
+  - 'PROCESS-NAME,HYP.exe,DIRECT'
+  - 'PROCESS-NAME,Throne.exe,DIRECT'
+  - 'DOMAIN-SUFFIX,ru,DIRECT'
+  - 'PROCESS-NAME,nekobox_core.exe,DIRECT'
+  - 'DOMAIN-SUFFIX,yastatic.net,DIRECT'
+  - 'DOMAIN-SUFFIX,yandex.net,DIRECT'
+  - 'DOMAIN-SUFFIX,yandex.kz,DIRECT'
+  - 'DOMAIN-SUFFIX,yandex.com,DIRECT'
+  - 'DOMAIN-SUFFIX,mycdn.me,DIRECT'
+  - 'DOMAIN-SUFFIX,vk.com,DIRECT'
+  - 'DOMAIN-SUFFIX,.ru,DIRECT'
+  - 'DOMAIN-SUFFIX,.su,DIRECT'
+  - 'DOMAIN-SUFFIX,.by,DIRECT'
+  - 'DOMAIN-SUFFIX,.ru.com,DIRECT'
+  - 'DOMAIN-SUFFIX,.ru.net,DIRECT'
+  - 'DOMAIN-SUFFIX,kudago.com,DIRECT'
+  - 'DOMAIN-SUFFIX,kinescope.io,DIRECT'
+  - 'DOMAIN-SUFFIX,redheadsound.studio,DIRECT'
+  - 'DOMAIN-SUFFIX,plplayer.online,DIRECT'
+  - 'DOMAIN-SUFFIX,lomont.site,DIRECT'
+  - 'DOMAIN-SUFFIX,remanga.org,DIRECT'
+  - 'DOMAIN-SUFFIX,shopstory.live,DIRECT'
+  - 'DOMAIN-KEYWORD,miradres,DIRECT'
+  - 'DOMAIN-KEYWORD,premier,DIRECT'
+  - 'DOMAIN-KEYWORD,shutterstock,DIRECT'
+  - 'DOMAIN-KEYWORD,2gis,DIRECT'
+  - 'DOMAIN-KEYWORD,diginetica,DIRECT'
+  - 'DOMAIN-KEYWORD,kinescopecdn,DIRECT'
+  - 'DOMAIN-KEYWORD,researchgate,DIRECT'
+  - 'DOMAIN-KEYWORD,springer,DIRECT'
+  - 'DOMAIN-KEYWORD,nextcloud,DIRECT'
+  - 'DOMAIN-KEYWORD,kaspersky,DIRECT'
+  - 'DOMAIN-KEYWORD,stepik,DIRECT'
+  - 'DOMAIN-KEYWORD,likee,DIRECT'
+  - 'DOMAIN-KEYWORD,snapchat,DIRECT'
+  - 'DOMAIN-KEYWORD,yappy,DIRECT'
+  - 'DOMAIN-KEYWORD,boosty.to,DIRECT'
+  - 'DOMAIN-KEYWORD,boosty,DIRECT'
+  - 'DOMAIN-KEYWORD,pikabu,DIRECT'
+  - 'DOMAIN-KEYWORD,okko,DIRECT'
+  - 'DOMAIN-KEYWORD,wink,DIRECT'
+  - 'DOMAIN-KEYWORD,kion,DIRECT'
+  - 'DOMAIN-KEYWORD,roblox,DIRECT'
+  - 'DOMAIN-KEYWORD,ozon,DIRECT'
+  - 'DOMAIN-KEYWORD,wildberries,DIRECT'
+  - 'DOMAIN-KEYWORD,aliexpress,DIRECT'
+  - 'PROCESS-NAME,yandex.exe,auto'
+  - 'PROCESS-NAME,chrome.exe,auto'
+  - 'PROCESS-NAME,msedge.exe,auto'
