@@ -139,9 +139,18 @@ rule-providers:
     url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesDirect.yaml
     path: ./rules/RulesDIRECT.yaml
     interval: 21600
+  
+  RulesVPNexe:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/rulesVPNexe.yaml
+    path: ./rules/RulesVPNexe.yaml
+    interval: 21600  
 
 rules:
   - RULE-SET,RulesDIRECT,DIRECT
   - RULE-SET,RulesZapas,zapas
   - RULE-SET,RulesVPN,VPN
+  - RULE-SET,RulesVPNexe,VPN
   - MATCH,DIRECT
+
