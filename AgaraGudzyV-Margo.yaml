@@ -153,4 +153,3 @@ rules:
   - RULE-SET,RulesZapas,zapas
   - RULE-SET,RulesVPN,VPN
   - RULE-SET,RulesVPNexe,VPN
-  - MATCH,DIRECT
