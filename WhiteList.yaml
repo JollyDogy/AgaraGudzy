@@ -62,6 +62,13 @@ rule-providers:
     path: ./rules/RulesDIRECT.yaml
     interval: 21600
 
+  zapasList:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/ProxyWhiteList.yaml
+    interval: 21600
+    path: ./providers/zapasList.yaml
+
 rules:
+  - RULE-SET,RulesZapas,WhiteList
   - RULE-SET,RulesDIRECT,DIRECT
   - MATCH,VPN
