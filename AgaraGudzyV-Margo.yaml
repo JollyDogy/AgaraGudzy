@@ -63,6 +63,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     proxies:
       - WARP Fast
+      - 2 WARP
       - zapas
 
   - name: Full WARP
