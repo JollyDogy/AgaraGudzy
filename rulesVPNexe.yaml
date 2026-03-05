@@ -1,6 +1,7 @@
 payload:
 #.EXE
   #- PROCESS-NAME,discord.exe
+  - PROCESS-NAME,FortniteClient-Win64-Shipping.exe
   - PROCESS-NAME,dontstarve_steam_x64.exe
   - PROCESS-NAME,dontstarve_dedicated_server_nullrenderer_x64.exe
   - PROCESS-NAME,dontstarve_dedicated_server_nullrenderer.exe
