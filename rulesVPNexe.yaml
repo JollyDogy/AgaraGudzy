@@ -23,3 +23,9 @@ payload:
   - PROCESS-NAME,browser.exe  
   - PROCESS-NAME,msedge.exe
   - PROCESS-NAME,yandex.exe
+  
+  - PROCESS-NAME,opera
+  - PROCESS-NAME,chrome
+  - PROCESS-NAME,browser  
+  - PROCESS-NAME,msedge
+  - PROCESS-NAME,yandex
