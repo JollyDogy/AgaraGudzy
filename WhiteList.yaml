@@ -62,11 +62,12 @@ rule-providers:
     path: ./rules/RulesDIRECT.yaml
     interval: 21600
 
-  zapasList:
+  RulesZapas:
     type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/ProxyWhiteList.yaml
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesZapas.yaml
+    path: ./rules/RulesZapas.yaml
     interval: 21600
-    path: ./providers/zapasList.yaml
 
 rules:
   - RULE-SET,RulesZapas,WhiteList
