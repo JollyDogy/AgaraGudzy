@@ -1,223 +1,114 @@
 proxies:
-  - name: "4Sarina-3273"
-    type: ss
-    server: 190.93.246.16
-    port: 443
-    cipher: none
-    password: "bm9uZToxNGIwMmUyYS04OTMwLTRhZmItODQxMi1lYTRhNDk1NGNhNWI"
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: ylnhh.us.ci
-      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/
-      tls: true
-      mux: 0
+  - name: "Trojan-1"
+    type: trojan
+    server: "www.shopify.com"
+    port: 2053
+    uuid: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91"
+    security: tls
+    sni: "cm22-bgphhh.pages.dev"
+    network: ws
+    ws-opts:
+      host: "cm22-bgphhh.pages.dev"
+      path: "/"
     udp: true
-
-  - name: "Dynamic-12495"
+  - name: "Trojan-2"
+    type: trojan
+    server: "www.shopify.com"
+    port: 2053
+    uuid: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91"
+    security: tls
+    sni: "cm22-bgphhh.pages.dev"
+    network: ws
+    ws-opts:
+      host: "cm22-bgphhh.pages.dev"
+      path: "/"
+    udp: true
+  - name: "Vless-1"
     type: vless
-    server: tgju.org
+    server: "tgju.org"
     port: 8080
-    uuid: b38b778b-06f0-4161-91b2-1f0b220b7df4
+    uuid: "b38b778b-06f0-4161-91b2-1f0b220b7df4"
     encryption: none
     security: none
+    sni: "www.speedtest.net"
     network: ws
     ws-opts:
-      host: 015.electrocellco-cf-015.workers.dev
-      path: /eyJqdW5rIjoiQm5nNGZUVWwiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIyMTMuMTcwLjE1Ny4xIl19
-    tls: true
+      host: "015.electrocellco-cf-015.workers.dev"
+      path: "/eyJqdW5rIjoiQm5nNGZUVWwiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIyMTMuMTcwLjE1Ny4xIl19"
     udp: true
-
-  - name: "Anycast-IP"
+  - name: "Trojan-3"
     type: trojan
-    server: www.shopify.com
+    server: "www.shopify.com"
     port: 2053
-    uuid: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+    uuid: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91"
     security: tls
-    sni: cm22-bgphhh.pages.dev
+    sni: "cm22-bgphhh.pages.dev"
     network: ws
     ws-opts:
-      host: cm22-bgphhh.pages.dev
-      path: /
+      host: "cm22-bgphhh.pages.dev"
+      path: "/"
     udp: true
-
-  - name: "Dynamic-16316"
+  - name: "Trojan-4"
     type: trojan
-    server: www.shopify.com
+    server: "www.shopify.com"
     port: 2053
-    uuid: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+    uuid: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91"
     security: tls
-    sni: cm22-bgphhh.pages.dev
+    sni: "cm22-bgphhh.pages.dev"
     network: ws
     ws-opts:
-      host: cm22-bgphhh.pages.dev
-      path: /
+      host: "cm22-bgphhh.pages.dev"
+      path: "/"
     udp: true
-
-  - name: "Dynamic-16284"
-    type: trojan
-    server: cf.877774.xyz
-    port: 2087
-    uuid: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-    security: tls
-    sni: cm22-bgphhh.pages.dev
-    network: ws
-    ws-opts:
-      host: cm22-bgphhh.pages.dev
-      path: /
-    udp: true
-
-  - name: "Dynamic-16289"
-    type: trojan
-    server: cf.877774.xyz
-    port: 2087
-    uuid: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-    security: tls
-    sni: cm22-bgphhh.pages.dev
-    network: ws
-    ws-opts:
-      host: cm22-bgphhh.pages.dev
-      path: /
-    udp: true
-
-  - name: "ES_speednode_0045"
-    type: trojan
-    server: 109.234.211.66
-    port: 8443
-    uuid: trojan
-    security: tls
-    sni: store.timimi.dpdns.org
-    network: ws
-    ws-opts:
-      host: store.timimi.dpdns.org
-      path: /
-    udp: true
-
-  - name: "4Sarina-3321"
+  - name: "Shadowsocks-1"
     type: ss
-    server: 46.246.96.59
+    server: "46.246.96.59"
     port: 8443
-    cipher: none
-    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU"
-    plugin: v2ray-plugin
+    password: "yourpassword"
+    encryption: "aes-256-gcm"
+    plugin: "v2ray-plugin"
     plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/
+      mode: "websocket"
+      host: "mfvpn.fuchen.indevs.in"
+      path: "/3e96ef7d-8637-42c2-ac73-75182196e755"
       tls: true
-      mux: 0
     udp: true
-
-  - name: "4Sarina-3314"
+  - name: "Shadowsocks-2"
     type: ss
-    server: 195.123.210.147
+    server: "195.123.210.147"
     port: 443
-    cipher: none
-    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU"
-    plugin: v2ray-plugin
+    password: "yourpassword"
+    encryption: "aes-256-gcm"
+    plugin: "v2ray-plugin"
     plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/
+      mode: "websocket"
+      host: "mfvpn.fuchen.indevs.in"
+      path: "/3e96ef7d-8637-42c2-ac73-75182196e755"
       tls: true
-      mux: 0
     udp: true
-
-  - name: "4Sarina-3313"
+  - name: "Shadowsocks-3"
     type: ss
-    server: 193.68.89.220
+    server: "193.68.89.220"
     port: 8443
-    cipher: none
-    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU"
-    plugin: v2ray-plugin
+    password: "yourpassword"
+    encryption: "aes-256-gcm"
+    plugin: "v2ray-plugin"
     plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/
+      mode: "websocket"
+      host: "mfvpn.fuchen.indevs.in"
+      path: "/3e96ef7d-8637-42c2-ac73-75182196e755"
       tls: true
-      mux: 0
     udp: true
-
-  - name: "4Sarina-3311"
+  - name: "Shadowsocks-4"
     type: ss
-    server: 188.126.77.155
+    server: "188.126.77.155"
     port: 8443
-    cipher: none
-    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU"
-    plugin: v2ray-plugin
+    password: "yourpassword"
+    encryption: "aes-256-gcm"
+    plugin: "v2ray-plugin"
     plugin-opts:
-      mode: websocket
-      host: mfvpn.fuchen.indevs.in
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/
+      mode: "websocket"
+      host: "mfvpn.fuchen.indevs.in"
+      path: "/3e96ef7d-8637-42c2-ac73-75182196e755"
       tls: true
-      mux: 0
-    udp: true
-
-  - name: "youneed.win"
-    type: trojan
-    server: 109.234.211.66
-    port: 8443
-    uuid: trojan
-    security: tls
-    sni: store.timimi.dpdns.org
-    network: ws
-    ws-opts:
-      host: store.timimi.dpdns.org
-      path: /
-    udp: true
-
-  - name: "4Sarina-3264"
-    type: ss
-    server: 154.194.0.16
-    port: 443
-    cipher: none
-    password: "bm9uZToxNGIwMmUyYS04OTMwLTRhZmItODQxMi1lYTRhNDk1NGNhNWI"
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: ylnhh.us.ci
-      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/
-      tls: true
-      mux: 0
-    udp: true
-
-  - name: "4Sarina-3291"
-    type: ss
-    server: 50.62.88.16
-    port: 443
-    cipher: none
-    password: "bm9uZToxNGIwMmUyYS04OTMwLTRhZmItODQxMi1lYTRhNDk1NGNhNWI"
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: ylnhh.us.ci
-      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/
-      tls: true
-      mux: 0
-    udp: true
-
-  - name: "Dynamic-16285"
-    type: trojan
-    server: mfa.gov.ua
-    port: 2096
-    uuid: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-    security: tls
-    sni: cm22-bgphhh.pages.dev
-    network: ws
-    ws-opts:
-      host: cm22-bgphhh.pages.dev
-      path: /
-    udp: true
-
-  - name: "Dynamic-16290"
-    type: trojan
-    server: mfa.gov.ua
-    port: 2096
-    uuid: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
-    security: tls
-    sni: cm22-bgphhh.pages.dev
-    network: ws
-    ws-opts:
-      host: cm22-bgphhh.pages.dev
-      path: /
     udp: true
