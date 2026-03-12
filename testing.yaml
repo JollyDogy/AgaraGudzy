@@ -1,114 +1,306 @@
 proxies:
-  - name: "Trojan-1"
-    type: trojan
-    server: "www.shopify.com"
-    port: 2053
-    uuid: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91"
-    security: tls
-    sni: "cm22-bgphhh.pages.dev"
-    network: ws
-    ws-opts:
-      host: "cm22-bgphhh.pages.dev"
-      path: "/"
-    udp: true
-  - name: "Trojan-2"
-    type: trojan
-    server: "www.shopify.com"
-    port: 2053
-    uuid: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91"
-    security: tls
-    sni: "cm22-bgphhh.pages.dev"
-    network: ws
-    ws-opts:
-      host: "cm22-bgphhh.pages.dev"
-      path: "/"
-    udp: true
-  - name: "Vless-1"
-    type: vless
-    server: "tgju.org"
-    port: 8080
-    uuid: "b38b778b-06f0-4161-91b2-1f0b220b7df4"
-    encryption: none
-    security: none
-    sni: "www.speedtest.net"
-    network: ws
-    ws-opts:
-      host: "015.electrocellco-cf-015.workers.dev"
-      path: "/eyJqdW5rIjoiQm5nNGZUVWwiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIyMTMuMTcwLjE1Ny4xIl19"
-    udp: true
-  - name: "Trojan-3"
-    type: trojan
-    server: "www.shopify.com"
-    port: 2053
-    uuid: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91"
-    security: tls
-    sni: "cm22-bgphhh.pages.dev"
-    network: ws
-    ws-opts:
-      host: "cm22-bgphhh.pages.dev"
-      path: "/"
-    udp: true
-  - name: "Trojan-4"
-    type: trojan
-    server: "www.shopify.com"
-    port: 2053
-    uuid: "22367c45-f6c4-4ca8-8d52-d9787d7bbe91"
-    security: tls
-    sni: "cm22-bgphhh.pages.dev"
-    network: ws
-    ws-opts:
-      host: "cm22-bgphhh.pages.dev"
-      path: "/"
-    udp: true
-  - name: "Shadowsocks-1"
+  - name: "4Sarina-3303"
     type: ss
-    server: "46.246.96.59"
-    port: 8443
-    password: "yourpassword"
-    encryption: "aes-256-gcm"
-    plugin: "v2ray-plugin"
-    plugin-opts:
-      mode: "websocket"
-      host: "mfvpn.fuchen.indevs.in"
-      path: "/3e96ef7d-8637-42c2-ac73-75182196e755"
-      tls: true
-    udp: true
-  - name: "Shadowsocks-2"
-    type: ss
-    server: "195.123.210.147"
+    server: 103.133.1.38
     port: 443
-    password: "yourpassword"
-    encryption: "aes-256-gcm"
-    plugin: "v2ray-plugin"
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
     plugin-opts:
-      mode: "websocket"
-      host: "mfvpn.fuchen.indevs.in"
-      path: "/3e96ef7d-8637-42c2-ac73-75182196e755"
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755
       tls: true
+      mux: 0
     udp: true
-  - name: "Shadowsocks-3"
+    skip-cert-verify: true
+    tag: "4Sarina-3303"
+
+  - name: "4Sarina-3264"
     type: ss
-    server: "193.68.89.220"
-    port: 8443
-    password: "yourpassword"
-    encryption: "aes-256-gcm"
-    plugin: "v2ray-plugin"
+    server: 154.194.0.16
+    port: 443
+    cipher: aes-256-gcm
+    password: "bm9uZToxNGIwMmUyYS04OTMwLTRhZmItODQxMi1lYTRhNDk1NGNhNWI="
+    plugin: v2ray-plugin
     plugin-opts:
-      mode: "websocket"
-      host: "mfvpn.fuchen.indevs.in"
-      path: "/3e96ef7d-8637-42c2-ac73-75182196e755"
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b
       tls: true
+      mux: 0
     udp: true
-  - name: "Shadowsocks-4"
+    skip-cert-verify: true
+    tag: "4Sarina-3264"
+
+  - name: "4Sarina-3278"
     type: ss
-    server: "188.126.77.155"
-    port: 8443
-    password: "yourpassword"
-    encryption: "aes-256-gcm"
-    plugin: "v2ray-plugin"
+    server: 198.71.188.16
+    port: 443
+    cipher: aes-256-gcm
+    password: "bm9uZToxNGIwMmUyYS04OTMwLTRhZmItODQxMi1lYTRhNDk1NGNhNWI="
+    plugin: v2ray-plugin
     plugin-opts:
-      mode: "websocket"
-      host: "mfvpn.fuchen.indevs.in"
-      path: "/3e96ef7d-8637-42c2-ac73-75182196e755"
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b
       tls: true
+      mux: 0
     udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3278"
+
+  - name: "4Sarina-3314"
+    type: ss
+    server: 195.123.210.147
+    port: 443
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3314"
+
+  - name: "4Sarina-3324"
+    type: ss
+    server: 89.110.113.198
+    port: 443
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3324"
+
+  - name: "4Sarina-3297"
+    type: ss
+    server: 83.147.253.18
+    port: 443
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3297"
+
+  - name: "4Sarina-3307"
+    type: ss
+    server: 143.20.213.135
+    port: 8443
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3307"
+
+  - name: "4Sarina-3321"
+    type: ss
+    server: 46.246.96.59
+    port: 8443
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3321"
+
+  - name: "4Sarina-3301"
+    type: ss
+    server: 94.159.98.123
+    port: 443
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3301"
+
+  - name: "4Sarina-3313"
+    type: ss
+    server: 193.68.89.220
+    port: 8443
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3313"
+
+  - name: "4Sarina-3311"
+    type: ss
+    server: 188.126.77.155
+    port: 8443
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3311"
+
+  - name: "4Sarina-3315"
+    type: ss
+    server: 2.59.134.242
+    port: 2002
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3315"
+
+  - name: "4Sarina-3317"
+    type: ss
+    server: 212.192.215.229
+    port: 8443
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3317"
+
+  - name: "4Sarina-3266"
+    type: ss
+    server: 160.153.137.16
+    port: 443
+    cipher: aes-256-gcm
+    password: "bm9uZToxNGIwMmUyYS04OTMwLTRhZmItODQxMi1lYTRhNDk1NGNhNWI="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3266"
+
+  - name: "4Sarina-3282"
+    type: ss
+    server: 216.205.52.16
+    port: 443
+    cipher: aes-256-gcm
+    password: "bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3282"
+
+  - name: "4Sarina-3309"
+    type: ss
+    server: 170.114.45.38
+    port: 443
+    cipher: aes-256-gcm
+    password: "bm9uZToxNGIwMmUyYS04OTMwLTRhZmItODQxMi1lYTRhNDk1NGNhNWI="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3309"
+
+  - name: "4Sarina-3287"
+    type: ss
+    server: 45.40.154.16
+    port: 443
+    cipher: aes-256-gcm
+    password: "bm9uZToxNGIwMmUyYS04OTMwLTRhZmItODQxMi1lYTRhNDk1NGNhNWI="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3287"
+
+  - name: "4Sarina-3285"
+    type: ss
+    server: 45.147.248.115
+    port: 443
+    cipher: aes-256-gcm
+    password: "bm9uZToxNGIwMmUyYS04OTMwLTRhZmItODQxMi1lYTRhNDk1NGNhNWI="
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b
+      tls: true
+      mux: 0
+    udp: true
+    skip-cert-verify: true
+    tag: "4Sarina-3285"
