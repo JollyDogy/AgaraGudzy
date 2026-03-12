@@ -1,70 +1,209 @@
 proxies:
-- name: 4Sarina-3303
-  type: ss
-  server: 103.133.1.38
-  port: 443
-  cipher: none
-  password: "3e96ef7d-8637-42c2-ac73-75182196e755"
-  plugin: v2ray-plugin
-  plugin-opts:
-    mode: websocket
-    host: mfvpn.fuchen.indevs.in
-    path: "/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560"
-    tls: true
-  udp: true
 
-- name: 4Sarina-3264
-  type: ss
-  server: 154.194.0.16
+- name: "🇫🇮 Finland-478"
+  type: vless
+  server: 158.160.128.67
   port: 443
-  cipher: none
-  password: "14b02e2a-8930-4afb-8412-ea4a4954ca5b"
-  plugin: v2ray-plugin
-  plugin-opts:
-    mode: websocket
-    host: ylnhh.us.ci
-    path: "/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560"
-    tls: true
+  uuid: aad7ff2c-b498-4d5b-a9f5-e33894bca46b
   udp: true
+  tls: true
+  servername: rbc.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: tcp
+  reality-opts:
+    public-key: 4gcDJumxa0bTaHvrZRL4Hb5ItXPha6ZYZ0fGmMD_k0A
+    short-id: a45e469943654522
 
-- name: 4Sarina-3278
-  type: ss
-  server: 198.71.188.16
-  port: 443
-  cipher: none
-  password: "14b02e2a-8930-4afb-8412-ea4a4954ca5b"
-  plugin: v2ray-plugin
-  plugin-opts:
-    mode: websocket
-    host: ylnhh.us.ci
-    path: "/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560"
-    tls: true
+- name: "🇷🇺 Russia-CIDR-1"
+  type: vless
+  server: 51.250.75.126
+  port: 2777
+  uuid: 7559ad2a-a419-4fd7-bc6a-9350a017f72a
   udp: true
+  tls: true
+  servername: ads.x5.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: tcp
+  reality-opts:
+    public-key: HyxhIAJ1VbVX77n76vXAps81yWRVbKCr8AC_71sM5Ao
+    short-id: 0f4dacf08722a29f
 
-- name: 4Sarina-3314
-  type: ss
-  server: 195.123.210.147
-  port: 443
-  cipher: none
-  password: "3e96ef7d-8637-42c2-ac73-75182196e755"
-  plugin: v2ray-plugin
-  plugin-opts:
-    mode: websocket
-    host: mfvpn.fuchen.indevs.in
-    path: "/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560"
-    tls: true
+- name: "🇱🇹 Lithuania-541"
+  type: vless
+  server: 158.160.168.74
+  port: 8443
+  uuid: 2969013f-492b-4ecb-90e9-802a9c611968
   udp: true
+  tls: true
+  servername: rbc.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: tcp
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
 
-- name: 4Sarina-3324
-  type: ss
-  server: 89.110.113.198
-  port: 443
-  cipher: none
-  password: "3e96ef7d-8637-42c2-ac73-75182196e755"
-  plugin: v2ray-plugin
-  plugin-opts:
-    mode: websocket
-    host: mfvpn.fuchen.indevs.in
-    path: "/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560"
-    tls: true
+- name: "🇷🇺 RU-581"
+  type: vless
+  server: 158.160.209.88
+  port: 8443
+  uuid: 4b2d96d0-dbf0-4c63-a8a6-15ecbe3bc972
   udp: true
+  tls: true
+  servername: rbc.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: tcp
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 2715592069f36fe7
+
+- name: "🏳️ ShatakVPN"
+  type: vless
+  server: 158.160.209.88
+  port: 8443
+  uuid: 4b2d96d0-dbf0-4c63-a8a6-15ecbe3bc972
+  udp: true
+  tls: true
+  servername: rbc.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: tcp
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: f4b4a6365558ea2e
+
+- name: "🇭🇺 Hungary"
+  type: vless
+  server: 158.160.209.88
+  port: 8443
+  uuid: 4b2d96d0-dbf0-4c63-a8a6-15ecbe3bc972
+  udp: true
+  tls: true
+  servername: rbc.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: tcp
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 9c4a94c1f2e7a631
+
+- name: "🇱🇹 Lithuania-538"
+  type: vless
+  server: 158.160.168.74
+  port: 8443
+  uuid: 2969013f-492b-4ecb-90e9-802a9c611968
+  udp: true
+  tls: true
+  servername: rbc.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: tcp
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: e0ef3d5c0aacb615
+
+- name: "🇱🇹 Lithuania-175"
+  type: vless
+  server: 158.160.168.74
+  port: 443
+  uuid: 721ee690-040c-49af-af8d-e5aed6237415
+  udp: true
+  tls: true
+  servername: rbc.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: tcp
+  reality-opts:
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 33ac6f1b4c9d72a8
+
+- name: "🇵🇱 Poland-MEVSPACE-174"
+  type: vless
+  server: 84.201.135.155
+  port: 443
+  uuid: bbb1e4aa-b120-40dd-88d7-b93c7ef07006
+  udp: true
+  tls: true
+  servername: api-maps.yandex.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: tcp
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: c8597fb67d55d9c4
+
+- name: "🇳🇱 Netherlands-734"
+  type: vless
+  server: 84.201.174.250
+  port: 443
+  uuid: bbb1e4aa-b120-40dd-88d7-b93c7ef07006
+  udp: true
+  tls: true
+  servername: api-maps.yandex.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: tcp
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 7426b0c03ef009dc
+
+- name: "🇩🇪 Germany-386"
+  type: vless
+  server: 84.201.135.155
+  port: 443
+  uuid: bbb1e4aa-b120-40dd-88d7-b93c7ef07006
+  udp: true
+  tls: true
+  servername: api-maps.yandex.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: tcp
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 6354585c37827955
+
+- name: "🇵🇱 Poland-Cogent"
+  type: vless
+  server: 51.250.4.10
+  port: 443
+  uuid: bbb1e4aa-b120-40dd-88d7-b93c7ef07006
+  udp: true
+  tls: true
+  servername: api-maps.yandex.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: tcp
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 87cc0414902bee2d
+
+- name: "🇷🇺 VK-SNI"
+  type: vless
+  server: 94.126.207.245
+  port: 443
+  uuid: 56022eef-4ade-4240-b0cc-eb006797e7ac
+  udp: true
+  tls: true
+  servername: api.vk.com
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: tcp
+  reality-opts:
+    public-key: V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs
+    short-id: 9339
