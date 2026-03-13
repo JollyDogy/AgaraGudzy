@@ -29,13 +29,7 @@ proxy-providers:
     type: http
     url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP3.yaml
     interval: 21600
-    path: ./providers/WARP3List.yaml    
-
-  WARPFastList:
-    type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPFast.yaml
-    interval: 21600
-    path: ./providers/WARPFastList.yaml      
+    path: ./providers/WARP3List.yaml        
 
   WARPServerList:
     type: http
@@ -53,7 +47,6 @@ proxy-groups:
 #градация от лучшего до худшего варианта использования      
       - WARP If
       - Server WARP
-      - WARP Fast
       - 1 WARP
       - 2 WARP
       - 3 WARP
@@ -61,10 +54,6 @@ proxy-groups:
       - zapas
     use:
 #Нужно для отображения отдельных списков WARP      
-      - WARP1List
-      - WARP2List
-      - WARP3List
-      - WARPFastList
       - WARPServerList
 
 #Запасной вариант на случай нестабильности WARP
@@ -73,10 +62,11 @@ proxy-groups:
     hidden: true
     url: http://www.gstatic.com/generate_204
     proxies:
+      - 1 WARP
       - Server WARP
       - zapas
 
-#Полная проверка WARP - бесполезная хуйня
+#Полная проверка WARP но без Server WARP
   - name: Full WARP
     type: url-test
     tolerance: 60
@@ -87,8 +77,6 @@ proxy-groups:
       - 1 WARP
       - 2 WARP
       - 3 WARP
-      - WARP Fast
-      - Server WARP
 
   - name: 1 WARP
     type: fallback
@@ -113,15 +101,6 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     use:
       - WARP3List
-
-#WARP с уменьшиными значениями для большей производительности
-  - name: WARP Fast
-    type: fallback
-    interval: 400
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - WARPFastList
 
 #WARP с серверами переконвертированные из AWG
   - name: Server WARP
@@ -179,4 +158,4 @@ rules:
 #Основные правила для обхода  
   - RULE-SET,RulesVPN,VPN
 #Отдельные правила для исполняемых файлов файлов  
-  - RULE-SET,RulesVPNexe,VPN
+  - RULE-SET,RulesVPNexe,Server WARP
