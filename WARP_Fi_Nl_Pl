@@ -9,13 +9,13 @@ warp-common: &warp-common
   udp: true
   mtu: 1280
   remote-dns-resolve: true
-  dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
+  dns: [8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844]
 
 proxies:
-  - name: "AWG 1.5 (Fi)"
+  - name: "AWG 1.5 (Es)"
     <<: *warp-common
-    server: fi.tribukvy.ltd
-    port: 928
+    server: ee.tribukvy.ltd
+    port: 8854
     amnezia-wg-option:
       jc: 4
       jmin: 40
