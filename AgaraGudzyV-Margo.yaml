@@ -111,7 +111,7 @@ proxy-groups:
     use:
       - WARPServerList
 
-  - name: WARP Fi
+  - name: WARP Es
     type: fallback
     interval: 400
     hidden: true
@@ -163,7 +163,7 @@ rules:
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Отдельные правила для исполняемых файлов файлов 
-  - RULE-SET,RulesVPNexe,WARP Fi
+  - RULE-SET,RulesVPNexe,WARP Es
 #Запасные правила на случай отказа работы от WARP
   - RULE-SET,RulesZapas,zapas
 #Основные правила для обхода
