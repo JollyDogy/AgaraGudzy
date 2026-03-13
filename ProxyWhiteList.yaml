@@ -1,41 +1,40 @@
 proxies:
-- name: "🇫🇮 Finland Vision-01"
+- name: "[946ms ES @vlesstrojan] t.me/rjsxrd"
   type: vless
-  server: '158.160.128.67'
-  port: 443
-  uuid: 'aad7ff2c-b498-4d5b-a9f5-e33894bca46b'
+  server: 'tralalero.site'
+  port: 8443
+  uuid: '0def14f7-5f68-4d4b-8273-97134fb090f8'
   udp: true
   tls: true
   servername: 'rbc.ru'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
+  client-fingerprint: 'random'
+  network: 'tcp'
+  reality-opts:
+    public-key: '_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM'
+    short-id: '4ffc99daad0f261f'
+
+- name: "[OpenRay] 🇫🇮 FI-1284 t.me/rjsxrd"
+  type: vless
+  server: 'fi.prod.n7.homes'
+  port: 8443
+  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
+  udp: true
+  tls: true
+  servername: 'sun6-21.userapi.com'
+  skip-cert-verify: false
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: '4gcDJumxa0bTaHvrZRL4Hb5ItXPha6ZYZ0fGmMD_k0A'
-    short-id: 'a45e469943654522'
+    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
+    short-id: '3ca620a7ed5f3196'
 
-- name: "🇷🇺 Russia CIDR-01"
+- name: "[OpenRay] Dynamic-37 t.me/rjsxrd"
   type: vless
-  server: '51.250.75.126'
-  port: 2777
-  uuid: '7559ad2a-a419-4fd7-bc6a-9350a017f72a'
-  udp: true
-  tls: true
-  servername: 'ads.x5.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'HyxhIAJ1VbVX77n76vXAps81yWRVbKCr8AC_71sM5Ao'
-    short-id: '0f4dacf08722a29f'
-
-- name: "🇱🇹 Lithuania Vision-01"
-  type: vless
-  server: '158.160.168.74'
+  server: 'lt-cherry-01.com'
   port: 8443
-  uuid: '2969013f-492b-4ecb-90e9-802a9c611968'
+  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
   udp: true
   tls: true
   servername: 'rbc.ru'
@@ -47,139 +46,117 @@ proxies:
     public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
     short-id: '2cfb5a0ae8ab0cb0'
 
-- name: "🇷🇺 Russia Vision-02"
+- name: "🇩🇪 Германия 5 | AllVpnTg t.me/rjsxrd"
   type: vless
-  server: '158.160.209.88'
+  server: 'de.pp.prod.n7.homes'
   port: 8443
-  uuid: '4b2d96d0-dbf0-4c63-a8a6-15ecbe3bc972'
+  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
   udp: true
   tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: '7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg'
-    short-id: '2715592069f36fe7'
-
-- name: "🏳️ ShatakVPN Vision-01"
-  type: vless
-  server: '158.160.209.88'
-  port: 8443
-  uuid: '4b2d96d0-dbf0-4c63-a8a6-15ecbe3bc972'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: '7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg'
-    short-id: '2715592069f36fe7'
-
-- name: "🌐 Stable Vision-01"
-  type: vless
-  server: '158.160.209.88'
-  port: 8443
-  uuid: '4b2d96d0-dbf0-4c63-a8a6-15ecbe3bc972'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: '7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg'
-    short-id: 'f4b4a6365558ea2e'
-
-- name: "🇭🇺 Hungary Vision-01"
-  type: vless
-  server: '158.160.209.88'
-  port: 8443
-  uuid: '4b2d96d0-dbf0-4c63-a8a6-15ecbe3bc972'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: '7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg'
-    short-id: '2715592069f36fe7'
-
-- name: "🇪🇸 Spain Vision-01"
-  type: vless
-  server: '158.160.168.74'
-  port: 8443
-  uuid: '1bf0c341-4134-43a6-83e1-2bb1f8f3f708'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: '0d960275b7b0f9af'
-
-- name: "🇱🇹 Lithuania Vision-02"
-  type: vless
-  server: '158.160.168.74'
-  port: 8443
-  uuid: '2969013f-492b-4ecb-90e9-802a9c611968'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: 'e0ef3d5c0aacb615'
-
-- name: "🇱🇹 Lithuania Vision-03"
-  type: vless
-  server: '158.160.168.74'
-  port: 443
-  uuid: '721ee690-040c-49af-af8d-e5aed6237415'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
+  servername: 'sun6-21.userapi.com'
   skip-cert-verify: false
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: 'e0ef3d5c0aacb615'
+    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
+    short-id: '3ca620a7ed5f3196'
 
-- name: "🇱🇹 Lithuania Vision-04"
+- name: "🇩🇪 Германия 6 | AllVpnTg t.me/rjsxrd"
   type: vless
-  server: '158.160.168.74'
-  port: 443
-  uuid: '721ee690-040c-49af-af8d-e5aed6237415'
+  server: 'de.pp.prod.n7.homes'
+  port: 8443
+  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
   udp: true
   tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
+  servername: 'sun6-21.userapi.com'
   skip-cert-verify: false
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: 'e0ef3d5c0aacb615'
+    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
+    short-id: '3ca620a7ed5f3196'
 
-- name: "🇱🇹 Lithuania Vision-05"
+- name: "🇩🇪 DE VLESS 1631 t.me/rjsxrd"
   type: vless
-  server: '158.160.168.74'
+  server: 'de.pp.prod.n7.homes'
   port: 8443
-  uuid: '721ee690-040c-49af-af8d-e5aed6237415'
+  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
+  udp: true
+  tls: true
+  servername: 'sun6-21.userapi.com'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
+    short-id: '3ca620a7ed5f3196'
+
+- name: "🇩🇪 DE VLESS 237 t.me/rjsxrd t.me/rjsxrd"
+  type: vless
+  server: 'de.pp.prod.n7.homes'
+  port: 8443
+  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
+  udp: true
+  tls: true
+  servername: 'sun6-21.userapi.com'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
+    short-id: '3ca620a7ed5f3196'
+
+- name: "🇫🇮 Финляндия 2 | AllVpnTg t.me/rjsxrd"
+  type: vless
+  server: 'fi.prod.n7.homes'
+  port: 8443
+  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
+  udp: true
+  tls: true
+  servername: 'sun6-21.userapi.com'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
+    short-id: '3ca620a7ed5f3196'
+
+- name: "🇫🇮 Финляндия 3 | AllVpnTg t.me/rjsxrd"
+  type: vless
+  server: 'fi.prod.n7.homes'
+  port: 8443
+  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
+  udp: true
+  tls: true
+  servername: 'sun6-21.userapi.com'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
+    short-id: '3ca620a7ed5f3196'
+
+- name: "🇫🇮 Finland — #498 t.me/rjsxrd"
+  type: vless
+  server: '109.120.189.243'
+  port: 52006
+  uuid: '4fd2d5f6-d417-0bb8-9331-e20afde2fcd2'
+  udp: true
+  tls: true
+  servername: 'max.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik'
+    short-id: 'd8c6b58bcbb0c323'
+
+- name: "🇮🇹 Italy [SNI-RU] rbc.ru t.me/rjsxrd"
+  type: vless
+  server: 'tralalero.site'
+  port: 8443
+  uuid: '0def14f7-5f68-4d4b-8273-97134fb090f8'
   udp: true
   tls: true
   servername: 'rbc.ru'
@@ -188,286 +165,14 @@ proxies:
   client-fingerprint: 'random'
   network: 'tcp'
   reality-opts:
-    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: 'e0ef3d5c0aacb615'
+    public-key: '_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM'
+    short-id: '4ffc99daad0f261f'
 
-- name: "🇫🇮 Finland Vision-02"
+- name: "🇱🇹 Lithuania [SNI-RU] rbc.ru t.me/rjsxrd"
   type: vless
-  server: '158.160.128.67'
+  server: 'lt-cherry-01.com'
   port: 8443
-  uuid: 'aad7ff2c-b498-4d5b-a9f5-e33894bca46b'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: '4gcDJumxa0bTaHvrZRL4Hb5ItXPha6ZYZ0fGmMD_k0A'
-    short-id: 'a45e469943654522'
-
-- name: "🇵🇱 Poland Mevspace-01"
-  type: vless
-  server: '84.201.135.155'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: 'c8597fb67d55d9c4'
-
-- name: "🇳🇱 Netherlands Mevspace-01"
-  type: vless
-  server: '84.201.174.250'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: '7426b0c03ef009dc'
-
-- name: "🌐 Unknown Vision-01"
-  type: vless
-  server: '51.250.94.121'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: '17802e8ff84f12df'
-
-- name: "🌐 Anycast-01"
-  type: vless
-  server: '51.250.70.163'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: '17f0f0e38f01af5a'
-
-- name: "🌐 Anycast-02"
-  type: vless
-  server: '84.201.172.164'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: '4a3ad88ff867a295'
-
-- name: "🇳🇱 Netherlands Mevspace-02"
-  type: vless
-  server: '51.250.94.139'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: '2476f063981ffd92'
-
-- name: "🇩🇪 Germany Mevspace-01"
-  type: vless
-  server: '84.201.135.155'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: '6354585c37827955'
-
-- name: "🇵🇱 Poland Mevspace-02"
-  type: vless
-  server: '51.250.13.82'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: 'a76ea384b29a4f79'
-
-- name: "🇵🇱 Poland Mevspace-03"
-  type: vless
-  server: '84.201.172.164'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: '87cc0414902bee2d'
-
-- name: "🇵🇱 Poland Mevspace-04"
-  type: vless
-  server: '84.201.135.155'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: 'e55fd8f9c9a9a0ca'
-
-- name: "🇵🇱 Poland Mevspace-05"
-  type: vless
-  server: '51.250.94.121'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: '17802e8ff84f12df'
-
-- name: "🇵🇱 Poland Mevspace-06"
-  type: vless
-  server: '84.201.174.250'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: '17802e8ff84f12df'
-
-- name: "🌐 Unknown CIDR-01"
-  type: vless
-  server: '51.250.75.126'
-  port: 2777
-  uuid: '7559ad2a-a419-4fd7-bc6a-9350a017f72a'
-  udp: true
-  tls: true
-  servername: 'ads.x5.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'edge'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'HyxhIAJ1VbVX77n76vXAps81yWRVbKCr8AC_71sM5Ao'
-    short-id: '0f4dacf08722a29f'
-
-- name: "🇷🇺 Russia CIDR-02"
-  type: vless
-  server: '51.250.74.50'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: 'c8597fb67d55d9c4'
-
-- name: "🇵🇱 Poland Cogent-01"
-  type: vless
-  server: '51.250.4.10'
-  port: 443
-  uuid: 'bbb1e4aa-b120-40dd-88d7-b93c7ef07006'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg'
-    short-id: '87cc0414902bee2d'
-
-- name: "🌐 Unknown Vision-02"
-  type: vless
-  server: '51.250.34.38'
-  port: 2772
-  uuid: '7559ad2a-a419-4fd7-bc6a-9350a017f72a'
-  udp: true
-  tls: true
-  servername: 'api-maps.yandex.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'rvMyQI5ZuNHmUjz0r9fHubtdKFRFaeGRSqjFqNoGgGU'
-    short-id: '0f4daaf08700a15f'
-
-- name: "🇱🇹 Lithuania Vision-06"
-  type: vless
-  server: '158.160.168.74'
-  port: 443
-  uuid: '1bf0c341-4134-43a6-83e1-2bb1f8f3f708'
+  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
   udp: true
   tls: true
   servername: 'rbc.ru'
@@ -479,7 +184,147 @@ proxies:
     public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
     short-id: '2cfb5a0ae8ab0cb0'
 
-- name: "🇷🇺 Russia VK-01"
+- name: "🏳️ ShatakVPN 135350 t.me/rjsxrd"
+  type: vless
+  server: '109.120.189.243'
+  port: 52006
+  uuid: '41e8f68c-4635-1f40-a466-1b03ce16e09c'
+  udp: true
+  tls: true
+  servername: 'max.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik'
+    short-id: 'd8c6b58bcbb0c323'
+
+- name: "🏳️ ShatakVPN 456246 t.me/rjsxrd"
+  type: vless
+  server: '109.120.189.243'
+  port: 52006
+  uuid: '41e8f68c-4635-07d0-a466-1b03ce16e09c'
+  udp: true
+  tls: true
+  servername: 'max.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik'
+    short-id: 'd8c6b58bcbb0c323'
+
+- name: "🏳️ UNKNOWN VLESS 103 t.me/rjsxrd"
+  type: vless
+  server: 'tralalero.site'
+  port: 8443
+  uuid: '0def14f7-5f68-4d4b-8273-97134fb090f8'
+  udp: true
+  tls: true
+  servername: 'rbc.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'random'
+  network: 'tcp'
+  reality-opts:
+    public-key: '_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM'
+    short-id: '4ffc99daad0f261f'
+
+- name: "🏳️ UNKNOWN VLESS 1098 t.me/rjsxrd"
+  type: vless
+  server: 'lt-cherry-01.com'
+  port: 8443
+  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
+  udp: true
+  tls: true
+  servername: 'rbc.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'random'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
+    short-id: '2cfb5a0ae8ab0cb0'
+
+- name: "🏳️ UNKNOWN VLESS 1098 t.me/rjsxrd2"
+  type: vless
+  server: 'lt-cherry-01.com'
+  port: 8443
+  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
+  udp: true
+  tls: true
+  servername: 'rbc.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'random'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
+    short-id: '2cfb5a0ae8ab0cb0'
+
+- name: "0169 | 🇩🇪 Germany | VLESS | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd"
+  type: vless
+  server: 'de.pp.prod.n7.homes'
+  port: 8443
+  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
+  udp: true
+  tls: true
+  servername: 'sun6-21.userapi.com'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
+    short-id: '3ca620a7ed5f3196'
+
+- name: "0169 | 🇩🇪 Germany | VLESS | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd2"
+  type: vless
+  server: 'de.pp.prod.n7.homes'
+  port: 8443
+  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
+  udp: true
+  tls: true
+  servername: 'sun6-21.userapi.com'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
+    short-id: '3ca620a7ed5f3196'
+
+- name: "0458 | 🇩🇪 Germany | VLESS | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd3"
+  type: vless
+  server: 'de.pp.prod.n7.homes'
+  port: 8443
+  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
+  udp: true
+  tls: true
+  servername: 'sun6-21.userapi.com'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
+    short-id: '3ca620a7ed5f3196'
+
+- name: "0574 | 🇫🇮 Finland | Free | @LowiK_Live t.me/rjsxrd"
+  type: vless
+  server: 'fi.prod.n7.homes'
+  port: 8444
+  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
+  udp: true
+  tls: true
+  servername: 'google.com'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
+    short-id: '3ca620a7ed5f3196'
+
+- name: "138. ? 94.126.207.245 t.me/rjsxrd t.me/rjsxrd"
   type: vless
   server: '94.126.207.245'
   port: 443
@@ -495,27 +340,11 @@ proxies:
     public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
     short-id: '9339'
 
-- name: "🇷🇺 Russia VK-02"
+- name: "389. 🇱🇹 Lithuania t.me/rjsxrd"
   type: vless
-  server: '94.126.207.245'
-  port: 443
-  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
-  udp: true
-  tls: true
-  servername: 'api.vk.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
-    short-id: '9339'
-
-- name: "🇱🇹 Lithuania CIDR-01"
-  type: vless
-  server: '158.160.168.74'
+  server: 'lt-cherry-01.com'
   port: 8443
-  uuid: '2969013f-492b-4ecb-90e9-802a9c611968'
+  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
   udp: true
   tls: true
   servername: 'rbc.ru'
@@ -525,4 +354,36 @@ proxies:
   network: 'tcp'
   reality-opts:
     public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: 'e0ef3d5c0aacb615'
+    short-id: '2cfb5a0ae8ab0cb0'
+
+- name: "389. 🇱🇹 Lithuania t.me/rjsxrd2"
+  type: vless
+  server: 'lt-cherry-01.com'
+  port: 8443
+  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
+  udp: true
+  tls: true
+  servername: 'rbc.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'random'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
+    short-id: '2cfb5a0ae8ab0cb0'
+
+- name: "4FreeIran-7035 t.me/rjsxrd"
+  type: vless
+  server: '109.120.189.243'
+  port: 52006
+  uuid: '4fd2d5f6-d417-0bb8-9331-e20afde2fcd2'
+  udp: true
+  tls: true
+  servername: 'max.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik'
+    short-id: 'd8c6b58bcbb0c323'
