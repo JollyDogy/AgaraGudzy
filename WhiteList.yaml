@@ -13,11 +13,11 @@ proxy-providers:
     interval: 21600
     path: ./providers/zapasList.yaml
 
-  WARP1List:
+  WARPServerList:
     type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP1.yaml
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP_Fi_Nl_Pl
     interval: 21600
-    path: ./providers/WARP1List.yaml    
+    path: ./providers/WARPServerList.yaml    
 
 proxy-groups:
   - name: VPN
@@ -27,7 +27,7 @@ proxy-groups:
     proxies:
       - Full
       - WhiteList
-      - 1 WARP
+      - WARP
 
   - name: Full
     type: fallback
@@ -38,13 +38,13 @@ proxy-groups:
       - 1 WARP
       - WhiteList
 
-  - name: 1 WARP
+  - name: WARP
     type: fallback
     interval: 300
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
-      - WARP1List
+      - WARPServerList
  
   - name: WhiteList
     type: url-test
