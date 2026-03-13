@@ -14,3 +14,21 @@ payload:
   - DOMAIN-KEYWORD,gateway.discord.gg
   - DOMAIN-KEYWORD,status.discord.com
   - DOMAIN-KEYWORD,updates.discord.com
+#Browser
+  - PROCESS-NAME,opera.exe
+  - PROCESS-NAME,chrome.exe
+  - PROCESS-NAME,browser.exe  
+  - PROCESS-NAME,msedge.exe
+  - PROCESS-NAME,yandex.exe
+  
+  - PROCESS-NAME,opera
+  - PROCESS-NAME,chrome
+  - PROCESS-NAME,browser  
+  - PROCESS-NAME,msedge
+  - PROCESS-NAME,yandex
+  #EXE
+  - PROCESS-NAME,uTorrent.exe
+  - PROCESS-NAME,telegram.exe
+  - PROCESS-NAME,EpicWebHelper.exe
+  - PROCESS-NAME,EpicGamesLauncher.exe
+  - PROCESS-NAME,DriverBooster.exe
