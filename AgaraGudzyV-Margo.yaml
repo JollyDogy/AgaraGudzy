@@ -37,6 +37,12 @@ proxy-providers:
     interval: 21600
     path: ./providers/WARPFastList.yaml      
 
+  WARPServerList:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP_Fi_Nl_Pl
+    interval: 21600
+    path: ./providers/WARPServerList.yaml    
+
 proxy-groups:
   - name: VPN
     type: select
@@ -44,7 +50,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     icon: https://psv4.userapi.com/s/v1/d2/myYi0zo7FBs5-0OC_n9gCfGlX1fEp93vU1GXg092p-4eWEmkWcvSUKPOFtIPUL2Pbdreb4hSP5eZexSjQdK7wHda_MhypBmD-3Z_Z72m0_1K8iZ6o-BLXrIX3neC9lR-EpC2PJ8qPkqN/chebur.png
     proxies:
-      - Fast If
+#градация от лучшего до худшего варианта использования      
+      - WARP If
+      - Server WARP
       - WARP Fast
       - 1 WARP
       - 2 WARP
@@ -52,20 +60,23 @@ proxy-groups:
       - Full WARP
       - zapas
     use:
+#Нужно для отображения отдельных списков WARP      
       - WARP1List
       - WARP2List
       - WARP3List
       - WARPFastList
+      - WARPServerList
 
-  - name: Fast If
+#Запасной вариант на случай нестабильности WARP
+  - name: WARP If
     type: fallback
     hidden: true
     url: http://www.gstatic.com/generate_204
     proxies:
-      - WARP Fast
-      - 2 WARP
+      - Server WARP
       - zapas
 
+#Полная проверка WARP - бесполезная хуйня
   - name: Full WARP
     type: url-test
     tolerance: 60
@@ -77,6 +88,7 @@ proxy-groups:
       - 2 WARP
       - 3 WARP
       - WARP Fast
+      - Server WARP
 
   - name: 1 WARP
     type: fallback
@@ -102,6 +114,7 @@ proxy-groups:
     use:
       - WARP3List
 
+#WARP с уменьшиными значениями для большей производительности
   - name: WARP Fast
     type: fallback
     interval: 400
@@ -109,7 +122,17 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     use:
       - WARPFastList
+
+#WARP с серверами переконвертированные из AWG
+  - name: Server WARP
+    type: fallback
+    interval: 400
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - WARPServerList
  
+#Белые списки 
   - name: zapas
     type: url-test
     tolerance: 200
