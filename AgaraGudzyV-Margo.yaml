@@ -33,7 +33,7 @@ proxy-providers:
 
   WARPServerList:
     type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP_Fi_Nl_Pl
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPServer
     interval: 21600
     path: ./providers/WARPServerList.yaml    
 
@@ -116,7 +116,16 @@ proxy-groups:
     interval: 400
     hidden: true
     url: http://www.gstatic.com/generate_204
-    filter: "AWG 1.5 \\(Es\\)"
+    filter: "AWG \\(Es\\)"
+    use:
+      - WARPServerList
+
+  - name: WARP Fi
+    type: fallback
+    interval: 400
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    filter: "AWG \\(Fi\\)"
     use:
       - WARPServerList
 
@@ -160,6 +169,7 @@ rule-providers:
     interval: 21600  
 
 rules:
+  - PROCESS-NAME,discord.exe,WARP Fi
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Отдельные правила для исполняемых файлов файлов 
