@@ -1,389 +1,315 @@
 proxies:
-- name: "[946ms ES @vlesstrojan] t.me/rjsxrd"
-  type: vless
-  server: 'tralalero.site'
-  port: 8443
-  uuid: '0def14f7-5f68-4d4b-8273-97134fb090f8'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: '_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM'
-    short-id: '4ffc99daad0f261f'
+- name: "Channel id: @ShadowProxy66🇳🇱 t.me/rjsxrd"
+  type: hysteria2
+  server: 'gavazn.lnmarketplace.net'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "[OpenRay] 🇫🇮 FI-1284 t.me/rjsxrd"
-  type: vless
-  server: 'fi.prod.n7.homes'
-  port: 8443
-  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
-  udp: true
-  tls: true
-  servername: 'sun6-21.userapi.com'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
-    short-id: '3ca620a7ed5f3196'
+- name: "@V2xay #3 t.me/rjsxrd"
+  type: hysteria2
+  server: 'gavazn.lnmarketplace.net'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "[OpenRay] Dynamic-37 t.me/rjsxrd"
-  type: vless
-  server: 'lt-cherry-01.com'
-  port: 8443
-  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: '2cfb5a0ae8ab0cb0'
+- name: "https://t.me/ShadowsocksM25 t.me/rjsxrd"
+  type: hysteria2
+  server: '206.71.158.23'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🇩🇪 Германия 5 | AllVpnTg t.me/rjsxrd"
-  type: vless
-  server: 'de.pp.prod.n7.homes'
-  port: 8443
-  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
-  udp: true
-  tls: true
-  servername: 'sun6-21.userapi.com'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
-    short-id: '3ca620a7ed5f3196'
+- name: "分享日记 t.me/rjsxrd"
+  type: hysteria2
+  server: '206.71.158.23'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🇩🇪 Германия 6 | AllVpnTg t.me/rjsxrd"
-  type: vless
-  server: 'de.pp.prod.n7.homes'
-  port: 8443
-  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
-  udp: true
-  tls: true
-  servername: 'sun6-21.userapi.com'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
-    short-id: '3ca620a7ed5f3196'
+- name: "FR   HYSTERIA2-TCP-NTLS - Scaleway S.a.s.  62.210.124.146 t.me/rjsxrd"
+  type: hysteria2
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🇩🇪 DE VLESS 1631 t.me/rjsxrd"
-  type: vless
-  server: 'de.pp.prod.n7.homes'
-  port: 8443
-  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
-  udp: true
-  tls: true
-  servername: 'sun6-21.userapi.com'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
-    short-id: '3ca620a7ed5f3196'
+- name: "9|17@oneclickvpnkeys t.me/rjsxrd"
+  type: hysteria2
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🇩🇪 DE VLESS 237 t.me/rjsxrd t.me/rjsxrd"
-  type: vless
-  server: 'de.pp.prod.n7.homes'
-  port: 8443
-  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
-  udp: true
-  tls: true
-  servername: 'sun6-21.userapi.com'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
-    short-id: '3ca620a7ed5f3196'
+- name: "@V2xay #3 t.me/rjsxrd2"
+  type: hysteria2
+  server: 'gavazn.lnmarketplace.net'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🇫🇮 Финляндия 2 | AllVpnTg t.me/rjsxrd"
-  type: vless
-  server: 'fi.prod.n7.homes'
-  port: 8443
-  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
-  udp: true
-  tls: true
-  servername: 'sun6-21.userapi.com'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
-    short-id: '3ca620a7ed5f3196'
+- name: "@kingo_team t.me/rjsxrd"
+  type: hysteria2
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🇫🇮 Финляндия 3 | AllVpnTg t.me/rjsxrd"
-  type: vless
-  server: 'fi.prod.n7.homes'
-  port: 8443
-  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
-  udp: true
-  tls: true
-  servername: 'sun6-21.userapi.com'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
-    short-id: '3ca620a7ed5f3196'
+- name: "🪴17@oneclickvpnkeys t.me/rjsxrd"
+  type: hysteria2
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🇫🇮 Finland — #498 t.me/rjsxrd"
-  type: vless
-  server: '109.120.189.243'
-  port: 52006
-  uuid: '4fd2d5f6-d417-0bb8-9331-e20afde2fcd2'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik'
-    short-id: 'd8c6b58bcbb0c323'
+- name: "🪴17@oneclickvpnkeys t.me/rjsxrd2"
+  type: hysteria2
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🇮🇹 Italy [SNI-RU] rbc.ru t.me/rjsxrd"
-  type: vless
-  server: 'tralalero.site'
-  port: 8443
-  uuid: '0def14f7-5f68-4d4b-8273-97134fb090f8'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: '_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM'
-    short-id: '4ffc99daad0f261f'
+- name: "FR 🇫🇷 ┇ HYSTERIA2-TCP-NTLS - Scaleway S.a.s. ┇ 62.210.124.146 t.me/rjsxrd"
+  type: hysteria2
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🇱🇹 Lithuania [SNI-RU] rbc.ru t.me/rjsxrd"
-  type: vless
-  server: 'lt-cherry-01.com'
-  port: 8443
-  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: '2cfb5a0ae8ab0cb0'
+- name: "📟22@ConfigV2RayNG t.me/rjsxrd"
+  type: hysteria2
+  server: '206.71.158.23'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🏳️ ShatakVPN 135350 t.me/rjsxrd"
-  type: vless
-  server: '109.120.189.243'
-  port: 52006
-  uuid: '41e8f68c-4635-1f40-a466-1b03ce16e09c'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik'
-    short-id: 'd8c6b58bcbb0c323'
+- name: "hamedp71-61-🇨🇦 t.me/rjsxrd"
+  type: hysteria2
+  server: '206.71.158.23'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🏳️ ShatakVPN 456246 t.me/rjsxrd"
-  type: vless
-  server: '109.120.189.243'
-  port: 52006
-  uuid: '41e8f68c-4635-07d0-a466-1b03ce16e09c'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik'
-    short-id: 'd8c6b58bcbb0c323'
+- name: "10|17@oneclickvpnkeys t.me/rjsxrd"
+  type: hysteria2
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🏳️ UNKNOWN VLESS 103 t.me/rjsxrd"
-  type: vless
-  server: 'tralalero.site'
-  port: 8443
-  uuid: '0def14f7-5f68-4d4b-8273-97134fb090f8'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: '_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM'
-    short-id: '4ffc99daad0f261f'
+- name: "🪴17@oneclickvpnkeys t.me/rjsxrd3"
+  type: hysteria2
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🏳️ UNKNOWN VLESS 1098 t.me/rjsxrd"
-  type: vless
-  server: 'lt-cherry-01.com'
-  port: 8443
-  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: '2cfb5a0ae8ab0cb0'
+- name: "@kingo_team t.me/rjsxrd2"
+  type: hysteria2
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "🏳️ UNKNOWN VLESS 1098 t.me/rjsxrd2"
-  type: vless
-  server: 'lt-cherry-01.com'
-  port: 8443
-  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: '2cfb5a0ae8ab0cb0'
+- name: "🇳🇱@FreakConfig t.me/rjsxrd"
+  type: hysteria2
+  server: 'gavazn.lnmarketplace.net'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "0169 | 🇩🇪 Germany | VLESS | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd"
-  type: vless
-  server: 'de.pp.prod.n7.homes'
-  port: 8443
-  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
-  udp: true
-  tls: true
-  servername: 'sun6-21.userapi.com'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
-    short-id: '3ca620a7ed5f3196'
+- name: "17@oneclickvpnkeys t.me/rjsxrd"
+  type: hysteria2
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "0169 | 🇩🇪 Germany | VLESS | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd2"
-  type: vless
-  server: 'de.pp.prod.n7.homes'
-  port: 8443
-  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
-  udp: true
-  tls: true
-  servername: 'sun6-21.userapi.com'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
-    short-id: '3ca620a7ed5f3196'
+- name: "Channel id: @ShadowProxy66🇺🇸 t.me/rjsxrd"
+  type: hysteria2
+  server: '206.71.158.23'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "0458 | 🇩🇪 Germany | VLESS | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd3"
-  type: vless
-  server: 'de.pp.prod.n7.homes'
-  port: 8443
-  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
-  udp: true
-  tls: true
-  servername: 'sun6-21.userapi.com'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
-    short-id: '3ca620a7ed5f3196'
+- name: "17@oneclickvpnkeys t.me/rjsxrd2"
+  type: hysteria2
+  server: '62.210.124.146'
+  port: 22000
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "0574 | 🇫🇮 Finland | Free | @LowiK_Live t.me/rjsxrd"
-  type: vless
-  server: 'fi.prod.n7.homes'
-  port: 8444
-  uuid: 'dc1b85fd-a08e-42d7-ae2b-0a320f3399b7'
-  udp: true
-  tls: true
-  servername: 'google.com'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo'
-    short-id: '3ca620a7ed5f3196'
+- name: "10|🇳🇱@FreakConfig t.me/rjsxrd"
+  type: hysteria2
+  server: 'gavazn.lnmarketplace.net'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "138. ? 94.126.207.245 t.me/rjsxrd t.me/rjsxrd"
-  type: vless
-  server: '94.126.207.245'
+- name: "🇳🇱@FreakConfig #6 t.me/rjsxrd"
+  type: hysteria2
+  server: 'gavazn.lnmarketplace.net'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
+
+- name: "📟22@ConfigV2RayNG t.me/rjsxrd2"
+  type: hysteria2
+  server: '206.71.158.23'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
+
+- name: "🇳🇱@FreakConfig #5 t.me/rjsxrd"
+  type: hysteria2
+  server: '206.71.158.23'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
+
+- name: "✨78@ConfigV2RayNG t.me/rjsxrd"
+  type: hysteria2
+  server: 'gavazn.lnmarketplace.net'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
+
+- name: "81_Salavat_Befrest t.me/rjsxrd"
+  type: hysteria2
+  server: 'gavazn.lnmarketplace.net'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
+
+- name: "⚛️90@ConfigV2RayNG t.me/rjsxrd"
+  type: hysteria2
+  server: '12f7c432-t6t0g0-t87m8y-1pr35.hk1.hyhuawei.com'
   port: 443
-  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
-  udp: true
-  tls: true
-  servername: 'api.vk.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
-    short-id: '9339'
+  password: '6b7c1278-ff9d-11ee-84ca-f23c913c8d2b'
+  sni: '12f7c432-t6t0g0-t87m8y-1pr35.hk1.hyhuawei.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "389. 🇱🇹 Lithuania t.me/rjsxrd"
-  type: vless
-  server: 'lt-cherry-01.com'
-  port: 8443
-  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: '2cfb5a0ae8ab0cb0'
+- name: "⚛️90@oneclickvpnkeys t.me/rjsxrd"
+  type: hysteria2
+  server: '12f7c432-t6t0g0-t87m8y-1pr35.hk1.hyhuawei.com'
+  port: 443
+  password: '6b7c1278-ff9d-11ee-84ca-f23c913c8d2b'
+  sni: '12f7c432-t6t0g0-t87m8y-1pr35.hk1.hyhuawei.com'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "389. 🇱🇹 Lithuania t.me/rjsxrd2"
-  type: vless
-  server: 'lt-cherry-01.com'
-  port: 8443
-  uuid: '0471f871-75a9-4e3a-8092-3e535cf41f80'
-  udp: true
-  tls: true
-  servername: 'rbc.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'random'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA'
-    short-id: '2cfb5a0ae8ab0cb0'
+- name: "🇺🇸US(AzadNet.t.me) t.me/rjsxrd"
+  type: hysteria2
+  server: '206.71.158.23'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
 
-- name: "4FreeIran-7035 t.me/rjsxrd"
-  type: vless
-  server: '109.120.189.243'
-  port: 52006
-  uuid: '4fd2d5f6-d417-0bb8-9331-e20afde2fcd2'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik'
-    short-id: 'd8c6b58bcbb0c323'
+- name: "🇽🇽XX(AzadNet.t.me) t.me/rjsxrd"
+  type: hysteria2
+  server: 'gavazn.lnmarketplace.net'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
+
+- name: "Channel id: @ShadowProxy66🇳🇱 t.me/rjsxrd2"
+  type: hysteria2
+  server: 'gavazn.lnmarketplace.net'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
