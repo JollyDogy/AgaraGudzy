@@ -29,8 +29,8 @@ proxies:
 
   - name: "AWG (Fi)"
     <<: *warp-common
-    server: fi0.tribukvy.ltd
-    port: 1010
+    server: fi.tribukvy.ltd
+    port: 928
     amnezia-wg-option:
       jc: 4
       jmin: 40
