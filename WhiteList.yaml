@@ -15,7 +15,7 @@ proxy-providers:
 
   WARPServerList:
     type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP_Fi_Nl_Pl
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPServer
     interval: 21600
     path: ./providers/WARPServerList.yaml    
 
