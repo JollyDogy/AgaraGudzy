@@ -35,7 +35,13 @@ proxy-providers:
     type: http
     url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPServer
     interval: 21600
-    path: ./providers/WARPServerList.yaml    
+    path: ./providers/WARPServerList.yaml
+
+  WARPServerFi:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPServerFi
+    interval: 21600
+    path: ./providers/WARPServerFi.yaml   
 
 proxy-groups:
   - name: VPN
@@ -126,7 +132,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     filter: "AWG \\(Fi\\)"
     use:
-      - WARPServerList
+      - WARPServerFi
 
 #Белые списки 
   - name: zapas
