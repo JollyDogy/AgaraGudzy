@@ -35,7 +35,13 @@ proxy-providers:
     type: http
     url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPServer
     interval: 21600
-    path: ./providers/WARPServerList.yaml    
+    path: ./providers/WARPServerList.yaml
+
+  WARPServerFi:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPServerFi
+    interval: 21600
+    path: ./providers/WARPServerFi.yaml   
 
 proxy-groups:
   - name: VPN
@@ -55,6 +61,7 @@ proxy-groups:
     use:
 #Нужно для отображения отдельных списков WARP      
       - WARPServerList
+      - WARPServerFi
 
 #Запасной вариант на случай нестабильности WARP
   - name: WARP If
@@ -68,9 +75,8 @@ proxy-groups:
 
 #Полная проверка WARP но без Server WARP
   - name: Full WARP
-    type: url-test
-    tolerance: 60
-    interval: 500
+    type: fallback
+    interval: 550
     hidden: true
     url: http://www.gstatic.com/generate_204
     proxies:
@@ -80,7 +86,7 @@ proxy-groups:
 
   - name: 1 WARP
     type: fallback
-    interval: 400
+    interval: 450
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
@@ -88,7 +94,7 @@ proxy-groups:
       
   - name: 2 WARP
     type: fallback
-    interval: 400
+    interval: 450
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
@@ -96,7 +102,7 @@ proxy-groups:
 
   - name: 3 WARP
     type: fallback
-    interval: 400
+    interval: 450
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
@@ -105,7 +111,7 @@ proxy-groups:
 #WARP с серверами переконвертированные из AWG
   - name: Server WARP
     type: fallback
-    interval: 400
+    interval: 450
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
@@ -121,19 +127,19 @@ proxy-groups:
       - WARPServerList
 
   - name: WARP Fi
-    type: fallback
-    interval: 400
+    type: url-test
+    tolerance: 120
+    interval: 60
     hidden: true
     url: http://www.gstatic.com/generate_204
-    filter: "AWG \\(Fi\\)"
     use:
-      - WARPServerList
+      - WARPServerFi
 
 #Белые списки 
   - name: zapas
     type: url-test
     tolerance: 200
-    interval: 120
+    interval: 320
     url: http://www.gstatic.com/generate_204
     icon: https://psv4.userapi.com/s/v1/d2/JzoTqn_sF-pyaVhhfrdzgNO9UJZPAHOkiY0Qtp-56c-j_TXwNjNgXaNKolcUOHEUHMnuQxWB1s8RWl9UlkD0rMpiFZVuyVx0dgPEurn2yOjdDppkKpLS3wXzAyx-7i2tqdZS2mtdRwJE/TsrsheuDshye.png
     use:
