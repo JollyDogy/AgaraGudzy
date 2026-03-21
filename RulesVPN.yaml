@@ -15,12 +15,20 @@ payload:
   - DOMAIN-KEYWORD,status.discord.com
   - DOMAIN-KEYWORD,updates.discord.com
 #Browser
+  - PROCESS-NAME,opera_gx.exe
+  - PROCESS-NAME,opera_GX.exe
+  - PROCESS-NAME,operagx.exe
+  - PROCESS-NAME,operaGX.exe
   - PROCESS-NAME,opera.exe
   - PROCESS-NAME,chrome.exe
   - PROCESS-NAME,browser.exe  
   - PROCESS-NAME,msedge.exe
   - PROCESS-NAME,yandex.exe
-  
+
+  - PROCESS-NAME,opera_gx
+  - PROCESS-NAME,opera_GX
+  - PROCESS-NAME,operagx
+  - PROCESS-NAME,operaGX
   - PROCESS-NAME,opera
   - PROCESS-NAME,chrome
   - PROCESS-NAME,browser  
