@@ -16,8 +16,6 @@ payload:
   - PROCESS-NAME,Palworld-Win64-Shipping.exe
   - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe
 #WEB  
-  - DOMAIN-KEYWORD,spotify.com
-  - DOMAIN-KEYWORD,open.spotify.com
   - DOMAIN-KEYWORD,rbxcdn.com
   - DOMAIN-KEYWORD,roblox.com
   - DOMAIN-KEYWORD,chatgpt.com:433
