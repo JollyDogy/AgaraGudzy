@@ -1,5 +1,7 @@
 payload:
 #.EXE
 #WEB
+  - DOMAIN-KEYWORD,spotify.com
+  - DOMAIN-KEYWORD,open.spotify.com
   - DOMAIN-KEYWORD,chatgpt.com
   - DOMAIN-KEYWORD,chatgpt.com:443
