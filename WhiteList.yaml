@@ -13,43 +13,10 @@ proxy-providers:
     interval: 21600
     path: ./providers/zapasList.yaml
 
-  WARPList:
-    type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP1.yaml
-    interval: 21600
-    path: ./providers/WARPList.yaml    
-
 proxy-groups:
-  - name: VPN
-    type: select
-    interval: 90
-    url: http://www.gstatic.com/generate_204
-    proxies:
-      - Full
-      - WhiteList
-      - WARP
-
-  - name: Full
-    type: fallback
-    tolerance: 90
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    proxies:
-      - WARP
-      - WhiteList
-
-  - name: WARP
-    type: fallback
-    interval: 300
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - WARPList
- 
   - name: WhiteList
-    type: url-test
-    tolerance: 200
-    interval: 120
+    type: fallback
+    interval: 60
     url: http://www.gstatic.com/generate_204
     use:
       - 'zapasList'
@@ -62,14 +29,6 @@ rule-providers:
     path: ./rules/RulesDIRECT.yaml
     interval: 21600
 
-  RulesZapas:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesZapas.yaml
-    path: ./rules/RulesZapas.yaml
-    interval: 21600
-
 rules:
-  - RULE-SET,RulesZapas,WhiteList
   - RULE-SET,RulesDIRECT,DIRECT
-  - MATCH,VPN
+  - MATCH,WhiteList
