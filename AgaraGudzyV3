@@ -176,7 +176,6 @@ rule-providers:
     interval: 21600  
 
 rules:
-  - PROCESS-NAME,discord.exe,WARP Fi
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Отдельные правила для исполняемых файлов файлов 
@@ -185,3 +184,4 @@ rules:
   - RULE-SET,RulesZapas,zapas
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
+  - PROCESS-NAME,discord.exe,WARP Fi
