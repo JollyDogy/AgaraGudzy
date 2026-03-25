@@ -1,0 +1,466 @@
+proxies:
+- name: "Шкатулка запретов (1632) t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "🇷🇺 Russia | 🌐 | [IPv6] [*CIDR] @solidtrust t.me/rjsxrd"
+  type: vless
+  server: 'ai.enigmabot.ru'
+  port: 443
+  uuid: 'a6abf70b-f734-42e5-ace6-208e4d53d207'
+  udp: true
+  tls: true
+  servername: 'max.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw'
+    short-id: 'fb916778d4'
+
+- name: "[OpenRay] 🇷🇺 RU-14791 t.me/rjsxrd"
+  type: vless
+  server: '212.233.91.100'
+  port: 444
+  uuid: 'e314bbdb-4b14-47a9-ab09-b6f7949e931a'
+  udp: true
+  tls: true
+  servername: 'ads.x5.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'ZilRhTkwCKjlm28idpeDYnVGqryjlfoXF4XfeLrTaF0'
+    short-id: '68c888e3'
+
+- name: "🇩🇪 Германия | 🌐 | 🔐 [🏳️LTE] | 🥭🔥   t.me/rjsxrd"
+  type: vless
+  server: '51.250.18.203'
+  port: 443
+  uuid: '916de9ac-1fe3-4c93-887a-ce4285d0bb9b'
+  udp: true
+  tls: true
+  servername: 'ads.x5.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'edge'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'LEgnawD7VliYSnI92sHL6exc7QgeRbn53m_eGgoRXR0'
+    short-id: '68fa381fbf73cd30'
+
+- name: "🇩🇪| @SevaVPB_bot t.me/rjsxrd"
+  type: vless
+  server: '51.250.18.203'
+  port: 443
+  uuid: '916de9ac-1fe3-4c93-887a-ce4285d0bb9b'
+  udp: true
+  tls: true
+  servername: 'ads.x5.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'edge'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'LEgnawD7VliYSnI92sHL6exc7QgeRbn53m_eGgoRXR0'
+    short-id: '68fa381fbf73cd30'
+
+- name: "tg@Notorgames_0-40 t.me/rjsxrd t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "Шкатулка запретов (1001) t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "Шкатулка запретов t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "🇷🇺 RU | CIDR | 723 | @ByeWhiteLists2 t.me/rjsxrd t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "[OpenRay] 🇷🇺 RU-14915 t.me/rjsxrd"
+  type: vless
+  server: '51.250.11.201'
+  port: 443
+  uuid: '916de9ac-1fe3-4c93-887a-ce4285d0bb9b'
+  udp: true
+  tls: true
+  servername: 'ads.x5.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'safari'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'vTKyf5iqVUNQMjFJ6hzue665Ka3c-7hqVzy4zMzO3z8'
+    short-id: 'fbacbaea96b43f51'
+
+- name: "Шкатулка запретов (2140) t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "Шкатулка запретов (336) t.me/rjsxrd t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "🇷🇺 RU | CIDR | 174 | @ByeWhiteLists2 t.me/rjsxrd t.me/rjsxrd t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "🇷🇺 RU | CIDR | 252 | @ByeWhiteLists2 t.me/rjsxrd t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "Шкатулка запретов (1957) t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "Шкатулка запретов (1021) t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "🇷🇺 RU | CIDR | 124 | @ByeWhiteLists2 t.me/rjsxrd t.me/rjsxrd t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "041🇷🇺 t.me/rjsxrd t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "[1081ms Россия RU 🇷🇺 @vlesstrojan] t.me/rjsxrd"
+  type: vless
+  server: '85.192.32.138'
+  port: 443
+  uuid: 'a6abf70b-f734-42e5-ace6-208e4d53d207'
+  udp: true
+  tls: true
+  servername: 'max.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'random'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw'
+    short-id: 'fb916778d4'
+
+- name: "Шкатулка запретов (2069) t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "Шкатулка запретов (2106) t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "Шкатулка запретов (1007) t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "🇩🇪 Germany | 🌐 | [IPv6] [*CIDR] t.me/rjsxrd"
+  type: vless
+  server: '5ktelvkeld4.country-24.de-nfast.com'
+  port: 443
+  uuid: 'f165ea66-6229-4919-9f82-913e02895571'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "Шкатулка запретов (2067) t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "[1033ms Россия RU 🇷🇺 @vlesstrojan] t.me/rjsxrd"
+  type: vless
+  server: '85.192.32.138'
+  port: 443
+  uuid: 'a6abf70b-f734-42e5-ace6-208e4d53d207'
+  udp: true
+  tls: true
+  servername: 'max.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw'
+    short-id: 'fb916778d4'
+
+- name: "4Jadi-6733 t.me/rjsxrd"
+  type: vless
+  server: '94.126.207.245'
+  port: 443
+  uuid: '56022eef-4ade-4240-b0cc-eb006797e7ac'
+  udp: true
+  tls: true
+  servername: 'api.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'V32osv0u9T3QItvyk4UgK-mjJuXkXLn4u_3pbk8eNgs'
+    short-id: '9339'
+
+- name: "31. 🇵🇱 Poland t.me/rjsxrd"
+  type: vless
+  server: '5.181.188.224'
+  port: 443
+  uuid: 'c08d880e-106f-4366-9d00-cc9355d99abc'
+  udp: true
+  tls: true
+  servername: 'web.max.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'EA-Sxh4tF7Iym27iYccYI5aCrc796cBJgRv9_maBbl4'
+    short-id: '85bd'
+
+- name: "[361ms Россия RU 🇷🇺 @vlesstrojan] t.me/rjsxrd"
+  type: vless
+  server: '45.89.190.83'
+  port: 40443
+  uuid: 'cf5531e8-9e80-445d-9f5e-e69394f35949'
+  udp: true
+  tls: true
+  servername: 'max.ru'
+  skip-cert-verify: false
+  client-fingerprint: 'randomized'
+  network: 'grpc'
+  reality-opts:
+    public-key: '_A6MVT9TnnPfZKZ7Zqqag6Z1zy46sMFieoaQcMA03XY'
+    short-id: '57a6'
+  grpc-opts:
+    grpc-service-name: 'max.ru'
+
+- name: "🇷🇺 Россия [🏳️LTE] | 🥭🔥 t.me/rjsxrd"
+  type: vless
+  server: '45.89.190.83'
+  port: 40443
+  uuid: 'b5a1b1f3-3cb6-4eb0-bdd6-77241f797bb8'
+  udp: true
+  tls: true
+  servername: 'max.ru'
+  skip-cert-verify: false
+  client-fingerprint: 'randomized'
+  network: 'grpc'
+  reality-opts:
+    public-key: '_A6MVT9TnnPfZKZ7Zqqag6Z1zy46sMFieoaQcMA03XY'
+    short-id: '57a6'
+  grpc-opts:
+    grpc-service-name: 'max.ru'
