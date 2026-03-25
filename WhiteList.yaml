@@ -13,13 +13,36 @@ proxy-providers:
     interval: 21600
     path: ./providers/zapasList.yaml
 
+  VLESSList:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/VLESSWhiteList.yaml
+    interval: 21600
+    path: ./providers/VLESSList.yaml
+
 proxy-groups:
-  - name: WhiteList
+  - name: VPN
+    type: fallback
+    interval: 60
+    url: http://www.gstatic.com/generate_204
+    proxies:
+      - Zapas
+      - VLESS
+
+  - name: Zapas
+    hidden: true
     type: fallback
     interval: 60
     url: http://www.gstatic.com/generate_204
     use:
-      - 'zapasList'
+      - zapasList
+
+  - name: VLESS
+    hidden: true
+    type: fallback
+    interval: 60
+    url: http://www.gstatic.com/generate_204
+    use:
+      - VLESSList
 
 rule-providers:
   RulesDIRECT:
@@ -31,4 +54,4 @@ rule-providers:
 
 rules:
   - RULE-SET,RulesDIRECT,DIRECT
-  - MATCH,WhiteList
+  - MATCH,VPN
