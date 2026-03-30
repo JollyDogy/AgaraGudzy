@@ -35,6 +35,7 @@ payload:
   - PROCESS-NAME,msedge
   - PROCESS-NAME,yandex
   #EXE
+  - PROCESS-NAME,VotV-Win64-Shipping.exe
   - PROCESS-NAME,uTorrent.exe
   - PROCESS-NAME,telegram.exe
   - PROCESS-NAME,EpicWebHelper.exe
