@@ -184,4 +184,4 @@ rules:
   - RULE-SET,RulesZapas,zapas
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
-  - PROCESS-NAME,discord.exe,WARP Fi
+  - PROCESS-NAME,discord.exe,1 WARP
