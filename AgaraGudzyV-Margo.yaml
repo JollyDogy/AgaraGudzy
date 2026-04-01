@@ -121,7 +121,7 @@ rules:
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Отдельные правила для исполняемых файлов файлов 
-  - RULE-SET,RulesVPNexe,Server WARP
+  - RULE-SET,RulesVPNexe,WARP If
 #Запасные правила на случай отказа работы от WARP
   - RULE-SET,RulesZapas,Server WARP
 #Основные правила для обхода
