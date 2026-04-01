@@ -13,23 +13,11 @@ proxy-providers:
     interval: 21600
     path: ./providers/zapasList.yaml
 
-  WARP1List:
+  WARPStandart:
     type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP1.yaml
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPStandart.yaml
     interval: 21600
-    path: ./providers/WARP1List.yaml    
-
-  WARP2List:
-    type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP2.yaml
-    interval: 21600
-    path: ./providers/WARP2List.yaml     
-
-  WARP3List:
-    type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARP3.yaml
-    interval: 21600
-    path: ./providers/WARP3List.yaml        
+    path: ./providers/WARPStandart.yaml    
 
   WARPServerList:
     type: http
@@ -37,25 +25,17 @@ proxy-providers:
     interval: 21600
     path: ./providers/WARPServerList.yaml
 
-  WARPServerFi:
-    type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPServerFi
-    interval: 21600
-    path: ./providers/WARPServerFi.yaml   
-
 proxy-groups:
   - name: VPN
     type: select
-    interval: 600
+    interval: 800
     url: http://www.gstatic.com/generate_204
     icon: https://psv4.userapi.com/s/v1/d2/myYi0zo7FBs5-0OC_n9gCfGlX1fEp93vU1GXg092p-4eWEmkWcvSUKPOFtIPUL2Pbdreb4hSP5eZexSjQdK7wHda_MhypBmD-3Z_Z72m0_1K8iZ6o-BLXrIX3neC9lR-EpC2PJ8qPkqN/chebur.png
     proxies:
 #градация от лучшего до худшего варианта использования      
       - WARP If
       - Server WARP
-      - 1 WARP
-      - 2 WARP
-      - 3 WARP
+      - WARP
       - zapas
     use:
 #Нужно для отображения отдельных списков WARP      
@@ -64,38 +44,22 @@ proxy-groups:
 #Запасной вариант на случай нестабильности WARP
   - name: WARP If
     type: fallback
-    interval: 60
+    interval: 300
     hidden: true
     url: http://www.gstatic.com/generate_204
     proxies:
-      - 1 WARP
+      - WARP
       - Server WARP
       - zapas
 
-  - name: 1 WARP
+  - name: WARP
     type: fallback
     interval: 450
-    hidden: true
+    hidden: false
     url: http://www.gstatic.com/generate_204
     use:
-      - WARP1List
+      - WARPStandart
       
-  - name: 2 WARP
-    type: fallback
-    interval: 450
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - WARP2List
-
-  - name: 3 WARP
-    type: fallback
-    interval: 450
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - WARP3List
-
 #WARP с серверами переконвертированные из AWG
   - name: Server WARP
     type: fallback
@@ -118,7 +82,7 @@ proxy-groups:
   - name: zapas
     type: url-test
     tolerance: 200
-    interval: 320
+    interval: 420
     url: http://www.gstatic.com/generate_204
     icon: https://psv4.userapi.com/s/v1/d2/JzoTqn_sF-pyaVhhfrdzgNO9UJZPAHOkiY0Qtp-56c-j_TXwNjNgXaNKolcUOHEUHMnuQxWB1s8RWl9UlkD0rMpiFZVuyVx0dgPEurn2yOjdDppkKpLS3wXzAyx-7i2tqdZS2mtdRwJE/TsrsheuDshye.png
     use:
