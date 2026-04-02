@@ -70,11 +70,11 @@ proxy-groups:
       - WARPServerList
 
   - name: WARP PL
-    type: fallback
-    interval: 400
+    type: url-test
+    interval: 15
     hidden: true
-    url: http://www.gstatic.com/generate_204
-    filter: "WARP PL"
+    url: http://gateway.discord.gg
+    filter: "WARP PL| WARP PL2"
     use:
       - WARPServerList
 
@@ -118,6 +118,7 @@ rule-providers:
     interval: 21600  
 
 rules:
+  - PROCESS-NAME,discord.exe,WARP PL
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Отдельные правила для исполняемых файлов файлов 
