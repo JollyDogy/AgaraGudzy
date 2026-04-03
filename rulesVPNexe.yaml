@@ -14,6 +14,7 @@ payload:
   - PROCESS-NAME,REPO.exe
   - PROCESS-NAME,SlimeRancher2.exe
   - PROCESS-NAME,Palworld-Win64-Shipping.exe
+  - PROCESS-NAME,DeadByDaylight.exe
   - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe
 #WEB  
   - DOMAIN-KEYWORD,rbxcdn.com
