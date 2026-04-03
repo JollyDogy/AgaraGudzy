@@ -69,14 +69,15 @@ proxy-groups:
     use:
       - WARPServerList
 
-  - name: WARP PL
+  - name: WARP Discord
     type: url-test
     interval: 15
     hidden: true
     url: http://gateway.discord.gg
-    filter: "WARP PL| WARP PL2"
+    filter: "WARP PL|WARP PL2|162.159.195.1:500"
     use:
       - WARPServerList
+      - WARPStandart
 
 #Белые списки 
   - name: zapas
@@ -118,7 +119,7 @@ rule-providers:
     interval: 21600  
 
 rules:
-  - PROCESS-NAME,discord.exe,WARP PL
+  - PROCESS-NAME,discord.exe,WARP Discord
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Отдельные правила для исполняемых файлов файлов 
