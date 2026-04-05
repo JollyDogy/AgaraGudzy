@@ -1,5 +1,6 @@
 payload:
 #WEB
+  - DOMAIN-KEYWORD,ru.yummyani.me
   - DOMAIN-KEYWORD,discord
   - DOMAIN-SUFFIX,discord
   - DOMAIN-KEYWORD,api.betterdiscord.app
