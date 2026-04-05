@@ -71,7 +71,7 @@ proxy-groups:
 
   - name: WARP Discord
     type: url-test
-    interval: 10
+    interval: 20
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
     filter: "WARP PL|WARP PL2"
