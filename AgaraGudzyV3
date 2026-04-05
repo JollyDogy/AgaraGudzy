@@ -121,6 +121,7 @@ rule-providers:
 
 rules:
 #Короткие правила
+  - DOMAIN-KEYWORD,animegorus.ru,VPN
   - DOMAIN-KEYWORD,ru.yummyani.me,VPN
   - PROCESS-NAME,discord.exe,WARP Discord
 #Правила для прямых соединений
