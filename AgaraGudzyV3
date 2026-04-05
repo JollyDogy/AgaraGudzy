@@ -119,6 +119,8 @@ rule-providers:
     interval: 21600  
 
 rules:
+#Короткие правила
+  - DOMAIN-KEYWORD,ru.yummyani.me,VPN
   - PROCESS-NAME,discord.exe,WARP Discord
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
