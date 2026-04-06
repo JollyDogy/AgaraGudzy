@@ -72,6 +72,7 @@ proxy-groups:
   - name: WARP Discord
     type: url-test
     interval: 20
+    tolerance: 45
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
     filter: "WARP PL"
@@ -79,7 +80,6 @@ proxy-groups:
       - WARPServerList
     proxies:
       - WARP
-    auto-fallback: true
 
 #Белые списки 
   - name: zapas
