@@ -124,10 +124,10 @@ rules:
   - DOMAIN-KEYWORD,animegorus.ru,VPN
   - DOMAIN-KEYWORD,yummyani.me,VPN
   - PROCESS-NAME,discord.exe,WARP Discord
-#Правила для прямых соединений
-  - RULE-SET,RulesDIRECT,DIRECT
 #Отдельные правила для исполняемых файлов файлов 
   - RULE-SET,RulesVPNexe,Server WARP
+#Правила для прямых соединений
+  - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
   - RULE-SET,RulesZapas,Server WARP
 #Основные правила для обхода
