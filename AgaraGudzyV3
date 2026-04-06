@@ -74,7 +74,7 @@ proxy-groups:
     interval: 20
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
-    filter: "WARP PL|WARP PL2"
+    filter: "WARP PL"
     use:
       - WARPServerList
     proxies:
