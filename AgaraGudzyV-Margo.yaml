@@ -72,14 +72,14 @@ proxy-groups:
   - name: WARP Discord
     type: url-test
     interval: 20
+    tolerance: 45
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
-    filter: "WARP PL|WARP PL2"
+    filter: "WARP PL"
     use:
       - WARPServerList
     proxies:
       - WARP
-    auto-fallback: true
 
 #Белые списки 
   - name: zapas
@@ -121,7 +121,8 @@ rule-providers:
 
 rules:
 #Короткие правила
-  - DOMAIN-KEYWORD,ru.yummyani.me,VPN
+  - DOMAIN-KEYWORD,animegorus.ru,VPN
+  - DOMAIN-KEYWORD,yummyani.me,VPN
   - PROCESS-NAME,discord.exe,WARP Discord
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
