@@ -25,6 +25,18 @@ proxy-providers:
     interval: 21600
     path: ./providers/WARPServerList.yaml
 
+proxies:
+- name: "TestingDiscord"
+  type: hysteria2
+  server: '206.71.158.23'
+  port: 45000
+  password: 'Telegram-->@Ln2Ray'
+  sni: 'gavazn.55994421.xyz'
+  obfs: 'salamander'
+  obfs-password: 'Telegram-->@Ln2Ray'
+  skip-cert-verify: true
+  tfo: false
+
 proxy-groups:
   - name: VPN
     type: select
@@ -73,13 +85,12 @@ proxy-groups:
   - name: WARP Discord
     type: url-test
     interval: 20
-    tolerance: 45
+    tolerance: 20
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
     filter: "WARP PL"
-    use:
-      - WARPServerList
     proxies:
+      - TestingDiscord
       - WARP
 
 #Запасной вариант на случай нестабильности Server WARP
