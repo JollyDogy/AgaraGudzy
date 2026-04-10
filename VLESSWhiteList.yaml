@@ -1,737 +1,826 @@
 proxies:
-- name: "[913ms PH PH  @vlesstrojan] t.me/rjsxrd"
+- name: "🇷🇺 Россия | Black List | Fast | EaveVPN | #0001 t.me/rjsxrd"
   type: vless
-  server: '61.245.11.105'
-  port: 48444
-  uuid: '144edc21-267e-4b51-8dc9-6a0b5df537cc'
-  udp: true
-  tls: true
-  servername: 'eh.vk.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FApUbcJurXfV5Y3PG2xRycl1R7y0CxwmUU7FRgUpzG0'
-    short-id: '3e4f5a6b'
-
-- name: "🌍 Philippines | Infinivan Incorporated 4 t.me/rjsxrd"
-  type: vless
-  server: '61.245.11.105'
-  port: 48444
-  uuid: '144edc21-267e-4b51-8dc9-6a0b5df537cc'
-  udp: true
-  tls: true
-  servername: 'eh.vk.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FApUbcJurXfV5Y3PG2xRycl1R7y0CxwmUU7FRgUpzG0'
-    short-id: '3e4f5a6b'
-
-- name: "🇫🇮 Финляндия | 🥭🔥 max.ru t.me/rjsxrd"
-  type: vless
-  server: '150.241.88.23'
+  server: '144.31.219.99'
   port: 443
   uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
   udp: true
   tls: true
-  servername: 'max.ru'
+  servername: 'google.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: '_e21PkbpGda7PXEBs8y8iJiKVkEYkZGR_Sfs5rCO_HM'
+    short-id: 'a1b2c3d4'
+
+- name: "51. 🇷🇺 Russia t.me/rjsxrd"
+  type: vless
+  server: '7qqrbome80g.country-26.de-nfast.com'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
 
-- name: "🇺🇸 Соединенные Штаты | 🥭🔥 ads.x5.ru t.me/rjsxrd"
+- name: "10. 🇷🇺 Russia t.me/rjsxrd"
   type: vless
-  server: '89.46.38.112'
+  server: '7qqrbome80g.country-26.de-nfast.com'
   port: 443
-  uuid: 'ec9e7b71-72b6-0021-8549-2efb1b21a502'
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
   udp: true
   tls: true
-  servername: 'ads.x5.ru'
+  servername: 'tradingview.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: 'b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4'
-    short-id: '6e3f0a5b'
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
 
-- name: "🇵🇱 Польша | Black List | Fast | EaveVPN | #0034 t.me/rjsxrd"
+- name: "69. 🇷🇺 Russia t.me/rjsxrd"
   type: vless
-  server: 'pl5.zoomersky.online'
-  port: 8443
-  uuid: '026f3289-2fca-11f1-8c84-dcb6e8e27879'
+  server: '7qqrbome80g.country-26.de-nfast.com'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
   udp: true
   tls: true
-  servername: 'yahoo.com'
+  servername: 'tradingview.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: '8HQFveqeGbXX5h_63W0_uZMfyKzY3VlFRVOtuWhX_Hw'
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
 
-- name: "🇦🇩 Андорра | Black List | Fast | EaveVPN | #0146 t.me/rjsxrd"
-  type: trojan
-  server: '192.142.4.232'
-  port: 2083
-  password: 'q2jXRWncMA7pQren_VjQKhSQfoBWK_'
-  udp: true
-  tls: true
-  servername: 'xo.e0f.cx'
-  skip-cert-verify: false
-  network: 'ws'
-  ws-opts:
-    path: '/trojan-ws'
-    headers:
-      Host: 'xo.e0f.cx'
-
-- name: "🇵🇱 Польша | Black List | Fast | EaveVPN | #0022 t.me/rjsxrd"
+- name: "1. 🇷🇺 Russia t.me/rjsxrd"
   type: vless
-  server: 'pl5.zoomersky.online'
+  server: '178.209.127.184'
   port: 443
-  uuid: '026f3289-2fca-11f1-8c84-dcb6e8e27879'
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
   udp: true
   tls: true
-  servername: 'yahoo.com'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: '8HQFveqeGbXX5h_63W0_uZMfyKzY3VlFRVOtuWhX_Hw'
-
-- name: "[OpenRay] 🇩🇪 DE-11617 t.me/rjsxrd"
-  type: vless
-  server: '107.161.154.166'
-  port: 57189
-  uuid: 'c5555224-ab82-408c-b358-0fff6ee23430'
-  udp: true
-  tls: true
-  servername: 'ya.ru'
-  skip-cert-verify: false
-  client-fingerprint: 'firefox'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'U6rxc0TQedipxfHGdaidhy4c6AG76hVQLfDm_YDBIGQ'
-    short-id: '44'
-
-- name: "🇵🇱 Польша | Black List | Fast | EaveVPN | #0023 t.me/rjsxrd"
-  type: vless
-  server: 'pl5.zoomersky.online'
-  port: 8443
-  uuid: '026f3289-2fca-11f1-8c84-dcb6e8e27879'
-  udp: true
-  tls: true
-  servername: 'yahoo.com'
+  servername: 'tradingview.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
+  client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '8HQFveqeGbXX5h_63W0_uZMfyKzY3VlFRVOtuWhX_Hw'
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
 
-- name: "🇷🇺 Россия | White List | Fast | EaveVPN | #0003 t.me/rjsxrd"
+- name: "0224 | 🌐 Unknown | VLESS | TG: @YoutubeUnBlockRu t.me/rjsxrd"
   type: vless
-  server: '107.161.154.166'
-  port: 57189
-  uuid: 'c5555224-ab82-408c-b358-0fff6ee23430'
-  udp: true
-  tls: true
-  servername: 'ya.ru'
-  skip-cert-verify: false
-  client-fingerprint: 'firefox'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'U6rxc0TQedipxfHGdaidhy4c6AG76hVQLfDm_YDBIGQ'
-    short-id: '44'
-
-- name: "🇵🇱 Польша | Black List | Fast | EaveVPN | #0032 t.me/rjsxrd"
-  type: vless
-  server: 'pl5.zoomersky.online'
+  server: '7qqrbome80g.country-26.de-nfast.com'
   port: 443
-  uuid: '026f3289-2fca-11f1-8c84-dcb6e8e27879'
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
   udp: true
   tls: true
-  servername: 'yahoo.com'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: '8HQFveqeGbXX5h_63W0_uZMfyKzY3VlFRVOtuWhX_Hw'
-
-- name: "[803ms Польша PL 🇵🇱 @vlesstrojan] t.me/rjsxrd"
-  type: vless
-  server: 'pl5.zoomersky.online'
-  port: 8443
-  uuid: '026f3289-2fca-11f1-8c84-dcb6e8e27879'
-  udp: true
-  tls: true
-  servername: 'yahoo.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: '8HQFveqeGbXX5h_63W0_uZMfyKzY3VlFRVOtuWhX_Hw'
-
-- name: "[346ms Германия DE 🇩🇪 @vlesstrojan] t.me/rjsxrd"
-  type: vless
-  server: '107.161.154.166'
-  port: 57189
-  uuid: 'c5555224-ab82-408c-b358-0fff6ee23430'
-  udp: true
-  tls: true
-  servername: 'ya.ru'
-  skip-cert-verify: false
-  client-fingerprint: 'firefox'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'U6rxc0TQedipxfHGdaidhy4c6AG76hVQLfDm_YDBIGQ'
-    short-id: '44'
-
-- name: "🇩🇪 Германия | 🌐 | 🔐 | 🥭🔥 ya.ru t.me/rjsxrd"
-  type: vless
-  server: '107.161.154.166'
-  port: 57189
-  uuid: 'c5555224-ab82-408c-b358-0fff6ee23430'
-  udp: true
-  tls: true
-  servername: 'ya.ru'
-  skip-cert-verify: false
-  client-fingerprint: 'firefox'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'U6rxc0TQedipxfHGdaidhy4c6AG76hVQLfDm_YDBIGQ'
-    short-id: '44'
-
-- name: "🇦🇩 Андорра | Black List | Fast | EaveVPN | #0044 t.me/rjsxrd"
-  type: trojan
-  server: '192.142.4.232'
-  port: 2083
-  password: 'q2jXRWncMA7pQren_VjQKhSQfoBWK_'
-  udp: true
-  tls: true
-  servername: 'xo.e0f.cx'
-  skip-cert-verify: false
-  network: 'ws'
-  ws-opts:
-    path: '/trojan-ws'
-    headers:
-      Host: 'xo.e0f.cx'
-
-- name: "🇩🇪 [VL] Германия #944 | РосТуннель t.me/rjsxrd"
-  type: vless
-  server: '107.161.154.166'
-  port: 57189
-  uuid: 'c5555224-ab82-408c-b358-0fff6ee23430'
-  udp: true
-  tls: true
-  servername: 'ya.ru'
-  skip-cert-verify: false
-  client-fingerprint: 'firefox'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'U6rxc0TQedipxfHGdaidhy4c6AG76hVQLfDm_YDBIGQ'
-    short-id: '44'
-
-- name: "[1473ms Польша PL 🇵🇱 @vlesstrojan] t.me/rjsxrd"
-  type: vless
-  server: 'pl5.zoomersky.online'
-  port: 443
-  uuid: '026f3289-2fca-11f1-8c84-dcb6e8e27879'
-  udp: true
-  tls: true
-  servername: 'yahoo.com'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: '8HQFveqeGbXX5h_63W0_uZMfyKzY3VlFRVOtuWhX_Hw'
-
-- name: "🇩🇪 Germany | 🌐 | [IPv6] [SNI-RU] ya.ru t.me/rjsxrd"
-  type: vless
-  server: '107.161.154.166'
-  port: 57189
-  uuid: 'c5555224-ab82-408c-b358-0fff6ee23430'
-  udp: true
-  tls: true
-  servername: 'ya.ru'
-  skip-cert-verify: false
-  client-fingerprint: 'firefox'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'U6rxc0TQedipxfHGdaidhy4c6AG76hVQLfDm_YDBIGQ'
-    short-id: '44'
-
-- name: "136. 🇩🇪 Germany t.me/rjsxrd"
-  type: vless
-  server: '107.161.154.166'
-  port: 57189
-  uuid: 'c5555224-ab82-408c-b358-0fff6ee23430'
-  udp: true
-  tls: true
-  servername: 'ya.ru'
-  skip-cert-verify: false
-  client-fingerprint: 'firefox'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'U6rxc0TQedipxfHGdaidhy4c6AG76hVQLfDm_YDBIGQ'
-    short-id: '44'
-
-- name: "🇳🇱 [VL] Нидерланды #1461 | РосТуннель t.me/rjsxrd"
-  type: vless
-  server: '195.133.9.30'
-  port: 8443
-  uuid: 'ab958ab0-2b47-11f1-92cb-12ba70109d32'
-  udp: true
-  tls: true
-  servername: 'www.apple.com'
+  servername: 'tradingview.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: 'FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc'
-    short-id: 'deadbeef42'
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
 
-- name: "[408ms US US  @vlesstrojan] t.me/rjsxrd"
+- name: "19. 🇷🇺 Russia t.me/rjsxrd"
   type: vless
-  server: '144.172.112.211'
-  port: 8443
-  uuid: 'ab958ab0-2b47-11f1-92cb-12ba70109d32'
+  server: '178.209.127.184'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
   udp: true
   tls: true
-  servername: 'www.apple.com'
+  servername: 'tradingview.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: 'FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc'
-    short-id: 'cafe01234567'
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
 
-- name: "113. 🇩🇪 Germany t.me/rjsxrd"
+- name: "🏳️ UNKNOWN VLESS 745 t.me/rjsxrd"
   type: vless
-  server: '107.161.154.166'
-  port: 57189
-  uuid: 'c5555224-ab82-408c-b358-0fff6ee23430'
+  server: '7qqrbome80g.country-26.de-nfast.com'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "[332ms Россия RU 🇷🇺 @vlesstrojan] t.me/rjsxrd t.me/rjsxrd"
+  type: vless
+  server: '7qqrbome80g.country-26.de-nfast.com'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "1979. VLESS | SNI: yastatic.net | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.178'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "[871ms US US  @vlesstrojan] t.me/rjsxrd"
+  type: vless
+  server: 'us5.zoomersky.online'
+  port: 443
+  uuid: '8cf1c214-3376-11f1-bf19-dcb6e8e27879'
+  udp: true
+  tls: true
+  servername: 'yahoo.com'
+  skip-cert-verify: false
+  network: 'tcp'
+  reality-opts:
+    public-key: '_BSh1csJMwOaqyUH_Y_ideZQ3vogMw_VsEJCOGSgJkY'
+
+- name: "45. 🇵🇱 Poland t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.191'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "60. 🇷🇺 Russia t.me/rjsxrd"
+  type: vless
+  server: '178.209.127.184'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "🇷🇺 Russia, Moscow | 🌐 | [IPv6] | [BL] t.me/rjsxrd2"
+  type: vless
+  server: '7qqrbome80g.country-26.de-nfast.com'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "🇷🇺Россия LTE @FreeCFGHub t.me/rjsxrd"
+  type: vless
+  server: '178.209.127.184'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "🇬🇪 Грузия | Black List | Fast | EaveVPN | #0064 t.me/rjsxrd"
+  type: vless
+  server: 'us5.zoomersky.online'
+  port: 443
+  uuid: '8cf1c214-3376-11f1-bf19-dcb6e8e27879'
+  udp: true
+  tls: true
+  servername: 'yahoo.com'
+  skip-cert-verify: false
+  network: 'tcp'
+  reality-opts:
+    public-key: '_BSh1csJMwOaqyUH_Y_ideZQ3vogMw_VsEJCOGSgJkY'
+
+- name: "🇵🇱 Poland | Newserverlife 12 t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.178'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "🇬🇪 Грузия | Black List | Fast | EaveVPN | #0086 t.me/rjsxrd"
+  type: vless
+  server: 'us5.zoomersky.online'
+  port: 443
+  uuid: '8cf1c214-3376-11f1-bf19-dcb6e8e27879'
+  udp: true
+  tls: true
+  servername: 'yahoo.com'
+  skip-cert-verify: false
+  network: 'tcp'
+  reality-opts:
+    public-key: '_BSh1csJMwOaqyUH_Y_ideZQ3vogMw_VsEJCOGSgJkY'
+
+- name: "🇵🇱 Poland | 🌐 | [IPv6] [SNI-RU] yastatic.net t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.191'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "🇷🇺 Россия | White List | Fast | EaveVPN | #0146 t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.191'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "29. 🇵🇱 Poland t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.191'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "[480ms Польша PL 🇵🇱 @vlesstrojan] t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.191'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "🇷🇺 Россия | White List | Fast | EaveVPN | #0145 t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.178'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "🇵🇱 Poland | Newserverlife 1 t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.191'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "🇵🇱 Poland | Newserverlife 11 t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.178'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "🏳️ UNKNOWN VLESS 112 t.me/rjsxrd t.me/rjsxrd"
+  type: vless
+  server: '7qqrbome80g.country-26.de-nfast.com'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "138. 🇵🇱 Poland t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.178'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "🇵🇱 Poland | Newserverlife 9 t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.191'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "🇵🇱 Poland | Newserverlife 2 t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.178'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "🇵🇱 Польша | 🌐 | 🔐 | 🥭🔥 yastatic.net t.me/rjsxrd2"
+  type: vless
+  server: '82.22.40.178'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "🇷🇺 [VL] Россия #1749 | РосТуннель t.me/rjsxrd"
+  type: vless
+  server: '7qqrbome80g.country-26.de-nfast.com'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "[689ms Латвия LV 🇱🇻 @vlesstrojan] t.me/rjsxrd"
+  type: vless
+  server: '91.197.1.218'
+  port: 15655
+  uuid: '3fa43a99-b7c8-4d73-889e-63d186f41d5b'
+  udp: true
+  tls: true
+  servername: 'google.com'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'bSpAbv0pfxf2D8OySqg2HiPTQN90wPv7hKD2e47ZtB4'
+    short-id: '3879'
+
+- name: "2057. VLESS | SNI: ya.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
+  type: vless
+  server: '194.67.100.111'
+  port: 6443
+  uuid: '91ce09d4-1879-4a24-a321-58fa5eefe6f8'
   udp: true
   tls: true
   servername: 'ya.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'U0kSbayNCG0zq6WQlCPYoFyzWqbJ7ZpxxROBYuHIQhc'
+    short-id: '4becb820'
+
+- name: "0204 t.me/rjsxrd t.me/rjsxrd"
+  type: vless
+  server: '7qqrbome80g.country-26.de-nfast.com'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "🇵🇱 Poland | Newserverlife 4 t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.191'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "🇵🇱 Польша | 🌐 | 🔐 | 🥭🔥 yastatic.net t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.191'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "40. 🇷🇺 Russia t.me/rjsxrd"
+  type: vless
+  server: '7qqrbome80g.country-26.de-nfast.com'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "4074. 🇷🇺 VLESS | SNI: tradingview.com | TG: @wlrustg t.me/rjsxrd"
+  type: vless
+  server: '178.209.127.184'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "! t.me/rjsxrd"
+  type: vless
+  server: 'ru4.b2-ray.ru'
+  port: 6443
+  uuid: '91ce09d4-1879-4a24-a321-58fa5eefe6f8'
+  udp: true
+  tls: true
+  servername: 'ya.ru'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'U0kSbayNCG0zq6WQlCPYoFyzWqbJ7ZpxxROBYuHIQhc'
+    short-id: '4becb820'
+
+- name: "1246 | 🇦🇲 Armenia | VLESS | 📺 YT | TG: @YoutubeUnBlockRu t.me/rjsxrd"
+  type: vless
+  server: 'am.janvpn.ru'
+  port: 59996
+  uuid: '71b191fd-0a33-4905-a601-0979aa9b983e'
+  udp: true
+  tls: true
+  servername: 'yahoo.com'
+  flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'firefox'
   network: 'tcp'
   reality-opts:
-    public-key: 'U6rxc0TQedipxfHGdaidhy4c6AG76hVQLfDm_YDBIGQ'
-    short-id: '44'
+    public-key: 'Qse9gI7x_oaUtYpat3UdIMdIU8x_nYIGegq96omgXg0'
+    short-id: 'fa1aa700'
 
-- name: "422. 🇫🇷 France t.me/rjsxrd"
+- name: "3. 🇷🇺 Russia t.me/rjsxrd"
   type: vless
-  server: 'shop.enigmabot.ru'
+  server: '178.209.127.184'
   port: 443
-  uuid: '446d84e5-a711-4257-b95f-8bedbf318fea'
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
   udp: true
   tls: true
-  servername: 'max.ru'
+  servername: 'tradingview.com'
   flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "🇱🇻 [VL] Латвия #2611 | РосТуннель t.me/rjsxrd"
+  type: vless
+  server: '91.197.1.218'
+  port: 15655
+  uuid: '3fa43a99-b7c8-4d73-889e-63d186f41d5b'
+  udp: true
+  tls: true
+  servername: 'google.com'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'bSpAbv0pfxf2D8OySqg2HiPTQN90wPv7hKD2e47ZtB4'
+    short-id: '3879'
+
+- name: "22. 🇵🇱 Poland t.me/rjsxrd"
+  type: vless
+  server: '82.22.40.191'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
+  udp: true
+  tls: true
+  servername: 'yastatic.net'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
+
+- name: "[482ms Россия RU 🇷🇺 @vlesstrojan] t.me/rjsxrd"
+  type: vless
+  server: '7qqrbome80g.country-26.de-nfast.com'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "🇷🇺 Россия | Black List | Fast | EaveVPN | #0067 t.me/rjsxrd"
+  type: vless
+  server: '178.209.127.184'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "🇳🇱 Нидерланды | Black List | Fast | EaveVPN | #0016 t.me/rjsxrd"
+  type: vless
+  server: 'finland-1.mutabor-sec.ru'
+  port: 37623
+  uuid: 'a3a90d47-df89-496b-a578-814d8c85d8fc'
+  udp: true
+  tls: true
+  servername: 'www.mutabor-sec.ru'
   skip-cert-verify: false
   client-fingerprint: 'random'
   network: 'tcp'
   reality-opts:
-    public-key: 'x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc'
-    short-id: 'ccad786414bbb5'
+    public-key: 'VSD97wC6JYviZSi66w6leWdOljj_dr4LaibgyoGDLnw'
+    short-id: '458dfb15fb'
 
-- name: "8@t.me/Notorgames_0 t.me/rjsxrd"
+- name: "8. 🇷🇺 Russia t.me/rjsxrd"
   type: vless
-  server: '195.2.84.109'
+  server: '178.209.127.184'
   port: 443
-  uuid: 'ec486464-46c8-4f80-acc1-a3ccdcf01744'
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
   udp: true
   tls: true
-  servername: 'ads.x5.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: '6OvNu3z9uVh1Br6hIOQOz4Qai7xuykdjcvtqiLqNRUs'
-    short-id: '3edd4952'
-
-- name: "🇩🇪 Германия | Black List | Fast | EaveVPN | #0053 t.me/rjsxrd"
-  type: vless
-  server: '144.172.112.211'
-  port: 8443
-  uuid: 'ab958ab0-2b47-11f1-92cb-12ba70109d32'
-  udp: true
-  tls: true
-  servername: 'www.apple.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc'
-    short-id: 'cafe01234567'
-
-- name: "262. 🇩🇪 Germany t.me/rjsxrd"
-  type: vless
-  server: '107.161.154.166'
-  port: 57189
-  uuid: 'c5555224-ab82-408c-b358-0fff6ee23430'
-  udp: true
-  tls: true
-  servername: 'ya.ru'
-  skip-cert-verify: false
-  client-fingerprint: 'firefox'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'U6rxc0TQedipxfHGdaidhy4c6AG76hVQLfDm_YDBIGQ'
-    short-id: '44'
-
-- name: "🇷🇺 [VL] Россия #1832 | РосТуннель t.me/rjsxrd t.me/rjsxrd"
-  type: vless
-  server: '195.2.84.109'
-  port: 443
-  uuid: 'ec486464-46c8-4f80-acc1-a3ccdcf01744'
-  udp: true
-  tls: true
-  servername: 'ads.x5.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: '6OvNu3z9uVh1Br6hIOQOz4Qai7xuykdjcvtqiLqNRUs'
-    short-id: '3edd4952'
-
-- name: "🇷🇺 Россия | White List | Fast | EaveVPN | #0004 t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.249'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
+  servername: 'tradingview.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
 
-- name: "🇩🇪 Германия | Black List | Fast | EaveVPN | #0067 t.me/rjsxrd"
+- name: "2089. VLESS | SNI: yastatic.net | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
   type: vless
-  server: '144.172.112.211'
-  port: 8443
-  uuid: 'ab958ab0-2b47-11f1-92cb-12ba70109d32'
+  server: '82.22.40.191'
+  port: 59999
+  uuid: '7a36ff3b-9571-407c-95c0-9f6d57177c20'
   udp: true
   tls: true
-  servername: 'www.apple.com'
+  servername: 'yastatic.net'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: 'FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc'
-    short-id: 'cafe01234567'
+    public-key: 'x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM'
+    short-id: '6ba85179'
 
-- name: "1732. VLESS | SNI: ya.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
+- name: "4. 🇷🇺 Russia t.me/rjsxrd"
   type: vless
-  server: '107.161.154.166'
-  port: 57189
-  uuid: 'c5555224-ab82-408c-b358-0fff6ee23430'
-  udp: true
-  tls: true
-  servername: 'ya.ru'
-  skip-cert-verify: false
-  client-fingerprint: 'firefox'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'U6rxc0TQedipxfHGdaidhy4c6AG76hVQLfDm_YDBIGQ'
-    short-id: '44'
-
-- name: "🇷🇺 [VL] Россия #1645 | РосТуннель t.me/rjsxrd"
-  type: vless
-  server: '195.2.84.109'
+  server: '178.209.127.184'
   port: 443
-  uuid: 'ec486464-46c8-4f80-acc1-a3ccdcf01744'
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
   udp: true
   tls: true
-  servername: 'ads.x5.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: '6OvNu3z9uVh1Br6hIOQOz4Qai7xuykdjcvtqiLqNRUs'
-    short-id: '3edd4952'
-
-- name: "🇷🇺 Russia [SNI-RU] ads.x5.ru t.me/rjsxrd"
-  type: vless
-  server: '195.2.84.109'
-  port: 443
-  uuid: 'ec486464-46c8-4f80-acc1-a3ccdcf01744'
-  udp: true
-  tls: true
-  servername: 'ads.x5.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: '6OvNu3z9uVh1Br6hIOQOz4Qai7xuykdjcvtqiLqNRUs'
-    short-id: '3edd4952'
-
-- name: "213. 🇸🇪 Sweden t.me/rjsxrd"
-  type: vless
-  server: 'in-se-th-01.ray-balance.space'
-  port: 443
-  uuid: '0eca1f22-e5a1-4888-a0fa-c2345e87cf2f'
-  udp: true
-  tls: true
-  servername: 'eh.vk.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: '29rxp4KkkiRwPRgWGnQH60t8ZNkYYv6VAyyGo3ExKWc'
-
-- name: "[384ms Россия RU 🇷🇺 @vlesstrojan] t.me/rjsxrd"
-  type: vless
-  server: '195.2.84.109'
-  port: 443
-  uuid: 'ec486464-46c8-4f80-acc1-a3ccdcf01744'
-  udp: true
-  tls: true
-  servername: 'ads.x5.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: '6OvNu3z9uVh1Br6hIOQOz4Qai7xuykdjcvtqiLqNRUs'
-    short-id: '3edd4952'
-
-- name: "🇷🇺 Россия | 🥭🔥 ads.x5.ru t.me/rjsxrd"
-  type: vless
-  server: '195.2.84.109'
-  port: 443
-  uuid: 'ec486464-46c8-4f80-acc1-a3ccdcf01744'
-  udp: true
-  tls: true
-  servername: 'ads.x5.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: '6OvNu3z9uVh1Br6hIOQOz4Qai7xuykdjcvtqiLqNRUs'
-    short-id: '3edd4952'
-
-- name: "v2go | 🇺🇸 US | VLESS | 1358 t.me/rjsxrd"
-  type: vless
-  server: 'us.api-yandex.net'
-  port: 443
-  uuid: '8b65efc9-03a3-4758-8a2e-4b66a1e75062'
-  udp: true
-  tls: true
-  servername: 'us.api-yandex.net'
+  servername: 'tradingview.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: 'jA_Xd8qfMloJg0lbdxPnEcDJc3MltgueXpxYQAWnlD0'
-    short-id: '0f4dacf66101e05f'
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
 
-- name: "159. 🇸🇪 Sweden t.me/rjsxrd t.me/rjsxrd"
+- name: "[805ms Нидерланды NL 🇳🇱 @vlesstrojan] t.me/rjsxrd"
   type: vless
-  server: 'in-se-th-01.ray-balance.space'
+  server: 'ams4.zoomersky.online'
   port: 443
-  uuid: '0eca1f22-e5a1-4888-a0fa-c2345e87cf2f'
-  udp: true
-  tls: true
-  servername: 'eh.vk.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: '29rxp4KkkiRwPRgWGnQH60t8ZNkYYv6VAyyGo3ExKWc'
-
-- name: "180. 🇩🇪 Germany t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.249'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇷🇺 Russia [SNI-RU] max.ru t.me/rjsxrd"
-  type: vless
-  server: '85.209.135.25'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "969. 🇵🇱 VLESS | SNI: www.amd.com | CIDR: ? | TG: @wlrustg t.me/rjsxrd"
-  type: vless
-  server: '45.15.128.183'
-  port: 603
-  uuid: '4484eae9-e195-4adf-b2b5-ad0b9132162b'
-  udp: true
-  tls: true
-  servername: 'www.amd.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'lWJaKBaMPs0NYHGCbfsrmn64R4juEQEvfmHNnL741Ek'
-
-- name: "258. 🇩🇪 Germany t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.250'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇷🇺 [VL] Россия #1885 | РосТуннель t.me/rjsxrd"
-  type: vless
-  server: '85.209.135.25'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "320. 🇷🇺 Russia t.me/rjsxrd"
-  type: vless
-  server: '85.209.135.25'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "239. 🇸🇪 Sweden t.me/rjsxrd"
-  type: vless
-  server: 'in-se-th-01.ray-balance.space'
-  port: 443
-  uuid: '0eca1f22-e5a1-4888-a0fa-c2345e87cf2f'
-  udp: true
-  tls: true
-  servername: 'eh.vk.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: '29rxp4KkkiRwPRgWGnQH60t8ZNkYYv6VAyyGo3ExKWc'
-
-- name: "🇵🇱 Польша | Black List | Fast | EaveVPN | #0025 t.me/rjsxrd"
-  type: vless
-  server: '45.15.128.183'
-  port: 603
-  uuid: '4484eae9-e195-4adf-b2b5-ad0b9132162b'
-  udp: true
-  tls: true
-  servername: 'www.amd.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'lWJaKBaMPs0NYHGCbfsrmn64R4juEQEvfmHNnL741Ek'
-
-- name: "99. 🇸🇪 Sweden t.me/rjsxrd"
-  type: vless
-  server: 'in-se-th-01.ray-balance.space'
-  port: 443
-  uuid: '0eca1f22-e5a1-4888-a0fa-c2345e87cf2f'
-  udp: true
-  tls: true
-  servername: 'eh.vk.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: '29rxp4KkkiRwPRgWGnQH60t8ZNkYYv6VAyyGo3ExKWc'
-
-- name: "🇷🇺 Россия [🏳️LTE] | 🥭🔥   t.me/rjsxrd"
-  type: vless
-  server: '217.16.28.63'
-  port: 7443
-  uuid: '5a36817c-83c0-4032-a4e8-caf1f91a44ab'
-  udp: true
-  tls: true
-  servername: 'ads.x5.ru'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'grpc'
-  reality-opts:
-    public-key: '8hdXyv-YBQIaA2xgOfT2nhfna5y5s19qbZD-SpMZ6hg'
-    short-id: 'dd700a46e27751d1'
-  grpc-opts:
-    grpc-service-name: 'UpdateService'
-
-- name: "🇵🇱 Польша | Black List | Fast | EaveVPN | #0033 t.me/rjsxrd"
-  type: vless
-  server: 'pl5.zoomersky.online'
-  port: 8443
-  uuid: '026f3289-2fca-11f1-8c84-dcb6e8e27879'
+  uuid: '8cf1c214-3376-11f1-bf19-dcb6e8e27879'
   udp: true
   tls: true
   servername: 'yahoo.com'
-  flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   network: 'tcp'
   reality-opts:
-    public-key: '8HQFveqeGbXX5h_63W0_uZMfyKzY3VlFRVOtuWhX_Hw'
+    public-key: 'QhD3AWFgvo_82s3y9td_XeNyjttACk46GfQcCQfmaDQ'
 
-- name: "55. VLESS | SNI: eh.vk.com | TG: @wlrustg t.me/rjsxrd"
+- name: "🇷🇺 RU VLESS 1441 t.me/rjsxrd"
   type: vless
-  server: 'in-se-th-01.ray-balance.space'
+  server: '178.209.127.184'
   port: 443
-  uuid: '0eca1f22-e5a1-4888-a0fa-c2345e87cf2f'
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "🇷🇺 Россия | Black List | Fast | EaveVPN | #0092 t.me/rjsxrd"
+  type: vless
+  server: '7qqrbome80g.country-26.de-nfast.com'
+  port: 443
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "🇷🇺 Russia | TG: @HardVpn_robot t.me/rjsxrd"
+  type: vless
+  server: '45.92.176.189'
+  port: 443
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
   servername: 'eh.vk.com'
@@ -740,60 +829,93 @@ proxies:
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: '29rxp4KkkiRwPRgWGnQH60t8ZNkYYv6VAyyGo3ExKWc'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "🇵🇱 Польша | Black List | Fast | EaveVPN | #0024 t.me/rjsxrd"
+- name: "🇷🇺 Россия | 🥭🔥 eh.vk.com t.me/rjsxrd3"
   type: vless
-  server: 'pl5.zoomersky.online'
-  port: 8443
-  uuid: '026f3289-2fca-11f1-8c84-dcb6e8e27879'
-  udp: true
-  tls: true
-  servername: 'yahoo.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: '8HQFveqeGbXX5h_63W0_uZMfyKzY3VlFRVOtuWhX_Hw'
-
-- name: "1674. VLESS | SNI: max.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
-  type: vless
-  server: '150.241.88.23'
+  server: 'ru1.krevetkavpn.ru'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
-  servername: 'max.ru'
+  servername: 'eh.vk.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "224. 🇫🇮 Finland t.me/rjsxrd"
+- name: "84. 🇷🇺 Russia t.me/rjsxrd"
   type: vless
-  server: '2.27.52.63'
+  server: '7qqrbome80g.country-26.de-nfast.com'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
   udp: true
   tls: true
-  servername: 'max.ru'
+  servername: 'tradingview.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
 
-- name: "0184 | 🌐 Unknown | 🏳️ SNI-VK | VLESS | TG: @YoutubeUnBlockRu t.me/rjsxrd"
+- name: "🇷🇺 Russia, Moscow | 🌐 | [IPv6] | [BL] t.me/rjsxrd"
   type: vless
-  server: 'in-se-th-01.ray-balance.space'
+  server: '178.209.127.184'
   port: 443
-  uuid: '0eca1f22-e5a1-4888-a0fa-c2345e87cf2f'
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
+  udp: true
+  tls: true
+  servername: 'tradingview.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
+
+- name: "🇳🇱 Нидерланды | Black List | Fast | EaveVPN | #0015 t.me/rjsxrd"
+  type: vless
+  server: 'finland-1.mutabor-sec.ru'
+  port: 37623
+  uuid: 'a3a90d47-df89-496b-a578-814d8c85d8fc'
+  udp: true
+  tls: true
+  servername: 'www.mutabor-sec.ru'
+  skip-cert-verify: false
+  client-fingerprint: 'random'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'VSD97wC6JYviZSi66w6leWdOljj_dr4LaibgyoGDLnw'
+    short-id: '458dfb15fb'
+
+- name: "🇷🇺 Россия | White List | Fast | EaveVPN | #0162 t.me/rjsxrd"
+  type: vless
+  server: 'ru1.krevetkavpn.ru'
+  port: 443
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
+  udp: true
+  tls: true
+  servername: 'eh.vk.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'qq'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
+
+- name: "2080. VLESS | SNI: eh.vk.com | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
+  type: vless
+  server: '45.92.176.189'
+  port: 443
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
   servername: 'eh.vk.com'
@@ -802,173 +924,14 @@ proxies:
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: '29rxp4KkkiRwPRgWGnQH60t8ZNkYYv6VAyyGo3ExKWc'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "1691. VLESS | SNI: max.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
+- name: "🇷🇺 Russia [SNI-RU] eh.vk.com t.me/rjsxrd"
   type: vless
-  server: '2.27.37.250'
+  server: '45.92.176.189'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "415. 🇩🇪 Germany t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.250'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "76. 🇫🇮 Finland t.me/rjsxrd"
-  type: vless
-  server: '2.27.52.63'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "297. 🇩🇪 Germany t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.250'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "232. 🇺🇸 United States t.me/rjsxrd"
-  type: vless
-  server: 'us.api-yandex.net'
-  port: 443
-  uuid: '8b65efc9-03a3-4758-8a2e-4b66a1e75062'
-  udp: true
-  tls: true
-  servername: 'us.api-yandex.net'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'jA_Xd8qfMloJg0lbdxPnEcDJc3MltgueXpxYQAWnlD0'
-    short-id: '0f4dacf66101e05f'
-
-- name: "🇷🇺 Россия | White List | Fast | EaveVPN | #0005 t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.250'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇬🇧 [VL] Великобритания #2234 | РосТуннель t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.249'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇺🇸 United States, Chicago | [BL] t.me/rjsxrd"
-  type: vless
-  server: 'us.api-yandex.net'
-  port: 443
-  uuid: '8b65efc9-03a3-4758-8a2e-4b66a1e75062'
-  udp: true
-  tls: true
-  servername: 'us.api-yandex.net'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'jA_Xd8qfMloJg0lbdxPnEcDJc3MltgueXpxYQAWnlD0'
-    short-id: '0f4dacf66101e05f'
-
-- name: "[OpenRay] 🇬🇧 GB-827 t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.250'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇬🇧 [VL] Великобритания #2236 | РосТуннель t.me/rjsxrd"
-  type: vless
-  server: '2.27.52.63'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇸🇪 Sweden | 🌐 | [IPv6] [SNI-RU] eh.vk.com t.me/rjsxrd"
-  type: vless
-  server: 'in-se-th-01.ray-balance.space'
-  port: 443
-  uuid: '0eca1f22-e5a1-4888-a0fa-c2345e87cf2f'
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
   servername: 'eh.vk.com'
@@ -977,187 +940,94 @@ proxies:
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: '29rxp4KkkiRwPRgWGnQH60t8ZNkYYv6VAyyGo3ExKWc'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "1678. VLESS | SNI: max.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
+- name: "🇷🇺 Russia [SNI-RU] eh.vk.com t.me/rjsxrd2"
   type: vless
-  server: '2.27.37.249'
+  server: 'ru1.krevetkavpn.ru'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
-  servername: 'max.ru'
+  servername: 'eh.vk.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "🇩🇪 Германия | 🥭🔥 max.ru t.me/rjsxrd"
+- name: "2037. VLESS | SNI: eh.vk.com | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
   type: vless
-  server: '2.27.37.250'
+  server: 'ru1.krevetkavpn.ru'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
-  servername: 'max.ru'
+  servername: 'eh.vk.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "1645. VLESS | SNI: max.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
+- name: "! 45 | REALITY | SNI: eh.vk.com | IN: RU OUT: RU | RATING: 5/10 t.me/rjsxrd"
   type: vless
-  server: '85.209.135.25'
+  server: 'ru1.krevetkavpn.ru'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
-  servername: 'max.ru'
+  servername: 'eh.vk.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "[370ms Великобритания GB 🇬🇧 @vlesstrojan] t.me/rjsxrd"
+- name: "🇷🇺 Russia [SNI-RU] eh.vk.com t.me/rjsxrd3"
   type: vless
-  server: '2.27.37.250'
+  server: '45.92.176.189'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
-  servername: 'max.ru'
+  servername: 'eh.vk.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "170. 🇩🇪 Germany t.me/rjsxrd"
+- name: "🇷🇺 [VL] Россия #1786 | РосТуннель t.me/rjsxrd"
   type: vless
-  server: '2.27.37.250'
+  server: '178.209.127.184'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
+  uuid: '4b481152-ba7f-4445-8cc0-d33d58546e23'
   udp: true
   tls: true
-  servername: 'max.ru'
+  servername: 'tradingview.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: '-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw'
+    short-id: '50'
 
-- name: "🇬🇧 [VL] Великобритания #2235 | РосТуннель t.me/rjsxrd"
+- name: "🇷🇺 Россия | White List | Fast | EaveVPN | #0161 t.me/rjsxrd"
   type: vless
-  server: '2.27.37.250'
+  server: '45.92.176.189'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "1651. VLESS | SNI: max.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
-  type: vless
-  server: '150.241.88.23'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "1724. VLESS | SNI: max.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
-  type: vless
-  server: '2.27.52.63'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "[OpenRay] 🇷🇺 RU-17744 t.me/rjsxrd"
-  type: vless
-  server: '195.2.84.109'
-  port: 443
-  uuid: 'ec486464-46c8-4f80-acc1-a3ccdcf01744'
-  udp: true
-  tls: true
-  servername: 'ads.x5.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: '6OvNu3z9uVh1Br6hIOQOz4Qai7xuykdjcvtqiLqNRUs'
-    short-id: '3edd4952'
-
-- name: "1684. VLESS | SNI: max.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
-  type: vless
-  server: '85.209.135.25'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇵🇱 Польша | Black List | Fast | EaveVPN | #0035 t.me/rjsxrd"
-  type: vless
-  server: '45.15.128.183'
-  port: 603
-  uuid: '4484eae9-e195-4adf-b2b5-ad0b9132162b'
-  udp: true
-  tls: true
-  servername: 'www.amd.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'lWJaKBaMPs0NYHGCbfsrmn64R4juEQEvfmHNnL741Ek'
-
-- name: "tg@Notorgames_0-188 t.me/rjsxrd"
-  type: vless
-  server: 'in-se-th-01.ray-balance.space'
-  port: 443
-  uuid: '0eca1f22-e5a1-4888-a0fa-c2345e87cf2f'
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
   servername: 'eh.vk.com'
@@ -1166,188 +1036,62 @@ proxies:
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: '29rxp4KkkiRwPRgWGnQH60t8ZNkYYv6VAyyGo3ExKWc'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "[342ms Великобритания GB 🇬🇧 @vlesstrojan] t.me/rjsxrd"
+- name: "🇷🇺 Россия | White List | Fast | EaveVPN | #0160 t.me/rjsxrd"
   type: vless
-  server: '2.27.37.249'
+  server: '45.92.176.189'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
-  servername: 'max.ru'
+  servername: 'eh.vk.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "🇷🇺 Russia [SNI-RU] max.ru t.me/rjsxrd2"
+- name: "2105. VLESS | SNI: eh.vk.com | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
   type: vless
-  server: '85.209.135.25'
+  server: '45.92.176.189'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
-  servername: 'max.ru'
+  servername: 'eh.vk.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "tg@Notorgames_0-58 t.me/rjsxrd"
+- name: "🇷🇺 Россия | 🥭🔥 eh.vk.com t.me/rjsxrd"
   type: vless
-  server: '195.2.84.109'
+  server: '45.92.176.189'
   port: 443
-  uuid: 'ec486464-46c8-4f80-acc1-a3ccdcf01744'
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
-  servername: 'ads.x5.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  network: 'tcp'
-  reality-opts:
-    public-key: '6OvNu3z9uVh1Br6hIOQOz4Qai7xuykdjcvtqiLqNRUs'
-    short-id: '3edd4952'
-
-- name: "1654. VLESS | SNI: max.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.249'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
+  servername: 'eh.vk.com'
   flow: 'xtls-rprx-vision'
   skip-cert-verify: false
   client-fingerprint: 'qq'
   network: 'tcp'
   reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
 
-- name: "[OpenRay] 🇬🇧 GB-828 t.me/rjsxrd"
+- name: "🇷🇺 Россия | 🥭🔥 eh.vk.com t.me/rjsxrd2"
   type: vless
-  server: '2.27.52.63'
+  server: '45.92.176.189'
   port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇩🇪 Германия | 🥭🔥 max.ru t.me/rjsxrd2"
-  type: vless
-  server: '2.27.37.249'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "1662. VLESS | SNI: max.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.250'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "201. 🇩🇪 Germany t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.249'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "[OpenRay] 🇫🇮 FI-1552 t.me/rjsxrd"
-  type: vless
-  server: '150.241.88.23'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "62. 🇫🇮 Finland t.me/rjsxrd"
-  type: vless
-  server: '150.241.88.23'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "190. 🇩🇪 Germany t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.249'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇲🇪 [БС-VL] Черногория #10205 | РосТуннель t.me/rjsxrd"
-  type: vless
-  server: 'in-se-th-01.ray-balance.space'
-  port: 443
-  uuid: '0eca1f22-e5a1-4888-a0fa-c2345e87cf2f'
+  uuid: 'b33d24eb-1d34-4b5f-bae2-31f5720fb509'
   udp: true
   tls: true
   servername: 'eh.vk.com'
@@ -1356,195 +1100,5 @@ proxies:
   client-fingerprint: 'chrome'
   network: 'tcp'
   reality-opts:
-    public-key: '29rxp4KkkiRwPRgWGnQH60t8ZNkYYv6VAyyGo3ExKWc'
-
-- name: "[OpenRay] 🇷🇺 RU-18005 t.me/rjsxrd"
-  type: vless
-  server: '85.209.135.25'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇷🇺 Россия | White List | Fast | EaveVPN | #0001 t.me/rjsxrd"
-  type: vless
-  server: '150.241.88.23'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇷🇺 Россия | 🥭🔥 max.ru t.me/rjsxrd"
-  type: vless
-  server: '85.209.135.25'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇩🇪 Germany [SNI-RU] max.ru t.me/rjsxrd2"
-  type: vless
-  server: '2.27.37.249'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "175. 🇩🇪 Germany t.me/rjsxrd"
-  type: vless
-  server: '2.27.37.249'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇷🇺 Россия | White List | Fast | EaveVPN | #0008 t.me/rjsxrd"
-  type: vless
-  server: 'in-se-th-01.ray-balance.space'
-  port: 443
-  uuid: '0eca1f22-e5a1-4888-a0fa-c2345e87cf2f'
-  udp: true
-  tls: true
-  servername: 'eh.vk.com'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  network: 'tcp'
-  reality-opts:
-    public-key: '29rxp4KkkiRwPRgWGnQH60t8ZNkYYv6VAyyGo3ExKWc'
-
-- name: "[458ms Финляндия FI 🇫🇮 @vlesstrojan] t.me/rjsxrd"
-  type: vless
-  server: '150.241.88.23'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇫🇮 Finland [SNI-RU] max.ru t.me/rjsxrd"
-  type: vless
-  server: '150.241.88.23'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇩🇪 Germany [SNI-RU] max.ru t.me/rjsxrd3"
-  type: vless
-  server: '2.27.37.250'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "63. 🇫🇮 Finland t.me/rjsxrd"
-  type: vless
-  server: '150.241.88.23'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
-
-- name: "🇮🇹 Италия | Black List | Fast | EaveVPN | #0050 t.me/rjsxrd"
-  type: vless
-  server: 'us.api-yandex.net'
-  port: 443
-  uuid: '8b65efc9-03a3-4758-8a2e-4b66a1e75062'
-  udp: true
-  tls: true
-  servername: 'us.api-yandex.net'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: 'jA_Xd8qfMloJg0lbdxPnEcDJc3MltgueXpxYQAWnlD0'
-    short-id: '0f4dacf66101e05f'
-
-- name: "1675. VLESS | SNI: max.ru | TG: @wlrustg | Thanks: @rkp_channel t.me/rjsxrd"
-  type: vless
-  server: '2.27.52.63'
-  port: 443
-  uuid: '322ffd77-9adc-4e10-8302-a8bcc14555a0'
-  udp: true
-  tls: true
-  servername: 'max.ru'
-  flow: 'xtls-rprx-vision'
-  skip-cert-verify: false
-  client-fingerprint: 'qq'
-  network: 'tcp'
-  reality-opts:
-    public-key: '-yTIP_yek0O1V8tG2yclXp74s55wEgn_aFxbuy-Q-X8'
-    short-id: 'c6118399'
+    public-key: 'uj0IWY_E4-rnooWaJ9aLs1OwBHjERcIsicINge5HNGk'
+    short-id: '10157c5a414da989'
