@@ -69,6 +69,7 @@ proxy-groups:
     use:
       - WARPServerList
 
+#Отдельный скрипт для минимального пинга Discord
   - name: WARP Discord
     type: url-test
     interval: 20
@@ -81,7 +82,17 @@ proxy-groups:
     proxies:
       - WARP
 
-#Белые списки 
+#Запасной вариант на случай нестабильности Server WARP
+  - name: Server If
+    type: fallback
+    interval: 100
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    proxies:
+      - Server WARP
+      - zapas
+
+#Запасные VPN
   - name: zapas
     type: fallback
     interval: 420
@@ -129,6 +140,6 @@ rules:
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
-  - RULE-SET,RulesZapas,Server WARP
+  - RULE-SET,RulesZapas,Server If
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
