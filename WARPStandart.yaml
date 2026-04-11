@@ -26,11 +26,6 @@ proxies:
     <<: *warp-common
     server: engage.cloudflareclient.com
     port: 2408
-  
-  - name: "188.114.97.1:500"
-    <<: *warp-common
-    server: 188.114.97.1
-    port: 500
 
   - name: "162.159.195.1:500"
     <<: *warp-common
@@ -42,11 +37,6 @@ proxies:
     server: engage.cloudflareclient.com
     port: 4500
     
-  - name: "188.114.97.148:4500"
-    <<: *warp-common
-    server: 188.114.97.148
-    port: 4500
-    
   - name: "engage.cloudflareclient.com:500"
     <<: *warp-common
     server: engage.cloudflareclient.com
@@ -56,8 +46,3 @@ proxies:
     <<: *warp-common
     server: 188.114.99.224
     port: 1002
-    
-  - name: "8.34.146.113:968"
-    <<: *warp-common
-    server: 8.34.146.113
-    port: 968
