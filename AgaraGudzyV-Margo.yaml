@@ -19,12 +19,6 @@ proxy-providers:
     interval: 21600
     path: ./providers/WARPStandart.yaml    
 
-  WARPServerList:
-    type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPServer
-    interval: 21600
-    path: ./providers/WARPServerList.yaml
-
 proxy-groups:
   - name: VPN
     type: select
@@ -34,12 +28,8 @@ proxy-groups:
     proxies:
 #градация от лучшего до худшего варианта использования      
       - WARP If
-      - Server WARP
-      - WARP Discord
+      - Discord
       - zapas
-    use:
-#Нужно для отображения отдельных списков WARP      
-      - WARPServerList
 
 #Запасной вариант на случай нестабильности WARP
   - name: WARP If
@@ -49,7 +39,6 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     proxies:
       - WARP
-      - Server WARP
       - zapas
 
   - name: WARP
@@ -59,32 +48,25 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     use:
       - WARPStandart
-      
-#WARP с серверами переконвертированные из AWG
-  - name: Server WARP
-    type: fallback
-    interval: 50
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - WARPServerList
 
-  - name: WARP Discord
+#Отдельный скрипт для минимального пинга Discord
+  - name: Discord
     type: url-test
-    interval: 20
-    tolerance: 45
+    interval: 15
+    tolerance: 8
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
-    filter: "WARP PL"
+    filter: "Discord"
     use:
-      - WARPServerList
+      - zapasList
     proxies:
       - WARP
 
-#Белые списки 
+#Запасные VPN
   - name: zapas
-    type: fallback
-    interval: 420
+    type: url-test
+    interval: 90
+    tolerance: 50
     url: http://www.gstatic.com/generate_204
     icon: https://psv4.userapi.com/s/v1/d2/JzoTqn_sF-pyaVhhfrdzgNO9UJZPAHOkiY0Qtp-56c-j_TXwNjNgXaNKolcUOHEUHMnuQxWB1s8RWl9UlkD0rMpiFZVuyVx0dgPEurn2yOjdDppkKpLS3wXzAyx-7i2tqdZS2mtdRwJE/TsrsheuDshye.png
     use:
@@ -123,12 +105,12 @@ rules:
 #Короткие правила
   - DOMAIN-KEYWORD,animegorus.ru,VPN
   - DOMAIN-KEYWORD,yummyani.me,VPN
-  - PROCESS-NAME,discord.exe,WARP Discord
+  - PROCESS-NAME,discord.exe,Discord
 #Отдельные правила для исполняемых файлов файлов 
-  - RULE-SET,RulesVPNexe,Server WARP
+  - RULE-SET,RulesVPNexe,zapas
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
-  - RULE-SET,RulesZapas,Server WARP
+  - RULE-SET,RulesZapas,zapas
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
