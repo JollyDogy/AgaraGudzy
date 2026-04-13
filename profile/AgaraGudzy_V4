@@ -9,13 +9,13 @@ tcp-concurrent: false
 proxy-providers:
   zapasList:
     type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/ProxyWhiteList.yaml
+    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/ProxyWhiteList.yaml
     interval: 21600
     path: ./providers/zapasList.yaml
 
   WARPStandart:
     type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/WARPStandart.yaml
+    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/WARPStandart.yaml
     interval: 21600
     path: ./providers/WARPStandart.yaml    
 
@@ -24,7 +24,7 @@ proxy-groups:
     type: select
     interval: 800
     url: http://www.gstatic.com/generate_204
-    icon: https://psv4.userapi.com/s/v1/d2/myYi0zo7FBs5-0OC_n9gCfGlX1fEp93vU1GXg092p-4eWEmkWcvSUKPOFtIPUL2Pbdreb4hSP5eZexSjQdK7wHda_MhypBmD-3Z_Z72m0_1K8iZ6o-BLXrIX3neC9lR-EpC2PJ8qPkqN/chebur.png
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/CheburNET.png
     proxies:
 #градация от лучшего до худшего варианта использования      
       - WARP If
@@ -68,7 +68,7 @@ proxy-groups:
     interval: 90
     tolerance: 50
     url: http://www.gstatic.com/generate_204
-    icon: https://psv4.userapi.com/s/v1/d2/JzoTqn_sF-pyaVhhfrdzgNO9UJZPAHOkiY0Qtp-56c-j_TXwNjNgXaNKolcUOHEUHMnuQxWB1s8RWl9UlkD0rMpiFZVuyVx0dgPEurn2yOjdDppkKpLS3wXzAyx-7i2tqdZS2mtdRwJE/TsrsheuDshye.png
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     use:
       - 'zapasList'
 
@@ -76,28 +76,28 @@ rule-providers:
   RulesZapas:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesZapas.yaml
+    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/RulesZapas.yaml
     path: ./rules/RulesZapas.yaml
     interval: 21600
 
   RulesVPN:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesVPN.yaml
+    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/RulesVPN.yaml
     path: ./rules/RulesVPN.yaml
     interval: 21600
  
   RulesDIRECT:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesDirect.yaml
+    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/RulesDirect.yaml
     path: ./rules/RulesDIRECT.yaml
     interval: 21600
   
   RulesVPNexe:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/rulesVPNexe.yaml
+    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/rulesVPNexe.yaml
     path: ./rules/RulesVPNexe.yaml
     interval: 21600  
 
