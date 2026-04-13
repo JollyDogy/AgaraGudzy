@@ -9,7 +9,7 @@ tcp-concurrent: false
 proxy-providers:
   zapasList:
     type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/ProxyWhiteList.yaml
+    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/ProxyWhiteList.yaml
     interval: 21600
     path: ./providers/zapasList.yaml
 
