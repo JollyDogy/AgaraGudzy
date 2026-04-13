@@ -9,13 +9,13 @@ tcp-concurrent: false
 proxy-providers:
   zapasList:
     type: http
-    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/proxies/ProxyWhiteList.yaml
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/ProxyWhiteList.yaml
     interval: 21600
     path: ./providers/zapasList.yaml
 
   VLESSList:
     type: http
-    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/proxies/VLESSWhiteList.yaml
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/VLESSWhiteList.yaml
     interval: 21600
     path: ./providers/VLESSList.yaml
 
@@ -48,7 +48,7 @@ rule-providers:
   RulesDIRECT:
     type: http
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/rules/RulesDirect.yaml
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/rules/RulesDirect.yaml
     path: ./rules/RulesDIRECT.yaml
     interval: 21600
 
