@@ -15,7 +15,7 @@ proxy-providers:
 
   WARPStandart:
     type: http
-    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/proxies/WARPStandart.yaml
+    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/proxies/WARP/WARPStandart.yaml
     interval: 21600
     path: ./providers/WARPStandart.yaml    
 
