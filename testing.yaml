@@ -1,773 +1,353 @@
-warp-common: &warp-common
-  type: wireguard
-  ip: 172.16.0.2
-  ipv6: 2606:4700:110:8403:de9:1751:66c1:f323
-  private-key: cPpdKKB/4fN9ZMDBikoHWZlWh2WE/sJ6I65s1v+TVV0=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  allowed-ips: ['0.0.0.0/0']
-  reserved: [140, 195, 239]
-  udp: true
-  mtu: 1280
-  remote-dns-resolve: true
-  dns: [77.88.8.8, 77.88.8.1, 2a02:6b8::feed:0ff, 2a02:6b8:0:1::feed:0ff]
-  amnezia-wg-option:
-   jc: 120
-   jmin: 23
-   jmax: 911
-   s1: 0
-   s2: 0
-   h1: 1
-   h2: 2
-   h4: 3
-   h3: 4
-   i1: <b 0xce000000010897a297ecc34cd6dd000044d0ec2e2e1ea2991f467ace4222129b5a098823784694b4897b9986ae0b7280135fa85e196d9ad980b150122129ce2a9379531b0fd3e871ca5fdb883c369832f730e272d7b8b74f393f9f0fa43f11e510ecb2219a52984410c204cf875585340c62238e14ad04dff382f2c200e0ee22fe743b9c6b8b043121c5710ec289f471c91ee414fca8b8be8419ae8ce7ffc53837f6ade262891895f3f4cecd31bc93ac5599e18e4f01b472362b8056c3172b513051f8322d1062997ef4a383b01706598d08d48c221d30e74c7ce000cdad36b706b1bf9b0607c32ec4b3203a4ee21ab64df336212b9758280803fcab14933b0e7ee1e04a7becce3e2633f4852585c567894a5f9efe9706a151b615856647e8b7dba69ab357b3982f554549bef9256111b2d67afde0b496f16962d4957ff654232aa9e845b61463908309cfd9de0a6abf5f425f577d7e5f6440652aa8da5f73588e82e9470f3b21b27b28c649506ae1a7f5f15b876f56abc4615f49911549b9bb39dd804fde182bd2dcec0c33bad9b138ca07d4a4a1650a2c2686acea05727e2a78962a840ae428f55627516e73c83dd8893b02358e81b524b4d99fda6df52b3a8d7a5291326e7ac9d773c5b43b8444554ef5aea104a738ed650aa979674bbed38da58ac29d87c29d387d80b526065baeb073ce65f075ccb56e47533aef357dceaa8293a523c5f6f790be90e4731123d3c6152a70576e90b4ab5bc5ead01576c68ab633ff7d36dcde2a0b2c68897e1acfc4d6483aaaeb635dd63c96b2b6a7a2bfe042f6aed82e5363aa850aace12ee3b1a93f30d8ab9537df483152a5527faca21efc9981b304f11fc95336f5b9637b174c5a0659e2b22e159a9fed4b8e93047371175b1d6d9cc8ab745f3b2281537d1c75fb9451871864efa5d184c38c185fd203de206751b92620f7c369e031d2041e152040920ac2c5ab5340bfc9d0561176abf10a147287ea90758575ac6a9f5ac9f390d0d5b23ee12af583383d994e22c0cf42383834bcd3ada1b3825a0664d8f3fb678261d57601ddf94a8a68a7c273a18c08aa99c7ad8c6c42eab67718843597ec9930457359dfdfbce024afc2dcf9348579a57d8d3490b2fa99f278f1c37d87dad9b221acd575192ffae1784f8e60ec7cee4068b6b988f0433d96d6a1b1865f4e155e9fe020279f434f3bf1bd117b717b92f6cd1cc9bea7d45978bcc3f24bda631a36910110a6ec06da35f8966c9279d130347594f13e9e07514fa370754d1424c0a1545c5070ef9fb2acd14233e8a50bfc5978b5bdf8bc1714731f798d21e2004117c61f2989dd44f0cf027b27d4019e81ed4b5c31db347c4a3a4d85048d7093cf16753d7b0d15e078f5c7a5205dc2f87e330a1f716738dce1c6180e9d02869b5546f1c4d2748f8c90d9693cba4e0079297d22fd61402dea32ff0eb69ebd65a5d0b687d87e3a8b2c42b648aa723c7c7daf37abcc4bb85caea2ee8f55bec20e913b3324ab8f5c3304f820d42ad1b9f2ffc1a3af9927136b4419e1e579ab4c2ae3c776d293d397d575df181e6cae0a4ada5d67ecea171cca3288d57c7bbdaee3befe745fb7d634f70386d873b90c4d6c6596bb65af68f9e5121e67ebf0d89d3c909ceedfb32ce9575a7758ff080724e1ab5d5f43074ecb53a479af21ed03d7b6899c36631c0166f9d47e5e1d4528a5d3d3f744029c4b1c190cbfbad06f5f83f7ad0429fa9a2719c56ffe3783460e166de2d8>
-
-proxies:
-# Гео-endpoint'ы
-- name: "[🌍] 🇳🇱 Нидерланды"
-  <<: *warp-common
-  server: nl.tribukvy.ltd
-  port: 4500
-- name: "[🌍] 🇵🇱 Польша"
-  <<: *warp-common
-  server: pl.tribukvy.ltd
-  port: 4500
-- name: "[🌍] 🇵🇱 Польша #2"
-  <<: *warp-common
-  server: pl0.tribukvy.ltd
-  port: 4500
-- name: "[🌍] 🇪🇪 Эстония"
-  <<: *warp-common
-  server: ee.tribukvy.ltd
-  port: 4500
-- name: "[🌍] 🇩🇪 Германия"
-  <<: *warp-common
-  server: de.tribukvy.ltd
-  port: 4500
-- name: "[🌍] 🇷🇺 Россия"
-  <<: *warp-common
-  server: ru0.tribukvy.ltd
-  port: 4500
-- name: "[🌍] 🇺🇸 США"
-  <<: *warp-common
-  server: usa.tribukvy.ltd
-  port: 4500
-
-# Оригинальные эндпоинты
-- name: "[⭐] 188.114.97.1:500"
-  <<: *warp-common
-  server: 188.114.97.1
-  port: 500
-- name: "[⭐] 188.114.97.148:4500"
-  <<: *warp-common
-  server: 188.114.97.148
-  port: 4500
-- name: "[⭐] 162.159.195.1:500"
-  <<: *warp-common
-  server: 162.159.195.1
-  port: 500
-- name: "[⭐] engage.cloudflareclient.com:4500"
-  <<: *warp-common
-  server: engage.cloudflareclient.com
-  port: 4500
-- name: "[⭐] engage.cloudflareclient.com:500"
-  <<: *warp-common
-  server: engage.cloudflareclient.com
-  port: 500
-- name: "[⭐] engage.cloudflareclient.com:2408"
-  <<: *warp-common
-  server: engage.cloudflareclient.com
-  port: 2408
-- name: "[⭐] 188.114.99.224:1002"
-  <<: *warp-common
-  server: 188.114.99.224
-  port: 1002
-- name: "[⭐] 8.34.146.113:968"
-  <<: *warp-common
-  server: 8.34.146.113
-  port: 968
-
-# 162.159.192.1-20
-- name: "162.159.192.1:2408"
-  <<: *warp-common
-  server: 162.159.192.1
-  port: 2408
-- name: "162.159.192.1:1701"
-  <<: *warp-common
-  server: 162.159.192.1
-  port: 1701
-- name: "162.159.192.1:4500"
-  <<: *warp-common
-  server: 162.159.192.1
-  port: 4500
-- name: "162.159.192.1:500"
-  <<: *warp-common
-  server: 162.159.192.1
-  port: 500
-- name: "162.159.192.2:2408"
-  <<: *warp-common
-  server: 162.159.192.2
-  port: 2408
-- name: "162.159.192.2:1701"
-  <<: *warp-common
-  server: 162.159.192.2
-  port: 1701
-- name: "162.159.192.2:4500"
-  <<: *warp-common
-  server: 162.159.192.2
-  port: 4500
-- name: "162.159.192.2:500"
-  <<: *warp-common
-  server: 162.159.192.2
-  port: 500
-- name: "162.159.192.3:2408"
-  <<: *warp-common
-  server: 162.159.192.3
-  port: 2408
-- name: "162.159.192.3:1701"
-  <<: *warp-common
-  server: 162.159.192.3
-  port: 1701
-- name: "162.159.192.3:4500"
-  <<: *warp-common
-  server: 162.159.192.3
-  port: 4500
-- name: "162.159.192.3:500"
-  <<: *warp-common
-  server: 162.159.192.3
-  port: 500
-- name: "162.159.192.4:2408"
-  <<: *warp-common
-  server: 162.159.192.4
-  port: 2408
-- name: "162.159.192.4:1701"
-  <<: *warp-common
-  server: 162.159.192.4
-  port: 1701
-- name: "162.159.192.4:4500"
-  <<: *warp-common
-  server: 162.159.192.4
-  port: 4500
-- name: "162.159.192.4:500"
-  <<: *warp-common
-  server: 162.159.192.4
-  port: 500
-- name: "162.159.192.5:2408"
-  <<: *warp-common
-  server: 162.159.192.5
-  port: 2408
-- name: "162.159.192.5:1701"
-  <<: *warp-common
-  server: 162.159.192.5
-  port: 1701
-- name: "162.159.192.5:4500"
-  <<: *warp-common
-  server: 162.159.192.5
-  port: 4500
-- name: "162.159.192.5:500"
-  <<: *warp-common
-  server: 162.159.192.5
-  port: 500
-- name: "162.159.192.6:2408"
-  <<: *warp-common
-  server: 162.159.192.6
-  port: 2408
-- name: "162.159.192.6:1701"
-  <<: *warp-common
-  server: 162.159.192.6
-  port: 1701
-- name: "162.159.192.6:4500"
-  <<: *warp-common
-  server: 162.159.192.6
-  port: 4500
-- name: "162.159.192.6:500"
-  <<: *warp-common
-  server: 162.159.192.6
-  port: 500
-- name: "162.159.192.7:2408"
-  <<: *warp-common
-  server: 162.159.192.7
-  port: 2408
-- name: "162.159.192.7:1701"
-  <<: *warp-common
-  server: 162.159.192.7
-  port: 1701
-- name: "162.159.192.7:4500"
-  <<: *warp-common
-  server: 162.159.192.7
-  port: 4500
-- name: "162.159.192.7:500"
-  <<: *warp-common
-  server: 162.159.192.7
-  port: 500
-- name: "162.159.192.8:2408"
-  <<: *warp-common
-  server: 162.159.192.8
-  port: 2408
-- name: "162.159.192.8:1701"
-  <<: *warp-common
-  server: 162.159.192.8
-  port: 1701
-- name: "162.159.192.8:4500"
-  <<: *warp-common
-  server: 162.159.192.8
-  port: 4500
-- name: "162.159.192.8:500"
-  <<: *warp-common
-  server: 162.159.192.8
-  port: 500
-- name: "162.159.192.9:2408"
-  <<: *warp-common
-  server: 162.159.192.9
-  port: 2408
-- name: "162.159.192.9:1701"
-  <<: *warp-common
-  server: 162.159.192.9
-  port: 1701
-- name: "162.159.192.9:4500"
-  <<: *warp-common
-  server: 162.159.192.9
-  port: 4500
-- name: "162.159.192.9:500"
-  <<: *warp-common
-  server: 162.159.192.9
-  port: 500
-- name: "162.159.192.10:2408"
-  <<: *warp-common
-  server: 162.159.192.10
-  port: 2408
-- name: "162.159.192.10:1701"
-  <<: *warp-common
-  server: 162.159.192.10
-  port: 1701
-- name: "162.159.192.10:4500"
-  <<: *warp-common
-  server: 162.159.192.10
-  port: 4500
-- name: "162.159.192.10:500"
-  <<: *warp-common
-  server: 162.159.192.10
-  port: 500
-- name: "162.159.192.11:2408"
-  <<: *warp-common
-  server: 162.159.192.11
-  port: 2408
-- name: "162.159.192.11:1701"
-  <<: *warp-common
-  server: 162.159.192.11
-  port: 1701
-- name: "162.159.192.11:4500"
-  <<: *warp-common
-  server: 162.159.192.11
-  port: 4500
-- name: "162.159.192.11:500"
-  <<: *warp-common
-  server: 162.159.192.11
-  port: 500
-- name: "162.159.192.12:2408"
-  <<: *warp-common
-  server: 162.159.192.12
-  port: 2408
-- name: "162.159.192.12:1701"
-  <<: *warp-common
-  server: 162.159.192.12
-  port: 1701
-- name: "162.159.192.12:4500"
-  <<: *warp-common
-  server: 162.159.192.12
-  port: 4500
-- name: "162.159.192.12:500"
-  <<: *warp-common
-  server: 162.159.192.12
-  port: 500
-- name: "162.159.192.13:2408"
-  <<: *warp-common
-  server: 162.159.192.13
-  port: 2408
-- name: "162.159.192.13:1701"
-  <<: *warp-common
-  server: 162.159.192.13
-  port: 1701
-- name: "162.159.192.13:4500"
-  <<: *warp-common
-  server: 162.159.192.13
-  port: 4500
-- name: "162.159.192.13:500"
-  <<: *warp-common
-  server: 162.159.192.13
-  port: 500
-- name: "162.159.192.14:2408"
-  <<: *warp-common
-  server: 162.159.192.14
-  port: 2408
-- name: "162.159.192.14:1701"
-  <<: *warp-common
-  server: 162.159.192.14
-  port: 1701
-- name: "162.159.192.14:4500"
-  <<: *warp-common
-  server: 162.159.192.14
-  port: 4500
-- name: "162.159.192.14:500"
-  <<: *warp-common
-  server: 162.159.192.14
-  port: 500
-- name: "162.159.192.15:2408"
-  <<: *warp-common
-  server: 162.159.192.15
-  port: 2408
-- name: "162.159.192.15:1701"
-  <<: *warp-common
-  server: 162.159.192.15
-  port: 1701
-- name: "162.159.192.15:4500"
-  <<: *warp-common
-  server: 162.159.192.15
-  port: 4500
-- name: "162.159.192.15:500"
-  <<: *warp-common
-  server: 162.159.192.15
-  port: 500
-- name: "162.159.192.16:2408"
-  <<: *warp-common
-  server: 162.159.192.16
-  port: 2408
-- name: "162.159.192.16:1701"
-  <<: *warp-common
-  server: 162.159.192.16
-  port: 1701
-- name: "162.159.192.16:4500"
-  <<: *warp-common
-  server: 162.159.192.16
-  port: 4500
-- name: "162.159.192.16:500"
-  <<: *warp-common
-  server: 162.159.192.16
-  port: 500
-- name: "162.159.192.17:2408"
-  <<: *warp-common
-  server: 162.159.192.17
-  port: 2408
-- name: "162.159.192.17:1701"
-  <<: *warp-common
-  server: 162.159.192.17
-  port: 1701
-- name: "162.159.192.17:4500"
-  <<: *warp-common
-  server: 162.159.192.17
-  port: 4500
-- name: "162.159.192.17:500"
-  <<: *warp-common
-  server: 162.159.192.17
-  port: 500
-- name: "162.159.192.18:2408"
-  <<: *warp-common
-  server: 162.159.192.18
-  port: 2408
-- name: "162.159.192.18:1701"
-  <<: *warp-common
-  server: 162.159.192.18
-  port: 1701
-- name: "162.159.192.18:4500"
-  <<: *warp-common
-  server: 162.159.192.18
-  port: 4500
-- name: "162.159.192.18:500"
-  <<: *warp-common
-  server: 162.159.192.18
-  port: 500
-- name: "162.159.192.19:2408"
-  <<: *warp-common
-  server: 162.159.192.19
-  port: 2408
-- name: "162.159.192.19:1701"
-  <<: *warp-common
-  server: 162.159.192.19
-  port: 1701
-- name: "162.159.192.19:4500"
-  <<: *warp-common
-  server: 162.159.192.19
-  port: 4500
-- name: "162.159.192.19:500"
-  <<: *warp-common
-  server: 162.159.192.19
-  port: 500
-- name: "162.159.192.20:2408"
-  <<: *warp-common
-  server: 162.159.192.20
-  port: 2408
-- name: "162.159.192.20:1701"
-  <<: *warp-common
-  server: 162.159.192.20
-  port: 1701
-- name: "162.159.192.20:4500"
-  <<: *warp-common
-  server: 162.159.192.20
-  port: 4500
-- name: "162.159.192.20:500"
-  <<: *warp-common
-  server: 162.159.192.20
-  port: 500
-
-# 162.159.195.1-10
-- name: "162.159.195.1:2408"
-  <<: *warp-common
-  server: 162.159.195.1
-  port: 2408
-- name: "162.159.195.1:1701"
-  <<: *warp-common
-  server: 162.159.195.1
-  port: 1701
-- name: "162.159.195.1:4500"
-  <<: *warp-common
-  server: 162.159.195.1
-  port: 4500
-- name: "162.159.195.2:2408"
-  <<: *warp-common
-  server: 162.159.195.2
-  port: 2408
-- name: "162.159.195.2:1701"
-  <<: *warp-common
-  server: 162.159.195.2
-  port: 1701
-- name: "162.159.195.2:4500"
-  <<: *warp-common
-  server: 162.159.195.2
-  port: 4500
-- name: "162.159.195.2:500"
-  <<: *warp-common
-  server: 162.159.195.2
-  port: 500
-- name: "162.159.195.3:2408"
-  <<: *warp-common
-  server: 162.159.195.3
-  port: 2408
-- name: "162.159.195.3:1701"
-  <<: *warp-common
-  server: 162.159.195.3
-  port: 1701
-- name: "162.159.195.3:4500"
-  <<: *warp-common
-  server: 162.159.195.3
-  port: 4500
-- name: "162.159.195.3:500"
-  <<: *warp-common
-  server: 162.159.195.3
-  port: 500
-- name: "162.159.195.4:2408"
-  <<: *warp-common
-  server: 162.159.195.4
-  port: 2408
-- name: "162.159.195.4:1701"
-  <<: *warp-common
-  server: 162.159.195.4
-  port: 1701
-- name: "162.159.195.4:4500"
-  <<: *warp-common
-  server: 162.159.195.4
-  port: 4500
-- name: "162.159.195.4:500"
-  <<: *warp-common
-  server: 162.159.195.4
-  port: 500
-- name: "162.159.195.5:2408"
-  <<: *warp-common
-  server: 162.159.195.5
-  port: 2408
-- name: "162.159.195.5:1701"
-  <<: *warp-common
-  server: 162.159.195.5
-  port: 1701
-- name: "162.159.195.5:4500"
-  <<: *warp-common
-  server: 162.159.195.5
-  port: 4500
-- name: "162.159.195.5:500"
-  <<: *warp-common
-  server: 162.159.195.5
-  port: 500
-- name: "162.159.195.6:2408"
-  <<: *warp-common
-  server: 162.159.195.6
-  port: 2408
-- name: "162.159.195.6:1701"
-  <<: *warp-common
-  server: 162.159.195.6
-  port: 1701
-- name: "162.159.195.6:4500"
-  <<: *warp-common
-  server: 162.159.195.6
-  port: 4500
-- name: "162.159.195.6:500"
-  <<: *warp-common
-  server: 162.159.195.6
-  port: 500
-- name: "162.159.195.7:2408"
-  <<: *warp-common
-  server: 162.159.195.7
-  port: 2408
-- name: "162.159.195.7:1701"
-  <<: *warp-common
-  server: 162.159.195.7
-  port: 1701
-- name: "162.159.195.7:4500"
-  <<: *warp-common
-  server: 162.159.195.7
-  port: 4500
-- name: "162.159.195.7:500"
-  <<: *warp-common
-  server: 162.159.195.7
-  port: 500
-- name: "162.159.195.8:2408"
-  <<: *warp-common
-  server: 162.159.195.8
-  port: 2408
-- name: "162.159.195.8:1701"
-  <<: *warp-common
-  server: 162.159.195.8
-  port: 1701
-- name: "162.159.195.8:4500"
-  <<: *warp-common
-  server: 162.159.195.8
-  port: 4500
-- name: "162.159.195.8:500"
-  <<: *warp-common
-  server: 162.159.195.8
-  port: 500
-- name: "162.159.195.9:2408"
-  <<: *warp-common
-  server: 162.159.195.9
-  port: 2408
-- name: "162.159.195.9:1701"
-  <<: *warp-common
-  server: 162.159.195.9
-  port: 1701
-- name: "162.159.195.9:4500"
-  <<: *warp-common
-  server: 162.159.195.9
-  port: 4500
-- name: "162.159.195.9:500"
-  <<: *warp-common
-  server: 162.159.195.9
-  port: 500
-- name: "162.159.195.10:2408"
-  <<: *warp-common
-  server: 162.159.195.10
-  port: 2408
-- name: "162.159.195.10:1701"
-  <<: *warp-common
-  server: 162.159.195.10
-  port: 1701
-- name: "162.159.195.10:4500"
-  <<: *warp-common
-  server: 162.159.195.10
-  port: 4500
-- name: "162.159.195.10:500"
-  <<: *warp-common
-  server: 162.159.195.10
-  port: 500
-
-rule-providers:
-  porno:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/porno.txt"
-    path: ./ruleset/porno.yaml
-    interval: 86400
-  discord:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/discord.txt"
-    path: ./ruleset/discord.yaml
-    interval: 86400
-  youtube:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/youtube.txt"
-    path: ./ruleset/youtube.yaml
-    interval: 86400
-  socials:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/socials.txt"
-    path: ./ruleset/socials.yaml
-    interval: 86400
-  torrent:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/torrent.txt"
-    path: ./ruleset/torrent.yaml
-    interval: 86400
-  tools:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/tools.txt"
-    path: ./ruleset/tools.yaml
-    interval: 86400
-  music:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/music.txt"
-    path: ./ruleset/music.yaml
-    interval: 86400
-  telegram:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/nellimonix/ClashXRule@release/telegram.txt"
-    path: ./ruleset/telegram.yaml
-    interval: 86400
-
-proxy-groups:
-- name: Cloudflare
-  type: select
-  icon: https://www.vectorlogo.zone/logos/cloudflare/cloudflare-icon.svg
-  proxies:
-    - "[🌍] 🇳🇱 Нидерланды"
-    - "[🌍] 🇵🇱 Польша"
-    - "[🌍] 🇵🇱 Польша #2"
-    - "[🌍] 🇪🇪 Эстония"
-    - "[🌍] 🇩🇪 Германия"
-    - "[🌍] 🇷🇺 Россия"
-    - "[🌍] 🇺🇸 США"
-    - "[⭐] 188.114.97.1:500"
-    - "[⭐] 188.114.97.148:4500"
-    - "[⭐] 162.159.195.1:500"
-    - "[⭐] engage.cloudflareclient.com:4500"
-    - "[⭐] engage.cloudflareclient.com:500"
-    - "[⭐] engage.cloudflareclient.com:2408"
-    - "[⭐] 188.114.99.224:1002"
-    - "[⭐] 8.34.146.113:968"
-    - "162.159.192.1:2408"
-    - "162.159.192.1:1701"
-    - "162.159.192.1:4500"
-    - "162.159.192.1:500"
-    - "162.159.192.2:2408"
-    - "162.159.192.2:1701"
-    - "162.159.192.2:4500"
-    - "162.159.192.2:500"
-    - "162.159.192.3:2408"
-    - "162.159.192.3:1701"
-    - "162.159.192.3:4500"
-    - "162.159.192.3:500"
-    - "162.159.192.4:2408"
-    - "162.159.192.4:1701"
-    - "162.159.192.4:4500"
-    - "162.159.192.4:500"
-    - "162.159.192.5:2408"
-    - "162.159.192.5:1701"
-    - "162.159.192.5:4500"
-    - "162.159.192.5:500"
-    - "162.159.192.6:2408"
-    - "162.159.192.6:1701"
-    - "162.159.192.6:4500"
-    - "162.159.192.6:500"
-    - "162.159.192.7:2408"
-    - "162.159.192.7:1701"
-    - "162.159.192.7:4500"
-    - "162.159.192.7:500"
-    - "162.159.192.8:2408"
-    - "162.159.192.8:1701"
-    - "162.159.192.8:4500"
-    - "162.159.192.8:500"
-    - "162.159.192.9:2408"
-    - "162.159.192.9:1701"
-    - "162.159.192.9:4500"
-    - "162.159.192.9:500"
-    - "162.159.192.10:2408"
-    - "162.159.192.10:1701"
-    - "162.159.192.10:4500"
-    - "162.159.192.10:500"
-    - "162.159.192.11:2408"
-    - "162.159.192.11:1701"
-    - "162.159.192.11:4500"
-    - "162.159.192.11:500"
-    - "162.159.192.12:2408"
-    - "162.159.192.12:1701"
-    - "162.159.192.12:4500"
-    - "162.159.192.12:500"
-    - "162.159.192.13:2408"
-    - "162.159.192.13:1701"
-    - "162.159.192.13:4500"
-    - "162.159.192.13:500"
-    - "162.159.192.14:2408"
-    - "162.159.192.14:1701"
-    - "162.159.192.14:4500"
-    - "162.159.192.14:500"
-    - "162.159.192.15:2408"
-    - "162.159.192.15:1701"
-    - "162.159.192.15:4500"
-    - "162.159.192.15:500"
-    - "162.159.192.16:2408"
-    - "162.159.192.16:1701"
-    - "162.159.192.16:4500"
-    - "162.159.192.16:500"
-    - "162.159.192.17:2408"
-    - "162.159.192.17:1701"
-    - "162.159.192.17:4500"
-    - "162.159.192.17:500"
-    - "162.159.192.18:2408"
-    - "162.159.192.18:1701"
-    - "162.159.192.18:4500"
-    - "162.159.192.18:500"
-    - "162.159.192.19:2408"
-    - "162.159.192.19:1701"
-    - "162.159.192.19:4500"
-    - "162.159.192.19:500"
-    - "162.159.192.20:2408"
-    - "162.159.192.20:1701"
-    - "162.159.192.20:4500"
-    - "162.159.192.20:500"
-    - "162.159.195.1:2408"
-    - "162.159.195.1:1701"
-    - "162.159.195.1:4500"
-    - "162.159.195.2:2408"
-    - "162.159.195.2:1701"
-    - "162.159.195.2:4500"
-    - "162.159.195.2:500"
-    - "162.159.195.3:2408"
-    - "162.159.195.3:1701"
-    - "162.159.195.3:4500"
-    - "162.159.195.3:500"
-    - "162.159.195.4:2408"
-    - "162.159.195.4:1701"
-    - "162.159.195.4:4500"
-    - "162.159.195.4:500"
-    - "162.159.195.5:2408"
-    - "162.159.195.5:1701"
-    - "162.159.195.5:4500"
-    - "162.159.195.5:500"
-    - "162.159.195.6:2408"
-    - "162.159.195.6:1701"
-    - "162.159.195.6:4500"
-    - "162.159.195.6:500"
-    - "162.159.195.7:2408"
-    - "162.159.195.7:1701"
-    - "162.159.195.7:4500"
-    - "162.159.195.7:500"
-    - "162.159.195.8:2408"
-    - "162.159.195.8:1701"
-    - "162.159.195.8:4500"
-    - "162.159.195.8:500"
-    - "162.159.195.9:2408"
-    - "162.159.195.9:1701"
-    - "162.159.195.9:4500"
-    - "162.159.195.9:500"
-    - "162.159.195.10:2408"
-    - "162.159.195.10:1701"
-    - "162.159.195.10:4500"
-    - "162.159.195.10:500"
-  url: 'http://gateway.discord.gg'
-  interval: 300
-
-rules:
-- PROCESS-NAME,Discord.exe,Cloudflare
-- PROCESS-NAME,Update.exe,Cloudflare
-- RULE-SET,telegram,Cloudflare
-- RULE-SET,discord,Cloudflare
-- RULE-SET,youtube,Cloudflare
-- RULE-SET,porno,Cloudflare
-- RULE-SET,torrent,Cloudflare
-- RULE-SET,tools,Cloudflare
-- RULE-SET,socials,Cloudflare
-- RULE-SET,music,Cloudflare
-- MATCH,DIRECT
+vless://d5b7d347-6488-4091-bb61-384bbe57078a@158.160.200.92:443?security=reality&sni=www.oracle.com&fp=chrome&pbk=l07EdUi5TwtWlmBSXgmrAOZ1wKpDE2iIO4rPUkeH9Qo&sid=da0fe33a&type=tcp&flow=xtls-rprx-vision&encryption=none#45.%20RU%20Russia%20t.me/rjsxrd
+vless://d5b7d347-6488-4091-bb61-384bbe57078a@158.160.200.92:443?security=reality&sni=www.oracle.com&fp=chrome&pbk=l07EdUi5TwtWlmBSXgmrAOZ1wKpDE2iIO4rPUkeH9Qo&sid=da0fe33a&type=tcp&flow=xtls-rprx-vision&encryption=none#1950.%20%F0%9F%87%AB%F0%9F%87%AE%20VLESS%20%7C%20SNI:%20www.oracle.com%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://1c45e98c-8a4a-45e7-acc5-3a3cc962f463@84.201.189.56:443?security=reality&sni=r0.mradx.net&fp=chrome&pbk=h7CCbT_1gwxhQGM-4_pZkNRbAe_I6YFQM6jO9x6uORw&type=tcp&flow=xtls-rprx-vision&encryption=none#226@t.me/freekesha21%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20244267%20t.me/rjsxrd
+vless://9920bea4-e559-4ad1-ae53-fa3376642ee8@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#10.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://85247b35-0dde-4d1a-a69b-db82e3353fe8@51.250.105.228:443?security=reality&sni=5post-gate.x5.ru&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20[%D0%91%D0%A1-VL]%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%2310712%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me/rjsxrd
+vless://1c45e98c-8a4a-45e7-acc5-3a3cc962f463@84.201.189.56:443?security=reality&sni=r0.mradx.net&fp=chrome&pbk=h7CCbT_1gwxhQGM-4_pZkNRbAe_I6YFQM6jO9x6uORw&type=tcp&flow=xtls-rprx-vision&encryption=none#226@t.me/Notorgames_0%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20886815%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20396831%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20107362%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20952715%20t.me/rjsxrd
+vless://1c45e98c-8a4a-45e7-acc5-3a3cc962f463@84.201.189.56:443?security=reality&sni=r0.mradx.net&fp=chrome&pbk=h7CCbT_1gwxhQGM-4_pZkNRbAe_I6YFQM6jO9x6uORw&type=tcp&flow=xtls-rprx-vision&encryption=none#4Kian-5319%20t.me/rjsxrd
+vless://6abe2cfd-ecf7-4a43-9be3-5139b3bad671@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20LTE%20129%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20824319%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20421257%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20967410%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20720363%20t.me/rjsxrd
+vless://f6528197-61ca-480d-abea-3de1432f10a4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#367.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20%7C%20Thanks:%20@rkp_channel%20t.me/rjsxrd
+vless://d229a587-9c5d-4c93-9a0d-8265db2a2546@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#347.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20168624%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20656498%20t.me/rjsxrd
+vless://1c45e98c-8a4a-45e7-acc5-3a3cc962f463@84.201.189.56:443?security=reality&sni=r0.mradx.net&fp=chrome&pbk=h7CCbT_1gwxhQGM-4_pZkNRbAe_I6YFQM6jO9x6uORw&type=tcp&flow=xtls-rprx-vision&encryption=none#tg@freekesha21-105%20t.me/rjsxrd
+vless://df05697b-7a24-453e-85c9-b1aeb1cfc89b@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#772.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20725769%20t.me/rjsxrd
+vless://d229a587-9c5d-4c93-9a0d-8265db2a2546@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://1c45e98c-8a4a-45e7-acc5-3a3cc962f463@84.201.189.56:443?security=reality&sni=r0.mradx.net&fp=chrome&pbk=h7CCbT_1gwxhQGM-4_pZkNRbAe_I6YFQM6jO9x6uORw&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20384285%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20155305%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20105322%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20354287%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20701523%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B0%F0%9F%87%B7%20[VL]%20%D0%AE%D0%B6%D0%BD%D0%B0%D1%8F%20%D0%9A%D0%BE%D1%80%D0%B5%D1%8F%20%236049%20%7C%20%D0%A0%D0%BE%D1%81%D0%A2%D1%83%D0%BD%D0%BD%D0%B5%D0%BB%D1%8C%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20803788%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20201%20-%20RU%20-%20VLESS/REALITY/PBK/SID/VISION/UTLS%20-%20443%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://85d36a91-c820-446b-8584-f3c1e274315a@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A8%F0%9F%87%A6%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230148%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20769043%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20935061%20t.me/rjsxrd
+vless://85247b35-0dde-4d1a-a69b-db82e3353fe8@51.250.105.228:443?security=reality&sni=5post-gate.x5.ru&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230022%20t.me/rjsxrd
+vless://9920bea4-e559-4ad1-ae53-fa3376642ee8@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#25.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20115420%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20297716%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%E2%80%94%20%23449%20t.me/rjsxrd
+vless://db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#17.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://d229a587-9c5d-4c93-9a0d-8265db2a2546@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#952.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20%7C%20Thanks:%20@rkp_channel%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%E2%80%94%20%23402%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20640712%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#4Kian-5970%20t.me/rjsxrd
+vless://db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://8d7e7beb-34d9-4742-b5a7-cce25ff80e99@51.250.105.228:443?security=reality&sni=5post-gate.x5.ru&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20Selectel%20%E2%80%94%20%2382%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20638445%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20650325%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20301232%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20871914%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20LTE%20122%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://df05697b-7a24-453e-85c9-b1aeb1cfc89b@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%D0%A1%D1%82%D0%B0%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%E2%80%94%20%23308%20t.me/rjsxrd%20t.me/rjsxrd
+vless://db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A8%F0%9F%87%A6%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230348%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20489875%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20204766%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20320868%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20681241%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20677179%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20135680%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20842214%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20570413%20t.me/rjsxrd
+vless://85247b35-0dde-4d1a-a69b-db82e3353fe8@51.250.105.228:443?security=reality&sni=5post-gate.x5.ru&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#!%2050%20%7C%20REALITY%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20IN:%20RU%20OUT:%20RU%20%7C%20RATING:%204/10%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20556512%20t.me/rjsxrd
+vless://a49e17d9-c4a4-4a09-9dfd-8035626221b4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20TG:%20@HardVpn_robot%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20961512%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20559668%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%A9%20%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D1%80%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230055%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20115189%20t.me/rjsxrd
+vless://85d36a91-c820-446b-8584-f3c1e274315a@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%AC%20Bulgaria%20%E2%80%94%20%23162%20t.me/rjsxrd
+vless://d5b7d347-6488-4091-bb61-384bbe57078a@158.160.200.92:443?security=reality&sni=www.oracle.com&fp=chrome&pbk=l07EdUi5TwtWlmBSXgmrAOZ1wKpDE2iIO4rPUkeH9Qo&sid=da0fe33a&type=tcp&flow=xtls-rprx-vision&encryption=none#[448ms%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20RU%20%F0%9F%87%B7%F0%9F%87%BA%20@vlesstrojan]%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20LTE%20130%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%AC%20LTE%2090%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20492015%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20898676%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20797226%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#331.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20915966%20t.me/rjsxrd
+vless://d229a587-9c5d-4c93-9a0d-8265db2a2546@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#769.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://a49e17d9-c4a4-4a09-9dfd-8035626221b4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%E2%80%94%20%23411%20t.me/rjsxrd
+vless://6e627a41-6053-415d-b12a-24e173154f5f@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20957824%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20LTE%2071%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#6.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20991771%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20929255%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20420291%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20456174%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20915082%20t.me/rjsxrd
+vless://db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#219@t.me/Notorgames_0%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20317954%20t.me/rjsxrd
+vless://df05697b-7a24-453e-85c9-b1aeb1cfc89b@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#349.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20517876%20t.me/rjsxrd
+vless://db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%AB%F0%9F%87%AE%20LTE%20106%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://9920bea4-e559-4ad1-ae53-fa3376642ee8@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#766.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20262%20-%20RU%20-%20VLESS/REALITY/PBK/SID/VISION/UTLS%20-%20443%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20638925%20t.me/rjsxrd
+vless://a49e17d9-c4a4-4a09-9dfd-8035626221b4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#768.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://9920bea4-e559-4ad1-ae53-fa3376642ee8@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A9%F0%9F%87%AA%20LTE%20164%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20845442%20t.me/rjsxrd
+vless://df05697b-7a24-453e-85c9-b1aeb1cfc89b@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%7C%20%F0%9F%8C%90%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20706504%20t.me/rjsxrd
+vless://6e627a41-6053-415d-b12a-24e173154f5f@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20LTE%20116%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%A9%20%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D1%80%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230005%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20249959%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#4Kian-6183%20t.me/rjsxrd
+vless://85247b35-0dde-4d1a-a69b-db82e3353fe8@51.250.105.228:443?security=reality&sni=5post-gate.x5.ru&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20Selectel%20%E2%80%94%20%2381%20t.me/rjsxrd
+vless://df05697b-7a24-453e-85c9-b1aeb1cfc89b@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%AA%F0%9F%87%AA%20LTE%20111%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://6abe2cfd-ecf7-4a43-9be3-5139b3bad671@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20354943%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20937624%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#754.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://6e627a41-6053-415d-b12a-24e173154f5f@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#68.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://85d36a91-c820-446b-8584-f3c1e274315a@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#764.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#351.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20632144%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20790521%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20722998%20t.me/rjsxrd
+vless://df05697b-7a24-453e-85c9-b1aeb1cfc89b@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20258079%20t.me/rjsxrd
+vless://a49e17d9-c4a4-4a09-9dfd-8035626221b4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A8%F0%9F%87%A6%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230055%20t.me/rjsxrd
+vless://d229a587-9c5d-4c93-9a0d-8265db2a2546@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A8%F0%9F%87%A6%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230058%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20234138%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#0699%20%7C%20%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20%F0%9F%8F%B3%EF%B8%8F%20CIDR-Yandex%20%7C%20%F0%9F%8F%B3%EF%B8%8F%20SNI-X5%20%7C%20VLESS%20%7C%20TG:%20@YoutubeUnBlockRu%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20561018%20t.me/rjsxrd
+vless://9920bea4-e559-4ad1-ae53-fa3376642ee8@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#765.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20659620%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20172090%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#951.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20%7C%20Thanks:%20@rkp_channel%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%AC%F0%9F%87%A7%20LTE%20120%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20460783%20t.me/rjsxrd
+vless://85d36a91-c820-446b-8584-f3c1e274315a@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#26.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20582781%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20TG:%20@HardVpn_robot%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#313.%20%F0%9F%87%B3%F0%9F%87%B1%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20511641%20t.me/rjsxrd
+vless://f6528197-61ca-480d-abea-3de1432f10a4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20LTE%2087%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20512869%20t.me/rjsxrd
+vless://6e627a41-6053-415d-b12a-24e173154f5f@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#317.%20%F0%9F%87%B3%F0%9F%87%B1%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20141556%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20227%20-%20RU%20-%20VLESS/REALITY/PBK/SID/VISION/UTLS%20-%20443%20t.me/rjsxrd
+vless://6e627a41-6053-415d-b12a-24e173154f5f@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#338.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20943461%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20346990%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20844660%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20211418%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20747404%20t.me/rjsxrd
+vless://85247b35-0dde-4d1a-a69b-db82e3353fe8@51.250.105.228:443?security=reality&sni=5post-gate.x5.ru&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230135%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20969463%20t.me/rjsxrd
+vless://6abe2cfd-ecf7-4a43-9be3-5139b3bad671@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://d229a587-9c5d-4c93-9a0d-8265db2a2546@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20560503%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20LTE%20131%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20697970%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20731191%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20559313%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20973033%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A8%F0%9F%87%A6%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230143%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20150009%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20316863%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20184187%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20198070%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20851769%20t.me/rjsxrd
+vless://db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%E2%80%94%20%23401%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20530395%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20752219%20t.me/rjsxrd
+vless://d229a587-9c5d-4c93-9a0d-8265db2a2546@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#2521%20%7C%20%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20%F0%9F%8F%B3%EF%B8%8F%20CIDR-Yandex%20%7C%20%F0%9F%8F%B3%EF%B8%8F%20SNI-X5%20%7C%20VLESS%20%7C%20TG:%20@YoutubeUnBlockRu%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20342182%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20305122%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20730552%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20390693%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#4Kian-5366%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20212614%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20548282%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A8%F0%9F%87%A6%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230042%20t.me/rjsxrd
+vless://a49e17d9-c4a4-4a09-9dfd-8035626221b4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#14.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20239321%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20275719%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20830136%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20882185%20t.me/rjsxrd
+vless://f6528197-61ca-480d-abea-3de1432f10a4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#1682%20%7C%20%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20%F0%9F%8F%B3%EF%B8%8F%20CIDR-Yandex%20%7C%20%F0%9F%8F%B3%EF%B8%8F%20SNI-X5%20%7C%20VLESS%20%7C%20TG:%20@YoutubeUnBlockRu%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20893216%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20427720%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%A9%20%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D1%80%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230030%20t.me/rjsxrd
+vless://d229a587-9c5d-4c93-9a0d-8265db2a2546@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20LTE%2070%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#785.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20%7C%20Thanks:%20@rkp_channel%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20672766%20t.me/rjsxrd
+vless://6e627a41-6053-415d-b12a-24e173154f5f@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%E2%80%94%20%23461%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20477430%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://d229a587-9c5d-4c93-9a0d-8265db2a2546@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#1645%20%7C%20%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20%F0%9F%8F%B3%EF%B8%8F%20CIDR-Yandex%20%7C%20%F0%9F%8F%B3%EF%B8%8F%20SNI-X5%20%7C%20VLESS%20%7C%20TG:%20@YoutubeUnBlockRu%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20118105%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#196@t.me/Notorgames_0%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20311909%20t.me/rjsxrd
+vless://9920bea4-e559-4ad1-ae53-fa3376642ee8@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20UNKNOWN%20VLESS%202818%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20177715%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20790515%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%A9%20%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D1%80%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230013%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20253819%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#4Nika-6201%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20109968%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#4Kian-5367%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20498428%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20799683%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20608746%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20234444%20t.me/rjsxrd
+vless://9920bea4-e559-4ad1-ae53-fa3376642ee8@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20LTE%2066%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#330.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20180445%20t.me/rjsxrd
+vless://f6528197-61ca-480d-abea-3de1432f10a4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%AC%20Bulgaria%20%E2%80%94%20%23181%20[Verified%20RU]%20t.me/rjsxrd
+vless://f6528197-61ca-480d-abea-3de1432f10a4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#773.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://9920bea4-e559-4ad1-ae53-fa3376642ee8@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%E2%80%94%20%23444%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20331780%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20489103%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20651372%20t.me/rjsxrd
+vless://f6528197-61ca-480d-abea-3de1432f10a4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A8%F0%9F%87%A6%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230061%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#256.%20%F0%9F%87%B7%F0%9F%87%BA%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20%7C%20Thanks:%20@YoutubeUnBlockRu%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20718306%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20934400%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20120100%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20585199%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20263%20-%20RU%20-%20VLESS/REALITY/PBK/SID/VISION/UTLS%20-%20443%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20288948%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20426694%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20273497%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20572920%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A8%F0%9F%87%A6%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230040%20t.me/rjsxrd
+vless://db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#348.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20952299%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#4Nika-6200%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20715167%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20480191%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20LTE%20117%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%E2%80%94%20%23453%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20204129%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%A9%20%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D1%80%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230029%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20827301%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20236273%20t.me/rjsxrd
+vless://d229a587-9c5d-4c93-9a0d-8265db2a2546@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20582193%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20TG:%20@HardVpn_robot%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20108308%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20863753%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%E2%80%94%20%23410%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20802562%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20266544%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20368%20-%20RU%20-%20VLESS/REALITY/PBK/SID/VISION/UTLS%20-%20443%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20LTE%20124%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://85d36a91-c820-446b-8584-f3c1e274315a@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A8%F0%9F%87%A6%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230341%20t.me/rjsxrd
+vless://db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%A9%20%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D1%80%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230011%20t.me/rjsxrd
+vless://85d36a91-c820-446b-8584-f3c1e274315a@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#4Nika-5439%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20238043%20t.me/rjsxrd
+vless://a49e17d9-c4a4-4a09-9dfd-8035626221b4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A9%F0%9F%87%AA%20LTE%2067%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://f6528197-61ca-480d-abea-3de1432f10a4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A9%F0%9F%87%AA%20LTE%2068%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20507043%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#2157%20%7C%20%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20%F0%9F%8F%B3%EF%B8%8F%20CIDR-Yandex%20%7C%20%F0%9F%8F%B3%EF%B8%8F%20SNI-X5%20%7C%20VLESS%20%7C%20TG:%20@YoutubeUnBlockRu%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20807748%20t.me/rjsxrd
+vless://df05697b-7a24-453e-85c9-b1aeb1cfc89b@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%A9%20%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D1%80%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230028%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#4Nika-5591%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20878755%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20344280%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#4Kian-5573%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20376718%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20293319%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20414520%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20392681%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20381328%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%E2%80%94%20%23458%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%A9%20%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D1%80%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230029%20t.me/rjsxrd
+vless://db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20TG:%20@HardVpn_robot%20t.me/rjsxrd
+vless://a49e17d9-c4a4-4a09-9dfd-8035626221b4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A7%F0%9F%87%B8%20%D0%AD%D1%89%D0%BA%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20937851%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20598137%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20422103%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20376975%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%E2%80%94%20%23404%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20792617%20t.me/rjsxrd
+vless://429fe050-387d-4864-bb53-0c94f190d6e7@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20696699%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20902912%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%AB%F0%9F%87%AE%20LTE%20108%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20200%20-%20RU%20-%20VLESS/REALITY/PBK/SID/VISION/UTLS%20-%20443%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20228%20-%20RU%20-%20VLESS/REALITY/PBK/SID/VISION/UTLS%20-%20443%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#21@t.me/Notorgames_0%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20522815%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20608859%20t.me/rjsxrd
+vless://6abe2cfd-ecf7-4a43-9be3-5139b3bad671@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#760.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%A9%20%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D1%80%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230006%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20%D0%9D%D0%B8%D0%B4%D0%B5%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D1%8B%20%7C%20%F0%9F%8C%90%20%7C%20%F0%9F%94%90%20[%F0%9F%8F%B3%EF%B8%8FLTE]%20%7C%20%F0%9F%A5%AD%F0%9F%94%A5%20%20%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20138234%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20681996%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%A9%20%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D1%80%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230062%20t.me/rjsxrd
+vless://9920bea4-e559-4ad1-ae53-fa3376642ee8@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%BA%F0%9F%87%B8%20LTE%2061%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20843028%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20467932%20t.me/rjsxrd
+vless://6e627a41-6053-415d-b12a-24e173154f5f@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%E2%80%94%20%23448%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20320801%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20488016%20t.me/rjsxrd
+vless://225f6228-c2dc-4cfb-b5c4-069008df43c6@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20881895%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20536091%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20418677%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#@kingo_team%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20324148%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20533356%20t.me/rjsxrd
+vless://a49e17d9-c4a4-4a09-9dfd-8035626221b4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20730573%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20661460%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A6%F0%9F%87%A9%20%D0%90%D0%BD%D0%B4%D0%BE%D1%80%D1%80%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230025%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20347502%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20902453%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20485301%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20451474%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20920302%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20130813%20t.me/rjsxrd
+vless://f6528197-61ca-480d-abea-3de1432f10a4@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#355.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20%7C%20Thanks:%20@rkp_channel%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20LTE%2092%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20484933%20t.me/rjsxrd
+vless://6abe2cfd-ecf7-4a43-9be3-5139b3bad671@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#315.%20%F0%9F%87%B3%F0%9F%87%B1%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://50791006-904f-41f2-bf60-d29fe64011e8@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20299885%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#731.%20%F0%9F%87%B3%F0%9F%87%B1%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20841439%20t.me/rjsxrd
+vless://6e627a41-6053-415d-b12a-24e173154f5f@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%7C%20%F0%9F%8C%90%20%7C%20[IPv6]%20[*CIDR]%20YA%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20803233%20t.me/rjsxrd
+vless://df05697b-7a24-453e-85c9-b1aeb1cfc89b@158.160.252.155:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A8%F0%9F%87%A6%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230060%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20777193%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#722.%20%F0%9F%87%B3%F0%9F%87%B1%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20t.me/rjsxrd
+vless://59653c87-2c6a-4d36-a26a-17723f052f6e@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20209983%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20972731%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20939212%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20987515%20t.me/rjsxrd
+vless://2f8f6b75-64c0-4f70-8302-a4a2c953fb72@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20535693%20t.me/rjsxrd
+vless://f66c2096-2c1c-4e25-96a7-0cd89aa6c080@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#840.%20VLESS%20%7C%20SNI:%205post-gate.x5.ru%20%7C%20CIDR:%20Yandex%20%7C%20TG:%20@wlrustg%20%7C%20Thanks:%20@rkp_channel%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=chrome&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20685465%20t.me/rjsxrd
+vless://279d019e-677e-4284-ade4-3c1dfb0d9f6f@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20LTE%2082%20%7C%20%D1%82%D0%B3%D0%BA:%20@rostunnel%20t.me/rjsxrd
+vless://db73c1ed-ecce-45ac-a1f6-1c9f78c0d9a9@158.160.248.134:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20TG:%20@HardVpn_robot%20t.me/rjsxrd
+vless://49c35e98-8448-4da0-9d11-2dbd9e7945da@158.160.232.29:443?security=reality&sni=5post-gate.x5.ru&fp=qq&pbk=XguLRlc-hWqFhf8-KTxtCE434F6e4Hiqoc5cTBpLxnE&sid=111111&type=tcp&flow=xtls-rprx-vision&encryption=none#%F0%9F%87%A8%F0%9F%87%A6%20%D0%9A%D0%B0%D0%BD%D0%B0%D0%B4%D0%B0%20%7C%20White%20List%20%7C%20Fast%20%7C%20EaveVPN%20%7C%20%230331%20t.me/rjsxrd
