@@ -48,7 +48,7 @@ rule-providers:
   RulesDIRECT:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/RulesDirect.yaml
+    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/RulesDirect.yaml
     path: ./rules/RulesDIRECT.yaml
     interval: 21600
 
