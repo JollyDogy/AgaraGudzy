@@ -15,7 +15,7 @@ proxy-providers:
 
   WARPStandart:
     type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARPStandart.yaml
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPStandart.yaml
     interval: 21600
     path: ./providers/WARPStandart.yaml    
 
