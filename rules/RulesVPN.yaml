@@ -39,7 +39,7 @@ payload:
   #EXE
   - PROCESS-NAME,VotV-Win64-Shipping.exe
   - PROCESS-NAME,uTorrent.exe
-  - PROCESS-NAME,telegram.exe
+  #- PROCESS-NAME,telegram.exe
   - PROCESS-NAME,EpicWebHelper.exe
   - PROCESS-NAME,EpicGamesLauncher.exe
   - PROCESS-NAME,DriverBooster.exe
