@@ -15,7 +15,7 @@ proxy-providers:
 
   VLESSList:
     type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/VLESSWhiteList.yaml
+    url: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/ProxyWhiteList.yaml
     interval: 21600
     path: ./providers/VLESSList.yaml
 
