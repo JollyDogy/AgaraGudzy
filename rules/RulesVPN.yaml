@@ -39,6 +39,7 @@ payload:
   #EXE
   - PROCESS-NAME,VotV-Win64-Shipping.exe
   - PROCESS-NAME,uTorrent.exe
+  - PROCESS-NAME,fpm.exe
   - PROCESS-NAME,Flashpoint.exe
   #- PROCESS-NAME,telegram.exe
   - PROCESS-NAME,EpicWebHelper.exe
