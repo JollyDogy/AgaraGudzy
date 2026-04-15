@@ -1,5 +1,6 @@
 payload:
 #WEB
+  - DOMAIN-KEYWORD,vtb
   - DOMAIN-KEYWORD,boosty.to
   - DOMAIN-KEYWORD,steam
   - DOMAIN-KEYWORD,edu.livedigital.space
