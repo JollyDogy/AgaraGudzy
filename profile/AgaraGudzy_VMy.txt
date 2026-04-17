@@ -1,0 +1,116 @@
+health-check:
+  enable: true
+  lazy: true
+  timeout: 1500
+  url: http://www.gstatic.com/generate_204
+  
+tcp-concurrent: false
+
+proxy-providers:
+  zapasList:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/ProxyWhiteList.yaml
+    interval: 21600
+    path: ./providers/zapasList.yaml
+
+  WARPStandart:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPStandart.yaml
+    interval: 21600
+    path: ./providers/WARPStandart.yaml    
+
+proxy-groups:
+  - name: VPN
+    type: select
+    interval: 800
+    url: http://www.gstatic.com/generate_204
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/CheburNET.png
+    proxies:
+#градация от лучшего до худшего варианта использования      
+      - WARP If
+      - Discord
+      - zapas
+
+#Запасной вариант на случай нестабильности WARP
+  - name: WARP If
+    type: fallback
+    interval: 300
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    proxies:
+      - WARP
+      - zapas
+
+  - name: WARP
+    type: fallback
+    interval: 450
+    hidden: false
+    url: http://www.gstatic.com/generate_204
+    use:
+      - WARPStandart
+
+#Отдельный скрипт для минимального пинга Discord
+  - name: Discord
+    type: url-test
+    interval: 15
+    tolerance: 8
+    hidden: true
+    url: http://gateway-us-east1-d.discord.gg
+    filter: "Discord"
+    use:
+      - zapasList
+    proxies:
+      - WARP
+
+#Запасные VPN
+  - name: zapas
+    type: url-test
+    interval: 90
+    tolerance: 50
+    url: http://www.gstatic.com/generate_204
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'zapasList'
+
+rule-providers:
+  RulesZapas:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/rules/RulesZapas.yaml
+    path: ./rules/RulesZapas.yaml
+    interval: 21600
+
+  RulesVPN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/rules/RulesVPN.yaml
+    path: ./rules/RulesVPN.yaml
+    interval: 21600
+ 
+  RulesDIRECT:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/rules/RulesDirect.yaml
+    path: ./rules/RulesDIRECT.yaml
+    interval: 21600
+  
+  RulesVPNexe:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/rules/rulesVPNexe.yaml
+    path: ./rules/RulesVPNexe.yaml
+    interval: 21600  
+
+rules:
+#Короткие правила
+  - DOMAIN-KEYWORD,animegorus.ru,VPN
+  - DOMAIN-KEYWORD,yummyani.me,VPN
+  - PROCESS-NAME,discord.exe,Discord
+#Отдельные правила для исполняемых файлов файлов 
+  - RULE-SET,RulesVPNexe,zapas
+#Правила для прямых соединений
+  - RULE-SET,RulesDIRECT,DIRECT
+#Запасные правила на случай отказа работы от WARP
+  - RULE-SET,RulesZapas,zapas
+#Основные правила для обхода
+  - RULE-SET,RulesVPN,VPN
