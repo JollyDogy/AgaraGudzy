@@ -103,6 +103,7 @@ rule-providers:
 
 rules:
 #Персональные правила
+  - PROCESS-NAME,Zapret.exe,DIRECT
   - DOMAIN-KEYWORD,youtube.com,DIRECT
   - PROCESS-NAME,telegram.exe,DIRECT
   - PROCESS-NAME,DeadByDaylight.exe,DIRECT
