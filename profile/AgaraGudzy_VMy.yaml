@@ -102,10 +102,18 @@ rule-providers:
     interval: 21600  
 
 rules:
+#Персональные правила
+  - PROCESS-NAME,telegram.exe,DIRECT
+  - PROCESS-NAME,DeadByDaylight.exe,DIRECT
+  - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,DIRECT
+  - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,DIRECT
+  - PROCESS-NAME,REPO.exe,DIRECT
+  - PROCESS-NAME,EpicWebHelper.exe,DIRECT
+  - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
 #Короткие правила
-  - DOMAIN-KEYWORD,animegorus.ru,VPN
-  - DOMAIN-KEYWORD,yummyani.me,VPN
-  - PROCESS-NAME,discord.exe,Discord
+  - DOMAIN-KEYWORD,animegorus.ru,zapas
+  - DOMAIN-KEYWORD,yummyani.me,zapas
+  #- PROCESS-NAME,discord.exe,Discord
 #Отдельные правила для исполняемых файлов файлов 
   - RULE-SET,RulesVPNexe,zapas
 #Правила для прямых соединений
