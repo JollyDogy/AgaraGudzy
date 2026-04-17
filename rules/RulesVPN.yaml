@@ -1,5 +1,6 @@
 payload:
 #WEB
+  - DOMAIN-KEYWORD,github.com
   - DOMAIN-KEYWORD,mod.io
   - DOMAIN-KEYWORD,ru.yummyani.me
   - DOMAIN-KEYWORD,discord
