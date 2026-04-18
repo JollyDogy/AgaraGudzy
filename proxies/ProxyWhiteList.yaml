@@ -1,21 +1,23 @@
 proxies:
 - name: "Discord 1"
   type: hysteria2
-  server: 'musicclips.videolinks.ru'
-  port: 8443
-  password: 'rstnnl:XmFNUbpdnnIy7df1YtfLyzVgzt8U9GUv'
-  sni: 'musicclips.videolinks.ru'
+  server: 'reddeadfan.rd-team.ru'
+  port: 2026
+  password: 'rstnnl:hrQVPjgUr9HTgKyTj0oFCr6j4EpRzXTQ'
+  sni: 'reddeadfan.rd-team.ru'
   obfs: 'salamander'
-  obfs-password: 'hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw'
+  obfs-password: 'FxZylbqClUqVqAs2nezW9kPyFb2edZ2'
   skip-cert-verify: true
   tfo: false
 
 - name: "Discord 2"
   type: hysteria2
-  server: 'sde.dbp.qzz.io'
-  port: 8443
-  password: 'fb211338854624f161f1Ea3D9584E2DEFE7c10A3'
-  sni: 'dbp.qzz.io'
+  server: 'nrealistic.nn-foto.ru'
+  port: 8932
+  password: 'rstnnl:7ltZBmta4ahLenTIoywBy3R1Z1PV7ZGf'
+  sni: 'nrealistic.nn-foto.ru'
+  obfs: 'salamander'
+  obfs-password: 'CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W'
   skip-cert-verify: true
   tfo: false
 
@@ -32,12 +34,12 @@ proxies:
 
 - name: "Discord 4"
   type: hysteria2
-  server: 'reddeadfan.rd-team.ru'
-  port: 2026
-  password: 'rstnnl:hrQVPjgUr9HTgKyTj0oFCr6j4EpRzXTQ'
-  sni: 'reddeadfan.rd-team.ru'
+  server: 'musicclips.videolinks.ru'
+  port: 8443
+  password: 'rstnnl:XmFNUbpdnnIy7df1YtfLyzVgzt8U9GUv'
+  sni: 'musicclips.videolinks.ru'
   obfs: 'salamander'
-  obfs-password: 'FxZylbqClUqVqAs2nezW9kPyFb2edZ2'
+  obfs-password: 'hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw'
   skip-cert-verify: true
   tfo: false
 
