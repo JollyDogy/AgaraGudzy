@@ -1,28 +1,6 @@
 proxies:
 - name: "Discord 1"
   type: hysteria2
-  server: 'reddeadfan.rd-team.ru'
-  port: 2026
-  password: 'rstnnl:hrQVPjgUr9HTgKyTj0oFCr6j4EpRzXTQ'
-  sni: 'reddeadfan.rd-team.ru'
-  obfs: 'salamander'
-  obfs-password: 'FxZylbqClUqVqAs2nezW9kPyFb2edZ2'
-  skip-cert-verify: true
-  tfo: false
-
-- name: "Discord 2"
-  type: hysteria2
-  server: 'nrealistic.nn-foto.ru'
-  port: 8932
-  password: 'rstnnl:7ltZBmta4ahLenTIoywBy3R1Z1PV7ZGf'
-  sni: 'nrealistic.nn-foto.ru'
-  obfs: 'salamander'
-  obfs-password: 'CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W'
-  skip-cert-verify: true
-  tfo: false
-
-- name: "Discord 3"
-  type: hysteria2
   server: '94.131.101.19'
   port: 444
   password: 'strong-secret-pass-777'
@@ -32,7 +10,7 @@ proxies:
   skip-cert-verify: true
   tfo: false
 
-- name: "Discord 4"
+- name: "Discord 2"
   type: hysteria2
   server: 'musicclips.videolinks.ru'
   port: 8443
@@ -40,6 +18,28 @@ proxies:
   sni: 'musicclips.videolinks.ru'
   obfs: 'salamander'
   obfs-password: 'hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw'
+  skip-cert-verify: true
+  tfo: false
+
+- name: "Discord 3"
+  type: hysteria2
+  server: 'reddeadfan.rd-team.ru'
+  port: 2026
+  password: 'rstnnl:hrQVPjgUr9HTgKyTj0oFCr6j4EpRzXTQ'
+  sni: 'reddeadfan.rd-team.ru'
+  obfs: 'salamander'
+  obfs-password: 'FxZylbqClUqVqAs2nezW9kPyFb2edZ2'
+  skip-cert-verify: true
+  tfo: false
+
+- name: "Discord 4"
+  type: hysteria2
+  server: 'nrealistic.nn-foto.ru'
+  port: 8932
+  password: 'rstnnl:7ltZBmta4ahLenTIoywBy3R1Z1PV7ZGf'
+  sni: 'nrealistic.nn-foto.ru'
+  obfs: 'salamander'
+  obfs-password: 'CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W'
   skip-cert-verify: true
   tfo: false
 
@@ -51,21 +51,4 @@ proxies:
   sni: 'www.microsoft.com'
   skip-cert-verify: true
   tfo: false
-
-- name: "Scaleway FR"
-  type: hysteria2
-  server: '62.210.124.146'
-  port: 22000
-  password: 'dongtaiwang.com'
-  sni: 'www.microsoft.com'
-  skip-cert-verify: true
-  tfo: false
-
-- name: "Huawei HK"
-  type: hysteria2
-  server: '12f7c432-t6t0g0-t87m8y-1pr35.hk1.hyhuawei.com'
-  port: 443
-  password: '6b7c1278-ff9d-11ee-84ca-f23c913c8d2b'
-  sni: '12f7c432-t6t0g0-t87m8y-1pr35.hk1.hyhuawei.com'
-  skip-cert-verify: true
   tfo: false
