@@ -1,5 +1,6 @@
 payload:
 #EXE
+  - PROCESS-NAME,Sky.exe
   - PROCESS-NAME,telegram.exe
   - PROCESS-NAME,roblox.exe
   - PROCESS-NAME,RobloxPlayerBeta.exe
