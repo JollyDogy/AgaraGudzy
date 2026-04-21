@@ -51,4 +51,3 @@ proxies:
   sni: 'www.microsoft.com'
   skip-cert-verify: true
   tfo: false
-  tfo: false
