@@ -20,6 +20,7 @@ payload:
   - PROCESS-NAME,DeadByDaylight.exe
   - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe
 #WEB  
+  - DOMAIN-KEYWORD,sex-studentki
   - DOMAIN-KEYWORD,rbxcdn.com
   - DOMAIN-KEYWORD,roblox.com
   - DOMAIN-KEYWORD,t.me
