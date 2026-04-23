@@ -1,5 +1,6 @@
 payload:
 #WEB
+  - DOMAIN-KEYWORD,api.hisavana.com
   - DOMAIN-KEYWORD,filters.adtidy.org
   - DOMAIN-KEYWORD,rus-dsu.shalltry.com
   - DOMAIN-KEYWORD,api.vk.me
