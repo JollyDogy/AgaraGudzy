@@ -1,22 +1,12 @@
 proxies:
 - name: "Discord 1"
-  type: vless
-  server: '104.18.12.149'
-  port: 8443
-  uuid: '98ef96cd-7f4c-420c-8feb-8f16268017e2'
-  udp: true
-  tls: true
-  servername: 'turkiye-fast.rocketset.fun'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
-  alpn:
-    - 'h2'
-    - 'http/1.1'
-  network: 'ws'
-  ws-opts:
-    path: '/'
-    headers:
-      Host: 'turkiye-fast.rocketset.fun'
+  type: hysteria2
+  server: '163.172.113.118'
+  port: 40022
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
+  skip-cert-verify: true
+  tfo: false
 
 - name: "Discord 2"
   type: hysteria2
