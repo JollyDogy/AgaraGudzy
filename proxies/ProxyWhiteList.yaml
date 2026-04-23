@@ -1,12 +1,11 @@
 proxies:
 - name: "Discord 1"
   type: hysteria2
-  server: '163.172.113.118'
-  port: 40022
-  password: 'dongtaiwang.com'
+  server: '178.18.147.66'
+  port: 29900
+  password: 'github.com/Alvin9999-newpac/fanqiang'
   sni: 'www.microsoft.com'
   skip-cert-verify: true
-  tfo: false
 
 - name: "Discord 2"
   type: hysteria2
@@ -43,9 +42,9 @@ proxies:
 
 - name: "Discord 5"
   type: hysteria2
-  server: '178.18.147.66'
-  port: 29900
-  password: 'github.com/Alvin9999-newpac/fanqiang'
+  server: '163.172.113.118'
+  port: 40022
+  password: 'dongtaiwang.com'
   sni: 'www.microsoft.com'
   skip-cert-verify: true
   tfo: false
