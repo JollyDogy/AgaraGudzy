@@ -1,5 +1,8 @@
 payload:
 #WEB
+  - DOMAIN-KEYWORD,filters.adtidy.org
+  - DOMAIN-KEYWORD,rus-dsu.shalltry.com
+  - DOMAIN-KEYWORD,api.vk.me
   - DOMAIN-KEYWORD,vtb
   - DOMAIN-KEYWORD,boosty.to
   - DOMAIN-KEYWORD,steam
