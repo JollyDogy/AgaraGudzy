@@ -110,8 +110,8 @@ rules:
   - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,REPO.exe,DIRECT
-  - PROCESS-NAME,EpicWebHelper.exe,DIRECT
-  - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
+  #- PROCESS-NAME,EpicWebHelper.exe,DIRECT
+  #- PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
 #Короткие правила
   - DOMAIN-KEYWORD,animegorus.ru,zapas
   - DOMAIN-KEYWORD,yummyani.me,zapas
