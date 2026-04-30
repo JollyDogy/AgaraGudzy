@@ -1,5 +1,6 @@
 payload:
 #EXE
+  - PROCESS-NAME,VRChat.exe
   - PROCESS-NAME,MWOClient.exe
   - PROCESS-NAME,Sky.exe
   - PROCESS-NAME,telegram.exe
