@@ -2,6 +2,7 @@ payload:
 #WEB
   - DOMAIN-KEYWORD,github.com
   - DOMAIN-KEYWORD,modapi.io
+  - DOMAIN-KEYWORD,modcdn.io
   - DOMAIN-KEYWORD,mod.io
   - DOMAIN-KEYWORD,ru.yummyani.me
   - DOMAIN-KEYWORD,discord
