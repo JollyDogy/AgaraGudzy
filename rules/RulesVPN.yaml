@@ -39,6 +39,7 @@ payload:
   - PROCESS-NAME,msedge
   - PROCESS-NAME,yandex
   #EXE
+  - PROCESS-NAME,Warframe.x64.exe
   - PROCESS-NAME,VRChat.exe
   - PROCESS-NAME,VotV-Win64-Shipping.exe
   - PROCESS-NAME,uTorrent.exe
