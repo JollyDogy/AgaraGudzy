@@ -61,6 +61,19 @@ proxy-groups:
     proxies:
       - WARP
 
+#Отдельно для игр
+  - name: Games
+    type: url-test
+    interval: 30
+    tolerance: 20
+    hidden: true
+    url: http://gateway-us-east1-d.discord.gg
+    filter: "Discord"
+    use:
+      - zapasList
+    proxies:
+      - WARP         
+
 #Запасные VPN
   - name: zapas
     type: url-test
@@ -117,7 +130,7 @@ rules:
   - DOMAIN-KEYWORD,yummyani.me,zapas
   #- PROCESS-NAME,discord.exe,Discord
 #Отдельные правила для исполняемых файлов файлов 
-  - RULE-SET,RulesVPNexe,zapas
+  - RULE-SET,RulesVPNexe,Games
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
