@@ -123,6 +123,11 @@ rules:
   - PROCESS-NAME,REPO.exe,DIRECT
   - PROCESS-NAME,EpicWebHelper.exe,DIRECT
   - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
+#Riot
+  - DOMAIN-KEYWORD,sgp.pvp.net,VPN
+  - DOMAIN-KEYWORD,pp.sgp.pvp.net,VPN
+  - DOMAIN-KEYWORD,riotcdn.net,VPN
+  - DOMAIN-KEYWORD,riotgames.com,VPN  
 #Короткие правила
   - DOMAIN-KEYWORD,animegorus.ru,zapas
   - DOMAIN-KEYWORD,yummyani.me,zapas
