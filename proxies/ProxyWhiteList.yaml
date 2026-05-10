@@ -10,15 +10,6 @@ proxies:
   skip-cert-verify: true
   tfo: false
 
-- name: "🇫🇷 Франция"
-  type: hysteria2
-  server: '163.172.113.118'
-  port: 41915
-  password: 'dongtaiwang.com'
-  sni: 'www.microsoft.com'
-  skip-cert-verify: true
-  tfo: false
-
 - name: "🇳🇱 Нидерланды"
   type: hysteria2
   server: 'nrealistic.nn-foto.ru'
@@ -40,6 +31,15 @@ proxies:
   obfs-password: 'FxZylbqClUqVqAs2nezW9kPyFb2edZ2'
   skip-cert-verify: true
   tfo: false
+
+- name: "🇺🇸 Соединенные Штаты"
+  type: hysteria2
+  server: '157.254.223.43'
+  port: 27921
+  password: 'dongtaiwang.com'
+  sni: 'www.bing.com'
+  skip-cert-verify: true
+  tfo: false  
 
 - name: "🇩🇰 Дания"
   type: hysteria2
