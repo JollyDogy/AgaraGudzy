@@ -1,5 +1,6 @@
 payload:
 #EXE
+  - PROCESS-NAME,Warframe.x64.exe
   - PROCESS-NAME,MWOClient.exe
   - PROCESS-NAME,Sky.exe
   - PROCESS-NAME,telegram.exe
@@ -20,9 +21,8 @@ payload:
   - PROCESS-NAME,DeadByDaylight.exe
   - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe
 #WEB  
-  - DOMAIN-KEYWORD,sex-studentki
   - DOMAIN-KEYWORD,rbxcdn.com
+  - DOMAIN-KEYWORD,warframe.com
   - DOMAIN-KEYWORD,roblox.com
-  - DOMAIN-KEYWORD,t.me
   #- DOMAIN-KEYWORD,chatgpt.com:433
   #- DOMAIN-KEYWORD,chatgpt.com
