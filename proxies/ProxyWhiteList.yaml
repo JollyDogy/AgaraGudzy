@@ -1,23 +1,10 @@
 proxies:
-- name: "🇫🇮 Helsinki"
+- name: "🇫🇷 France Paris"
   type: hysteria2
-  server: '45.12.146.179'
-  port: 444
-  password: 'strong-secret-pass-777'
+  server: '163.172.113.118'
+  port: 41171
+  password: 'dongtaiwang.com'
   sni: 'www.microsoft.com'
-  obfs: 'salamander'
-  obfs-password: 'cry_me_a_r1ver_2026'
-  skip-cert-verify: true
-  tfo: false
-
-- name: "🇳🇱 Нидерланды"
-  type: hysteria2
-  server: 'nrealistic.nn-foto.ru'
-  port: 8932
-  password: 'rstnnl:7ltZBmta4ahLenTIoywBy3R1Z1PV7ZGf'
-  sni: 'nrealistic.nn-foto.ru'
-  obfs: 'salamander'
-  obfs-password: 'CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W'
   skip-cert-verify: true
   tfo: false
 
@@ -29,6 +16,17 @@ proxies:
   sni: 'reddeadfan.rd-team.ru'
   obfs: 'salamander'
   obfs-password: 'FxZylbqClUqVqAs2nezW9kPyFb2edZ2'
+  skip-cert-verify: true
+  tfo: false
+
+- name: "🇳🇱 Нидерланды"
+  type: hysteria2
+  server: 'nrealistic.nn-foto.ru'
+  port: 8932
+  password: 'rstnnl:7ltZBmta4ahLenTIoywBy3R1Z1PV7ZGf'
+  sni: 'nrealistic.nn-foto.ru'
+  obfs: 'salamander'
+  obfs-password: 'CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W'
   skip-cert-verify: true
   tfo: false
 
