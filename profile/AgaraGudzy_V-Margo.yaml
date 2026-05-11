@@ -55,7 +55,6 @@ proxy-groups:
     tolerance: 8
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
-    filter: "Discord"
     use:
       - zapasList
     proxies:
@@ -68,7 +67,6 @@ proxy-groups:
     tolerance: 20
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
-    filter: "Discord"
     use:
       - zapasList
     proxies:
