@@ -1,6 +1,6 @@
 health-check:
   enable: true
-  lazy: true
+  lazy: false
   timeout: 1500
   url: http://www.gstatic.com/generate_204
   
@@ -22,7 +22,7 @@ proxy-providers:
 proxy-groups:
   - name: VPN
     type: fallback
-    interval: 60
+    interval: 45
     url: http://www.gstatic.com/generate_204
     proxies:
       - Zapas
@@ -31,7 +31,7 @@ proxy-groups:
   - name: Zapas
     hidden: true
     type: fallback
-    interval: 40
+    interval: 60
     url: http://www.gstatic.com/generate_204
     use:
       - zapasList
@@ -39,7 +39,7 @@ proxy-groups:
   - name: VLESS
     hidden: false
     type: fallback
-    interval: 60
+    interval: 45
     url: http://www.gstatic.com/generate_204
     use:
       - VLESSList
