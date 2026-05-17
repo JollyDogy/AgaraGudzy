@@ -1,8 +1,13 @@
 payload:
 #WEB
+  - IP-CIDR,87.240.185.141
+  - IP-CIDR,93.186.227.162
+  - DOMAIN-KEYWORD,opera
   - DOMAIN-KEYWORD,api.hisavana.com
   - DOMAIN-KEYWORD,filters.adtidy.org
   - DOMAIN-KEYWORD,rus-dsu.shalltry.com
+  - DOMAIN-KEYWORD,vk-portal.net
+  - DOMAIN-KEYWORD,vkuseraudio.net
   - DOMAIN-KEYWORD,api.vk.me
   - DOMAIN-KEYWORD,vtb
   - DOMAIN-KEYWORD,boosty.to
