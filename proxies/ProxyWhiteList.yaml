@@ -1,13 +1,4 @@
 proxies:
-- name: "🇫🇷 France Paris"
-  type: hysteria2
-  server: '163.172.113.118'
-  port: 41171
-  password: 'dongtaiwang.com'
-  sni: 'www.microsoft.com'
-  skip-cert-verify: true
-  tfo: false
-
 - name: "🇩🇪 Германия"
   type: hysteria2
   server: 'reddeadfan.rd-team.ru'
@@ -36,6 +27,15 @@ proxies:
   port: 27921
   password: 'dongtaiwang.com'
   sni: 'www.bing.com'
+  skip-cert-verify: true
+  tfo: false  
+
+- name: "🇫🇷 France Paris"
+  type: hysteria2
+  server: '163.172.113.118'
+  port: 41171
+  password: 'dongtaiwang.com'
+  sni: 'www.microsoft.com'
   skip-cert-verify: true
   tfo: false  
 
