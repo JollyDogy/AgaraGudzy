@@ -1,6 +1,7 @@
 payload:
 #.EXE
 #WEB
+  - DOMAIN-KEYWORD,microsoft.com
   - DOMAIN-KEYWORD,t.me
   - DOMAIN-KEYWORD,sex-studentki
   - DOMAIN-KEYWORD,yummyani.me
