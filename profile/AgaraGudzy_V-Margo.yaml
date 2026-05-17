@@ -62,20 +62,20 @@ proxy-groups:
 
 #Отдельно для игр
   - name: Games
-    type: url-test
-    interval: 30
-    tolerance: 20
+    type: fallback
+    interval: 15
+    #tolerance: 20
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
     use:
       - zapasList
-    proxies:
-      - WARP         
+    #proxies:
+      #- WARP      
 
 #Запасные VPN
   - name: zapas
-    type: url-test
-    interval: 90
+    type: fallback
+    interval: 30
     tolerance: 50
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
