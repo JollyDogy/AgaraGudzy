@@ -126,7 +126,6 @@ rules:
   - DOMAIN-KEYWORD,taptop.site,DIRECT
 #Riot
   - DOMAIN-KEYWORD,pvp.net,VPN
-  #- DOMAIN-KEYWORD,pp.sgp.pvp.net,VPN
   - DOMAIN-KEYWORD,riotcdn.net,VPN
   - DOMAIN-KEYWORD,riotgames.com,VPN  
 #Короткие правила
