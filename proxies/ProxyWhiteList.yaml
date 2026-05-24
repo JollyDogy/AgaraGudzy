@@ -52,7 +52,7 @@ proxies:
   skip-cert-verify: true
   tfo: false  
 
-- name: "🛡️5@oneclickvpnkeys t.me/rjsxrd t.me/rjsxrd"
+- name: "🇦🇹 Австрия"
   type: hysteria2
   server: '152.53.12.152'
   port: 4433
