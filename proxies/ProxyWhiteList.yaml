@@ -1,24 +1,37 @@
 proxies:
+- name: "🇬🇧 Великобритания"
+  type: hysteria2
+  server: '217.179.6.75'
+  port: 443
+  password: '65bc8227-48db-4993-9e9d-68394de672a1'
+  sni: 'holz10.api3-max.ru'
+  skip-cert-verify: false
+  tfo: false
+
+- name: "🇫🇷 Франция"
+  type: hysteria2
+  server: '45.92.218.132'
+  port: 443
+  password: '65bc8227-48db-4993-9e9d-68394de672a1'
+  sni: 'holz6.api3-max.ru'
+  skip-cert-verify: false
+  tfo: false
+
 - name: "🇩🇪 Германия"
   type: hysteria2
-  server: 'reddeadfan.rd-team.ru'
-  port: 2026
-  password: 'rstnnl:hrQVPjgUr9HTgKyTj0oFCr6j4EpRzXTQ'
-  sni: 'reddeadfan.rd-team.ru'
-  obfs: 'salamander'
-  obfs-password: 'FxZylbqClUqVqAs2nezW9kPyFb2edZ2'
+  server: '185.228.139.247'
+  port: 4433
+  password: '18cf8030-1ceb-4b7d-8c0c-c036413c144e'
   skip-cert-verify: true
   tfo: false
 
 - name: "🇳🇱 Нидерланды"
   type: hysteria2
-  server: 'nrealistic.nn-foto.ru'
-  port: 8932
-  password: 'rstnnl:7ltZBmta4ahLenTIoywBy3R1Z1PV7ZGf'
-  sni: 'nrealistic.nn-foto.ru'
-  obfs: 'salamander'
-  obfs-password: 'CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W'
-  skip-cert-verify: true
+  server: '162.217.249.137'
+  port: 443
+  password: '65bc8227-48db-4993-9e9d-68394de672a1'
+  sni: 'suprim5.api3-max.ru'
+  skip-cert-verify: false
   tfo: false
 
 - name: "🇺🇸 Соединенные Штаты"
@@ -29,21 +42,3 @@ proxies:
   sni: 'www.bing.com'
   skip-cert-verify: true
   tfo: false  
-
-- name: "🇫🇷 France Paris"
-  type: hysteria2
-  server: '163.172.113.118'
-  port: 41171
-  password: 'dongtaiwang.com'
-  sni: 'www.microsoft.com'
-  skip-cert-verify: true
-  tfo: false  
-
-- name: "🇩🇰 Дания"
-  type: hysteria2
-  server: '178.18.147.66'
-  port: 29900
-  password: 'github.com/Alvin9999-newpac/fanqiang'
-  sni: 'www.microsoft.com'
-  skip-cert-verify: true
-  tfo: false
