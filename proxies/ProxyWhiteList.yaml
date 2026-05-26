@@ -1,28 +1,31 @@
 proxies:
-- name: "🇬🇧 Великобритания"
+- name: "🇺🇸 США"
   type: hysteria2
-  server: '217.179.6.75'
+  server: '204.12.170.168'
   port: 443
-  password: '65bc8227-48db-4993-9e9d-68394de672a1'
-  sni: 'holz10.api3-max.ru'
-  skip-cert-verify: false
+  password: 'de72b066a61a39af'
+  sni: 'claude.ai'
+  obfs: 'salamander'
+  obfs-password: '726c9c641a068d74'
+  skip-cert-verify: true
   tfo: false
 
 - name: "🇩🇪 Германия"
   type: hysteria2
-  server: '185.228.139.247'
-  port: 4433
-  password: '18cf8030-1ceb-4b7d-8c0c-c036413c144e'
-  skip-cert-verify: true
+  server: '2.27.28.103'
+  port: 1935
+  password: 'hysteria2_fastlane_fur39yrgc:4hwuV1rbgM9x9MqtdBRynHns19kPd32F'
+  sni: 'de4.h.fastlanehosting.ru'
+  skip-cert-verify: false
   tfo: false
 
-- name: "🇫🇷 Франция"
+- name: "🇷🇴 Румыния"
   type: hysteria2
-  server: '45.92.218.132'
+  server: 'vpn-tw-002.fastervpn.world'
   port: 443
-  password: '65bc8227-48db-4993-9e9d-68394de672a1'
-  sni: 'holz6.api3-max.ru'
-  skip-cert-verify: false
+  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
+  sni: 'vpn-tw-002.fastervpn.world'
+  skip-cert-verify: true
   tfo: false
 
 - name: "🇳🇱 Нидерланды"
@@ -34,13 +37,13 @@ proxies:
   skip-cert-verify: false
   tfo: false
 
-- name: "🇲🇽 Мексика"
+- name: "🇧🇦 Босния"
   type: hysteria2
-  server: '152.53.12.152'
-  port: 4433
-  password: '18cf8030-1ceb-4b7d-8c0c-c036413c144e'
-  sni: 'de3.xiaoliyu.cyou'
-  skip-cert-verify: true
+  server: '185.106.96.231'
+  port: 443
+  password: '10550754-cf62-3d3b-ba6a-50be27a275d7'
+  sni: 's559.ccgfw.top'
+  skip-cert-verify: false
   tfo: false
 
 - name: "🇪🇪 Эстония"
@@ -52,10 +55,11 @@ proxies:
   skip-cert-verify: true
   tfo: false  
 
-- name: "🇦🇹 Австрия"
+- name: "🇬🇧 Великобритания"
   type: hysteria2
-  server: '152.53.12.152'
-  port: 4433
-  password: '18cf8030-1ceb-4b7d-8c0c-c036413c144e'
+  server: '5.39.254.225'
+  port: 2056
+  password: 'fe9b17e8-41e1-4d1b-b588-93a23665724f'
+  sni: 'ld1.mangshe.xyz'
   skip-cert-verify: true
   tfo: false
