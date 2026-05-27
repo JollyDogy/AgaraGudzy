@@ -12,10 +12,10 @@ proxies:
 
 - name: "🇩🇪 Германия"
   type: hysteria2
-  server: '2.27.28.103'
-  port: 1935
-  password: 'hysteria2_fastlane_fur39yrgc:4hwuV1rbgM9x9MqtdBRynHns19kPd32F'
-  sni: 'de4.h.fastlanehosting.ru'
+  server: 's545.ccgfw.online'
+  port: 443
+  password: '6d49fae1-374d-313e-b360-1227b0ea8dea'
+  sni: 's545.ccgfw.online'
   skip-cert-verify: false
   tfo: false
 
@@ -61,5 +61,14 @@ proxies:
   port: 2056
   password: 'fe9b17e8-41e1-4d1b-b588-93a23665724f'
   sni: 'ld1.mangshe.xyz'
+  skip-cert-verify: true
+  tfo: false
+
+- name: "🇷🇴 Румыния"
+  type: hysteria2
+  server: 'vpn-tw-002.fastervpn.world'
+  port: 443
+  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
+  sni: 'vpn-tw-002.fastervpn.world'
   skip-cert-verify: true
   tfo: false
