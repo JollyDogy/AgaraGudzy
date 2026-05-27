@@ -1,12 +1,10 @@
 proxies:
 - name: "🇺🇸 США"
   type: hysteria2
-  server: '204.12.170.168'
-  port: 443
-  password: 'de72b066a61a39af'
-  sni: 'claude.ai'
-  obfs: 'salamander'
-  obfs-password: '726c9c641a068d74'
+  server: '163.172.126.108'
+  port: 41227
+  password: 'github.com/Alvin9999-newpac/fanqiang'
+  sni: 'www.microsoft.com'
   skip-cert-verify: true
   tfo: false
 
