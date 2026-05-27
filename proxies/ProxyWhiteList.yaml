@@ -63,12 +63,3 @@ proxies:
   sni: 'ld1.mangshe.xyz'
   skip-cert-verify: true
   tfo: false
-
-- name: "🇷🇴 Румыния"
-  type: hysteria2
-  server: 'vpn-tw-002.fastervpn.world'
-  port: 443
-  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
-  sni: 'vpn-tw-002.fastervpn.world'
-  skip-cert-verify: true
-  tfo: false
