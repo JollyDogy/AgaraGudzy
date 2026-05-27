@@ -83,3 +83,35 @@ proxies:
   network: 'ws'
   ws-opts:
     path: '/f2fc2a1f'
+
+- name: "🇫🇮 ss"
+  type: ss
+  server: '195.133.2.2'
+  port: 34898
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'sbJZP5jEcWVgNfVG6sH76z'
+  udp: true
+
+- name: "🇳🇱 ss"
+  type: ss
+  server: '108.181.58.239'
+  port: 8388
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'CJmTCCx7Ltud'
+  udp: true
+
+- name: "🇺🇸 ss"
+  type: ss
+  server: '92.118.112.203'
+  port: 41348
+  cipher: 'chacha20-ietf-poly1305'
+  password: '66iAPUHyyA3YxBb3DmloTuArM0IiPeY2HCoH3m'
+  udp: true
+
+- name: "🇸🇬 ss"
+  type: ss
+  server: '154.18.239.126'
+  port: 37425
+  cipher: 'chacha20-ietf-poly1305'
+  password: 'eLPlIVuRZ6UJyapVDeT++l7fYC0uowXJFlb9qhntAd4='
+  udp: true
