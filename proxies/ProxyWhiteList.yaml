@@ -63,7 +63,7 @@ proxies:
   sni: 'ld1.mangshe.xyz'
   skip-cert-verify: true
   tfo: false
-
+  
 - name: "Trojan 1"
   type: trojan
   server: 'hl-freedom-2.undef.network'
@@ -73,7 +73,7 @@ proxies:
   tls: true
   skip-cert-verify: false
 
-  - name: "Trojan 2"
+- name: "Trojan 2"
   type: trojan
   server: 'hl-freedom-2.undef.network'
   port: 443
