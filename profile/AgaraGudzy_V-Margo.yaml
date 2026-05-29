@@ -113,6 +113,8 @@ rule-providers:
 
 rules:
 #Персональные правила
+  - PROCESS-NAME,Warframe.x64.exe,DIRECT
+  - DOMAIN-KEYWORD,warframe.com,DIRECT
   - PROCESS-NAME,steamwebhelper.exe,WARP
   - DOMAIN-KEYWORD,store.steampowered.com,WARP
   - PROCESS-NAME,Zapret.exe,DIRECT
