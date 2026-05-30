@@ -1,106 +1,75 @@
 proxies:
-- name: "🇺🇸 США"
+- name: "🇩🇪 Германия Tuic"
+  type: tuic
+  server: ip1.758733.xyz
+  port: 10088
+  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+  password: dongtaiwang.com
+  udp: true
+  sni: apple.com
+  alpn:
+    - h3
+  skip-cert-verify: true
+  congestion-controller: bbr
+
+- name: "🇩🇪 Германия-2 Tuic"
+  type: tuic
+  server: ip1.758733.xyz
+  port: 10088
+  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+  password: dongtaiwang.com
+  udp: true
+  sni: apple.com
+  alpn:
+    - h3
+  skip-cert-verify: true
+  congestion-controller: bbr
+
+- name: "🇺🇸 США Tuic"
+  type: tuic
+  server: 5.178.101.117
+  port: 30006
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
+  udp: true
+  sni: www.microsoft.com
+  alpn:
+    - h3
+  skip-cert-verify: true
+  congestion-controller: bbr
+
+- name: "🇱🇻 Латвия Hy2"
   type: hysteria2
-  server: '163.172.126.108'
-  port: 41227
-  password: 'github.com/Alvin9999-newpac/fanqiang'
-  sni: 'www.microsoft.com'
+  server: '31.59.104.139'
+  port: 8443
+  password: '239471f8-4608-438e-9d2e-a6a950d98ad4'
+  sni: 'bing.com'
   skip-cert-verify: true
   tfo: false
 
-- name: "🇩🇪 Германия"
+- name: "🇩🇪 Германия Hy2"
   type: hysteria2
-  server: 's545.ccgfw.online'
-  port: 443
-  password: '6d49fae1-374d-313e-b360-1227b0ea8dea'
-  sni: 's545.ccgfw.online'
-  skip-cert-verify: false
-  tfo: false
-
-- name: "🇷🇴 Румыния"
-  type: hysteria2
-  server: 'vpn-tw-002.fastervpn.world'
-  port: 443
-  password: 'H7mP2xY9kJ4nQ8wR5tF6vB3z'
-  sni: 'vpn-tw-002.fastervpn.world'
+  server: 'reddeadfan.rd-team.ru'
+  port: 2026
+  password: 'rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl'
+  sni: 'reddeadfan.rd-team.ru'
+  obfs: 'salamander'
+  obfs-password: 'FxZylbqClUqVqAs2nezW9kPyFb2edZ2'
   skip-cert-verify: true
   tfo: false
 
-- name: "🇳🇱 Нидерланды"
+- name: "🇺🇸 США Hy2"
   type: hysteria2
-  server: '162.217.249.137'
+  server: '204.12.170.168'
   port: 443
-  password: '65bc8227-48db-4993-9e9d-68394de672a1'
-  sni: 'suprim5.api3-max.ru'
-  skip-cert-verify: false
-  tfo: false
-
-- name: "🇧🇦 Босния"
-  type: hysteria2
-  server: '185.106.96.231'
-  port: 443
-  password: '10550754-cf62-3d3b-ba6a-50be27a275d7'
-  sni: 's559.ccgfw.top'
-  skip-cert-verify: false
-  tfo: false
-
-- name: "🇪🇪 Эстония"
-  type: hysteria2
-  server: '5.39.254.225'
-  port: 2056
-  password: 'fe9b17e8-41e1-4d1b-b588-93a23665724f'
-  sni: 'ld1.mangshe.xyz'
-  skip-cert-verify: true
-  tfo: false  
-
-- name: "🇬🇧 Великобритания"
-  type: hysteria2
-  server: '5.39.254.225'
-  port: 2056
-  password: 'fe9b17e8-41e1-4d1b-b588-93a23665724f'
-  sni: 'ld1.mangshe.xyz'
+  password: 'de72b066a61a39af'
+  sni: 'claude.ai'
+  obfs: 'salamander'
+  obfs-password: '726c9c641a068d74'
   skip-cert-verify: true
   tfo: false
-  
-- name: "Trojan 1"
-  type: trojan
-  server: 'hl-freedom-2.undef.network'
-  port: 443
-  password: 'Tn2Bf0iRwJkJQgDk6gX6x81RB'
-  udp: true
-  tls: true
-  skip-cert-verify: false
 
-- name: "Trojan 2"
-  type: trojan
-  server: 'hl-freedom-2.undef.network'
-  port: 443
-  password: 'mJVGfrOkZGnMywJD2uwmuXgOQ'
-  udp: true
-  tls: true
-  servername: 'hl-freedom-2.undef.network'
-  skip-cert-verify: false
-  network: 'ws'
-  ws-opts:
-    path: '/f2fc2a1f'
-
-- name: "🇫🇮 ss"
-  type: ss
-  server: '195.133.2.2'
-  port: 34898
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'sbJZP5jEcWVgNfVG6sH76z'
-  udp: true
-
-- name: "🇳🇱 ss"
-  type: ss
-  server: '108.181.58.239'
-  port: 8388
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'CJmTCCx7Ltud'
-  udp: true
-
-- name: "🇺🇸 ss"
+- name: "🇺🇸 США ss"
   type: ss
   server: '92.118.112.203'
   port: 41348
@@ -108,10 +77,13 @@ proxies:
   password: '66iAPUHyyA3YxBb3DmloTuArM0IiPeY2HCoH3m'
   udp: true
 
-- name: "🇸🇬 ss"
-  type: ss
-  server: '154.18.239.126'
-  port: 37425
-  cipher: 'chacha20-ietf-poly1305'
-  password: 'eLPlIVuRZ6UJyapVDeT++l7fYC0uowXJFlb9qhntAd4='
+- name: "Trojan1"
+  type: trojan
+  server: '211.76.176.98'
+  port: 19128
+  password: 'gcuCpQfaiVeDBdWG'
   udp: true
+  tls: true
+  servername: 'yazhou10.dynu.net'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
