@@ -76,14 +76,3 @@ proxies:
   cipher: 'chacha20-ietf-poly1305'
   password: '66iAPUHyyA3YxBb3DmloTuArM0IiPeY2HCoH3m'
   udp: true
-
-- name: "Trojan1"
-  type: trojan
-  server: '211.76.176.98'
-  port: 19128
-  password: 'gcuCpQfaiVeDBdWG'
-  udp: true
-  tls: true
-  servername: 'yazhou10.dynu.net'
-  skip-cert-verify: false
-  client-fingerprint: 'chrome'
