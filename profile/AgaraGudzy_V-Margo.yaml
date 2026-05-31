@@ -113,6 +113,7 @@ rule-providers:
 
 rules:
 #Персональные правила
+  - IP-CIDR,172.232.25.131/32,zapas
   - PROCESS-NAME,Warframe.x64.exe,DIRECT
   - DOMAIN-KEYWORD,warframe.com,DIRECT
   - PROCESS-NAME,steamwebhelper.exe,WARP
