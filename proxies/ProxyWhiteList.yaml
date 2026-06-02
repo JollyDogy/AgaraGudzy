@@ -1,4 +1,47 @@
 proxies:
+- name: "🇺🇸 США Tuic"
+  type: tuic
+  server: 5.178.101.117
+  port: 30006
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
+  udp: true
+  sni: www.microsoft.com
+  alpn:
+    - h3
+  skip-cert-verify: true
+  congestion-controller: bbr
+
+- name: "🇺🇸 США Hy2"
+  type: hysteria2
+  server: '204.12.170.168'
+  port: 443
+  password: 'de72b066a61a39af'
+  sni: 'claude.ai'
+  obfs: 'salamander'
+  obfs-password: '726c9c641a068d74'
+  skip-cert-verify: true
+  tfo: false  
+
+- name: "🇺🇸 США ss"
+  type: ss
+  server: '92.118.112.203'
+  port: 41348
+  cipher: 'chacha20-ietf-poly1305'
+  password: '66iAPUHyyA3YxBb3DmloTuArM0IiPeY2HCoH3m'
+  udp: true
+
+- name: "🇩🇪 Германия Hy2"
+  type: hysteria2
+  server: 'reddeadfan.rd-team.ru'
+  port: 2026
+  password: 'rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl'
+  sni: 'reddeadfan.rd-team.ru'
+  obfs: 'salamander'
+  obfs-password: 'FxZylbqClUqVqAs2nezW9kPyFb2edZ2'
+  skip-cert-verify: true
+  tfo: false
+
 - name: "🇩🇪 Германия Tuic"
   type: tuic
   server: ip1.758733.xyz
@@ -24,55 +67,3 @@ proxies:
     - h3
   skip-cert-verify: true
   congestion-controller: bbr
-
-- name: "🇺🇸 США Tuic"
-  type: tuic
-  server: 5.178.101.117
-  port: 30006
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  udp: true
-  sni: www.microsoft.com
-  alpn:
-    - h3
-  skip-cert-verify: true
-  congestion-controller: bbr
-
-- name: "🇱🇻 Латвия Hy2"
-  type: hysteria2
-  server: '31.59.104.139'
-  port: 8443
-  password: '239471f8-4608-438e-9d2e-a6a950d98ad4'
-  sni: 'bing.com'
-  skip-cert-verify: true
-  tfo: false
-
-- name: "🇩🇪 Германия Hy2"
-  type: hysteria2
-  server: 'reddeadfan.rd-team.ru'
-  port: 2026
-  password: 'rstnnl2705:QtmSqzxgO95zXwNcgVYSjDl02aRsjrrl'
-  sni: 'reddeadfan.rd-team.ru'
-  obfs: 'salamander'
-  obfs-password: 'FxZylbqClUqVqAs2nezW9kPyFb2edZ2'
-  skip-cert-verify: true
-  tfo: false
-
-- name: "🇺🇸 США Hy2"
-  type: hysteria2
-  server: '204.12.170.168'
-  port: 443
-  password: 'de72b066a61a39af'
-  sni: 'claude.ai'
-  obfs: 'salamander'
-  obfs-password: '726c9c641a068d74'
-  skip-cert-verify: true
-  tfo: false
-
-- name: "🇺🇸 США ss"
-  type: ss
-  server: '92.118.112.203'
-  port: 41348
-  cipher: 'chacha20-ietf-poly1305'
-  password: '66iAPUHyyA3YxBb3DmloTuArM0IiPeY2HCoH3m'
-  udp: true
