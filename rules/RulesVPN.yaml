@@ -28,6 +28,8 @@ payload:
   - PROCESS-NAME,msedge
   - PROCESS-NAME,yandex
   #EXE
+  - PROCESS-NAME,Overwolf.exe,WARP
+  - PROCESS-NAME,OverwolfBrowser.exe,WARP
   - PROCESS-NAME,VRChat.exe
   - PROCESS-NAME,VotV-Win64-Shipping.exe
   - PROCESS-NAME,uTorrent.exe
