@@ -34,16 +34,7 @@ warp-common2: &warp-common2
   dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
 
 proxies:
-- name: "162.159.195.5:4500"
-  <<: *warp-common
-  server: 162.159.195.5
-  port: 4500
-
-- name: "[⭐] 188.114.97.1:500"
-  <<: *warp-common
-  server: 188.114.97.1
-  port: 500
-  
+ 
 - name: "162.159.195.10:1701"
   <<: *warp-common
   server: 162.159.195.10
@@ -53,31 +44,11 @@ proxies:
   <<: *warp-common
   server: 162.159.192.19
   port: 2408
-
-- name: "162.159.195.8:1701"
-  <<: *warp-common
-  server: 162.159.195.8
-  port: 1701
-
-- name: "162.159.195.10:2408"
-  <<: *warp-common
-  server: 162.159.195.10
-  port: 2408
-
-- name: "162.159.192.19:4500"
-  <<: *warp-common
-  server: 162.159.192.19
-  port: 4500
-
+  
 - name: "162.159.192.15:2408"
   <<: *warp-common
   server: 162.159.192.15
   port: 2408
-
-- name: "162.159.195.4:4500"
-  <<: *warp-common
-  server: 162.159.195.4
-  port: 4500
 
 - name: "162.159.192.16:2408"
   <<: *warp-common
@@ -98,16 +69,6 @@ proxies:
   <<: *warp-common
   server: 162.159.192.12
   port: 4500
-
-- name: "162.159.192.14:2408"
-  <<: *warp-common
-  server: 162.159.192.14
-  port: 2408
-
-- name: "[⭐] 162.159.195.1:500"
-  <<: *warp-common
-  server: 162.159.195.1
-  port: 500
 
 - name: "162.159.192.1:1701"
   <<: *warp-common
