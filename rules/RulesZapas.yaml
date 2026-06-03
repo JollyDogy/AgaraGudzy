@@ -1,6 +1,8 @@
 payload:
 #.EXE
 #WEB
+  - DOMAIN-KEYWORD,animegorus.ru
+  - DOMAIN-KEYWORD,yummyani.me
   - DOMAIN-KEYWORD,w.hcaptcha
   - DOMAIN-KEYWORD,hcaptcha
   - DOMAIN-KEYWORD,discord
