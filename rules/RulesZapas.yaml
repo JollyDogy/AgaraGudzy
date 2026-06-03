@@ -1,6 +1,17 @@
 payload:
 #.EXE
 #WEB
+  - DOMAIN-KEYWORD,discord
+  - DOMAIN-SUFFIX,discord
+  - DOMAIN-KEYWORD,gateway.discord.gg
+  - DOMAIN-KEYWORD,status.discord.com
+  - DOMAIN-KEYWORD,updates.discord.com
+  - DOMAIN-KEYWORD,discordapp.net
+  - DOMAIN-KEYWORD,discord.com
+  - DOMAIN-KEYWORD,api.betterdiscord.app
+  - DOMAIN-KEYWORD,betterdiscord.app
+  - DOMAIN-KEYWORD,discord.media
+  - DOMAIN-KEYWORD,media.discordapp.net
   - DOMAIN-KEYWORD,microsoft.com
   - DOMAIN-KEYWORD,t.me
   - DOMAIN-KEYWORD,sex-studentki
