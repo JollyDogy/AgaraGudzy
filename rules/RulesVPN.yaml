@@ -5,19 +5,8 @@ payload:
   - DOMAIN-KEYWORD,modcdn.io
   - DOMAIN-KEYWORD,mod.io
   - DOMAIN-KEYWORD,ru.yummyani.me
-  - DOMAIN-KEYWORD,discord
-  - DOMAIN-SUFFIX,discord
-  - DOMAIN-KEYWORD,api.betterdiscord.app
-  - DOMAIN-KEYWORD,betterdiscord.app
-  - DOMAIN-KEYWORD,discord.media
   - DOMAIN-KEYWORD,githubusercontent.com
-  - DOMAIN-KEYWORD,discordapp.net
-  - DOMAIN-KEYWORD,discord.com
-  - DOMAIN-KEYWORD,media.discordapp.net
   - DOMAIN-KEYWORD,images-ext-1.discordapp.net
-  - DOMAIN-KEYWORD,gateway.discord.gg
-  - DOMAIN-KEYWORD,status.discord.com
-  - DOMAIN-KEYWORD,updates.discord.com
 #Browser
   - PROCESS-NAME,opera_gx.exe
   - PROCESS-NAME,opera_GX.exe
