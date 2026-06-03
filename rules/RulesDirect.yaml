@@ -1,5 +1,6 @@
 payload:
 #WEB
+  - PROCESS-NAME,Zapret.exe,DIRECT
   - IP-CIDR,87.240.0.0/16
   - IP-CIDR,93.186.0.0/16
   - DOMAIN-KEYWORD,turbo.cloud.solodcdn.com
