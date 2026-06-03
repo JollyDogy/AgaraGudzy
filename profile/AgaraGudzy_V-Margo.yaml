@@ -41,10 +41,10 @@ proxy-groups:
       - zapas
 
   - name: WARP
-    type: fallback
-    interval: 450
+    type: load-balance
+    interval: 30
     hidden: false
-    url: http://www.gstatic.com/generate_204
+    url: https://cp.cloudflare.com/generate_204
     use:
       - WARPStandart
 
@@ -66,7 +66,7 @@ proxy-groups:
     interval: 15
     #tolerance: 20
     hidden: true
-    url: http://gateway-us-east1-d.discord.gg
+    url: https://cp.cloudflare.com/generate_204
     use:
       - zapasList
     #proxies:
@@ -113,8 +113,10 @@ rule-providers:
 
 rules:
 #Персональные правила
+  - DOMAIN-KEYWORD,warframe.market,WARP
+  - IP-CIDR,198.18.0.1/32,zapas
   - IP-CIDR,172.232.25.131/32,zapas
-  - PROCESS-NAME,Warframe.x64.exe,DIRECT
+  #- DOMAIN-KEYWORD,api.warframe.com,zapas
   - DOMAIN-KEYWORD,warframe.com,DIRECT
   - PROCESS-NAME,steamwebhelper.exe,WARP
   - DOMAIN-KEYWORD,store.steampowered.com,WARP
@@ -127,8 +129,6 @@ rules:
   #- PROCESS-NAME,EpicWebHelper.exe,DIRECT
   #- PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
 #Короткие правила
-  - DOMAIN-KEYWORD,animegorus.ru,zapas
-  - DOMAIN-KEYWORD,yummyani.me,zapas
   #- PROCESS-NAME,discord.exe,Discord
 #Отдельные правила для исполняемых файлов файлов 
   - RULE-SET,RulesVPNexe,Games
