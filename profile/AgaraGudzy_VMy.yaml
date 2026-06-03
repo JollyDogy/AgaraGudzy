@@ -43,10 +43,10 @@ proxy-groups:
       - zapas
 
   - name: WARP
-    type: fallback
-    interval: 90
+    type: load-balance
+    interval: 30
     hidden: false
-    url: http://www.gstatic.com/generate_204
+    url: https://cp.cloudflare.com/generate_204
     use:
       - WARPStandart
 
@@ -64,21 +64,21 @@ proxy-groups:
 
 #Отдельно для игр
   - name: Games
-    type: fallback
+    type: url-test
     interval: 15
-    #tolerance: 20
+    tolerance: 20
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
     use:
       - zapasList
-    #proxies:
-      #- WARP      
+   #proxies:
+   #  - WARP      
 
 #Запасные VPN
   - name: zapas
     type: fallback
     interval: 30
-    tolerance: 50
+    #tolerance: 50
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     use:
@@ -115,6 +115,13 @@ rule-providers:
 
 rules:
 #Персональные правила
+  - DOMAIN-KEYWORD,warframe.market,WARP
+  - PROCESS-NAME,Overwolf.exe,WARP
+  - PROCESS-NAME,OverwolfBrowser.exe,WARP
+  - IP-CIDR,198.18.0.1/32,zapas
+  - IP-CIDR,172.232.25.131/32,zapas
+  #- DOMAIN-KEYWORD,api.warframe.com,zapas
+  - DOMAIN-KEYWORD,warframe.com,DIRECT
   - PROCESS-NAME,Zapret.exe,DIRECT
   - DOMAIN-KEYWORD,youtube.com,DIRECT
   - PROCESS-NAME,DeadByDaylight.exe,DIRECT
@@ -125,9 +132,9 @@ rules:
   - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
   - DOMAIN-KEYWORD,taptop.site,DIRECT
 #Riot
-  - DOMAIN-KEYWORD,pvp.net,VPN
-  - DOMAIN-KEYWORD,riotcdn.net,VPN
-  - DOMAIN-KEYWORD,riotgames.com,VPN  
+  #- DOMAIN-KEYWORD,pvp.net,VPN
+  #- DOMAIN-KEYWORD,riotcdn.net,VPN
+  #- DOMAIN-KEYWORD,riotgames.com,VPN  
 #Короткие правила
   - DOMAIN-KEYWORD,animegorus.ru,zapas
   - DOMAIN-KEYWORD,yummyani.me,zapas
