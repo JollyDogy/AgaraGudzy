@@ -1,6 +1,8 @@
 payload:
 #.EXE
 #WEB
+  - DOMAIN-KEYWORD,w.hcaptcha
+  - DOMAIN-KEYWORD,hcaptcha
   - DOMAIN-KEYWORD,discord
   - DOMAIN-SUFFIX,discord
   - DOMAIN-KEYWORD,gateway.discord.gg
