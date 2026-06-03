@@ -116,6 +116,7 @@ rules:
   - DOMAIN-KEYWORD,warframe.market,WARP
   - IP-CIDR,198.18.0.1/32,zapas
   - IP-CIDR,172.232.25.131/32,zapas
+  - PROCESS-NAME,Warframe.x64.exe,DIRECT
   #- DOMAIN-KEYWORD,api.warframe.com,zapas
   - DOMAIN-KEYWORD,warframe.com,DIRECT
   - PROCESS-NAME,steamwebhelper.exe,WARP
