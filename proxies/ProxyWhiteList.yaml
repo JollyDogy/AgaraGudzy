@@ -26,7 +26,7 @@ proxies:
 - name: "🇫🇮 Финляндия WARP"
   <<: *warp-common
   server: mfi.tribukvy.ltd
-  port: 4177
+  port: 7281
   amnezia-wg-option:
     jc: 4
     jmin: 40
