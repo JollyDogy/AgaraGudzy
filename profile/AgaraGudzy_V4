@@ -50,7 +50,7 @@ proxy-groups:
 
 #Отдельный скрипт для минимального пинга Discord
   - name: Discord
-    type: url-test
+    type: fallback
     interval: 15
     tolerance: 8
     hidden: true
