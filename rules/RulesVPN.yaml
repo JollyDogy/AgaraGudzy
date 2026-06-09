@@ -28,6 +28,7 @@ payload:
   - PROCESS-NAME,msedge
   - PROCESS-NAME,yandex
   #EXE
+  - PROCESS-NAME,telegram.exe  
   - PROCESS-NAME,Overwolf.exe,WARP
   - PROCESS-NAME,OverwolfBrowser.exe,WARP
   - PROCESS-NAME,VRChat.exe
