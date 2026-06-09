@@ -3,7 +3,6 @@ payload:
   - PROCESS-NAME,Warframe.x64.exe
   - PROCESS-NAME,MWOClient.exe
   - PROCESS-NAME,Sky.exe
-  - PROCESS-NAME,telegram.exe
   - PROCESS-NAME,roblox.exe
   - PROCESS-NAME,RobloxPlayerBeta.exe
   #- PROCESS-NAME,discord.exe
