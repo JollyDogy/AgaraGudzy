@@ -8,7 +8,7 @@ warp-server: &warp-server
   udp: true
   mtu: 1280
   remote-dns-resolve: true
-  dns: [77.88.8.8, 77.88.8.1]
+  dns: [1.1.1.1, 1.0.0.1]
   amnezia-wg-option:
    jc: 4
    jmin: 40
