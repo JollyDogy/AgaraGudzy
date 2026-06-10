@@ -1,5 +1,6 @@
 payload:
 #EXE
+  - PROCESS-NAME,FortniteClient-Win64-Shipping.exe
   - PROCESS-NAME,Warframe.x64.exe
   - PROCESS-NAME,MWOClient.exe
   - PROCESS-NAME,Sky.exe
