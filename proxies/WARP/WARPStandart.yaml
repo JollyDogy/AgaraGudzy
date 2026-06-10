@@ -8,7 +8,7 @@ warp-common: &warp-common
   udp: true
   mtu: 1280
   remote-dns-resolve: true
-  dns: [8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844]
+  dns: [83.220.169.155, 212.109.195.93, 195.133.25.16]
   amnezia-wg-option:
    jc: 120
    jmin: 23
@@ -31,7 +31,7 @@ warp-common2: &warp-common2
   udp: true
   mtu: 1280
   remote-dns-resolve: true
-  dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
+  dns: [111.88.96.50, 111.88.96.51]
 
 proxies:
 - name: "Стандартный 1"
