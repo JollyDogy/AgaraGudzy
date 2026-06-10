@@ -19,6 +19,12 @@ proxy-providers:
     interval: 21600
     path: ./providers/WARPStandart.yaml    
 
+  WARPServers:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPServer.yaml
+    interval: 21600
+    path: ./providers/WARPServers.yaml 
+
 proxy-groups:
   - name: VPN
     type: select
@@ -29,8 +35,7 @@ proxy-groups:
 #градация от лучшего до худшего варианта использования      
       - WARP If
       - zapas
-      - Games
-      - Discord
+      - WARPServer
 
 #Запасной вариант на случай нестабильности WARP
   - name: WARP If
@@ -43,10 +48,10 @@ proxy-groups:
       - zapas
 
   - name: WARP
-    type: load-balance
+    type: fallback
     interval: 30
     hidden: false
-    url: https://cp.cloudflare.com/generate_204
+    url: http://speed.cloudflare.com/
     use:
       - WARPStandart
 
@@ -70,19 +75,81 @@ proxy-groups:
     hidden: true
     url: https://cp.cloudflare.com/generate_204
     use:
-      - zapasList
-   #proxies:
-   #  - WARP      
+      - zapasList    
 
 #Запасные VPN
   - name: zapas
     type: fallback
     interval: 30
     #tolerance: 50
+    hidden: true
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     use:
       - 'zapasList'
+
+#WARPserver
+  - name: WARPServer
+    type: url-test
+    interval: 28
+    tolerance: 35
+    url: http://speed.cloudflare.com/
+    proxies:
+      - '🇫🇮 Финляндия'
+      - '🇵🇱 Польша'
+      - '🇳🇱 Нидерланды'
+      - '🇩🇪 Германия'
+      - '🇱🇻 Латвия'
+
+  - name: '🇫🇮 Финляндия'
+    type: fallback
+    interval: 30
+    hidden: true
+    url: http://speed.cloudflare.com/
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'WARPServers'
+    filter: "🇫🇮"     
+
+  - name: '🇵🇱 Польша'
+    type: fallback
+    interval: 30
+    hidden: true
+    url: http://speed.cloudflare.com/
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'WARPServers'
+    filter: "🇵🇱"
+
+  - name: '🇳🇱 Нидерланды'
+    type: fallback
+    interval: 30
+    hidden: true
+    url: http://speed.cloudflare.com/
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'WARPServers'
+    filter: "🇳🇱"    
+
+  - name: '🇩🇪 Германия'
+    type: fallback
+    interval: 30
+    hidden: true
+    url: http://speed.cloudflare.com/
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'WARPServers'
+    filter: "🇩🇪"            
+
+  - name: '🇱🇻 Латвия'
+    type: fallback
+    interval: 30
+    hidden: true
+    url: http://speed.cloudflare.com/
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'WARPServers'
+    filter: "🇱🇻"
 
 rule-providers:
   RulesZapas:
@@ -116,8 +183,9 @@ rule-providers:
 rules:
 #Персональные правила
   - DOMAIN-KEYWORD,warframe.market,WARP
-  - IP-CIDR,198.18.0.1/32,zapas
-  - IP-CIDR,172.232.25.131/32,zapas
+  - IP-CIDR,198.18.0.1/32,WARPServer
+  - IP-CIDR,172.232.25.131/32,WARPServer
+  - PROCESS-NAME,Warframe.x64.exe,DIRECT
   #- DOMAIN-KEYWORD,api.warframe.com,zapas
   - DOMAIN-KEYWORD,warframe.com,DIRECT
   - DOMAIN-KEYWORD,youtube.com,DIRECT
@@ -135,10 +203,10 @@ rules:
 #Короткие правила
   #- PROCESS-NAME,discord.exe,Discord
 #Отдельные правила для исполняемых файлов файлов 
-  - RULE-SET,RulesVPNexe,Games
+  - RULE-SET,RulesVPNexe,WARPServer
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
-  - RULE-SET,RulesZapas,zapas
+  - RULE-SET,RulesZapas,WARPServer
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
