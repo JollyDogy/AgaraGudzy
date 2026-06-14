@@ -22,7 +22,7 @@ proxy-providers:
 proxy-groups:
   - name: VPN
     type: fallback
-    interval: 45
+    interval: 50
     url: http://www.gstatic.com/generate_204
     proxies:
       - Zapas
@@ -31,15 +31,15 @@ proxy-groups:
   - name: Zapas
     hidden: true
     type: fallback
-    interval: 60
+    interval: 40
     url: http://www.gstatic.com/generate_204
     use:
       - zapasList
 
   - name: VLESS
-    hidden: false
+    hidden: true
     type: fallback
-    interval: 45
+    interval: 30
     url: http://www.gstatic.com/generate_204
     use:
       - VLESSList
