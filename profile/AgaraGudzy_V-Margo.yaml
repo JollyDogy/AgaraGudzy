@@ -190,7 +190,7 @@ rules:
   - PROCESS-NAME,steamwebhelper.exe,WARP
   - DOMAIN-KEYWORD,store.steampowered.com,WARP
   - PROCESS-NAME,Zapret.exe,DIRECT
-  - DOMAIN-KEYWORD,youtube.com,DIRECT
+  #- DOMAIN-KEYWORD,youtube.com,DIRECT
   - PROCESS-NAME,DeadByDaylight.exe,DIRECT
   - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,DIRECT
