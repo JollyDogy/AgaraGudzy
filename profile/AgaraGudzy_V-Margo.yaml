@@ -181,6 +181,9 @@ rule-providers:
 
 rules:
 #Персональные правила
+  - DOMAIN-KEYWORD,epicgames.dev,WARP
+  - DOMAIN-KEYWORD,epicgames.com,WARP
+  - DOMAIN-KEYWORD,bhvrdbd.com,WARP
   - DOMAIN-KEYWORD,warframe.market,WARP
   - IP-CIDR,198.18.0.1/32,WARPServer
   - IP-CIDR,172.232.25.131/32,WARPServer
