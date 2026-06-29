@@ -178,6 +178,9 @@ rule-providers:
 
 rules:
 #Персональные правила
+  - DOMAIN-KEYWORD,epicgames.dev,WARP
+  - DOMAIN-KEYWORD,epicgames.com,WARP
+  - DOMAIN-KEYWORD,bhvrdbd.com,WARP
   - PROCESS-NAME,parsec.exe,DIRECT
   - DOMAIN-KEYWORD,parsec.app,WARP
   - PROCESS-NAME,obs-browser-page.exe,DIRECT
