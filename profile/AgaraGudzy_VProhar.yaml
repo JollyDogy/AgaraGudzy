@@ -2,7 +2,7 @@ health-check:
   enable: true
   lazy: true
   timeout: 1500
-  url: http://www.gstatic.com/generate_204
+  url: http://speed.cloudflare.com/
   
 tcp-concurrent: false
 
@@ -34,7 +34,7 @@ proxy-groups:
     proxies:
 #градация от лучшего до худшего варианта использования      
       - WARP If
-      - zapas
+      #- zapas
       - WARPServer
 
 #Запасной вариант на случай нестабильности WARP
@@ -45,7 +45,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     proxies:
       - WARP
-      - zapas
+      - WARPServer
 
   - name: WARP
     type: fallback
@@ -62,8 +62,8 @@ proxy-groups:
     tolerance: 8
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
-    use:
-      - zapasList
+    #use:
+    #  - zapasList
     proxies:
       - WARP
 
@@ -91,9 +91,10 @@ proxy-groups:
 #WARPserver
   - name: WARPServer
     type: url-test
-    interval: 28
+    interval: 60
     tolerance: 35
-    url: http://speed.cloudflare.com/
+    url: http://www.gstatic.com/generate_204
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
       - '🇫🇮 Финляндия'
       - '🇵🇱 Польша'
@@ -103,50 +104,45 @@ proxy-groups:
 
   - name: '🇫🇮 Финляндия'
     type: fallback
-    interval: 30
+    interval: 50
     hidden: true
-    url: http://speed.cloudflare.com/
-    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
     filter: "🇫🇮"     
 
   - name: '🇵🇱 Польша'
     type: fallback
-    interval: 30
+    interval: 50
     hidden: true
-    url: http://speed.cloudflare.com/
-    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
     filter: "🇵🇱"
 
   - name: '🇳🇱 Нидерланды'
     type: fallback
-    interval: 30
+    interval: 50
     hidden: true
-    url: http://speed.cloudflare.com/
-    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
     filter: "🇳🇱"    
 
   - name: '🇩🇪 Германия'
     type: fallback
-    interval: 30
+    interval: 50
     hidden: true
-    url: http://speed.cloudflare.com/
-    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
     filter: "🇩🇪"            
 
   - name: '🇱🇻 Латвия'
     type: fallback
-    interval: 30
+    interval: 50
     hidden: true
-    url: http://speed.cloudflare.com/
-    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
     filter: "🇱🇻"
@@ -182,24 +178,26 @@ rule-providers:
 
 rules:
 #Персональные правила
+  - PROCESS-NAME,parsec.exe,DIRECT
+  - DOMAIN-KEYWORD,parsec.app,WARP
+  - PROCESS-NAME,obs-browser-page.exe,DIRECT
+  - PROCESS-NAME,obs64.exe,DIRECT
+  #- PROCESS-NAME,java.exe,WARP
+  - PROCESS-NAME,RPM-RolePlay.exe,WARP
+  - PROCESS-NAME,Zapret.exe,DIRECT
   - DOMAIN-KEYWORD,warframe.market,WARP
   - IP-CIDR,198.18.0.1/32,WARPServer
   - IP-CIDR,172.232.25.131/32,WARPServer
   - PROCESS-NAME,Warframe.x64.exe,DIRECT
   #- DOMAIN-KEYWORD,api.warframe.com,zapas
   - DOMAIN-KEYWORD,warframe.com,DIRECT
-  - DOMAIN-KEYWORD,youtube.com,DIRECT
+  #- DOMAIN-KEYWORD,youtube.com,DIRECT
   - PROCESS-NAME,DeadByDaylight.exe,DIRECT
   - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,REPO.exe,DIRECT
   - PROCESS-NAME,EpicWebHelper.exe,DIRECT
   - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
-  - DOMAIN-KEYWORD,taptop.site,DIRECT
-#Riot
-  #- DOMAIN-KEYWORD,pvp.net,VPN
-  #- DOMAIN-KEYWORD,riotcdn.net,VPN
-  #- DOMAIN-KEYWORD,riotgames.com,VPN  
 #Короткие правила
   #- PROCESS-NAME,discord.exe,Discord
 #Отдельные правила для исполняемых файлов файлов 
