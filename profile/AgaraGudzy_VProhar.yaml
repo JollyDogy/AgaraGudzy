@@ -1,0 +1,212 @@
+health-check:
+  enable: true
+  lazy: true
+  timeout: 1500
+  url: http://www.gstatic.com/generate_204
+  
+tcp-concurrent: false
+
+proxy-providers:
+  zapasList:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/ProxyWhiteList.yaml
+    interval: 21600
+    path: ./providers/zapasList.yaml
+
+  WARPStandart:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPStandart.yaml
+    interval: 21600
+    path: ./providers/WARPStandart.yaml    
+
+  WARPServers:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPServer.yaml
+    interval: 21600
+    path: ./providers/WARPServers.yaml 
+
+proxy-groups:
+  - name: VPN
+    type: select
+    interval: 800
+    url: http://www.gstatic.com/generate_204
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/CheburNET.png
+    proxies:
+#градация от лучшего до худшего варианта использования      
+      - WARP If
+      - zapas
+      - WARPServer
+
+#Запасной вариант на случай нестабильности WARP
+  - name: WARP If
+    type: fallback
+    interval: 450
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    proxies:
+      - WARP
+      - zapas
+
+  - name: WARP
+    type: fallback
+    interval: 30
+    hidden: false
+    url: http://speed.cloudflare.com/
+    use:
+      - WARPStandart
+
+#Отдельный скрипт для минимального пинга Discord
+  - name: Discord
+    type: url-test
+    interval: 20
+    tolerance: 8
+    hidden: true
+    url: http://gateway-us-east1-d.discord.gg
+    use:
+      - zapasList
+    proxies:
+      - WARP
+
+#Отдельно для игр
+  - name: Games
+    type: url-test
+    interval: 15
+    tolerance: 20
+    hidden: true
+    url: https://cp.cloudflare.com/generate_204
+    use:
+      - zapasList    
+
+#Запасные VPN
+  - name: zapas
+    type: fallback
+    interval: 30
+    #tolerance: 50
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'zapasList'
+
+#WARPserver
+  - name: WARPServer
+    type: url-test
+    interval: 28
+    tolerance: 35
+    url: http://speed.cloudflare.com/
+    proxies:
+      - '🇫🇮 Финляндия'
+      - '🇵🇱 Польша'
+      - '🇳🇱 Нидерланды'
+      - '🇩🇪 Германия'
+      - '🇱🇻 Латвия'
+
+  - name: '🇫🇮 Финляндия'
+    type: fallback
+    interval: 30
+    hidden: true
+    url: http://speed.cloudflare.com/
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'WARPServers'
+    filter: "🇫🇮"     
+
+  - name: '🇵🇱 Польша'
+    type: fallback
+    interval: 30
+    hidden: true
+    url: http://speed.cloudflare.com/
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'WARPServers'
+    filter: "🇵🇱"
+
+  - name: '🇳🇱 Нидерланды'
+    type: fallback
+    interval: 30
+    hidden: true
+    url: http://speed.cloudflare.com/
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'WARPServers'
+    filter: "🇳🇱"    
+
+  - name: '🇩🇪 Германия'
+    type: fallback
+    interval: 30
+    hidden: true
+    url: http://speed.cloudflare.com/
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'WARPServers'
+    filter: "🇩🇪"            
+
+  - name: '🇱🇻 Латвия'
+    type: fallback
+    interval: 30
+    hidden: true
+    url: http://speed.cloudflare.com/
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    use:
+      - 'WARPServers'
+    filter: "🇱🇻"
+
+rule-providers:
+  RulesZapas:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/rules/RulesZapas.yaml
+    path: ./rules/RulesZapas.yaml
+    interval: 21600
+
+  RulesVPN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/rules/RulesVPN.yaml
+    path: ./rules/RulesVPN.yaml
+    interval: 21600
+ 
+  RulesDIRECT:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/rules/RulesDirect.yaml
+    path: ./rules/RulesDIRECT.yaml
+    interval: 21600
+  
+  RulesVPNexe:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/rules/rulesVPNexe.yaml
+    path: ./rules/RulesVPNexe.yaml
+    interval: 21600  
+
+rules:
+#Персональные правила
+  - DOMAIN-KEYWORD,warframe.market,WARP
+  - IP-CIDR,198.18.0.1/32,WARPServer
+  - IP-CIDR,172.232.25.131/32,WARPServer
+  - PROCESS-NAME,Warframe.x64.exe,DIRECT
+  #- DOMAIN-KEYWORD,api.warframe.com,zapas
+  - DOMAIN-KEYWORD,warframe.com,DIRECT
+  - DOMAIN-KEYWORD,youtube.com,DIRECT
+  - PROCESS-NAME,DeadByDaylight.exe,DIRECT
+  - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,DIRECT
+  - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,DIRECT
+  - PROCESS-NAME,REPO.exe,DIRECT
+  - PROCESS-NAME,EpicWebHelper.exe,DIRECT
+  - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
+  - DOMAIN-KEYWORD,taptop.site,DIRECT
+#Riot
+  #- DOMAIN-KEYWORD,pvp.net,VPN
+  #- DOMAIN-KEYWORD,riotcdn.net,VPN
+  #- DOMAIN-KEYWORD,riotgames.com,VPN  
+#Короткие правила
+  #- PROCESS-NAME,discord.exe,Discord
+#Отдельные правила для исполняемых файлов файлов 
+  - RULE-SET,RulesVPNexe,WARPServer
+#Правила для прямых соединений
+  - RULE-SET,RulesDIRECT,DIRECT
+#Запасные правила на случай отказа работы от WARP
+  - RULE-SET,RulesZapas,WARPServer
+#Основные правила для обхода
+  - RULE-SET,RulesVPN,VPN
