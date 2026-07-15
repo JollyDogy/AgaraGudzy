@@ -29,6 +29,7 @@ payload:
   - PROCESS-NAME,msedge
   - PROCESS-NAME,yandex
   #EXE
+  - PROCESS-NAME,PenguinHotel-Win64-Shipping.exe 
   - PROCESS-NAME,telegram.exe  
   - PROCESS-NAME,Overwolf.exe,WARP
   - PROCESS-NAME,OverwolfBrowser.exe,WARP
