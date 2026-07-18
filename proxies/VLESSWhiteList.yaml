@@ -1,227 +1,426 @@
 proxies:
-- name: '[653ms Россия RU 🇷🇺 @vlesstrojan] t.me/rjsxrd'
+- name: '🇩🇪 [VL] Германия #4161 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 89.169.39.55
-  port: 443
-  uuid: c61ec320-29f1-4e00-9272-8b676e6957b4
+  server: 89.167.16.234
+  port: 8526
+  uuid: 9d6104a5-fc6d-4fe6-95b7-80d8f699e09d
   udp: true
   tls: true
-  servername: max.ru
-  flow: xtls-rprx-vision
+  servername: www.yahoo.com
   skip-cert-verify: false
-  client-fingerprint: qq
+  client-fingerprint: firefox
   network: tcp
   reality-opts:
-    public-key: Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU
-    short-id: '825867'
-- name: 🇳🇱 The Netherlands | @RaViraNet t.me/rjsxrd
-  type: ss
-  server: 82.38.31.11
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: 🇮🇹  Italy  [02]  MIFA t.me/rjsxrd
-  type: ss
-  server: 103.240.147.113
-  port: 14605
-  cipher: chacha20-ietf-poly1305
-  password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY
-  udp: true
-- name: 🇮🇹  Italy  [03]  MIFA t.me/rjsxrd
-  type: ss
-  server: 193.168.175.56
-  port: 14605
-  cipher: chacha20-ietf-poly1305
-  password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY
-  udp: true
-- name: CF中转_070404335 t.me/rjsxrd
+    public-key: -zNDEqKkScKvMWB7spEper78GE_u-nR4jDHZ3DpOoxM
+    short-id: 62ad184af31fc8cf
+- name: '🇬🇷 [VL] Греция #15292 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 162.159.19.67
+  server: ez-6174e8.nova-970a2c.workers.dev
   port: 443
-  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
+  uuid: a140f7c4-78aa-ba57-8d45-3f2d00000000
   udp: true
   tls: true
-  servername: nbhhh.mrcool.kdns.fr
+  servername: ez-6174e8.nova-970a2c.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: nbhhh.mrcool.kdns.fr
-- name: CF中转_070404334 t.me/rjsxrd
+- name: '🇫🇮 [VL] Финляндия #5873 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 162.159.13.71
+  server: fin1.panel11.ru
   port: 443
-  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
+  uuid: aeb9e730-5f9e-404d-a8af-9e2e68dc7f5d
   udp: true
   tls: true
-  servername: nbhhh.mrcool.kdns.fr
+  servername: fin1.panel11.ru
+  flow: xtls-rprx-vision
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+  network: tcp
+  reality-opts:
+    public-key: lQ8pnlOU0kqS77TA7Fftl8nSzktXLzFpOLGqCZEAhjg
+    short-id: aaec521b22bbe6cb
+- name: '🇬🇷 [VL] Греция #10435 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.25.126.78
+  port: 443
+  uuid: fb978279-0a28-4045-8258-e9ab97deaf2b
+  udp: true
+  tls: true
+  servername: ourfast.ccwu.cc
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: nbhhh.mrcool.kdns.fr
-- name: CF中转_0704043473 t.me/rjsxrd
+      Host: ourfast.ccwu.cc
+- name: '🇰🇿 [VL] Казахстан #1835 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 104.25.157.74
-  port: 2083
-  uuid: 3cb4c775-bf08-4158-a0e3-cbae9ac452d7
+  server: peekconfigg.vipserver1-39d.workers.dev
+  port: 2096
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
   udp: true
   tls: true
-  servername: orange-darkness-749f.phantomnettest1-65d.workers.dev
+  servername: peekconfigg.vipserver1-39d.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /sync
     headers:
-      Host: orange-darkness-749f.phantomnettest1-65d.workers.dev
-- name: CF中转_07040411444 t.me/rjsxrd
+      Host: peekconfigg.vipserver1-39d.workers.dev
+- name: '🇬🇧 [VL] Великобритания #1736 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 104.19.50.29
+  server: nameless-moon-7c4d.shafmrhjlos23.workers.dev
   port: 443
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  uuid: 89c5493f-9485-85e5-c43f-df0600000000
   udp: true
   tls: true
-  servername: vpn47.cc.cd
+  servername: nameless-moon-7c4d.shafmrhjlos23.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vasl
+- name: '🇩🇪 [VL] Германия #10901 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 172.67.208.235
+  port: 2096
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  udp: true
+  tls: true
+  servername: courses.mftplus.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: courses.mftplus.qzz.io
+- name: '🇬🇷 [VL] Греция #10318 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.21.17.4
+  port: 2087
+  uuid: 38a43f18-b4d9-443f-9ff1-4cf9de3d666e
+  udp: true
+  tls: true
+  servername: valid22.validbv9501.ir
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiS0ZJaGhSaG14Z0NMeCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjE0Ni4xMDMuMTE0LjEzNCJdfQ==?ed=2560
+    headers:
+      Host: valid22.validbv9501.ir
+- name: '🇫🇮 [VL] Финляндия #15787 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 108.162.198.217
+  port: 2087
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp9.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇺🇦 [VL] Украина #10711 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.27.78.203
+  port: 2083
+  uuid: 3727b0ac-9f3e-4da8-895e-33f739e9d9bb
+  udp: true
+  tls: true
+  servername: fhfhfhf.kathykroger.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fhfhfhf.kathykroger.workers.dev
+- name: '🇪🇬 [VL] Египет #15568 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 108.162.198.75
+  port: 2096
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp2.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇦🇹 [VL] Австрия #16523 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.26.7.138
+  port: 2096
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp7.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇪🇪 [VL] Эстония #15757 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.26.13.146
+  port: 2096
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp7.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇰🇿 [VL] Казахстан #16279 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 108.162.198.109
+  port: 2087
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp4.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇩🇪 [VL] Германия #16195 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.17.100.243
+  port: 2087
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp3.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇨🇿 [VL] Чехия #15084 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.17.111.203
+  port: 2053
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp9.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇦🇹 [VL] Австрия #17033 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.26.3.87
+  port: 2083
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp9.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇬🇷 [VL] Греция #17058 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 108.162.198.88
+  port: 2096
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp2.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇵🇱 [VL] Польша #15414 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 108.162.198.103
+  port: 2096
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp3.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇺🇦 [VL] Украина #15837 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.26.12.21
+  port: 2053
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp7.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇰🇿 [VL] Казахстан #15287 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.26.8.252
+  port: 443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp3.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇳🇱 [VL] Нидерланды #16005 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 108.162.198.9
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp9.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇨🇿 [VL] Чехия #16943 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 172.67.65.84
+  port: 2083
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp4.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇺🇦 [VL] Украина #16352 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 172.67.79.99
+  port: 2096
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp8.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇱🇻 [VL] Латвия #15132 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 172.67.73.80
+  port: 2083
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp9.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇫🇷 [VL] Франция #1933 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: cf-vless-4cf55824.aimall.fr
+  port: 443
+  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
+  udp: true
+  tls: true
+  servername: cf-vless-4cf55824.aimall.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: cf-vless-4cf55824.aimall.fr
+- name: '🇵🇱 [VL] Польша #17396 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 172.67.66.145
+  port: 443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp8.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇧🇾 [VL] Беларусь #15707 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 108.162.198.171
+  port: 8443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp29.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇨🇾 [VL] Кипр #17097 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.17.110.253
+  port: 2096
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp2.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇧🇾 [VL] Беларусь #17263 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 172.67.69.33
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp4.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇨🇭 [VL] Швейцария #1757 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: icy-morning-df86.alisooltaniiii2024ali.workers.dev
+  port: 443
+  uuid: 7ba17ba6-8d1d-4968-882b-f5a3b43eb51d
+  udp: true
+  tls: true
+  servername: icy-morning-df86.alisooltaniiii2024ali.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vpn47.cc.cd
-- name: CF中转_0704045099 t.me/rjsxrd
-  type: vless
-  server: 104.16.72.70
-  port: 443
-  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
-  udp: true
-  tls: true
-  servername: nbhhh.mrcool.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: nbhhh.mrcool.kdns.fr
-- name: CF中转_0704045089 t.me/rjsxrd
-  type: vless
-  server: 104.16.72.41
-  port: 443
-  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
-  udp: true
-  tls: true
-  servername: nbhhh.mrcool.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: nbhhh.mrcool.kdns.fr
-- name: 🇳🇱 The Netherlands | @RaViraNet t.me/rjsxrd (2)
-  type: ss
-  server: 82.38.31.10
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: CF中转_0704044418 t.me/rjsxrd
-  type: vless
-  server: 104.25.150.137
-  port: 443
-  uuid: b32d498e-bbac-4f5f-92bb-ea49d5d6ee94
-  udp: true
-  tls: true
-  servername: ez-2f4a7e.ezaccess15c2114.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-2f4a7e.ezaccess15c2114.workers.dev
-- name: CF中转_0704042504 t.me/rjsxrd
-  type: vless
-  server: 104.16.174.3
-  port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
-  udp: true
-  tls: true
-  servername: amooaliii.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /jdhfyws
-    headers:
-      Host: amooaliii.net
-- name: CF中转_070404636 t.me/rjsxrd
-  type: vless
-  server: 104.18.47.140
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
-  udp: true
-  tls: true
-  servername: sp.linuxdododo.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.JP.cmliussss.netfp=chrome
-    headers:
-      Host: sp.linuxdododo.ccwu.cc
-- name: CF中转_0704046156 t.me/rjsxrd
-  type: vless
-  server: 104.18.195.156
-  port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
-  udp: true
-  tls: true
-  servername: amooaliii.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /jdhfyws
-    headers:
-      Host: amooaliii.net
-- name: CF中转_070404687 t.me/rjsxrd
-  type: vless
-  server: 104.16.72.101
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
-  udp: true
-  tls: true
-  servername: sp.linuxdododo.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: sp.linuxdododo.ccwu.cc
-- name: CF中转_070404723 t.me/rjsxrd
-  type: vless
-  server: 104.16.73.26
-  port: 443
-  uuid: 666c7578-0000-4000-8000-000000000000
-  udp: true
-  tls: true
-  servername: parsa-panel-alypp.fafaavaf.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /flux
-    headers:
-      Host: parsa-panel-alypp.fafaavaf.workers.dev
-- name: CF中转_07040410269 t.me/rjsxrd
+      Host: icy-morning-df86.alisooltaniiii2024ali.workers.dev
+- name: '🇰🇿 [VL] Казахстан #10752 | РосТуннель t.me/rjsxrd'
   type: vless
   server: 104.17.20.214
   port: 443
@@ -236,491 +435,2618 @@ proxies:
     path: /
     headers:
       Host: refighehosein.salamdadash123.workers.dev
-- name: CF中转_070404772 t.me/rjsxrd
+- name: '🇧🇾 [VL] Беларусь #15121 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 104.16.72.2
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
+  server: 104.18.33.139
+  port: 2053
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: sp.linuxdododo.ccwu.cc
+  servername: vp40.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /proxyip
-    headers:
-      Host: sp.linuxdododo.ccwu.cc
-- name: CF中转_0704045517 t.me/rjsxrd
+    path: /
+- name: '🇵🇱 [VL] Польша #16430 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 173.245.59.14
-  port: 2053
-  uuid: 8cf1e524-ce8c-4c63-8440-3ecd687f5e8d
+  server: 104.19.33.83
+  port: 443
+  uuid: fb978279-0a28-4045-8258-e9ab97deaf2b
   udp: true
   tls: true
-  servername: still-lake-3cf7.dls2026.workers.dev
+  servername: ourfast.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇦🇲 [VL] Армения #14857 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.32.233
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp13.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇪🇪 [VL] Эстония #14672 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.149.122
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp6.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇳🇱 [VL] Нидерланды #15428 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.147.245
+  port: 2053
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp7.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇧🇾 [VL] Беларусь #15666 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.26
+  port: 2087
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp42.cc.cd
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇪🇪 [VL] Эстония #16884 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 198.41.223.79
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp7.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇫🇷 [VL] Франция #17325 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 198.41.208.241
+  port: 443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp3.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇵🇱 [VL] Польша #16914 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.158
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp3.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇬🇧 [VL] Великобритания #10555 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 5.175.141.20
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇦🇹 [VL] Австрия #15067 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.17.189.153
+  port: 2053
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp15.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇭🇷 [VL] Хорватия #17289 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.58.124
+  port: 2087
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp2.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇪🇬 [VL] Египет #15226 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 162.159.45.7
+  port: 8443
+  uuid: fb978279-0a28-4045-8258-e9ab97deaf2b
+  udp: true
+  tls: true
+  servername: wefast.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇩🇪 [VL] Германия #17209 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 162.159.39.104
+  port: 2096
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp8.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇰🇿 [VL] Казахстан #10584 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.192
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇷🇺 [VL] Россия #15532 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.17.50.253
+  port: 2087
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp9.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇪🇪 [VL] Эстония #10605 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.50
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇷🇺 [VL] Россия #15957 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.16.159.16
+  port: 2053
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp2.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇪🇪 [VL] Эстония #15677 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.80
+  port: 2083
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp7.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇪🇬 [VL] Египет #17272 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 162.159.34.39
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp8.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇪🇬 [VL] Египет #16198 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 162.159.41.1
+  port: 2083
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp8.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇦🇲 [VL] Армения #17030 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 198.41.223.216
+  port: 8443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp15.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇫🇷 [VL] Франция #15492 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 172.66.0.20
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp30.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇱🇻 [VL] Латвия #17346 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 198.41.223.167
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp3.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇬🇧 [VL] Великобритания #10545 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 31.43.179.20
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇬🇷 [VL] Греция #16030 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.17
+  port: 2087
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp4.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇷🇺 [VL] Россия #10768 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 141.101.120.73
+  port: 443
+  uuid: 5d8eb33a-2166-4daf-88fe-4be5799c493b
+  udp: true
+  tls: true
+  servername: noisy-term-e657.airdrop2014aa5168.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: still-lake-3cf7.dls2026.workers.dev
-- name: '[804ms HU HU  @vlesstrojan] t.me/rjsxrd'
+      Host: noisy-term-e657.airdrop2014aa5168.workers.dev
+- name: '🇸🇪 [VL] Швеция #15459 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: dp-hu-01.live
-  port: 443
-  uuid: 43df00c9-f209-4773-b1cc-48e175bfb606
+  server: 173.245.59.218
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
   udp: true
   tls: true
-  servername: storage.yandex.net
+  servername: vp3.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇨🇿 [VL] Чехия #10579 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.166
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇵🇱 [VL] Польша #17112 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.34.175
+  port: 2087
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp12.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇬🇧 [VL] Великобритания #17324 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.49.54
+  port: 443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp3.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇱🇻 [VL] Латвия #10522 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 159.112.235.20
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇸🇪 [VL] Швеция #16445 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.17.56.211
+  port: 2087
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp3.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇦🇲 [VL] Армения #17130 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.229
+  port: 443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp4.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇦🇲 [VL] Армения #10576 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.150
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇺🇦 [VL] Украина #15890 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 173.245.59.14
+  port: 2053
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp2.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇬🇧 [VL] Великобритания #15711 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.17.215.137
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp40.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇬🇧 [VL] Великобритания #16457 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 198.41.223.232
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp3.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇨🇭 [VL] Швейцария #15319 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 198.41.223.255
+  port: 2053
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp4.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇦🇲 [VL] Армения #14994 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 162.159.35.37
+  port: 2087
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp3.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇦🇹 [VL] Австрия #14939 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.102
+  port: 2083
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp8.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇨🇾 [VL] Кипр #16708 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.17.115.56
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp6.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇱🇹 [VL] Литва #10623 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.58.223
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp18.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp18.cc.cd
+- name: '🇱🇹 [VL] Литва #16252 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.17.59.225
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp7.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇧🇾 [VL] Беларусь #10531 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 188.164.248.20
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇩🇪 [VL] Германия #4105 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: de.monkeyvillage.pro
+  port: 443
+  uuid: 528ee6c3-7d3c-410e-b0de-0d5da09aeb14
+  udp: true
+  tls: true
+  servername: de.monkeyvillage.pro
   flow: xtls-rprx-vision
   skip-cert-verify: false
   client-fingerprint: firefox
   network: tcp
   reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: f4b4a6365558ea2e
-- name: CF中转_0704041581 t.me/rjsxrd
+    public-key: Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo
+    short-id: 11a646ca6678c507
+- name: '🇬🇧 [VL] Великобритания #10609 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 104.25.220.68
+  server: 91.193.59.72
   port: 443
-  uuid: 9952b71a-6c86-4522-888f-ff9ea9b93536
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
   udp: true
   tls: true
-  servername: 1.hshs8227shhshs.workers.dev
+  servername: cf11.evan00.dpdns.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
-- name: CF中转_0704044553 t.me/rjsxrd
-  type: vless
-  server: 104.25.3.165
-  port: 443
-  uuid: 737678dc-cc15-4643-85a4-ca9359df1aa4
-  udp: true
-  tls: true
-  servername: patient-moon-c61f.ggfsa55.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts: null
-- name: '[857ms CA CA  @vlesstrojan] t.me/rjsxrd'
-  type: trojan
-  server: space.byu.id.yxls.eu.cc
-  port: 443
-  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
-  udp: true
-  tls: true
-  servername: space.byu.id.yxls.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /au-do
-- name: CF中转_070404746 t.me/rjsxrd
-  type: vless
-  server: 104.18.153.10
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
-  udp: true
-  tls: true
-  servername: sp.linuxdododo.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip
+    path: Telegram🇨🇳+@WangCai2
     headers:
-      Host: sp.linuxdododo.ccwu.cc
-- name: CF中转_070404707 t.me/rjsxrd
+      Host: cf11.evan00.dpdns.org
+- name: '🇦🇹 [VL] Австрия #10583 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 104.27.61.92
+  server: 91.193.59.191
   port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
   udp: true
   tls: true
-  servername: amooaliii.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /jdhfyws
-    headers:
-      Host: amooaliii.net
-- name: CF中转_070404307 t.me/rjsxrd
-  type: vless
-  server: 104.18.45.137
-  port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
-  udp: true
-  tls: true
-  servername: amooaliii.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /jdhfyws
-    headers:
-      Host: amooaliii.net
-- name: CF中转_070404284 t.me/rjsxrd
-  type: vless
-  server: 108.162.194.135
-  port: 443
-  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
-  udp: true
-  tls: true
-  servername: nbhhh.mrcool.kdns.fr
+  servername: cf11.evan00.dpdns.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: Telegram🇨🇳+@WangCai2
     headers:
-      Host: nbhhh.mrcool.kdns.fr
-- name: CF中转_0704044384 t.me/rjsxrd
+      Host: cf11.evan00.dpdns.org
+- name: '🇩🇪 [VL] Германия #10517 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 104.18.32.47
+  server: 147.185.161.20
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇬🇷 [VL] Греция #10572 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.139
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇨🇭 [VL] Швейцария #17315 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.219
   port: 2087
-  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
   udp: true
   tls: true
-  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+  servername: vp4.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇵🇱 [VL] Польша #15395 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.56
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp7.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇬🇧 [VL] Великобритания #16639 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.48.192
+  port: 2083
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp6.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇪🇪 [VL] Эстония #16852 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.50.206
+  port: 2087
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp18.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /game
-    headers:
-      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
-- name: CF中转_0704046154 t.me/rjsxrd
+    path: /
+- name: '🇰🇿 [VL] Казахстан #14802 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 104.16.211.140
+  server: 104.17.189.13
+  port: 2087
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp7.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇺🇦 [VL] Украина #15276 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.17.145.7
   port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: amooaliii.net
+  servername: vp34.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /jdhfyws
-    headers:
-      Host: amooaliii.net
-- name: CF中转_070404717 t.me/rjsxrd
+    path: /
+- name: '🇺🇦 [VL] Украина #14907 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 104.16.72.70
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
-  udp: true
-  tls: true
-  servername: sp.linuxdododo.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: sp.linuxdododo.ccwu.cc
-- name: CF中转_0704044539 t.me/rjsxrd
-  type: vless
-  server: 172.64.32.75
+  server: 104.16.159.8
   port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
   udp: true
   tls: true
-  servername: amooaliii.net
+  servername: vp2.cc.cd
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /jdhfyws
-    headers:
-      Host: amooaliii.net
-- name: CF中转_0704046157 t.me/rjsxrd
+    path: /
+- name: '🇦🇲 [VL] Армения #15406 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 104.19.134.235
-  port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
-  udp: true
-  tls: true
-  servername: amooaliii.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /jdhfyws
-    headers:
-      Host: amooaliii.net
-- name: CF中转_0704042471 t.me/rjsxrd
-  type: vless
-  server: 104.17.222.14
+  server: 104.17.124.1
   port: 2053
-  uuid: ad40a583-2d59-44ff-88cf-b5db0e1e00a7
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: edgetunnel.kalmevebto.workers.dev
+  servername: vp24.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇦🇹 [VL] Австрия #15499 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.17.57.219
+  port: 2053
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp8.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇨🇭 [VL] Швейцария #16544 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 198.41.223.78
+  port: 2087
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp6.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇬🇷 [VL] Греция #16241 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.32.152
+  port: 2096
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp9.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇩🇪 [VL] Германия #10482 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: relay.oneoknews.com
+  port: 443
+  uuid: 5ae9ec50-5551-4bfa-9e09-bae15ffdd33d
+  udp: true
+  tls: true
+  servername: relay.oneoknews.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  reality-opts:
+    public-key: TwrXS2FIlRF5YYJlOYzcNp_ETPZ51lPAVM8xlZKFJR8
+    short-id: 742f07e91404a360
+  grpc-opts:
+    grpc-service-name: api.v1.StreamService
+- name: '🇷🇺 [VL] Россия #10595 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.232
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇧🇾 [VL] Беларусь #10589 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.214
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇰🇿 [VL] Казахстан #10573 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.143
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇰🇿 [VL] Казахстан #17023 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.152
+  port: 443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp7.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇬🇧 [VL] Великобритания #15832 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 198.41.208.243
+  port: 2053
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp6.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇺🇦 [VL] Украина #10422 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 162.159.43.233
+  port: 443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp2.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: edgetunnel.kalmevebto.workers.dev
-- name: '🇱🇹Обходы - TG: AirLinkVPNBot |0112| t.me/rjsxrd'
+      Host: vp2.cc.cd
+- name: '🇭🇷 [VL] Хорватия #10577 | РосТуннель t.me/rjsxrd'
   type: vless
-  server: 37.9.4.168
+  server: 91.193.59.155
   port: 443
-  uuid: c918927a-a4cf-45ad-a5c8-e135129ee1d4
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
   udp: true
   tls: true
-  servername: slackware.ubuntuhosting.host
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇦🇹 [VL] Австрия #14731 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.151
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp4.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇬🇷 [VL] Греция #16567 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 198.41.223.30
+  port: 2053
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp33.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇦🇲 [VL] Армения #15013 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.50.8
+  port: 8443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp34.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇨🇾 [VL] Кипр #16223 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 198.41.208.190
+  port: 8443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp9.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇨🇾 [VL] Кипр #10569 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.134
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇬🇧 [VL] Великобритания #10597 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.23
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇦🇲 [VL] Армения #17090 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.151.14
+  port: 443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp6.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇬🇧 [VL] Великобритания #17297 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.34.88
+  port: 2083
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp18.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇱🇹 [VL] Литва #10550 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 45.142.120.20
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇷🇺 [VL] Россия #6722 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 46.8.208.43
+  port: 443
+  uuid: b657c904-781e-406a-9062-b0011ff80041
+  udp: true
+  tls: true
+  servername: rutube.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: tcp
+  reality-opts:
+    public-key: zJPh6KpkMn0rSpoIRbmypTckWen2x-r4ZN-4SCn0MkM
+- name: '🇱🇻 [VL] Латвия #10586 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.206
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇫🇷 [VL] Франция #14864 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 198.41.223.195
+  port: 2096
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp6.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇳🇱 [VL] Нидерланды #10499 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: app.he-happ.com
+  port: 443
+  uuid: 9e4e5d64-11a3-48bc-8622-1d39bd1c2573
+  udp: true
+  tls: true
+  servername: app.he-happ.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  reality-opts:
+    public-key: 0DJvjVOtuyfSDnioOJJzHKMsYGgUD95Sw153xEJrBgo
+    short-id: db8389179a5852d4
+  grpc-opts:
+    grpc-service-name: cloud.v2.RelayService
+- name: '🇨🇾 [VL] Кипр #14808 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 172.64.146.59
+  port: 2087
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇨🇾 [VL] Кипр #10208 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.21.41.140
+  port: 2053
+  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
+  udp: true
+  tls: true
+  servername: po.fastbrokencompony.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  alpn:
+  - h3
+  - h2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: po.fastbrokencompony.com
+- name: '🇬🇧 [VL] Великобритания #10518 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 147.78.140.20
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇩🇪 [VL] Германия #3543 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 68.183.213.79
+  port: 443
+  uuid: bbbde6b4-eb72-4018-b702-1c782c528927
+  udp: true
+  tls: true
+  servername: etppnyfi.j84lb8cxseup4s2nb3if.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: etppnyfi.j84lb8cxseup4s2nb3if.workers.dev
+- name: '🇫🇷 [VL] Франция #10546 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 45.12.30.20
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇳🇱 [VL] Нидерланды #5433 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: nl2.vrsvpn.com
+  port: 444
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+  udp: true
+  tls: true
+  servername: web.max.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  reality-opts:
+    public-key: X-YL5VNtlMNIaBrwaHt3hJCeF_gMT9gPRDDlK1Qg7Tc
+    short-id: 8321461729abcdef
+  grpc-opts:
+    grpc-service-name: web.max.ru
+- name: '🇧🇾 [VL] Беларусь #10581 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.179
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇧🇾 [VL] Беларусь #10523 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 159.246.55.20
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇩🇪 [VL] Германия #14741 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.249
+  port: 443
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp8.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇷🇺 [VL] Россия #6346 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 213.171.8.7
+  port: 443
+  uuid: 506e9c62-f630-4bf6-89d9-575ec6b2a939
+  udp: true
+  tls: true
+  servername: yandex.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: tcp
+  reality-opts:
+    public-key: sKy_duclM4EkN5Swe0pv2sihnRiog2wxdrVe087RUQ4
+    short-id: deadbeaf
+- name: '🇩🇪 [VL] Германия #10566 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.121
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇸🇪 [VL] Швеция #16844 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.18.33.244
+  port: 2053
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp7.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇷🇺 [VL] Россия #15846 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.16.75.216
+  port: 443
+  uuid: b26ec0f4-6c92-45f7-b287-2a664abf1963
+  udp: true
+  tls: true
+  servername: server-ir-2.ariyuz.org
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇳🇱 [VL] Нидерланды #5605 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 46.8.69.162
+  port: 443
+  uuid: 4880f729-cd7c-4158-8fe7-860ec4e01482
+  udp: true
+  tls: true
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: tcp
+  reality-opts:
+    public-key: 0xPKGAAK5GSdktEfUgCdtMdeo9wuZFLvr-GVD35m2VU
+    short-id: 0f58c9be51e38a
+- name: '🇪🇪 [VL] Эстония #10587 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.209
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇦🇹 [VL] Австрия #10547 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 45.12.31.20
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇪🇪 [VL] Эстония #15582 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 104.19.146.246
+  port: 2087
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp40.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: '🇩🇪 [VL] Германия #4152 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 5.252.26.173
+  port: 8380
+  uuid: a2292e36-fafb-6634-051d-1d99f45503c7
+  udp: true
+  tls: true
+  servername: yahoo.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: tcp
+  reality-opts:
+    public-key: xtMO91xo5JUl2SvkUtozmSr2lLBFEkghyVALchFrYRY
+    short-id: 50acf6
+- name: '🇸🇪 [VL] Швеция #10600 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 91.193.59.24
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳+@WangCai2
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '🇸🇪 [VL] Швеция #11040 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 80.240.18.227
+  port: 10051
+  uuid: f4d859eb-abc6-4c57-9eee-8fe9e2ef0f94
+  udp: true
+  tls: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: '🇩🇪 [VL] Германия #3544 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 158.180.49.11
+  port: 8443
+  uuid: bbbde6b4-eb72-4018-b702-1c782c528927
+  udp: true
+  tls: true
+  servername: etppnyfi.j84lb8cxseup4s2nb3if.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: etppnyfi.j84lb8cxseup4s2nb3if.workers.dev
+- name: '🇩🇪 [VL] Германия #3591 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 45.76.87.125
+  port: 14750
+  uuid: c2c94230-7075-4558-89f4-ddf74d7de107
+  udp: true
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: '🇩🇪 [VL] Германия #3976 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 94.249.225.41
+  port: 443
+  uuid: d407defe-cd4f-4d32-a3b1-47c2c813c50d
+  udp: true
+  tls: true
+  servername: ssl.cougarboardsstore.store
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: tcp
+  reality-opts:
+    public-key: X6zcH8pCUXrauNQvbNkm8e_oTdB0wOr8eCMCzs3b1Tc
+- name: '🇩🇪 [VL] Германия #10481 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 87.120.108.150
+  port: 443
+  uuid: 54d91bc3-a461-4458-a620-36f27f5d6975
+  udp: true
+  tls: true
+  servername: www.amd.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  reality-opts:
+    public-key: jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ
+    short-id: 635a76c25a4b1820
+  grpc-opts:
+    grpc-service-name: grpc-api-v2
+- name: '🇫🇷 [VL] Франция #7479 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 37.49.230.102
+  port: 443
+  uuid: d407defe-cd4f-4d32-a3b1-47c2c813c50d
+  udp: true
+  tls: true
+  servername: fastsync.xyz
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: tcp
+  reality-opts:
+    public-key: ppvT23Dpmf4G9dZLVQJq3Ev9ckq4REa1jJ9gkXqp1zQ
+- name: '🇫🇷 [VL] Франция #7537 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 51.91.103.142
+  port: 8443
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  udp: true
+  tls: true
+  servername: s5gydl.936.us.ci
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=tw.william.us.ci?uuid=f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+    headers:
+      Host: s5gydl.936.us.ci
+- name: '🇷🇺 [VL] Россия #6300 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: qq.utiltools.ru
+  port: 443
+  uuid: eb78e1f0-d921-4ca9-a889-261fcc5a0547
+  udp: true
+  tls: true
+  servername: qq.utiltools.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: tcp
+  reality-opts:
+    public-key: drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI
+- name: '🇷🇺 [VL] Россия #10488 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 31.56.188.123
+  port: 443
+  uuid: 54d91bc3-a461-4458-a620-36f27f5d6975
+  udp: true
+  tls: true
+  servername: www.amd.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  reality-opts:
+    public-key: jgf0wWpgkEJZzu9wu45Ms33SNZpibtx507rpvzfz3mQ
+    short-id: 635a76c25a4b1820
+  grpc-opts:
+    grpc-service-name: grpc-api-v2
+- name: '🇷🇺 [VL] Россия #6630 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 78.159.250.214
+  port: 443
+  uuid: eb78e1f0-d921-4ca9-a889-261fcc5a0547
+  udp: true
+  tls: true
+  servername: qq.utiltools.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: tcp
+  reality-opts:
+    public-key: drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI
+- name: '🇷🇺 [VL] Россия #16099 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 194.55.239.206
+  port: 8443
+  uuid: ecad47b0-249e-001a-adff-e3c8f02b1897
+  udp: true
+  tls: true
+  servername: rutube.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: tcp
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+- name: '🇩🇪 [VL] Германия #3621 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 148.251.41.50
+  port: 10000
+  uuid: d096c0b7-2205-478f-9e2f-0c8366e5a2b8
+  udp: true
+  tls: true
+  servername: 3byyf8q0.qnts33mtgi0ebq9tjd34.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 3byyf8q0.qnts33mtgi0ebq9tjd34.workers.dev
+- name: '🇷🇺 [VL] Россия #6441 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: bs1.whitehost.org
+  port: 443
+  uuid: cad59ee8-e80f-4d0f-a9dd-d082e00a75e4
+  udp: true
+  tls: true
+  servername: wde3.whitedeu.org
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: tcp
+- name: '🇬🇧 [VL] Великобритания #7657 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 45.147.44.110
+  port: 8082
+  uuid: e46a21d4-b6a7-4d9b-8243-9899bcb07663
+  udp: true
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: '🇷🇺 [VL] Россия #3438 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: ad-020.limaklhc6.info
+  port: 8443
+  uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
+  udp: true
+  tls: true
+  servername: ad-020.limaklhc6.info
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad-020.limaklhc6.info
+- name: '🇷🇺 [VL] Россия #6830 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 93.77.188.102
+  port: 443
+  uuid: cad59ee8-e80f-4d0f-a9dd-d082e00a75e4
+  udp: true
+  tls: true
+  servername: wde3.whitedeu.org
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: tcp
+- name: '🇳🇱 [VL] Нидерланды #15922 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 152.70.58.201
+  port: 443
+  uuid: 8892e34a-339b-4526-b88d-cf68c516231c
+  udp: true
+  tls: true
+  servername: www.nvidia.com
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: tcp
+  reality-opts:
+    public-key: Hg_ivwbClYmR-SEHdoGgq4yEk6ltbjS5c4yiQRa4_28
+    short-id: 52c723e0fad49689
+- name: '🇨🇭 [VL] Швейцария #10945 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 45.130.125.158
+  port: 2053
+  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
+  udp: true
+  tls: true
+  servername: po.fastbrokencompony.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: po.fastbrokencompony.com
+- name: '🇰🇿 [VL] Казахстан #8872 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 93.183.87.159
+  port: 8443
+  uuid: d407defe-cd4f-4d32-a3b1-47c2c813c50d
+  udp: true
+  tls: true
+  servername: www.engage.edgedoor.ink
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: tcp
+  reality-opts:
+    public-key: lFVBai-H5JaIoD75hdP5qETYo7a49yxPiJ06Vi6WyV4
+- name: '🇵🇱 [VL] Польша #3409 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: vnp.noaguo.xyz
+  port: 443
+  uuid: 864da993-bccc-45a7-8271-2e5c5d6c3300
+  udp: true
+  tls: true
+  servername: vnp.noaguo.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vlws
+- name: '🇩🇪 [VL] Германия #4139 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 31.185.108.18
+  port: 8443
+  uuid: 7b84db8b-65cd-4072-9c57-dadae303feec
+  udp: true
+  tls: true
+  servername: free.isurux.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?Telegram🇨🇳+@WangCai2
+    headers:
+      Host: free.isurux.dpdns.org
+- name: '🇸🇪 [VL] Швеция #8752 | РосТуннель t.me/rjsxrd'
+  type: vless
+  server: 46.246.92.109
+  port: 443
+  uuid: 14f19724-de91-4285-a633-aa8e2caaf812
+  udp: true
+  tls: true
+  servername: site.rumedia-cdn.com
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: tcp
+  reality-opts:
+    public-key: JwL5KoiWkCJI2vMJxyTEplfv-zBAtwxOH8SMbw6QHzY
+    short-id: cd40c992fe4b10c2
+- name: 🇰🇷_韩国_34 t.me/rjsxrd
+  type: trojan
+  server: sensible-mongrel.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: sensible-mongrel.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷_韩国_13 t.me/rjsxrd
+  type: trojan
+  server: legible-ocelot.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: legible-ocelot.rooster465.autos
+  skip-cert-verify: false
+- name: 🇺🇸_美国_398 t.me/rjsxrd
+  type: vless
+  server: 1.tls.fastly.veraspeed.ir
+  port: 443
+  uuid: 891710f4-45f3-41b1-99a6-6f1510f83c10
+  udp: true
+  tls: true
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
+    headers:
+      Host: pan21.global.ssl.fastly.net
+- name: '@v2raybaaz ³ t.me/rjsxrd'
+  type: ss
+  server: 82.38.31.203
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇯🇵_日本_33 t.me/rjsxrd
+  type: trojan
+  server: adapting-spider.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: adapting-spider.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷_韩国_11 t.me/rjsxrd
+  type: trojan
+  server: accurate-cat.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: accurate-cat.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_93 t.me/rjsxrd
+  type: trojan
+  server: firm-krill.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: firm-krill.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷_韩国_12 t.me/rjsxrd
+  type: trojan
+  server: normal-bull.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: normal-bull.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬_新加坡_38 t.me/rjsxrd
+  type: trojan
+  server: helping-newt.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: helping-newt.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬_新加坡_101 t.me/rjsxrd
+  type: trojan
+  server: smooth-sculpin.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: smooth-sculpin.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_75 t.me/rjsxrd
+  type: trojan
+  server: expert-muskrat.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: expert-muskrat.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_23 t.me/rjsxrd
+  type: trojan
+  server: flexible-gannet.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: flexible-gannet.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_30 t.me/rjsxrd
+  type: trojan
+  server: gentle-turtle.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: gentle-turtle.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷_韩国_79 t.me/rjsxrd
+  type: trojan
+  server: guided-pelican.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: guided-pelican.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_83 t.me/rjsxrd
+  type: trojan
+  server: inviting-rabbit.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: inviting-rabbit.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬_新加坡_10 t.me/rjsxrd
+  type: trojan
+  server: proper-marlin.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: proper-marlin.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷_韩国_20 t.me/rjsxrd
+  type: trojan
+  server: modest-amoeba.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: modest-amoeba.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_85 t.me/rjsxrd
+  type: trojan
+  server: legible-ram.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: legible-ram.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_40 t.me/rjsxrd
+  type: trojan
+  server: stunning-mastodon.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: stunning-mastodon.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_70 t.me/rjsxrd
+  type: trojan
+  server: beloved-crow.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: beloved-crow.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_18 t.me/rjsxrd
+  type: trojan
+  server: hot-tapir.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: hot-tapir.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_44 t.me/rjsxrd
+  type: trojan
+  server: skilled-polliwog.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: skilled-polliwog.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_49 t.me/rjsxrd
+  type: trojan
+  server: optimal-penguin.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: optimal-penguin.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵_日本_48 t.me/rjsxrd
+  type: trojan
+  server: brief-hare.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: brief-hare.rooster465.autos
+  skip-cert-verify: false
+- name: 未知 SS-56 | free-nodes t.me/rjsxrd
+  type: ss
+  server: 103.111.114.82
+  port: 28061
+  cipher: chacha20-ietf-poly1305
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  udp: true
+- name: 🏳️_未知_259 t.me/rjsxrd
+  type: vless
+  server: 162.159.24.217
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🇸🇬_新加坡_145 t.me/rjsxrd
+  type: trojan
+  server: bold-eagle.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: bold-eagle.rooster465.autos
+  skip-cert-verify: false
+- name: 🇺🇸_美国_140 t.me/rjsxrd
+  type: trojan
+  server: alert-monster.rooster465.autos
+  port: 443
+  password: CF68213490
+  udp: true
+  tls: true
+  servername: alert-monster.rooster465.autos
+  skip-cert-verify: false
+- name: 🇺🇸 美国 | USA t.me/rjsxrd
+  type: vless
+  server: 154.17.4.244
+  port: 443
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  udp: true
+  tls: true
+  servername: s5gydl.936.us.ci
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=tw.william.us.ci?uuid=f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+    headers:
+      Host: s5gydl.936.us.ci
+- name: 未知 SS-55 | free-nodes t.me/rjsxrd
+  type: ss
+  server: 103.111.114.80
+  port: 28061
+  cipher: chacha20-ietf-poly1305
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  udp: true
+- name: 🇮🇳 印度 V2CROSS.COM t.me/rjsxrd
+  type: ss
+  server: 103.111.114.71
+  port: 28061
+  cipher: chacha20-ietf-poly1305
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  udp: true
+- name: 🏳️_未知_198 t.me/rjsxrd
+  type: vless
+  server: 172.64.153.90
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🇩🇪_德国_251 t.me/rjsxrd
+  type: vless
+  server: 88.198.82.148
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🇩🇪_德国_227 t.me/rjsxrd
+  type: vless
+  server: 88.198.82.156
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: '>>@oneclickvpnkeys::IN t.me/rjsxrd'
+  type: ss
+  server: 103.111.114.55
+  port: 28061
+  cipher: chacha20-ietf-poly1305
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  udp: true
+- name: '>>@oneclickvpnkeys::IN t.me/rjsxrd (2)'
+  type: ss
+  server: 103.111.114.61
+  port: 28061
+  cipher: chacha20-ietf-poly1305
+  password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
+  udp: true
+- name: 🇩🇪 Germany | 🌐 | [*CIDR] t.me/rjsxrd
+  type: vless
+  server: 171.22.134.213
+  port: 443
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  udp: true
+  tls: true
+  servername: media2.tcpdoor.net
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  reality-opts:
+    public-key: vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8
+    short-id: 3303c7a5
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🏳️_未知_233 t.me/rjsxrd
+  type: vless
+  server: 162.159.39.151
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_245 t.me/rjsxrd
+  type: vless
+  server: 162.159.39.192
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_296 t.me/rjsxrd
+  type: vless
+  server: 104.17.208.223
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_212 t.me/rjsxrd
+  type: vless
+  server: 162.159.38.1
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_238 t.me/rjsxrd
+  type: vless
+  server: 162.159.44.121
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_244 t.me/rjsxrd
+  type: vless
+  server: 172.64.229.110
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🇳🇱_荷兰_243 t.me/rjsxrd
+  type: vless
+  server: 88.218.248.195
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_252 t.me/rjsxrd
+  type: vless
+  server: 198.41.222.125
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_250 t.me/rjsxrd
+  type: vless
+  server: 104.16.247.6
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_219 t.me/rjsxrd
+  type: vless
+  server: 173.245.59.94
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_257 t.me/rjsxrd
+  type: vless
+  server: 172.64.53.253
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_236 t.me/rjsxrd
+  type: vless
+  server: 108.162.198.108
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🇩🇪39467 | ⚡️Telegram = t.me/SOSkeyNET t.me/rjsxrd
+  type: ss
+  server: 57.129.121.230
+  port: 10443
+  cipher: chacha20-ietf-poly1305
+  password: uROuEqsL8IUMMVb4wDwnGU
+  udp: true
+- name: 🏳️_未知_235 t.me/rjsxrd
+  type: vless
+  server: 104.25.254.34
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_197 t.me/rjsxrd
+  type: vless
+  server: 104.25.252.207
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  udp: true
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🇯🇵 日本 | JPN t.me/rjsxrd
+  type: vless
+  server: 172.64.52.97
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.US.cmliussss.net
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: 🇩🇪 Germany | 🌐 | [*CIDR] t.me/rjsxrd (2)
+  type: vless
+  server: 171.22.134.207
+  port: 443
+  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  udp: true
+  tls: true
+  servername: media2.tcpdoor.net
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: grpc
+  reality-opts:
+    public-key: vxhkDXfYpz1OLqZ-_9QVoQr3_UJLtJFheb5bD5YH7z8
+    short-id: 3303c7a5
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇷🇴 Romania | [*CIDR] t.me/rjsxrd
+  type: vless
+  server: ru-kas.white-aist.com
+  port: 8447
+  uuid: 5b38fd24-4d47-4ee2-a077-7d125e723230
+  udp: true
+  tls: true
+  servername: yahoo.com
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: grpc
+  reality-opts:
+    public-key: pf35NPPeasQGSt7VDSpI3_RKenLZ1UKI-FrEnKbfvH8
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇪🇸 Spain | [*CIDR] t.me/rjsxrd
+  type: vless
+  server: ru-kas.white-aist.com
+  port: 8446
+  uuid: 5b38fd24-4d47-4ee2-a077-7d125e723230
+  udp: true
+  tls: true
+  servername: yahoo.com
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: grpc
+  reality-opts:
+    public-key: pf35NPPeasQGSt7VDSpI3_RKenLZ1UKI-FrEnKbfvH8
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇫🇮 Finland | [*CIDR] t.me/rjsxrd
+  type: vless
+  server: ru-kas.white-aist.com
+  port: 8448
+  uuid: 5b38fd24-4d47-4ee2-a077-7d125e723230
+  udp: true
+  tls: true
+  servername: yahoo.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  reality-opts:
+    public-key: pf35NPPeasQGSt7VDSpI3_RKenLZ1UKI-FrEnKbfvH8
+  grpc-opts:
+    grpc-service-name: grpc
+- name: hamedp71::🏴‍☠️ t.me/rjsxrd
+  type: vless
+  server: love.ns.cloudflare.com
+  port: 443
+  uuid: 8ad6f598-cd8d-4fca-848e-05fc9be15ff3
+  udp: true
+  tls: true
+  servername: deicl.redstone-vex.sbs
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sea
+    headers:
+      Host: deicl.redstone-vex.sbs
+- name: 🇩🇪 Germany | 🌐 | [*CIDR] t.me/rjsxrd (3)
+  type: vless
+  server: 185.229.9.164
+  port: 443
+  uuid: 83cd3888-2ebe-4cb0-a012-d3c572358ac9
+  udp: true
+  tls: true
+  servername: api-maps.yandex.ru
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: tcp
+  reality-opts:
+    public-key: zMyJW8uYeZwurz4xCcnnPjYlCVP0nI5BDHp_0ZrxPjk
+- name: 🇸🇪 Sweden | [*CIDR] t.me/rjsxrd
+  type: vless
+  server: ru-kas.white-aist.com
+  port: 8443
+  uuid: 5b38fd24-4d47-4ee2-a077-7d125e723230
+  udp: true
+  tls: true
+  servername: yahoo.com
   skip-cert-verify: false
   client-fingerprint: edge
   network: grpc
   reality-opts:
-    public-key: A4EFCXsK2opMGKRuAAOfUZuj11Vi2O9rdPDk6gpynF4
-    short-id: b6549e
+    public-key: pf35NPPeasQGSt7VDSpI3_RKenLZ1UKI-FrEnKbfvH8
   grpc-opts:
-    grpc-service-name: gun
-- name: CF中转_070404468 t.me/rjsxrd
+    grpc-service-name: grpc
+- name: hamedp71::🇫🇷 t.me/rjsxrd
   type: vless
-  server: 162.159.40.181
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
+  server: betty.ns.cloudflare.com
+  port: 443
+  uuid: 073d1d50-8478-47bf-a828-7a1b381931d5
   udp: true
   tls: true
-  servername: sp.linuxdododo.ccwu.cc
+  servername: octopusss.net
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /proxyip=ProxyIP.JP.cmliussss.net
+    path: /odiyfws
     headers:
-      Host: sp.linuxdododo.ccwu.cc
-- name: CF中转_070404319 t.me/rjsxrd
+      Host: octopusss.net
+- name: 🏳️_未知_310 t.me/rjsxrd
   type: vless
-  server: 104.21.74.63
+  server: 162.159.38.163
   port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: amooaliii.net
+  servername: vp34.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /jdhfyws
+    path: /fp=chrome
     headers:
-      Host: amooaliii.net
-- name: CF中转_070404306 t.me/rjsxrd
+      Host: vp34.cc.cd
+- name: Шкатулка запретов — 🇺🇸US t.me/rjsxrd
   type: vless
-  server: 108.162.192.75
+  server: 172.67.135.69
   port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  uuid: 2730487f-0ed5-4f04-92d5-f95f9253d4f4
   udp: true
   tls: true
-  servername: amooaliii.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /jdhfyws
-    headers:
-      Host: amooaliii.net
-- name: CF中转_0704041727 t.me/rjsxrd
-  type: vless
-  server: 172.64.151.254
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
-  udp: true
-  tls: true
-  servername: sp.linuxdododo.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sp.linuxdododo.ccwu.cc
-- name: CF中转_070404535 t.me/rjsxrd
-  type: vless
-  server: 173.245.59.35
-  port: 443
-  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
-  udp: true
-  tls: true
-  servername: ld.235231.xyz
+  servername: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: ws
     headers:
-      Host: ld.235231.xyz
-- name: CF中转_0704042934 t.me/rjsxrd
-  type: vless
-  server: 173.245.58.75
+      Host: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
+- name: 🇮🇪_爱尔兰_65 t.me/rjsxrd
+  type: trojan
+  server: fun-labrador.rooster465.autos
   port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  password: NQ26071394
   udp: true
   tls: true
-  servername: amooaliii.net
+  servername: fun-labrador.rooster465.autos
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /jdhfyws
-    headers:
-      Host: amooaliii.net
-- name: 🇺🇸  USA  [07]  MIFA t.me/rjsxrd
+- name: 🇵🇱 Poland | [*CIDR] t.me/rjsxrd
   type: vless
-  server: all.tellmethetrue.shop
-  port: 443
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  server: ru-kas.white-aist.com
+  port: 8445
+  uuid: 5b38fd24-4d47-4ee2-a077-7d125e723230
   udp: true
   tls: true
-  servername: sca38.afterdomain.shop
+  servername: yahoo.com
   skip-cert-verify: false
-  alpn:
-  - h2
+  client-fingerprint: qq
   network: grpc
-- name: CF中转_0704042047 t.me/rjsxrd
-  type: vless
-  server: 198.41.223.55
-  port: 8443
-  uuid: 3ccf6bf1-3de3-46d5-81cf-788755edeb09
-  udp: true
-  tls: true
-  servername: nova-crystal-garden-d317.nova-ba2eb3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nova-crystal-garden-d317.nova-ba2eb3.workers.dev
-- name: CF中转_070404323 t.me/rjsxrd
-  type: vless
-  server: 104.18.206.22
+  reality-opts:
+    public-key: pf35NPPeasQGSt7VDSpI3_RKenLZ1UKI-FrEnKbfvH8
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇮🇪_爱尔兰_55 t.me/rjsxrd
+  type: trojan
+  server: thankful-piranha.rooster465.autos
   port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  password: NQ26071394
   udp: true
   tls: true
-  servername: amooaliii.net
+  servername: thankful-piranha.rooster465.autos
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /jdhfyws
-    headers:
-      Host: amooaliii.net
-- name: CF中转_0704043784 t.me/rjsxrd
-  type: vless
-  server: 104.21.74.112
+- name: 🇫🇷_法国_31 t.me/rjsxrd
+  type: trojan
+  server: ready-kangaroo.rooster465.autos
   port: 443
-  uuid: 7ae4d882-6ba0-4f31-9297-e70d1b67485c
+  password: NQ26071394
   udp: true
   tls: true
-  servername: ez-be0513.ezaccess1f567aa.workers.dev
+  servername: ready-kangaroo.rooster465.autos
   skip-cert-verify: false
-  client-fingerprint: chrome
+- name: 🇺🇸 美国 | USA t.me/rjsxrd (2)
+  type: vless
+  server: 199.232.222.178
+  port: 443
+  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
+  udp: true
+  tls: true
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
     headers:
-      Host: ez-be0513.ezaccess1f567aa.workers.dev
-- name: CF中转_0704044920 t.me/rjsxrd
+      Host: pan1.global.ssl.fastly.net
+- name: 🇺🇸 美国 | USA t.me/rjsxrd (3)
   type: vless
-  server: 173.245.58.207
+  server: 8.39.125.122
   port: 2083
-  uuid: 70c14b03-e052-483f-8cb8-83fcac4bf26b
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
   udp: true
   tls: true
-  servername: nova-pearl-garden-b135.nova-ace28e.workers.dev
+  servername: vp6.cc.cd
   skip-cert-verify: false
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: nova-pearl-garden-b135.nova-ace28e.workers.dev
-- name: CF中转_070404293 t.me/rjsxrd
+      Host: vp6.cc.cd
+- name: 🇸🇬 新加坡 | SGP t.me/rjsxrd
   type: vless
-  server: 104.16.72.101
+  server: 8.39.125.45
   port: 443
-  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: nbhhh.mrcool.kdns.fr
+  servername: vp37.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp37.cc.cd
+- name: 🏳️_未知_335 t.me/rjsxrd
+  type: vless
+  server: 104.19.52.8
+  port: 2096
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp42.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /proxyip
+    path: /
     headers:
-      Host: nbhhh.mrcool.kdns.fr
-- name: CF中转_070404330 t.me/rjsxrd
+      Host: vp42.cc.cd
+- name: 🇺🇸 美国 | USA t.me/rjsxrd (4)
   type: vless
-  server: 104.27.7.125
+  server: 198.41.209.7
+  port: 2096
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp33.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp33.cc.cd
+- name: 🏳️_未知_370 t.me/rjsxrd
+  type: vless
+  server: 104.18.33.37
   port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: amooaliii.net
+  servername: vp33.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /jdhfyws
+    path: /
     headers:
-      Host: amooaliii.net
-- name: CF中转_0704042885 t.me/rjsxrd
+      Host: vp33.cc.cd
+- name: 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 [*CIDR] t.me/rjsxrd
+  type: trojan
+  server: 45.67.215.9
+  port: 443
+  password: '521314'
+  udp: true
+  tls: true
+  servername: tjplay.lxdxo.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /Telegram+@WangCai2
+- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 [*CIDR] t.me/rjsxrd
   type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: 3cb4c775-bf08-4158-a0e3-cbae9ac452d7
+  server: 213.241.198.20
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
   udp: true
   tls: true
-  servername: orange-darkness-749f.phantomnettest1-65d.workers.dev
+  servername: cf11.evan00.dpdns.org
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /sync
+    path: Telegram🇨🇳+@WangCai2fp=chrome
     headers:
-      Host: orange-darkness-749f.phantomnettest1-65d.workers.dev
-- name: CF中转_07040410237 t.me/rjsxrd
+      Host: cf11.evan00.dpdns.org
+- name: 🇺🇸_美国_401 t.me/rjsxrd
   type: vless
-  server: 188.114.97.6
-  port: 8443
-  uuid: 3cb4c775-bf08-4158-a0e3-cbae9ac452d7
+  server: 199.232.22.39
+  port: 443
+  uuid: cbcf2255-6d66-4039-b7d6-c10d6ffc99e7
   udp: true
   tls: true
-  servername: orange-darkness-749f.phantomnettest1-65d.workers.dev
+  servername: ssl.fastly.com
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sync
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed
     headers:
-      Host: orange-darkness-749f.phantomnettest1-65d.workers.dev
-- name: CF中转_070404785 t.me/rjsxrd
+      Host: pan1.global.ssl.fastly.net
+- name: 🇮🇪_爱尔兰_36 t.me/rjsxrd
+  type: trojan
+  server: correct-starfish.rooster465.autos
+  port: 443
+  password: NQ26071394
+  udp: true
+  tls: true
+  servername: correct-starfish.rooster465.autos
+  skip-cert-verify: false
+- name: 🏳️_未知_365 t.me/rjsxrd
   type: vless
-  server: 198.41.208.102
-  port: 8443
-  uuid: a435b394-80a0-49b0-be45-c78fd509c51d
+  server: 8.35.211.13
+  port: 2087
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: node-877017628-e239e0.sukhtm-3284.workers.dev
+  servername: vp34.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?u=71443a82bf
+    path: /
     headers:
-      Host: node-877017628-e239e0.sukhtm-3284.workers.dev
-- name: 🇫🇷  France  [01]  MIFA t.me/rjsxrd
+      Host: vp34.cc.cd
+- name: 🇵🇱 Польша 1 | [BL] t.me/rjsxrd
   type: trojan
   server: 81.255.155.10
   port: 443
@@ -732,878 +3058,634 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-    headers:
-      Host: www.creationlong.org
-- name: '🇫🇷Обходы - TG: AirLinkVPNBot |0326| t.me/rjsxrd'
-  type: trojan
-  server: 216.24.57.1
-  port: 443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.calmloud.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: CF中转_070404759 t.me/rjsxrd
+- name: 🇩🇪 Germany | 🌐 | [*CIDR] t.me/rjsxrd (4)
   type: vless
-  server: 104.19.151.124
-  port: 2087
-  uuid: 759732c5-3b2d-4e71-8e73-92224f16b27e
+  server: ru-kas.white-aist.com
+  port: 8444
+  uuid: 5b38fd24-4d47-4ee2-a077-7d125e723230
   udp: true
   tls: true
-  servername: nova-mango-portal-254e.nova-fea1df.workers.dev
+  servername: yahoo.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?u=2924992ad8
-    headers:
-      Host: nova-mango-portal-254e.nova-fea1df.workers.dev
-- name: CF中转_0704045082 t.me/rjsxrd
-  type: vless
-  server: 198.41.223.253
-  port: 2083
-  uuid: e4f949dd-4b1d-48e9-8e30-f90029e105a2
-  udp: true
-  tls: true
-  servername: f.fugang.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f.fugang.dpdns.org
-- name: CF中转_070404774 t.me/rjsxrd
-  type: vless
-  server: 104.16.72.41
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
-  udp: true
-  tls: true
-  servername: sp.linuxdododo.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: sp.linuxdododo.ccwu.cc
-- name: CF中转_070404645 t.me/rjsxrd
-  type: vless
-  server: 104.17.62.253
-  port: 2096
-  uuid: 8822e683-fdf3-43f2-870d-10d1945baba0
-  udp: true
-  tls: true
-  servername: shiny-waterfall-8ffa.alinejatidev.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shiny-waterfall-8ffa.alinejatidev.workers.dev
-- name: CF中转_0704042068 t.me/rjsxrd
-  type: vless
-  server: 188.114.97.6
-  port: 2096
-  uuid: 3cb4c775-bf08-4158-a0e3-cbae9ac452d7
-  udp: true
-  tls: true
-  servername: orange-darkness-749f.phantomnettest1-65d.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: orange-darkness-749f.phantomnettest1-65d.workers.dev
-- name: '🇫🇷Обходы - TG: AirLinkVPNBot |0213| t.me/rjsxrd'
-  type: vless
-  server: 8.6.112.0
-  port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
-  udp: true
-  tls: true
-  servername: amooaliii.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /jdhfyws
-    headers:
-      Host: amooaliii.net
-- name: CF中转_07040411455 t.me/rjsxrd
-  type: vless
-  server: 104.16.75.235
-  port: 443
-  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
-  udp: true
-  tls: true
-  servername: het1.ariyuz.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: het1.ariyuz.org
-- name: '🇳🇱Обходы - TG: AirLinkVPNBot |0254| t.me/rjsxrd'
-  type: vless
-  server: 185.147.27.110
-  port: 48444
-  uuid: 53396bf6-c215-414b-8de6-70915edb5dec
-  udp: true
-  tls: true
-  servername: yastatic.net
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: tcp
-  reality-opts:
-    public-key: otX-zQKcxAsBpzEEAmeuPI3NwkN3QFZMklk_qSHwBTU
-- name: CF中转_070404654 t.me/rjsxrd
-  type: vless
-  server: 104.16.9.20
-  port: 443
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  udp: true
-  tls: true
-  servername: dat1.afterdomain.shop
-  skip-cert-verify: false
+  client-fingerprint: edge
   network: grpc
-- name: 🇦🇪  United Arab Emirates  [02]  MIFA t.me/rjsxrd
-  type: ss
-  server: 38.54.9.181
-  port: 3306
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: CF中转_0704042585 t.me/rjsxrd
+  reality-opts:
+    public-key: pf35NPPeasQGSt7VDSpI3_RKenLZ1UKI-FrEnKbfvH8
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🏳️_未知_333 t.me/rjsxrd
   type: vless
-  server: 162.159.45.175
+  server: 162.159.35.218
   port: 2053
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: fu.baiproxy.us.ci
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fu.baiproxy.us.ci
-- name: CF中转_07040411454 t.me/rjsxrd
-  type: vless
-  server: 104.16.75.234
-  port: 443
-  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
-  udp: true
-  tls: true
-  servername: server-ir-4.ariyuz.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us-1.ariyuz.org
-- name: '[918ms KZ KZ  @vlesstrojan] t.me/rjsxrd'
-  type: vless
-  server: 149.33.0.214
-  port: 14302
-  uuid: e08e7045-abd0-47aa-aa52-2820c4b869be
-  udp: true
-  tls: true
-  servername: www.samsung.com
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: tcp
-  reality-opts:
-    public-key: lw7-Msn5E2O6HbBdqMw9SvoDJgbDIvHss0UVQ9iZFRc
-    short-id: 106f1604d65bb70c
-- name: CF中转_0704044508 t.me/rjsxrd
-  type: vless
-  server: 162.159.44.100
-  port: 2087
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
-  udp: true
-  tls: true
-  servername: fu.baiproxy.us.ci
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: fu.baiproxy.us.ci
-- name: 🇸🇬  Singapore  [01]  MIFA t.me/rjsxrd
-  type: ss
-  server: 167.150.100.115
-  port: 27755
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
-  udp: true
-- name: 🇮🇷  Iran  [01]  MIFA t.me/rjsxrd
-  type: trojan
-  server: 2.144.21.112
-  port: 40443
-  password: humanity
-  udp: true
-  tls: true
-  servername: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 🇿🇦  South Africa  [01]  MIFA t.me/rjsxrd
-  type: trojan
-  server: 38.54.64.247
-  port: 443
-  password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-  udp: true
-  tls: true
-  skip-cert-verify: false
-- name: 🇮🇩  Indonesia  [02]  MIFA t.me/rjsxrd
-  type: ss
-  server: 130.94.92.62
-  port: 17216
-  cipher: chacha20-ietf-poly1305
-  password: ENxrMVhaagn43lKk0lcOwzo2-z8ShXiA-A
-  udp: true
-- name: 🇲🇾  Malaysia  [01]  MIFA t.me/rjsxrd
-  type: ss
-  server: 38.54.125.229
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
-- name: 🇮🇳  India  [06]  MIFA t.me/rjsxrd
-  type: ss
-  server: 172.105.39.124
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇯🇵  Japan  [09]  MIFA t.me/rjsxrd
-  type: trojan
-  server: 103.125.216.18
-  port: 443
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-  udp: true
-  tls: true
-  skip-cert-verify: false
-- name: 🇮🇩  Indonesia  [01]  MIFA t.me/rjsxrd
-  type: trojan
-  server: 130.94.94.15
-  port: 443
-  password: tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR
-  udp: true
-  tls: true
-  skip-cert-verify: false
-- name: 🇯🇵  Japan  [08]  MIFA t.me/rjsxrd
-  type: trojan
-  server: 103.125.216.68
-  port: 443
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-  udp: true
-  tls: true
-  servername: 103.125.216.68
-  skip-cert-verify: false
-- name: '[586ms JP JP  @vlesstrojan] t.me/rjsxrd'
-  type: trojan
-  server: 103.125.216.11
-  port: 443
-  password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-  udp: true
-  tls: true
-  servername: 103.125.216.11
-  skip-cert-verify: false
-- name: 🇰🇷  South Korea  [07]  MIFA t.me/rjsxrd
-  type: trojan
-  server: 38.60.220.65
-  port: 443
-  password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak
-  udp: true
-  tls: true
-  servername: 38.60.220.65
-  skip-cert-verify: false
-- name: '[555ms VN VN  @vlesstrojan] t.me/rjsxrd'
-  type: trojan
-  server: 38.60.252.118
-  port: 443
-  password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw
-  udp: true
-  tls: true
-  servername: 38.60.252.118
-  skip-cert-verify: false
-- name: 🇫🇮 Финляндия 14 | CS t.me/rjsxrd
-  type: vless
-  server: 178.250.242.157
-  port: 443
-  uuid: 5bead282-fe56-40a9-a09b-065b78207842
-  udp: true
-  tls: true
-  servername: ya.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: tcp
-  reality-opts:
-    public-key: qKA6VHyCok50-RsGca0EjTJgWJqKb16K6C-dEEuBBiA
-    short-id: e06dc9
-- name: 🇳🇱 Нидерланды 22 t.me/rjsxrd
-  type: vless
-  server: 192.142.8.200
-  port: 443
-  uuid: eb295947-24de-0001-9b8f-85431e5fe493
-  udp: true
-  tls: true
-  servername: md-editor.xyz
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: tcp
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-- name: 🇩🇪 Германия 39 | CS t.me/rjsxrd
-  type: vless
-  server: 185.17.0.39
-  port: 9443
-  uuid: 42387f58-fc1c-45dc-b224-b1c086e0bf64
-  udp: true
-  tls: true
-  servername: www.tesla.com
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: tcp
-  reality-opts:
-    public-key: 6RnCVPCohP4zBcbSmEJD9RRia8gERSV3Q0IaZec4El0
-    short-id: be0191cc
-- name: 🇵🇱 Польша 2 t.me/rjsxrd
-  type: vless
-  server: 77.239.114.254
-  port: 443
-  uuid: b6b24ed5-7060-11f1-a5bc-54db13ea7d40
-  udp: true
-  tls: true
-  servername: www.wp.pl
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: tcp
-  reality-opts:
-    public-key: gydLdekl4sNcE2j7vueKJJhpYWTBxlGs_VQ6-ZH55iQ
-- name: 🇭🇺 Венгрия 7 | CS t.me/rjsxrd
-  type: vless
-  server: 45.195.111.77
-  port: 443
-  uuid: 4af89b09-ce0c-4dab-b798-629d8b900af0
-  udp: true
-  tls: true
-  servername: storage.yandex.net
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: tcp
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: f4b4a6365558ea2e
-- name: CF中转_0704049186 t.me/rjsxrd
-  type: vless
-  server: 173.245.58.92
-  port: 2087
-  uuid: ad40a583-2d59-44ff-88cf-b5db0e1e00a7
-  udp: true
-  tls: true
-  servername: edgetunnel.kalmevebto.workers.dev
+  servername: vp18.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: edgetunnel.kalmevebto.workers.dev
-- name: CF中转_0704048121 t.me/rjsxrd
+      Host: vp18.cc.cd
+- name: 🇩🇪 德国 | DEU t.me/rjsxrd
   type: vless
-  server: 108.162.198.11
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
-  udp: true
-  tls: true
-  servername: sp.linuxdododo.ccwu.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sp.linuxdododo.ccwu.cc
-- name: CF中转_070404823 t.me/rjsxrd
-  type: vless
-  server: 173.245.58.144
-  port: 443
-  uuid: da806925-524d-46e2-a48d-154c19e73288
-  udp: true
-  tls: true
-  servername: ez-cdcc99.hamidreza908327.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?u=f10d2ec2b8
-    headers:
-      Host: ez-cdcc99.hamidreza908327.workers.dev
-- name: 🇭🇺 Венгрия 10 | CS t.me/rjsxrd
-  type: vless
-  server: 45.195.111.77
-  port: 443
-  uuid: f9ae5aed-9f23-4d9b-b4b2-e82a24c2d74a
-  udp: true
-  tls: true
-  servername: storage.yandex.net
-  flow: xtls-rprx-vision
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: tcp
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-- name: CF中转_0704049238 t.me/rjsxrd
-  type: vless
-  server: 104.18.153.10
-  port: 443
-  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
-  udp: true
-  tls: true
-  servername: nbhhh.mrcool.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: nbhhh.mrcool.kdns.fr
-- name: 德国_070404060 t.me/rjsxrd
-  type: vless
-  server: 138.199.233.214
-  port: 443
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  udp: true
-  tls: true
-  servername: vpn47.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn47.cc.cd
-- name: 未知_070404293 t.me/rjsxrd
-  type: vless
-  server: server15.peekconf1-741.workers.dev
-  port: 443
-  uuid: 78b9ac78-ebdf-4e51-8114-f6b0cd6d2169
-  udp: true
-  tls: true
-  servername: server15.peekconf1-741.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiOUZIcXVMV3FlbnoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==?ed=2560
-    headers:
-      Host: server15.peekconf1-741.workers.dev
-- name: 芬兰_070404066 t.me/rjsxrd
-  type: vless
-  server: 65.109.190.54
-  port: 2021
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  udp: true
-  tls: true
-  servername: vpn47.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn47.cc.cd
-- name: CF中转_0704047953 t.me/rjsxrd
-  type: vless
-  server: 172.67.157.237
-  port: 443
-  uuid: 7ae4d882-6ba0-4f31-9297-e70d1b67485c
-  udp: true
-  tls: true
-  servername: ez-be0513.ezaccess1f567aa.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ez-be0513.ezaccess1f567aa.workers.dev
-- name: 未知_0704042417 t.me/rjsxrd
-  type: vless
-  server: server20.peekconfig5.workers.dev
-  port: 443
-  uuid: 36d9003c-7240-40bc-af62-07c39f7a0b94
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiYmNCdUhCVkFEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0=
-    headers:
-      Host: server20.peekconfig5.workers.dev
-- name: 未知_070404662 t.me/rjsxrd
-  type: vless
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  port: 443
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  udp: true
-  tls: true
-  servername: vpn47.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn47.cc.cd
-- name: 未知_070404101 t.me/rjsxrd
-  type: vless
-  server: server3.pegibol940.workers.dev
-  port: 443
-  uuid: 5da16620-0386-4da3-a252-12a6380ed1a6
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiUHRlMEpuSzRFY1EyeUUwIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0=
-    headers:
-      Host: server3.pegibol940.workers.dev
-- name: 未知_0704043161 t.me/rjsxrd
-  type: vless
-  server: zeus-panel-jz0rp4.peekconf1q.workers.dev
+  server: 104.26.10.200
   port: 2053
-  uuid: 57677cef-dc8e-45d5-abd0-26e7c54f26cc
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: zeus-panel-jz0rp4.peekconf1q.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zeus-panel-jz0rp4.peekconf1q.workers.dev
-- name: CF中转_0704049543 t.me/rjsxrd
-  type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: 8cf1e524-ce8c-4c63-8440-3ecd687f5e8d
-  udp: true
-  tls: true
-  servername: still-lake-3cf7.dls2026.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: still-lake-3cf7.dls2026.workers.dev
-- name: 德国_070404818 t.me/rjsxrd
-  type: vless
-  server: 162.55.217.158
-  port: 8443
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  udp: true
-  tls: true
-  servername: vpn47.cc.cd
+  servername: vp37.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vpn47.cc.cd
-- name: 未知_070404360 t.me/rjsxrd
+      Host: vp37.cc.cd
+- name: 🏳️_未知_318 t.me/rjsxrd
   type: vless
-  server: saas.sin.fan
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
+  server: 172.66.3.146
+  port: 2083
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: sp.linuxdododo.ccwu.cc
+  servername: vp37.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp37.cc.cd
+- name: 🇯🇵 日本 | JPN t.me/rjsxrd (2)
+  type: vless
+  server: 172.64.229.1
+  port: 443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
   skip-cert-verify: false
   client-fingerprint: random
   network: ws
   ws-opts:
-    path: /
-- name: 未知_070404353 t.me/rjsxrd
-  type: vless
-  server: xn-ip.dbsll.ir
-  port: 2083
-  uuid: 199436d3-2fa2-4e34-a1de-844419de5a4f
-  udp: true
-  tls: true
-  servername: xn-de.shakhle.ir.
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048fp=chrome
+    path: /proxyip=ProxyIP.US.cmliussss.net
     headers:
-      Host: xn-de.shakhle.ir.
-- name: 未知_0704043162 t.me/rjsxrd
+      Host: cf11.evan00.dpdns.org
+- name: 🏳️_未知_369 t.me/rjsxrd
   type: vless
-  server: zeus-panel-jz0rp4.peekconf1q.workers.dev
-  port: 2087
-  uuid: 57677cef-dc8e-45d5-abd0-26e7c54f26cc
-  udp: true
-  tls: true
-  servername: zeus-panel-jz0rp4.peekconf1q.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zeus-panel-jz0rp4.peekconf1q.workers.dev
-- name: 美国_070404052 t.me/rjsxrd
-  type: vless
-  server: blog.webex.com
+  server: 104.17.99.201
   port: 443
-  uuid: 57d22829-187c-4f83-b757-d6e367ca6de8
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: blog.webex.com.yxls.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /au-mt
-    headers:
-      Host: blog.webex.com.yxls.eu.cc
-- name: 未知_0704044781 t.me/rjsxrd
-  type: vless
-  server: doomvex1.doomvexx.workers.dev
-  port: 443
-  uuid: 79328a64-a74f-48a0-9030-b5c7b96d43cc
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
-- name: 未知_0704043159 t.me/rjsxrd
-  type: vless
-  server: zeus-panel-jz0rp4.peekconf1q.workers.dev
-  port: 443
-  uuid: 57677cef-dc8e-45d5-abd0-26e7c54f26cc
-  udp: true
-  tls: true
-  servername: zeus-panel-jz0rp4.peekconf1q.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zeus-panel-jz0rp4.peekconf1q.workers.dev
-- name: 未知_0704043168 t.me/rjsxrd
-  type: vless
-  server: zeus-panel-jz0rp4.peekconf1q.workers.dev
-  port: 2096
-  uuid: 57677cef-dc8e-45d5-abd0-26e7c54f26cc
-  udp: true
-  tls: true
-  servername: zeus-panel-jz0rp4.peekconf1q.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zeus-panel-jz0rp4.peekconf1q.workers.dev
-- name: 未知_0704042796 t.me/rjsxrd
-  type: vless
-  server: zeus-panel-5kd9xf.peekconfigtelegram.workers.dev
-  port: 2096
-  uuid: 880318d9-db5d-46f4-8ea1-a81df79f872a
-  udp: true
-  tls: true
-  servername: zeus-panel-5kd9xf.peekconfigtelegram.workers.dev
+  servername: vp19.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: zeus-panel-5kd9xf.peekconfigtelegram.workers.dev
-- name: 未知_0704043457 t.me/rjsxrd
+      Host: vp19.cc.cd
+- name: 🏳️_未知_364 t.me/rjsxrd
   type: vless
-  server: ava.game.naver.com.cf.novantunnel.life
-  port: 443
-  uuid: 01785ba0-a548-4357-91d7-6b6cdd24e88c
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /Novan-AE26
-    headers:
-      Host: ava.game.naver.com.cf.novantunnel.life
-- name: 未知_070404282 t.me/rjsxrd
-  type: vless
-  server: courses.mftplus.qzz.io
-  port: 2096
-  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
-  udp: true
-  tls: true
-  servername: courses.mftplus.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
-    headers:
-      Host: courses.mftplus.qzz.io
-- name: 未知_0704044029 t.me/rjsxrd
-  type: vless
-  server: small-scene-f215.amiralizarefast1.workers.dev
-  port: 443
-  uuid: d9f94532-c4d4-4f94-ba23-6eb6d35bfc7d
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZW5GMjJSRmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
-    headers:
-      Host: small-scene-f215.amiralizarefast1.workers.dev
-- name: 未知_0704041760 t.me/rjsxrd
-  type: vless
-  server: zeus-panel-5kd9xf.peekconfigtelegram.workers.dev
-  port: 443
-  uuid: 880318d9-db5d-46f4-8ea1-a81df79f872a
-  udp: true
-  tls: true
-  servername: zeus-panel-5kd9xf.peekconfigtelegram.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zeus-panel-5kd9xf.peekconfigtelegram.workers.dev
-- name: CF中转_070404788 t.me/rjsxrd
-  type: vless
-  server: 104.25.161.29
-  port: 443
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  udp: true
-  tls: true
-  servername: dat1.afterdomain.shop
-  skip-cert-verify: false
-  network: grpc
-- name: 美国_070404871 t.me/rjsxrd
-  type: vless
-  server: 66.135.15.166
-  port: 34237
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  udp: true
-  tls: true
-  servername: vpn47.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn47.cc.cd
-- name: CF中转_0704049011 t.me/rjsxrd
-  type: vless
-  server: 173.245.59.153
-  port: 2083
-  uuid: 759732c5-3b2d-4e71-8e73-92224f16b27e
-  udp: true
-  tls: true
-  servername: nova-mango-portal-254e.nova-fea1df.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nova-mango-portal-254e.nova-fea1df.workers.dev
-- name: 美国_070404868 t.me/rjsxrd
-  type: vless
-  server: 172.235.49.135
-  port: 17973
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  udp: true
-  tls: true
-  servername: vpn47.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn47.cc.cd
-- name: 美国_070404870 t.me/rjsxrd
-  type: vless
-  server: 129.153.91.86
-  port: 3701
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  udp: true
-  tls: true
-  servername: vpn47.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn47.cc.cd
-- name: 美国_0704042796 t.me/rjsxrd
-  type: vless
-  server: 129.153.70.168
-  port: 4433
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  udp: true
-  tls: true
-  servername: vpn47.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn47.cc.cd
-- name: 印度_070404033 t.me/rjsxrd
-  type: vless
-  server: 143.110.247.61
+  server: 104.17.166.80
   port: 2053
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
-  servername: vpn47.cc.cd
+  servername: vp40.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vpn47.cc.cd
+      Host: vp40.cc.cd
+- name: 🏳️_未知_277 t.me/rjsxrd
+  type: vless
+  server: 172.67.75.133
+  port: 2053
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp37.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp37.cc.cd
+- name: 🏳️_未知_362 t.me/rjsxrd
+  type: vless
+  server: 162.159.39.219
+  port: 2083
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp30.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp30.cc.cd
+- name: 🏳️_未知_326 t.me/rjsxrd
+  type: vless
+  server: 104.17.118.218
+  port: 2053
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp17.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp17.cc.cd
+- name: 🇳🇱 The Netherlands | [*CIDR] t.me/rjsxrd
+  type: vless
+  server: ru-kas.white-aist.com
+  port: 8449
+  uuid: 5b38fd24-4d47-4ee2-a077-7d125e723230
+  udp: true
+  tls: true
+  servername: yahoo.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  reality-opts:
+    public-key: pf35NPPeasQGSt7VDSpI3_RKenLZ1UKI-FrEnKbfvH8
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🏳️_未知_350 t.me/rjsxrd
+  type: vless
+  server: 104.19.33.157
+  port: 2087
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp19.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp19.cc.cd
+- name: 🏳️_未知_334 t.me/rjsxrd
+  type: vless
+  server: 104.19.148.230
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp42.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp42.cc.cd
+- name: 🏳️_未知_382 t.me/rjsxrd
+  type: vless
+  server: 104.17.152.8
+  port: 2053
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp30.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: vp30.cc.cd
+- name: 🏳️_未知_349 t.me/rjsxrd
+  type: vless
+  server: 8.35.211.66
+  port: 2083
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp30.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp30.cc.cd
+- name: 🏳️_未知_274 t.me/rjsxrd
+  type: vless
+  server: 104.17.23.119
+  port: 2053
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp42.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp42.cc.cd
+- name: 🇯🇵 日本 | JPN t.me/rjsxrd (3)
+  type: vless
+  server: 162.159.38.2
+  port: 8443
+  uuid: 7612dd26-d0ce-4fe0-be7c-d093bb8645da
+  udp: true
+  tls: true
+  servername: cf11.evan00.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.US.cmliussss.net
+    headers:
+      Host: cf11.evan00.dpdns.org
+- name: '! 17 | GRPC+REALITY | SNI: ru2.fastfive.ru | IN: RU OUT: RU | RATING: 5/10
+    t.me/rjsxrd'
+  type: vless
+  server: 213.171.31.29
+  port: 443
+  uuid: ed425746-3d10-4b45-a71d-11ff5c3a772f
+  udp: true
+  tls: true
+  servername: ru2.fastfive.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  reality-opts:
+    public-key: I2aM-iYWKsWCPtzA_zRbq4AYiaZFDrDNo--xFI51Nlw
+    short-id: 7a842f6632c23114
+  grpc-opts:
+    grpc-service-name: clgoto
+- name: 🏳️_未知_336 t.me/rjsxrd
+  type: vless
+  server: 8.39.125.149
+  port: 2096
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp30.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp30.cc.cd
+- name: 🏳️_未知_323 t.me/rjsxrd
+  type: vless
+  server: 198.41.209.69
+  port: 2087
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp37.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp37.cc.cd
+- name: 🇺🇸 美国 | USA t.me/rjsxrd (5)
+  type: vless
+  server: 104.17.171.126
+  port: 8443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp15.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp15.cc.cd
+- name: 🏳️_未知_331 t.me/rjsxrd
+  type: vless
+  server: 104.19.50.138
+  port: 2087
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp18.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp18.cc.cd
+- name: 🇸🇬 新加坡 | SGP t.me/rjsxrd (2)
+  type: vless
+  server: 8.39.125.201
+  port: 2087
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  udp: true
+  tls: true
+  servername: vp8.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp8.cc.cd
+- name: 🏳️_未知_337 t.me/rjsxrd
+  type: vless
+  server: 104.17.170.20
+  port: 2053
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp30.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp30.cc.cd
+- name: 🏳️_未知_357 t.me/rjsxrd
+  type: vless
+  server: 104.19.146.26
+  port: 2053
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp19.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp19.cc.cd
+- name: 🇦🇪 ОАЭ 10 | [BL] t.me/rjsxrd
+  type: vless
+  server: fl.musicperec.ru
+  port: 443
+  uuid: bd99da97-265e-0021-82cc-4ec009fe9ce2
+  udp: true
+  tls: true
+  servername: www.amd.com
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: tcp
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 0a4b7c3d
+- name: 🇸🇬 新加坡 | SGP t.me/rjsxrd (3)
+  type: vless
+  server: 8.35.211.81
+  port: 2096
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp37.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp37.cc.cd
+- name: 🏳️_未知_379 t.me/rjsxrd
+  type: vless
+  server: 162.159.39.78
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp17.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp17.cc.cd
+- name: 🏳️_未知_354 t.me/rjsxrd
+  type: vless
+  server: 104.17.28.54
+  port: 2083
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp18.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp18.cc.cd
+- name: 🏳️_未知_340 t.me/rjsxrd
+  type: vless
+  server: 173.245.59.213
+  port: 8443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp34.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp34.cc.cd
+- name: 🏳️_未知_347 t.me/rjsxrd
+  type: vless
+  server: 104.17.162.42
+  port: 8443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp18.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp18.cc.cd
+- name: Шкатулка запретов — 🇺🇸US t.me/rjsxrd (2)
+  type: vless
+  server: cf.008500.xyz
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  udp: true
+  tls: true
+  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+- name: 🏳️_未知_289 t.me/rjsxrd
+  type: vless
+  server: 104.19.48.233
+  port: 2083
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp34.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp34.cc.cd
+- name: 🏳️_未知_359 t.me/rjsxrd
+  type: vless
+  server: 162.159.38.91
+  port: 2096
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp17.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp17.cc.cd
+- name: 🏳️_未知_321 t.me/rjsxrd
+  type: vless
+  server: 104.19.146.216
+  port: 2096
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp17.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp17.cc.cd
+- name: 🏳️_未知_352 t.me/rjsxrd
+  type: vless
+  server: 104.17.217.214
+  port: 2087
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp19.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp19.cc.cd
+- name: 🇧🇦 Босния 28 | [BL] t.me/rjsxrd
+  type: vless
+  server: br.muzon.to
+  port: 443
+  uuid: bd99da97-265e-425b-82cc-4ec009fe9ce2
+  udp: true
+  tls: true
+  servername: www.amd.com
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: tcp
+  reality-opts:
+    public-key: Jg7t1GwxpS4fhsYzqgz37zlQRSd8YAHECtgdGFDrnDc
+    short-id: 9b0c1d2e
+- name: 🏳️_未知_395 t.me/rjsxrd
+  type: vless
+  server: 104.26.10.51
+  port: 2087
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp42.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp42.cc.cd
+- name: Шкатулка запретов — 🇺🇸US t.me/rjsxrd (3)
+  type: vless
+  server: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
+  port: 443
+  uuid: 2730487f-0ed5-4f04-92d5-f95f9253d4f4
+  udp: true
+  tls: true
+  servername: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: ws
+    headers:
+      Host: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
+- name: 🏳️_未知_285 t.me/rjsxrd
+  type: vless
+  server: 172.67.77.213
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  udp: true
+  tls: true
+  servername: vp17.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp17.cc.cd
+- name: '! 33 | REALITY | SNI: www.amd.com | IN: RU OUT: RU | RATING: 3/10 t.me/rjsxrd'
+  type: vless
+  server: br.muzon.to
+  port: 443
+  uuid: 2b947013-7551-4a8e-bc4f-470e9e987e88
+  udp: true
+  tls: true
+  servername: www.amd.com
+  flow: xtls-rprx-vision
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: tcp
+  reality-opts:
+    public-key: Jg7t1GwxpS4fhsYzqgz37zlQRSd8YAHECtgdGFDrnDc
+    short-id: 9b0c1d2e
+- name: Шкатулка запретов — 🇺🇸US t.me/rjsxrd (4)
+  type: vless
+  server: nuclear.us.kg
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  udp: true
+  tls: true
+  servername: nuclear.us.kg
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /free/1.226.227.169:50001
+    headers:
+      Host: nuclear.us.kg
