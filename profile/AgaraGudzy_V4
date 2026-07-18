@@ -48,18 +48,6 @@ proxy-groups:
     use:
       - WARPStandart
 
-#Отдельный скрипт для минимального пинга Discord
-  - name: Discord
-    type: fallback
-    interval: 15
-    tolerance: 8
-    hidden: true
-    url: http://gateway-us-east1-d.discord.gg
-    use:
-      - zapasList
-    proxies:
-      - WARP
-
 #Отдельно для игр
   - name: Games
     type: fallback
@@ -69,8 +57,8 @@ proxy-groups:
     url: https://cp.cloudflare.com/generate_204
     use:
       - zapasList
-    #proxies:
-      #- WARP      
+    proxies:
+      - WARP      
 
 #Запасные VPN
   - name: zapas
@@ -115,7 +103,7 @@ rules:
 #Короткие правила
   - DOMAIN-KEYWORD,animegorus.ru,VPN
   - DOMAIN-KEYWORD,yummyani.me,VPN
-  - PROCESS-NAME,discord.exe,Discord
+  - PROCESS-NAME,discord.exe,WARP
 #Отдельные правила для исполняемых файлов файлов 
   - RULE-SET,RulesVPNexe,Games
 #Правила для прямых соединений
