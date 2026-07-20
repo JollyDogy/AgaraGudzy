@@ -40,7 +40,7 @@ proxy-groups:
 #Запасной вариант на случай нестабильности WARP
   - name: WARP If
     type: fallback
-    interval: 300
+    interval: 170
     hidden: true
     url: http://www.gstatic.com/generate_204
     proxies:
@@ -49,41 +49,16 @@ proxy-groups:
 
   - name: WARP
     type: fallback
-    interval: 30
+    interval: 160
     hidden: false
     url: https://cp.cloudflare.com/generate_204
     use:
       - WARPStandart
 
-#Отдельный скрипт для минимального пинга Discord
-  - name: Discord
-    type: url-test
-    interval: 15
-    tolerance: 8
-    hidden: true
-    url: http://gateway-us-east1-d.discord.gg
-    use:
-      - zapasList
-    proxies:
-      - WARP
-
-#Отдельно для игр
-  - name: Games
-    type: fallback
-    interval: 15
-    #tolerance: 20
-    hidden: true
-    url: https://cp.cloudflare.com/generate_204
-    use:
-      - zapasList
-    #proxies:
-      #- WARP      
-
 #Запасные VPN
   - name: zapas
     type: fallback
     interval: 30
-    tolerance: 50
     hidden: true
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
@@ -92,18 +67,17 @@ proxy-groups:
 
 #WARPserver
   - name: WARPServer
-    type: url-test
-    interval: 60
-    tolerance: 35
+    type: fallback
+    interval: 50
     hidden: false
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
-      - '🇫🇮 Финляндия'
       - '🇵🇱 Польша'
+      - '🇱🇻 Латвия'
       - '🇳🇱 Нидерланды'
       - '🇩🇪 Германия'
-      - '🇱🇻 Латвия'
+      - '🇫🇮 Финляндия'
 
   - name: '🇫🇮 Финляндия'
     type: fallback
@@ -181,6 +155,7 @@ rule-providers:
 
 rules:
 #Персональные правила
+  - PROCESS-NAME,telegram.exe,WARPServer
   - DOMAIN-KEYWORD,epicgames.dev,WARP
   - DOMAIN-KEYWORD,epicgames.com,WARP
   - DOMAIN-KEYWORD,bhvrdbd.com,WARP
@@ -194,14 +169,14 @@ rules:
   - DOMAIN-KEYWORD,store.steampowered.com,WARP
   - PROCESS-NAME,Zapret.exe,DIRECT
   #- DOMAIN-KEYWORD,youtube.com,DIRECT
-  - PROCESS-NAME,DeadByDaylight.exe,DIRECT
-  - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,DIRECT
+  - PROCESS-NAME,DeadByDaylight.exe,WARP
+  - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,WARP
   - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,REPO.exe,DIRECT
   #- PROCESS-NAME,EpicWebHelper.exe,DIRECT
   #- PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
 #Короткие правила
-  #- PROCESS-NAME,discord.exe,Discord
+  - PROCESS-NAME,discord.exe,WARP
 #Отдельные правила для исполняемых файлов файлов 
   - RULE-SET,RulesVPNexe,WARPServer
 #Правила для прямых соединений
