@@ -892,6 +892,7 @@ proxy-groups:
 #WARPserver
   - name: WARPServer
     type: fallback
+    hidden: true
     interval: 60
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
@@ -947,6 +948,64 @@ proxy-groups:
       - 'WARPServers'
     filter: "🇱🇻"
 
+
+  - name: Servers
+    type: fallback
+    interval: 50
+    proxies:
+      - "🇪🇪 🎮 ⭐️ Эстония #2 | Hysteria2"
+      - "🇪🇪 🎮 ⭐️ Эстония #3 | Hysteria2"
+      - "🇪🇪 ⚡️ ⭐️ Эстония #3"
+      - "🇫🇮 ⚡️ ⭐️ Финляндия #2 (Мост РФ)"
+      - 🇪🇺 ⬇️ 🎮 Игровые ⬇️
+      - 🇩🇪 🎮 Германия | Hysteria2
+      - 🇵🇱 🎮 ⭐️ Польша
+      - "🇫🇮 🎮 Финляндия #4"
+      - "🇳🇱 📱 Мобильный #1"
+      - "🇳🇱 📱 Мобильный #2"
+      - "🇩🇪 📱 ⭐️ Мобильный #3"
+      - "🇵🇱 📱 Мобильный #4"
+      - "🇩🇪 📱 ⭐️ Мобильный #5"
+      - 🇪🇺 ⬇️ ⚡️ Быстрые до 10 Гбит/с ⬇️
+      - "🇩🇪 ⚡️ Германия #4"
+      - 🇫🇮 ⚡️ Финляндия (Мост РФ)
+      - 🇩🇪 ⚡️ ⭐️ Германия
+      - 🇬🇧 ⚡️ Великобритания
+      - 🇮🇹 ⚡️ Италия
+      - 🇳🇱 ⚡️ Нидерланды
+      - "🇳🇱 ⚡️ Нидерланды #2"
+      - "🇳🇱 ⚡️ Нидерланды #3"
+      - 🇵🇱 ⚡️ ⭐️ Польша
+      - "🇵🇱 ⚡️ Польша #2"
+      - "🇵🇱 ⚡️ Польша #3"
+      - 🇳🇴 ⚡️ ⭐️ Норвегия
+      - 🇫🇮 ⚡️ Финляндия | Torrent ✅
+      - "🇫🇷 ⚡️ Франция #2 (Мост РФ)"
+      - 🇪🇺 ⬇️ Если VLESS не работает ⬇️
+      - 🇩🇪 Германия | Hysteria2
+      - 🇩🇪 ⭐️ Германия | xhttp (Мост РФ)
+      - 🇵🇱 ⭐️ Польша | gRPC
+      - 🇪🇺 ⬇️ Остальные ⬇️
+      - 🇧🇬 ⭐️ Болгария
+      - "🇩🇪 Германия #2"
+      - "🇩🇪 Германия #3 (Мост РФ)"
+      - 🇱🇻 Латвия
+      - 🇱🇹 ⭐️ Литва - YouTube не RU (Мост РФ)
+      - "🇳🇱 Нидерланды #4"
+      - "🇵🇱 Польша #5"
+      - 🇷🇺 Россия, Москва
+      - 🇷🇴 Румыния
+      - 🇺🇸 США
+      - 🇺🇸 ⭐️ США, Даллас
+      - 🇹🇷 Турция
+      - "🇫🇮 Финляндия #3"
+      - "🇫🇮 Финляндия #4"
+      - 🇨🇿 Чехия (Мост РФ)
+      - 🇸🇪 Швеция (Мост РФ)
+      - 🇪🇪 Эстония
+      - "🇪🇪 ⭐️ Эстония #2"
+      - 🇯🇵 Япония
+
 rule-providers:
   RulesZapas:
     type: http
@@ -978,14 +1037,14 @@ rule-providers:
 
 rules:
 #Персональные правила
-  - "PROCESS-NAME,VALORANT-Win64-Shipping.exe,🇪🇪 🎮 ⭐️ Эстония #3 | Hysteria2"
-  - PROCESS-NAME,telegram.exe,WARPServer
+  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,Servers
+  - PROCESS-NAME,telegram.exe,Servers
   - DOMAIN-KEYWORD,epicgames.dev,WARP
   - DOMAIN-KEYWORD,epicgames.com,WARP
   - DOMAIN-KEYWORD,bhvrdbd.com,WARP
   - DOMAIN-KEYWORD,warframe.market,WARP
   - IP-CIDR,198.18.0.1/32,WARPServer
-  - IP-CIDR,172.232.25.131/32,WARPServer
+  - IP-CIDR,172.232.25.131/32,Servers
   - PROCESS-NAME,Warframe.x64.exe,DIRECT
   #- DOMAIN-KEYWORD,api.warframe.com,zapas
   - DOMAIN-KEYWORD,warframe.com,DIRECT
@@ -1002,10 +1061,10 @@ rules:
 #Короткие правила
   - PROCESS-NAME,discord.exe,WARP
 #Отдельные правила для исполняемых файлов файлов 
-  - RULE-SET,RulesVPNexe,WARPServer
+  - RULE-SET,RulesVPNexe,Servers
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
-  - RULE-SET,RulesZapas,WARPServer
+  - RULE-SET,RulesZapas,Servers
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
