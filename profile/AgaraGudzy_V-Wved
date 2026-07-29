@@ -82,6 +82,66 @@ proxy-groups:
     use:
       - 'zapasList'
 
+
+#WARPserver
+  - name: WARPServer
+    type: fallback
+    hidden: true
+    interval: 60
+    url: http://www.gstatic.com/generate_204
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    proxies:
+      - '🇵🇱 Польша'
+      - '🇱🇻 Латвия2'
+      - '🇳🇱 Нидерланды'
+      - '🇩🇪 Германия'
+      - '🇫🇮 Финляндия'
+
+  - name: '🇫🇮 Финляндия'
+    type: fallback
+    interval: 50
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "🇫🇮"     
+
+  - name: '🇵🇱 Польша'
+    type: fallback
+    interval: 50
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "🇵🇱"
+
+  - name: '🇳🇱 Нидерланды'
+    type: fallback
+    interval: 50
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "🇳🇱"    
+
+  - name: '🇩🇪 Германия'
+    type: fallback
+    interval: 50
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "🇩🇪"            
+
+  - name: '🇱🇻 Латвия2'
+    type: fallback
+    interval: 50
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "🇱🇻"
+
 rule-providers:
   RulesZapas:
     type: http
@@ -114,7 +174,7 @@ rule-providers:
 rules:
 #Персональные правила
   - PROCESS-NAME,Zapret.exe,DIRECT
-  - DOMAIN-KEYWORD,youtube.com,DIRECT
+  - DOMAIN-KEYWORD,youtube.com,WARP
   - PROCESS-NAME,DeadByDaylight.exe,DIRECT
   - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,DIRECT
@@ -122,7 +182,7 @@ rules:
   - PROCESS-NAME,EpicWebHelper.exe,DIRECT
   - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
 #Короткие правила
-  #- PROCESS-NAME,discord.exe,Discord
+  #- PROCESS-NAME,discord.exe,WARP
 #Отдельные правила для исполняемых файлов файлов 
   - RULE-SET,RulesVPNexe,Games
 #Правила для прямых соединений
