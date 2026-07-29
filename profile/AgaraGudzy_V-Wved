@@ -28,7 +28,7 @@ proxy-groups:
     proxies:
 #градация от лучшего до худшего варианта использования      
       - WARP If
-      - zapas
+      - WARPserver
 
 #Запасной вариант на случай нестабильности WARP
   - name: WARP If
@@ -74,6 +74,7 @@ proxy-groups:
 #Запасные VPN
   - name: zapas
     type: fallback
+    hidden: true
     interval: 30
     tolerance: 50
     url: http://www.gstatic.com/generate_204
@@ -85,7 +86,7 @@ proxy-groups:
 #WARPserver
   - name: WARPServer
     type: fallback
-    hidden: true
+    hidden: false
     interval: 60
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
