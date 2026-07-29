@@ -34,7 +34,7 @@ proxy-groups:
     proxies:
 #градация от лучшего до худшего варианта использования      
       - WARP If
-      - WARPserver
+      - WARPServer
 
 #Запасной вариант на случай нестабильности WARP
   - name: WARP If
@@ -44,7 +44,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     proxies:
       - WARP
-      - zapas
+      - WARPServer
 
   - name: WARP
     type: fallback
@@ -54,18 +54,6 @@ proxy-groups:
     use:
       - WARPStandart
 
-#Отдельный скрипт для минимального пинга Discord
-  - name: Discord
-    type: url-test
-    interval: 15
-    tolerance: 8
-    hidden: true
-    url: http://gateway-us-east1-d.discord.gg
-    use:
-      - zapasList
-    proxies:
-      - WARP
-
 #Отдельно для игр
   - name: Games
     type: url-test
@@ -74,7 +62,7 @@ proxy-groups:
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
     proxies:
-      - WARPserver
+      - WARPServer
       - WARP      
 
 #Запасные VPN
@@ -195,6 +183,6 @@ rules:
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
-  - RULE-SET,RulesZapas,WARPserver
+  - RULE-SET,RulesZapas,WARPServer
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
