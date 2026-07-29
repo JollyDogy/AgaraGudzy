@@ -62,15 +62,14 @@ proxy-groups:
 
 #Отдельно для игр
   - name: Games
-    type: fallback
+    type: url-test
     interval: 15
     #tolerance: 20
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
-    use:
-      - zapasList
-    #proxies:
-      #- WARP      
+    proxies:
+      - WARPserver
+      - WARP      
 
 #Запасные VPN
   - name: zapas
@@ -173,6 +172,7 @@ rule-providers:
 
 rules:
 #Персональные правила
+  - PROCESS-NAME,telegram.exe,WARPServer
   - PROCESS-NAME,Zapret.exe,DIRECT
   - DOMAIN-KEYWORD,youtube.com,WARP
   - PROCESS-NAME,DeadByDaylight.exe,DIRECT
@@ -188,6 +188,6 @@ rules:
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
-  - RULE-SET,RulesZapas,zapas
+  - RULE-SET,RulesZapas,WARPserver
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
