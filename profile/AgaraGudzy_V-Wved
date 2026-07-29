@@ -19,6 +19,12 @@ proxy-providers:
     interval: 21600
     path: ./providers/WARPStandart.yaml    
 
+  WARPServers:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPServer.yaml
+    interval: 21600
+    path: ./providers/WARPServers.yaml 
+
 proxy-groups:
   - name: VPN
     type: select
