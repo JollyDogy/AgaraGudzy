@@ -949,8 +949,9 @@ proxy-groups:
     filter: "🇱🇻"
 
   - name: Servers
-    type: fallback
+    type: uts-test
     interval: 50
+    tolerance: 20
     proxies:
       - "🇪🇪 🎮 ⭐️ Эстония #3 | Hysteria2"
       - "🇪🇪 🎮 ⭐️ Эстония #2 | Hysteria2"
