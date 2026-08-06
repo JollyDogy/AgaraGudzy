@@ -32,4 +32,4 @@ rule-providers:
 
 rules:
   - RULE-SET,RulesDIRECT,DIRECT
-  - MATCH,VPN
+  - MATCH,VLESS
