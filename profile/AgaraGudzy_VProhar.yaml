@@ -25,6 +25,807 @@ proxy-providers:
     interval: 21600
     path: ./providers/WARPServers.yaml 
 
+proxies:
+  - name: 🇪🇺 ⚡️ Быстрый | АВТО
+    type: vless
+    server: web.max.ru
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇪🇺 🌎 Остальные | АВТО
+    type: vless
+    server: web.max.ru
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇪🇺 📱 Мобильный | АВТО
+    type: vless
+    server: web.max.ru
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇳🇱 📱 Мобильный #1"
+    type: vless
+    server: 31.177.111.234
+    port: 443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: apyc.ru
+    reality-opts:
+      public-key: rA7eOqDO79nAPa_Dhb2BECBblrZhRSJkOVyysKNFgzc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇳🇱 📱 Мобильный #2"
+    type: vless
+    server: 31.177.111.213
+    port: 443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: beautylic.ru
+    reality-opts:
+      public-key: lW3HxVSEVzJI_jdr6F8Qgs-jpEKfwhZTDdL0oojtaF8
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇩🇪 📱 ⭐️ Мобильный #3"
+    type: vless
+    server: 95.163.232.30
+    port: 443
+    network: grpc
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    tls: true
+    servername: max.ru
+    reality-opts:
+      public-key: rITw9vOAOaeEc7ucFfzVLNOwZ3HirPZRBBoMjvahKWk
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: ns
+    client-fingerprint: firefox
+  - name: "🇵🇱 📱 Мобильный #4"
+    type: vless
+    server: 91.185.83.120
+    port: 443
+    network: grpc
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    tls: true
+    servername: converter.sowt.app
+    reality-opts:
+      public-key: N5GtVhbrElwwlJn7Azpj43qRXXfht1hKg50tT-3T1jQ
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: ns
+    client-fingerprint: firefox
+  - name: "🇩🇪 📱 ⭐️ Мобильный #5"
+    type: vless
+    server: skys3.greatecloud.com
+    port: 443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: skys3.greatecloud.com
+    alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+  - name: 🇪🇺 ⬇️ ⚡️ Быстрые до 10 Гбит/с ⬇️
+    type: vless
+    server: ee.convert-cloud.guru
+    port: 443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ee.convert-cloud.guru
+    reality-opts:
+      public-key: 9kQGK7IuVFWU9xCb4g9ygL1CEv87QmVZJzWLz74pTSc
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 ⚡️ Германия #4"
+    type: vless
+    server: 31.76.119.236
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇪🇪 ⚡️ ⭐️ Эстония #3"
+    type: vless
+    server: ee.convert-cloud.guru
+    port: 443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ee.convert-cloud.guru
+    reality-opts:
+      public-key: 9kQGK7IuVFWU9xCb4g9ygL1CEv87QmVZJzWLz74pTSc
+      short-id: ""
+    client-fingerprint: chrome
+  - name: 🇫🇮 ⚡️ Финляндия (Мост РФ)
+    type: vless
+    server: 201.51.5.44
+    port: 27443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: SzQ67e8z2qNV5Ad-HpYTUOwbRphD31SSC9X9eVynPQw
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇩🇪 ⚡️ ⭐️ Германия
+    type: vless
+    server: de.skytunnel.pw
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇬🇧 ⚡️ Великобритания
+    type: vless
+    server: 31.76.39.132
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: QGlJtT7TdXFaIctNpsvykWqAgTR3VCq3Z0H94-QKHDc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇮🇹 ⚡️ Италия
+    type: vless
+    server: 31.76.113.88
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: CzI1Zft9ToNgciMIfMhtn_Q5RRO0Q3AyURYvrvnKL14
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇳🇱 ⚡️ Нидерланды
+    type: vless
+    server: 217.60.24.2
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: AYWvVCObGJ_5TnNMGj4z_UDSDzMJ3IcoRgIBCAeUWFs
+      short-id: ""
+    client-fingerprint: qq
+  - name: "🇳🇱 ⚡️ Нидерланды #2"
+    type: vless
+    server: 2.27.7.202
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: CzI1Zft9ToNgciMIfMhtn_Q5RRO0Q3AyURYvrvnKL14
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇳🇱 ⚡️ Нидерланды #3"
+    type: vless
+    server: 94.183.255.5
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: QGlJtT7TdXFaIctNpsvykWqAgTR3VCq3Z0H94-QKHDc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇵🇱 ⚡️ ⭐️ Польша
+    type: vless
+    server: 144.31.1.186
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: 8u7qFDkAHdFwbw0bVaRlZXkGVLhQLUUfLJsYJJaABmU
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇵🇱 ⚡️ Польша #2"
+    type: vless
+    server: 2.26.148.169
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇵🇱 ⚡️ Польша #3"
+    type: vless
+    server: 31.56.188.9
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: QGlJtT7TdXFaIctNpsvykWqAgTR3VCq3Z0H94-QKHDc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇳🇴 ⚡️ ⭐️ Норвегия
+    type: vless
+    server: 185.181.60.198
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇫🇮 ⚡️ Финляндия | Torrent ✅
+    type: vless
+    server: fi2.lumera.lol
+    port: 443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: Me88aqCBXjQhr96_pE6T_HbFSRt_nrbYtCKbkxWplG4
+      short-id: ""
+    client-fingerprint: qq
+  - name: "🇫🇮 ⚡️ ⭐️ Финляндия #2 (Мост РФ)"
+    type: vless
+    server: 201.51.5.44
+    port: 443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: 8lJpRUZZ6ERz2NjJLo4zv-HlUe4NrTRXWD0IrGC4pGg
+      short-id: ""
+    client-fingerprint: qq
+  - name: "🇫🇷 ⚡️ Франция #2 (Мост РФ)"
+    type: vless
+    server: 201.51.5.44
+    port: 18443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: ZxbE5WPErrLV893GBaerkP1-P2vavRalgJlItm1mUUw
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇪🇺 ⬇️ Если VLESS не работает ⬇️
+    type: hysteria2
+    server: ball.bluekitty.lol
+    port: 443
+    udp: true
+    password: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    sni: ball.bluekitty.lol
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - name: 🇩🇪 Германия | Hysteria2
+    type: hysteria2
+    server: ball.bluekitty.lol
+    port: 443
+    udp: true
+    password: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    sni: ball.bluekitty.lol
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - name: 🇩🇪 ⭐️ Германия | xhttp (Мост РФ)
+    type: vless
+    server: 201.51.5.44
+    port: 12443
+    network: xhttp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: UIpd1ZrRZxWI2HUazgIBL-pt4bFpYvu-b8SL7uQvdBM
+      short-id: ""
+    xhttp-opts:
+      mode: auto
+    client-fingerprint: qq
+  - name: 🇵🇱 ⭐️ Польша | gRPC
+    type: vless
+    server: 144.31.1.186
+    port: 4445
+    network: grpc
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: rEswwepHSqjQ0oHV3rl8yoUdT-S4mK221AHFejfM320
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: ns
+    client-fingerprint: firefox
+  - name: 🇪🇺 ⬇️ 🎮 Игровые ⬇️
+    type: hysteria2
+    server: ball.bluekitty.lol
+    port: 443
+    udp: true
+    password: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    sni: ball.bluekitty.lol
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - name: 🇩🇪 🎮 Германия | Hysteria2
+    type: hysteria2
+    server: ball.bluekitty.lol
+    port: 443
+    udp: true
+    password: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    sni: ball.bluekitty.lol
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - name: 🇵🇱 🎮 ⭐️ Польша
+    type: vless
+    server: 144.31.1.186
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: 8u7qFDkAHdFwbw0bVaRlZXkGVLhQLUUfLJsYJJaABmU
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇫🇮 🎮 Финляндия #4"
+    type: vless
+    server: 87.120.107.134
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇪🇪 🎮 ⭐️ Эстония #2 | Hysteria2"
+    type: hysteria2
+    server: hyst1.purplecat.sbs
+    port: 443
+    udp: true
+    password: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    sni: hyst1.purplecat.sbs
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - name: "🇪🇪 🎮 ⭐️ Эстония #3 | Hysteria2"
+    type: hysteria2
+    server: 185.155.222.61
+    port: 443
+    udp: true
+    password: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    sni: ee.convert-cloud.guru
+    client-fingerprint: chrome
+    alpn:
+      - h3
+  - name: 🇪🇺 ⬇️ Остальные ⬇️
+    type: vless
+    server: 213.183.63.187
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇧🇬 ⭐️ Болгария
+    type: vless
+    server: 213.183.63.187
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇩🇪 Германия #2"
+    type: vless
+    server: 85.137.253.102
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: AYWvVCObGJ_5TnNMGj4z_UDSDzMJ3IcoRgIBCAeUWFs
+      short-id: ""
+    client-fingerprint: qq
+  - name: "🇩🇪 Германия #3 (Мост РФ)"
+    type: vless
+    server: 201.51.5.44
+    port: 19443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: M0I-k8RCRg34VYpQmAPeHlW5XVFpDx6Lp3MwBU_mTyA
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇱🇻 Латвия
+    type: vless
+    server: 94.183.234.123
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: CzI1Zft9ToNgciMIfMhtn_Q5RRO0Q3AyURYvrvnKL14
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇱🇹 ⭐️ Литва - YouTube не RU (Мост РФ)
+    type: vless
+    server: 217.26.27.149
+    port: 20443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: 9vJourxbBUWOjkTd_gGVCAqUANwnBvMmQjcEel8SxHE
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇳🇱 Нидерланды #4"
+    type: vless
+    server: 217.60.23.11
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: AYWvVCObGJ_5TnNMGj4z_UDSDzMJ3IcoRgIBCAeUWFs
+      short-id: ""
+    client-fingerprint: qq
+  - name: "🇵🇱 Польша #5"
+    type: vless
+    server: 91.92.21.50
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: CzI1Zft9ToNgciMIfMhtn_Q5RRO0Q3AyURYvrvnKL14
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇷🇺 Россия, Москва
+    type: vless
+    server: 5.129.249.11
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇷🇴 Румыния
+    type: vless
+    server: 178.214.211.126
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: CzI1Zft9ToNgciMIfMhtn_Q5RRO0Q3AyURYvrvnKL14
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇺🇸 США
+    type: vless
+    server: 2.27.160.71
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: AYWvVCObGJ_5TnNMGj4z_UDSDzMJ3IcoRgIBCAeUWFs
+      short-id: ""
+    client-fingerprint: qq
+  - name: 🇺🇸 ⭐️ США, Даллас
+    type: vless
+    server: 191.101.238.171
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇹🇷 Турция
+    type: vless
+    server: 103.83.86.190
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: CzI1Zft9ToNgciMIfMhtn_Q5RRO0Q3AyURYvrvnKL14
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇫🇮 Финляндия #3"
+    type: vless
+    server: 132.243.223.84
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇫🇮 Финляндия #4"
+    type: vless
+    server: 87.120.107.134
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇨🇿 Чехия (Мост РФ)
+    type: vless
+    server: 201.51.5.44
+    port: 15443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: DLU-22rHtUOtUfsYS3y7TIkKZYthPPrR1KB1maVm7yU
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇸🇪 Швеция (Мост РФ)
+    type: vless
+    server: 217.26.27.149
+    port: 22443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: stOUGp4_VZBNldG88lWZUK9iNTLR1znZjE38F_IFlC8
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇪🇪 Эстония
+    type: vless
+    server: 5.181.202.180
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: CzI1Zft9ToNgciMIfMhtn_Q5RRO0Q3AyURYvrvnKL14
+      short-id: ""
+    client-fingerprint: firefox
+  - name: "🇪🇪 ⭐️ Эстония #2"
+    type: vless
+    server: 185.252.177.125
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: vk.ru
+    reality-opts:
+      public-key: QGlJtT7TdXFaIctNpsvykWqAgTR3VCq3Z0H94-QKHDc
+      short-id: ""
+    client-fingerprint: firefox
+  - name: 🇯🇵 Япония
+    type: vless
+    server: 31.76.91.20
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
+      short-id: ""
+    client-fingerprint: firefox
+
 proxy-groups:
   - name: VPN
     type: select
@@ -90,17 +891,17 @@ proxy-groups:
 
 #WARPserver
   - name: WARPServer
-    type: url-test
+    type: fallback
+    hidden: true
     interval: 60
-    tolerance: 35
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
-      - '🇫🇮 Финляндия'
       - '🇵🇱 Польша'
+      - '🇱🇻 Латвия2'
       - '🇳🇱 Нидерланды'
       - '🇩🇪 Германия'
-      - '🇱🇻 Латвия'
+      - '🇫🇮 Финляндия'
 
   - name: '🇫🇮 Финляндия'
     type: fallback
@@ -138,7 +939,7 @@ proxy-groups:
       - 'WARPServers'
     filter: "🇩🇪"            
 
-  - name: '🇱🇻 Латвия'
+  - name: '🇱🇻 Латвия2'
     type: fallback
     interval: 50
     hidden: true
@@ -146,6 +947,59 @@ proxy-groups:
     use:
       - 'WARPServers'
     filter: "🇱🇻"
+
+  - name: Servers
+    type: url-test
+    interval: 50
+    tolerance: 20
+    proxies:
+      - "🇪🇪 🎮 ⭐️ Эстония #2 | Hysteria2"
+      - "🇪🇪 🎮 ⭐️ Эстония #3 | Hysteria2"
+      - 🇵🇱 ⭐️ Польша | gRPC
+      - 🇪🇺 ⬇️ ⚡️ Быстрые до 10 Гбит/с ⬇️
+      - "🇪🇪 ⚡️ ⭐️ Эстония #3"
+      - "🇫🇮 ⚡️ ⭐️ Финляндия #2 (Мост РФ)"
+      - 🇪🇺 ⬇️ 🎮 Игровые ⬇️
+      - 🇩🇪 🎮 Германия | Hysteria2
+      - 🇩🇪 Германия | Hysteria2
+      - "🇫🇮 🎮 Финляндия #4"
+      - 🇵🇱 🎮 ⭐️ Польша
+      - "🇩🇪 ⚡️ Германия #4"
+      - 🇫🇮 ⚡️ Финляндия (Мост РФ)
+      - 🇩🇪 ⚡️ ⭐️ Германия
+      - 🇬🇧 ⚡️ Великобритания
+      - 🇮🇹 ⚡️ Италия
+      - 🇳🇱 ⚡️ Нидерланды
+      - "🇳🇱 ⚡️ Нидерланды #2"
+      - "🇳🇱 ⚡️ Нидерланды #3"
+      - 🇵🇱 ⚡️ ⭐️ Польша
+      - "🇵🇱 ⚡️ Польша #2"
+      - "🇵🇱 ⚡️ Польша #3"
+      - 🇳🇴 ⚡️ ⭐️ Норвегия
+      - 🇫🇮 ⚡️ Финляндия | Torrent ✅
+      - "🇫🇷 ⚡️ Франция #2 (Мост РФ)"
+      - 🇪🇺 ⬇️ Если VLESS не работает ⬇️
+      - 🇩🇪 ⭐️ Германия | xhttp (Мост РФ)
+      - 🇪🇺 ⬇️ Остальные ⬇️
+      - 🇧🇬 ⭐️ Болгария
+      - "🇩🇪 Германия #2"
+      - "🇩🇪 Германия #3 (Мост РФ)"
+      - 🇱🇻 Латвия
+      - 🇱🇹 ⭐️ Литва - YouTube не RU (Мост РФ)
+      - "🇳🇱 Нидерланды #4"
+      - "🇵🇱 Польша #5"
+      - 🇷🇺 Россия, Москва
+      - 🇷🇴 Румыния
+      - 🇺🇸 США
+      - 🇺🇸 ⭐️ США, Даллас
+      - 🇹🇷 Турция
+      - "🇫🇮 Финляндия #3"
+      - "🇫🇮 Финляндия #4"
+      - 🇨🇿 Чехия (Мост РФ)
+      - 🇸🇪 Швеция (Мост РФ)
+      - 🇪🇪 Эстония
+      - "🇪🇪 ⭐️ Эстония #2"
+      - 🇯🇵 Япония
 
 rule-providers:
   RulesZapas:
@@ -178,19 +1032,25 @@ rule-providers:
 
 rules:
 #Персональные правила
-  - DOMAIN-KEYWORD,epicgames.dev,WARP
-  - DOMAIN-KEYWORD,epicgames.com,WARP
-  - DOMAIN-KEYWORD,bhvrdbd.com,WARP
+  - DOMAIN-KEYWORD,donationalerts.com,Servers
+  - PROCESS-NAME,java.exe,Servers
+  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,Servers
+  - PROCESS-NAME,yt-dlp.exe,DIRECT
+  - PROCESS-NAME,4kvideodownloaderplus.exe,WARP
+  - DOMAIN-KEYWORD,Barotrauma.exe,WARP
+  - PROCESS-NAME,PenguinHotel-Win64-Shipping.exe,Servers
+  - PROCESS-NAME,telegram.exe,Servers
   - PROCESS-NAME,parsec.exe,DIRECT
-  - DOMAIN-KEYWORD,parsec.app,WARP
+  - DOMAIN-KEYWORD, parsec.app,WARP
   - PROCESS-NAME,obs-browser-page.exe,DIRECT
   - PROCESS-NAME,obs64.exe,DIRECT
   #- PROCESS-NAME,java.exe,WARP
+  - PROCESS-NAME,DOOMx64.exe,WARP
   - PROCESS-NAME,RPM-RolePlay.exe,WARP
   - PROCESS-NAME,Zapret.exe,DIRECT
   - DOMAIN-KEYWORD,warframe.market,WARP
-  - IP-CIDR,198.18.0.1/32,WARPServer
-  - IP-CIDR,172.232.25.131/32,WARPServer
+  - IP-CIDR,198.18.0.1/32,Servers
+  - IP-CIDR,172.232.25.131/32,Servers
   - PROCESS-NAME,Warframe.x64.exe,DIRECT
   #- DOMAIN-KEYWORD,api.warframe.com,zapas
   - DOMAIN-KEYWORD,warframe.com,DIRECT
@@ -201,13 +1061,14 @@ rules:
   - PROCESS-NAME,REPO.exe,DIRECT
   - PROCESS-NAME,EpicWebHelper.exe,DIRECT
   - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
+  - DOMAIN-KEYWORD,taptop.site,DIRECT
 #Короткие правила
-  #- PROCESS-NAME,discord.exe,Discord
+  #- PROCESS-NAME,discord.exe,WARP
 #Отдельные правила для исполняемых файлов файлов 
-  - RULE-SET,RulesVPNexe,WARPServer
+  - RULE-SET,RulesVPNexe,Servers
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
-  - RULE-SET,RulesZapas,WARPServer
+  - RULE-SET,RulesZapas,Servers
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
