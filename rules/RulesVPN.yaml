@@ -1,5 +1,6 @@
 payload:
 #WEB
+  - DOMAIN-KEYWORD,mca.conczin.net
   - DOMAIN-KEYWORD,playground.ru
   - DOMAIN-KEYWORD,github.com
   - DOMAIN-KEYWORD,modapi.io
