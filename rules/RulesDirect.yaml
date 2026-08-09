@@ -63,3 +63,6 @@ payload:
   - DOMAIN-KEYWORD,ozon
   - DOMAIN-KEYWORD,wildberries
   - DOMAIN-KEYWORD,aliexpress
+#EXE
+  - PROCESS-NAME,obs64.exe
+  - PROCESS-NAME,obs-browser-page.exe
