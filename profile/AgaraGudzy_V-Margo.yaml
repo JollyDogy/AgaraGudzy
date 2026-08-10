@@ -836,7 +836,7 @@ proxy-groups:
 #градация от лучшего до худшего варианта использования      
       - WARP If
       #- zapas
-      - WARPServer
+      - Servers
 
 #Запасной вариант на случай нестабильности WARP
   - name: WARP If
