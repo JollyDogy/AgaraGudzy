@@ -180,7 +180,7 @@ rules:
 #Персональные правила
   - DOMAIN-KEYWORD,donationalerts.com,WARPServer
   #- PROCESS-NAME,java.exe,WARPServer
-  #- PROCESS-NAME,VALORANT-Win64-Shipping.exe,WARPServer
+  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,WARP
   - PROCESS-NAME,yt-dlp.exe,DIRECT
   #- PROCESS-NAME,4kvideodownloaderplus.exe,WARP
   - DOMAIN-KEYWORD,Barotrauma.exe,WARP
@@ -209,7 +209,7 @@ rules:
   - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
   - DOMAIN-KEYWORD,taptop.site,DIRECT
 #Короткие правила
-  #- PROCESS-NAME,discord.exe,WARP
+  - PROCESS-NAME,discord.exe,WARP
 #Отдельные правила для исполняемых файлов файлов 
   - RULE-SET,RulesVPNexe,WARP
 #Правила для прямых соединений
