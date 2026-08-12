@@ -180,14 +180,14 @@ rules:
 #Персональные правила
   - DOMAIN-KEYWORD,donationalerts.com,WARPServer
   #- PROCESS-NAME,java.exe,WARPServer
-  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,WARPServer
+  #- PROCESS-NAME,VALORANT-Win64-Shipping.exe,WARPServer
   - PROCESS-NAME,yt-dlp.exe,DIRECT
-  - PROCESS-NAME,4kvideodownloaderplus.exe,WARP
+  #- PROCESS-NAME,4kvideodownloaderplus.exe,WARP
   - DOMAIN-KEYWORD,Barotrauma.exe,WARP
   - PROCESS-NAME,PenguinHotel-Win64-Shipping.exe,WARPServer
-  - PROCESS-NAME,telegram.exe,WARPServer
+  - PROCESS-NAME,telegram.exe,DIRECT
   - PROCESS-NAME,parsec.exe,DIRECT
-  - DOMAIN-KEYWORD, parsec.app,WARP
+  - DOMAIN-KEYWORD,parsec.app,WARP
   - PROCESS-NAME,obs-browser-page.exe,DIRECT
   - PROCESS-NAME,obs64.exe,DIRECT
   #- PROCESS-NAME,java.exe,WARP
@@ -211,10 +211,10 @@ rules:
 #Короткие правила
   #- PROCESS-NAME,discord.exe,WARP
 #Отдельные правила для исполняемых файлов файлов 
-  - RULE-SET,RulesVPNexe,WARPServer
+  - RULE-SET,RulesVPNexe,WARP
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
-  - RULE-SET,RulesZapas,WARPServer
+  - RULE-SET,RulesZapas,WARP
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
