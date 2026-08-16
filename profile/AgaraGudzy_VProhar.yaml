@@ -180,7 +180,7 @@ rules:
 #Персональные правила
   - DOMAIN-KEYWORD,donationalerts.com,WARPServer
   #- PROCESS-NAME,java.exe,WARPServer
-  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,WARP
+  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,yt-dlp.exe,DIRECT
   #- PROCESS-NAME,4kvideodownloaderplus.exe,WARP
   - DOMAIN-KEYWORD,Barotrauma.exe,WARP
