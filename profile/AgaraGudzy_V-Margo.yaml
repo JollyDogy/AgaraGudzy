@@ -833,7 +833,7 @@ proxy-groups:
 
   - name: WARP
     type: fallback
-    interval: 30
+    interval: 90
     hidden: false
     url: http://speed.cloudflare.com/
     use:
