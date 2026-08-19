@@ -118,7 +118,7 @@ rules:
   #- PROCESS-NAME,4kvideodownloaderplus.exe,WARP
   - DOMAIN-KEYWORD,Barotrauma.exe,WARP
   - PROCESS-NAME,PenguinHotel-Win64-Shipping.exe,WARPServer
-  - PROCESS-NAME,telegram.exe,DIRECT
+  - PROCESS-NAME,telegram.exe,WARPServer
   - PROCESS-NAME,parsec.exe,DIRECT
   - DOMAIN-KEYWORD,parsec.app,WARP
   - PROCESS-NAME,obs-browser-page.exe,DIRECT
