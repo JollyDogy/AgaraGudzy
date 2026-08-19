@@ -13,7 +13,53 @@ proxy-providers:
     interval: 21600
     path: ./providers/VLESSList.yaml
 
+
+  WARPServers:
+    type: http
+    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPServer.yaml
+    interval: 21600
+    path: ./providers/WARPServers.yaml 
+
 proxy-groups:
+  - name: VPN
+    type: fallback
+    interval: 80
+    hidden: false
+    url: http://speed.cloudflare.com/
+    proxies:
+      - WARPServer
+      - VLESS
+
+#WARPserver
+  - name: WARPServer
+    type: url-test
+    hidden: false
+    interval: 120
+    tolerance: 20
+    url: http://www.gstatic.com/generate_204
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
+    proxies:
+      - '🇵🇱 Польша'
+      - '🇩🇪 Германия'
+
+  - name: '🇵🇱 Польша'
+    type: fallback
+    interval: 90
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "🇵🇱"
+
+  - name: '🇩🇪 Германия'
+    type: fallback
+    interval: 90
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "🇩🇪"            
+
   - name: VLESS
     hidden: false
     type: fallback
