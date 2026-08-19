@@ -32,7 +32,7 @@ proxy-groups:
 
   - name: WARP
     type: fallback
-    interval: 30
+    interval: 300
     hidden: false
     url: https://cp.cloudflare.com/generate_204
     use:
