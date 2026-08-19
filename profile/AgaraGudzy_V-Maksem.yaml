@@ -22,7 +22,7 @@ proxy-providers:
 proxy-groups:
   - name: VPN
     type: select
-    interval: 800
+    interval: 120
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/CheburNET.png
     proxies:
