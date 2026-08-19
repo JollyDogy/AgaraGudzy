@@ -7,12 +7,6 @@ health-check:
 tcp-concurrent: false
 
 proxy-providers:
-  zapasList:
-    type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/ProxyWhiteList.yaml
-    interval: 21600
-    path: ./providers/zapasList.yaml
-
   WARPStandart:
     type: http
     url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPStandart.yaml
@@ -645,21 +639,6 @@ proxies:
       public-key: CzI1Zft9ToNgciMIfMhtn_Q5RRO0Q3AyURYvrvnKL14
       short-id: ""
     client-fingerprint: firefox
-  - name: 🇷🇺 Россия, Москва
-    type: vless
-    server: 5.129.249.11
-    port: 8443
-    network: tcp
-    udp: true
-    uuid: fbf50e16-ea6c-4b5b-ba41-8cdad6b6eb13
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: vk.ru
-    reality-opts:
-      public-key: 92bt1gYq9EAz3SSOtKDrmqnbetNcaStEDicwrFg0_Rc
-      short-id: ""
-    client-fingerprint: firefox
   - name: 🇷🇴 Румыния
     type: vless
     server: 178.214.211.126
@@ -834,20 +813,10 @@ proxy-groups:
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/CheburNET.png
     proxies:
 #градация от лучшего до худшего варианта использования      
-      - WARP If
-      #- zapas
+      - WARP
       - Servers
 
 #Запасной вариант на случай нестабильности WARP
-  - name: WARP If
-    type: fallback
-    interval: 450
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    proxies:
-      - WARP
-      - WARPServer
-
   - name: WARP
     type: fallback
     interval: 30
@@ -863,94 +832,42 @@ proxy-groups:
     tolerance: 8
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
-    #use:
-    #  - zapasList
     proxies:
       - WARP
 
-#Отдельно для игр
-  - name: Games
-    type: url-test
-    interval: 15
-    tolerance: 20
-    hidden: true
-    url: https://cp.cloudflare.com/generate_204
-    use:
-      - zapasList    
-
-#Запасные VPN
-  - name: zapas
-    type: fallback
-    interval: 30
-    #tolerance: 50
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
-    use:
-      - 'zapasList'
-
 #WARPserver
   - name: WARPServer
-    type: fallback
-    hidden: true
-    interval: 60
+    type: url-test
+    hidden: false
+    interval: 120
+    tolerance: 20
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
       - '🇵🇱 Польша'
-      - '🇱🇻 Латвия2'
-      - '🇳🇱 Нидерланды'
       - '🇩🇪 Германия'
-      - '🇫🇮 Финляндия'
-
-  - name: '🇫🇮 Финляндия'
-    type: fallback
-    interval: 50
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - 'WARPServers'
-    filter: "🇫🇮"     
 
   - name: '🇵🇱 Польша'
     type: fallback
-    interval: 50
+    interval: 90
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
     filter: "🇵🇱"
 
-  - name: '🇳🇱 Нидерланды'
-    type: fallback
-    interval: 50
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - 'WARPServers'
-    filter: "🇳🇱"    
-
   - name: '🇩🇪 Германия'
     type: fallback
-    interval: 50
+    interval: 90
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
     filter: "🇩🇪"            
 
-  - name: '🇱🇻 Латвия2'
-    type: fallback
-    interval: 50
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - 'WARPServers'
-    filter: "🇱🇻"
-
   - name: Servers
     type: url-test
-    interval: 50
+    interval: 90
     tolerance: 20
     proxies:
       - "🇪🇪 🎮 ⭐️ Эстония #2 | Hysteria2"
@@ -988,7 +905,6 @@ proxy-groups:
       - 🇱🇹 ⭐️ Литва - YouTube не RU (Мост РФ)
       - "🇳🇱 Нидерланды #4"
       - "🇵🇱 Польша #5"
-      - 🇷🇺 Россия, Москва
       - 🇷🇴 Румыния
       - 🇺🇸 США
       - 🇺🇸 ⭐️ США, Даллас
@@ -1030,14 +946,15 @@ rule-providers:
     path: ./rules/RulesVPNexe.yaml
     interval: 21600  
 
-rules:
+rules: 
 #Персональные правила
+  - PROCESS-NAME,prismlauncher.exe,WARP
+  - PROCESS-NAME,VotV-Win64-Shipping.exe,DIRECT
+  - DOMAIN-KEYWORD,streamelements,Servers
   - DOMAIN-KEYWORD,donationalerts.com,Servers
-  - PROCESS-NAME,java.exe,Servers
-  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,Servers
+  #- PROCESS-NAME,java.exe,Servers
+  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,yt-dlp.exe,DIRECT
-  - PROCESS-NAME,4kvideodownloaderplus.exe,WARP
-  - PROCESS-NAME,Barotrauma.exe,WARP
   - PROCESS-NAME,PenguinHotel-Win64-Shipping.exe,Servers
   - PROCESS-NAME,telegram.exe,Servers
   - PROCESS-NAME,parsec.exe,DIRECT
@@ -1057,9 +974,7 @@ rules:
   - PROCESS-NAME,EpicWebHelper.exe,DIRECT
   - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
   - DOMAIN-KEYWORD,taptop.site,DIRECT
-#Короткие правила
-  #- PROCESS-NAME,discord.exe,WARP
-#Отдельные правила для исполняемых файлов файлов 
+#Отдельные правила для исполняемых файлов файлов
   - RULE-SET,RulesVPNexe,Servers
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
@@ -1067,3 +982,5 @@ rules:
   - RULE-SET,RulesZapas,Servers
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
+#Discord
+  #- PROCESS-NAME,discord.exe,WARP
