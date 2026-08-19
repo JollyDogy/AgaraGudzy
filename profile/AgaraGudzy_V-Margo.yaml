@@ -7,12 +7,6 @@ health-check:
 tcp-concurrent: false
 
 proxy-providers:
-  zapasList:
-    type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/ProxyWhiteList.yaml
-    interval: 21600
-    path: ./providers/zapasList.yaml
-
   WARPStandart:
     type: http
     url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPStandart.yaml
@@ -834,19 +828,8 @@ proxy-groups:
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/CheburNET.png
     proxies:
 #градация от лучшего до худшего варианта использования      
-      - WARP If
-      #- zapas
-      - Servers
-
-#Запасной вариант на случай нестабильности WARP
-  - name: WARP If
-    type: fallback
-    interval: 450
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    proxies:
       - WARP
-      - WARPServer
+      - Servers
 
   - name: WARP
     type: fallback
@@ -868,85 +851,35 @@ proxy-groups:
     proxies:
       - WARP
 
-#Отдельно для игр
-  - name: Games
-    type: url-test
-    interval: 15
-    tolerance: 20
-    hidden: true
-    url: https://cp.cloudflare.com/generate_204
-    use:
-      - zapasList    
-
-#Запасные VPN
-  - name: zapas
-    type: fallback
-    interval: 30
-    #tolerance: 50
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
-    use:
-      - 'zapasList'
-
 #WARPserver
   - name: WARPServer
-    type: fallback
-    hidden: true
-    interval: 60
+    type: url-test
+    hidden: false
+    interval: 120
+    tolerance: 20
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
       - '🇵🇱 Польша'
-      - '🇱🇻 Латвия2'
-      - '🇳🇱 Нидерланды'
       - '🇩🇪 Германия'
-      - '🇫🇮 Финляндия'
-
-  - name: '🇫🇮 Финляндия'
-    type: fallback
-    interval: 50
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - 'WARPServers'
-    filter: "🇫🇮"     
 
   - name: '🇵🇱 Польша'
     type: fallback
-    interval: 50
+    interval: 90
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
     filter: "🇵🇱"
 
-  - name: '🇳🇱 Нидерланды'
-    type: fallback
-    interval: 50
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - 'WARPServers'
-    filter: "🇳🇱"    
-
   - name: '🇩🇪 Германия'
     type: fallback
-    interval: 50
+    interval: 90
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
     filter: "🇩🇪"            
-
-  - name: '🇱🇻 Латвия2'
-    type: fallback
-    interval: 50
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - 'WARPServers'
-    filter: "🇱🇻"
 
   - name: Servers
     type: uts-test
@@ -1043,8 +976,6 @@ rules:
   - DOMAIN-KEYWORD,epicgames.com,WARP
   - DOMAIN-KEYWORD,bhvrdbd.com,WARP
   - DOMAIN-KEYWORD,warframe.market,WARP
-  - IP-CIDR,198.18.0.1/32,WARPServer
-  - IP-CIDR,172.232.25.131/32,Servers
   - PROCESS-NAME,Warframe.x64.exe,DIRECT
   #- DOMAIN-KEYWORD,api.warframe.com,zapas
   - DOMAIN-KEYWORD,warframe.com,DIRECT
@@ -1058,8 +989,6 @@ rules:
   - PROCESS-NAME,REPO.exe,DIRECT
   #- PROCESS-NAME,EpicWebHelper.exe,DIRECT
   #- PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
-#Короткие правила
-  - PROCESS-NAME,discord.exe,WARP
 #Отдельные правила для исполняемых файлов файлов 
   - RULE-SET,RulesVPNexe,Servers
 #Правила для прямых соединений
@@ -1068,3 +997,5 @@ rules:
   - RULE-SET,RulesZapas,Servers
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
+#Discord
+  - PROCESS-NAME,discord.exe,WARP
