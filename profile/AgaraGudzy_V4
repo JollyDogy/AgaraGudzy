@@ -32,7 +32,7 @@ proxy-groups:
 
   - name: WARP
     type: fallback
-    interval: 30
+    interval: 160
     hidden: false
     url: http://www.gstatic.com/generate_204
     use:
