@@ -50,16 +50,6 @@ proxy-groups:
     proxies:
       - WARP
 
-#Отдельно для игр
-  - name: Games
-    type: url-test
-    interval: 15
-    tolerance: 20
-    hidden: true
-    url: https://cp.cloudflare.com/generate_204
-    use:
-      - zapasList    
-
 #WARPserver
   - name: WARPServer
     type: url-test
