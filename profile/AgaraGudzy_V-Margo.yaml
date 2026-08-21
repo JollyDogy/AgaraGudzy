@@ -830,6 +830,7 @@ proxy-groups:
 #градация от лучшего до худшего варианта использования      
       - WARP
       - Servers
+      - WARPServer
 
   - name: WARP
     type: fallback
@@ -846,8 +847,6 @@ proxy-groups:
     tolerance: 8
     hidden: true
     url: http://gateway-us-east1-d.discord.gg
-    #use:
-    #  - zapasList
     proxies:
       - WARP
 
@@ -882,8 +881,8 @@ proxy-groups:
     filter: "🇩🇪"            
 
   - name: Servers
-    type: uts-test
-    interval: 50
+    type: url-test
+    interval: 60
     tolerance: 20
     proxies:
       - "🇪🇪 🎮 ⭐️ Эстония #3 | Hysteria2"
