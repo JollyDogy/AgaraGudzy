@@ -5,12 +5,12 @@ health-check:
   url: http://www.gstatic.com/generate_204
   
 tcp-concurrent: false
-
-  WARPServers:
-    type: http
-    url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPServer.yaml
-    interval: 21600
-    path: ./providers/WARPServers.yaml 
+proxy-providers:
+ WARPServers:
+   type: http
+   url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPServer.yaml
+   interval: 21600
+   path: ./providers/WARPServers.yaml 
 
 proxies:
   - name: 🇪🇺 ⚡️ Быстрый | АВТО
@@ -737,7 +737,7 @@ proxy-groups:
       - 'WARPServers'
     filter: "🇩🇪"            
 
-- name: Servers
+  - name: Servers
     type: url-test
     interval: 80
     tolerance: 20
@@ -800,4 +800,4 @@ rule-providers:
 
 rules:
   - RULE-SET,RulesDIRECT,DIRECT
-  - MATCH,Zalupka
+  - MATCH,VPN
