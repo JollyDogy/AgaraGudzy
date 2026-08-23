@@ -848,7 +848,7 @@ rule-providers:
 
 rules:
 #Персональные правила
-  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,Servers
+  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,telegram.exe,Servers
   - DOMAIN-KEYWORD,epicgames.dev,WARP
   - DOMAIN-KEYWORD,epicgames.com,WARP
