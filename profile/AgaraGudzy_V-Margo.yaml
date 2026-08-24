@@ -857,8 +857,6 @@ rules:
   - PROCESS-NAME,Warframe.x64.exe,DIRECT
   #- DOMAIN-KEYWORD,api.warframe.com,zapas
   - DOMAIN-KEYWORD,warframe.com,DIRECT
-  - PROCESS-NAME,steamwebhelper.exe,WARP
-  - DOMAIN-KEYWORD,store.steampowered.com,WARP
   - PROCESS-NAME,Zapret.exe,DIRECT
   #- DOMAIN-KEYWORD,youtube.com,DIRECT
   - PROCESS-NAME,DeadByDaylight.exe,WARP
