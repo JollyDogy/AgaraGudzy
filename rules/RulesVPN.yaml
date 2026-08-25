@@ -10,6 +10,7 @@ payload:
   - DOMAIN-KEYWORD,githubusercontent.com
   - DOMAIN-KEYWORD,images-ext-1.discordapp.net
 #Browser
+  - PROCESS-NAME,Rambox.exe
   - PROCESS-NAME,opera_gx.exe
   - PROCESS-NAME,opera_GX.exe
   - PROCESS-NAME,operagx.exe
