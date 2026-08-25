@@ -716,6 +716,16 @@ proxy-groups:
       - Servers
       - WARPServer
 
+  - name: Obhodnic
+    type: fallback
+    interval: 300
+    url: http://www.gstatic.com/generate_204
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/CheburNET.png
+    proxies:
+#градация от лучшего до худшего варианта использования      
+      - Servers
+      - WARPServer
+
   - name: WARP
     type: fallback
     interval: 90
@@ -849,7 +859,7 @@ rule-providers:
 rules:
 #Персональные правила
   - PROCESS-NAME,VALORANT-Win64-Shipping.exe,DIRECT
-  - PROCESS-NAME,telegram.exe,Servers
+  - PROCESS-NAME,telegram.exe,Obhodnic
   - DOMAIN-KEYWORD,epicgames.dev,WARP
   - DOMAIN-KEYWORD,epicgames.com,WARP
   - DOMAIN-KEYWORD,bhvrdbd.com,WARP
@@ -866,11 +876,11 @@ rules:
   #- PROCESS-NAME,EpicWebHelper.exe,DIRECT
   #- PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
 #Отдельные правила для исполняемых файлов файлов 
-  - RULE-SET,RulesVPNexe,Servers
+  - RULE-SET,RulesVPNexe,Obhodnic
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
-  - RULE-SET,RulesZapas,Servers
+  - RULE-SET,RulesZapas,Obhodnic
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
 #Discord
