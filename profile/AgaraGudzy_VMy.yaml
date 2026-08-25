@@ -716,6 +716,16 @@ proxy-groups:
       - WARP
       - Servers
 
+  - name: Obhodnic
+    type: fallback
+    interval: 300
+    url: http://www.gstatic.com/generate_204
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/CheburNET.png
+    proxies:
+#градация от лучшего до худшего варианта использования      
+      - Servers
+      - WARPServer
+
 #Запасной вариант на случай нестабильности WARP
   - name: WARP
     type: fallback
@@ -769,6 +779,7 @@ proxy-groups:
     type: url-test
     interval: 90
     tolerance: 20
+    icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
       - 🇪🇺 ⚡️ Быстрый | АВТО
       - 🇪🇺 🌎 Остальные | АВТО
@@ -848,16 +859,18 @@ rule-providers:
     interval: 21600  
 
 rules: 
-#Персональные правила
+#Персональные правила  
+  - PROCESS-NAME,Rambox.exe,WARP
+  - PROCESS-NAME,RiotClientServices.exe,WARP
   - PROCESS-NAME,prismlauncher.exe,WARP
   - PROCESS-NAME,VotV-Win64-Shipping.exe,DIRECT
-  - DOMAIN-KEYWORD,streamelements,Servers
-  - DOMAIN-KEYWORD,donationalerts.com,Servers
-  #- PROCESS-NAME,java.exe,Servers
+  - DOMAIN-KEYWORD,streamelements,Obhodnic
+  - DOMAIN-KEYWORD,donationalerts.com,Obhodnic
+  #- PROCESS-NAME,java.exe,Obhodnic
   - PROCESS-NAME,VALORANT-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,yt-dlp.exe,DIRECT
-  - PROCESS-NAME,PenguinHotel-Win64-Shipping.exe,Servers
-  - PROCESS-NAME,telegram.exe,Servers
+  - PROCESS-NAME,PenguinHotel-Win64-Shipping.exe,Obhodnic
+  - PROCESS-NAME,telegram.exe,Obhodnic
   - PROCESS-NAME,parsec.exe,DIRECT
   #- PROCESS-NAME,java.exe,WARP
   - PROCESS-NAME,DOOMx64.exe,WARP
@@ -876,11 +889,11 @@ rules:
   - PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
   - DOMAIN-KEYWORD,taptop.site,DIRECT
 #Отдельные правила для исполняемых файлов файлов
-  - RULE-SET,RulesVPNexe,Servers
+  - RULE-SET,RulesVPNexe,Obhodnic
 #Правила для прямых соединений
   - RULE-SET,RulesDIRECT,DIRECT
 #Запасные правила на случай отказа работы от WARP
-  - RULE-SET,RulesZapas,Servers
+  - RULE-SET,RulesZapas,Obhodnic
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
 #Discord
