@@ -1,8 +1,9 @@
 payload:
 #.EXE
-#WEB
+#WEB 
   - IP-CIDR,172.232.25.131/32
   - IP-CIDR,198.18.0.1/32
+  - DOMAIN-KEYWORD,igra-prestolov.vip
   - DOMAIN-KEYWORD,phncdn
   - DOMAIN-KEYWORD,pornhub
   - DOMAIN-KEYWORD,animegorus.ru
