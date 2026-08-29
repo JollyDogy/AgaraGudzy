@@ -34,17 +34,18 @@ proxy-groups:
   - name: WARPServer
     type: url-test
     hidden: false
-    interval: 120
+    interval: 80
     tolerance: 20
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
       - '🇵🇱 Польша'
       - '🇩🇪 Германия'
+      - '🇫🇮 Финляндия'
 
   - name: '🇵🇱 Польша'
     type: fallback
-    interval: 90
+    interval: 70
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
@@ -53,17 +54,26 @@ proxy-groups:
 
   - name: '🇩🇪 Германия'
     type: fallback
-    interval: 90
+    interval: 70
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
-    filter: "🇩🇪"            
+    filter: "🇩🇪"     
+    
+  - name: '🇫🇮 Финляндия'
+    type: fallback
+    interval: 70
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "🇫🇮"   
 
   - name: VLESS
     hidden: false
     type: fallback
-    interval: 50
+    interval: 90
     url: http://www.gstatic.com/generate_204
     use:
       - VLESSList
@@ -78,4 +88,4 @@ rule-providers:
 
 rules:
   - RULE-SET,RulesDIRECT,DIRECT
-  - MATCH,VLESS
+  - MATCH,VPN
