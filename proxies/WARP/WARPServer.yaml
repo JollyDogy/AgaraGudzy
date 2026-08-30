@@ -283,15 +283,15 @@ proxies:
   network: h2
 
   - name: "🇫🇮 Финляндия_2 AWG"
-  <<: *warp-common
+  <<: *warp-common6
   server: tel.fi.tribukvy.ltd
   port: 4500
 - name: "🇫🇮 Финляндия_2 QUIC"
-  <<: *warp-masque
+  <<: *warp-masque6
   server: tel.fi.tribukvy.ltd
   port: 443
 - name: "🇫🇮 Финляндия_2 H2"
-  <<: *warp-masque
+  <<: *warp-masque6
   server: tel.fi.tribukvy.ltd
   port: 443
   network: h2
