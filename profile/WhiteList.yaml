@@ -13,7 +13,6 @@ proxy-providers:
     interval: 21600
     path: ./providers/VLESSList.yaml
 
-
   WARPServers:
     type: http
     url: https://raw.githubusercontent.com/JollyDogy/AgaraGudzy/refs/heads/main/proxies/WARP/WARPServer.yaml
@@ -23,7 +22,7 @@ proxy-providers:
 proxy-groups:
   - name: VPN
     type: fallback
-    interval: 80
+    interval: 100
     hidden: false
     url: http://speed.cloudflare.com/
     proxies:
@@ -32,10 +31,9 @@ proxy-groups:
 
 #WARPserver
   - name: WARPServer
-    type: url-test
+    type: load-balance
     hidden: false
-    interval: 80
-    tolerance: 20
+    interval: 120
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
@@ -73,7 +71,7 @@ proxy-groups:
   - name: VLESS
     hidden: false
     type: fallback
-    interval: 90
+    interval: 80
     url: http://www.gstatic.com/generate_204
     use:
       - VLESSList
