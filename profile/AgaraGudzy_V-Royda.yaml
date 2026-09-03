@@ -39,10 +39,9 @@ proxy-groups:
 
 #WARPserver
   - name: WARPServer
-    type: url-test
+    type: load-balance
     hidden: false
     interval: 120
-    tolerance: 20
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
