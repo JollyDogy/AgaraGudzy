@@ -32,32 +32,53 @@ proxy-groups:
 #WARPserver
   - name: WARPServer
     type: load-balance
+    strategy: round-robin
     hidden: false
     interval: 120
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
-      - '🇵🇱 Польша'
+      - '🇵🇱 Польша-1'
       - '🇩🇪 Германия'
+      - '🇵🇱 Польша-2'
+      - '🇩🇪 Германия-2'
       - '🇫🇮 Финляндия'
 
-  - name: '🇵🇱 Польша'
+  - name: '🇵🇱 Польша-1'
     type: fallback
-    interval: 70
+    interval: 90
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
-    filter: "🇵🇱"
+    filter: "Польша"
+
+  - name: '🇵🇱 Польша-2'
+    type: fallback
+    interval: 90
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "Польша_2"    
 
   - name: '🇩🇪 Германия'
     type: fallback
-    interval: 70
+    interval: 90
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
-    filter: "🇩🇪"     
+    filter: "Германия"
+    
+  - name: '🇩🇪 Германия-2'
+    type: fallback
+    interval: 90
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "Германия_2"
     
   - name: '🇫🇮 Финляндия'
     type: fallback
