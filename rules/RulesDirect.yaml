@@ -1,5 +1,6 @@
 payload:
 #WEB 
+  - DOMAIN-KEYWORD,anixmirai
   - DOMAIN-KEYWORD,freetp.org
   - PROCESS-NAME,Zapret.exe,DIRECT
   - IP-CIDR,87.240.0.0/16
