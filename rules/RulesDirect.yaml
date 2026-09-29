@@ -1,5 +1,6 @@
 payload:
-#WEB 
+#WEB  
+  - DOMAIN-KEYWORD,blitz.cloud.solodcdn.com
   - DOMAIN-KEYWORD,anixmirai
   - DOMAIN-KEYWORD,freetp.org
   - PROCESS-NAME,Zapret.exe,DIRECT
