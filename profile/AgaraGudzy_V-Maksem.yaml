@@ -45,26 +45,46 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
-      - '🇵🇱 Польша'
-      - '🇩🇪 Германия'
+      - '🇵🇱 Польша-1'
+      - '🇩🇪 Германия-1'
+      - '🇵🇱 Польша-2'
+      - '🇩🇪 Германия-2'
 
-  - name: '🇵🇱 Польша'
+  - name: '🇵🇱 Польша-1'
     type: fallback
     interval: 90
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
-    filter: "🇵🇱"
+    filter: "Польша"
 
-  - name: '🇩🇪 Германия'
+  - name: '🇵🇱 Польша-2'
     type: fallback
     interval: 90
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
-    filter: "🇩🇪"            
+    filter: "Польша_2"    
+
+  - name: '🇩🇪 Германия-1'
+    type: fallback
+    interval: 90
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "Германия"
+    
+  - name: '🇩🇪 Германия-2'
+    type: fallback
+    interval: 90
+    hidden: true
+    url: http://www.gstatic.com/generate_204
+    use:
+      - 'WARPServers'
+    filter: "Германия_2"          
 
 rule-providers:
   RulesZapas:
