@@ -1,6 +1,5 @@
 payload:
 #WEB
-  - DOMAIN-KEYWORD,ip.infinity-filter
   - DOMAIN-KEYWORD,mca.conczin.net
   - DOMAIN-KEYWORD,playground.ru
   - DOMAIN-KEYWORD,github.com
