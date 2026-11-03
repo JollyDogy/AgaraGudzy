@@ -1,6 +1,7 @@
 payload:
 #.EXE
 #WEB 
+  - DOMAIN-KEYWORD,ip.infinity-filter
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,api.hellbz.de
   - DOMAIN-KEYWORD,openrouter.ai
