@@ -1,6 +1,6 @@
 payload:
-#.EXE
 #WEB 
+  - DOMAIN-KEYWORD,fix.rpmserver
   - DOMAIN-KEYWORD,ip.infinity-filter
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,api.hellbz.de
