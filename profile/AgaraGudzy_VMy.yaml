@@ -1,7 +1,7 @@
 health-check:
   enable: true
   lazy: true
-  timeout: 1500
+  timeout: 1000
   url: http://speed.cloudflare.com/
   
 tcp-concurrent: false
@@ -32,29 +32,19 @@ proxy-groups:
 
 #Запасной вариант на случай нестабильности WARP
   - name: WARP
-    type: load-balance
-    strategy: consistent-hashing
-    interval: 60
+    type: fallback
+    #strategy: consistent-hashing
+    interval: 180
     hidden: false
     url: http://speed.cloudflare.com/
     use:
       - WARPStandart
 
-#Отдельный скрипт для минимального пинга Discord
-  - name: Discord
-    type: url-test
-    interval: 20
-    tolerance: 8
-    hidden: true
-    url: http://gateway-us-east1-d.discord.gg
-    proxies:
-      - WARP
-
 #WARPserver
   - name: WARPServer
     type: load-balance
     hidden: false
-    interval: 120
+    interval: 160
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
@@ -65,7 +55,7 @@ proxy-groups:
 
   - name: '🇵🇱 Польша-1'
     type: fallback
-    interval: 90
+    interval: 200
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
@@ -74,7 +64,7 @@ proxy-groups:
 
   - name: '🇵🇱 Польша-2'
     type: fallback
-    interval: 90
+    interval: 200
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
@@ -83,7 +73,7 @@ proxy-groups:
 
   - name: '🇩🇪 Германия-1'
     type: fallback
-    interval: 90
+    interval: 200
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
@@ -92,7 +82,7 @@ proxy-groups:
     
   - name: '🇩🇪 Германия-2'
     type: fallback
-    interval: 90
+    interval: 200
     hidden: true
     url: http://www.gstatic.com/generate_204
     use:
@@ -129,41 +119,50 @@ rule-providers:
     interval: 21600  
 
 rules: 
-#Персональные правила 
+#Персональные правила  
+  #- PROCESS-NAME,obs-browser-page.exe,WARPServer
+  - "DOMAIN-KEYWORD,openport,🇩🇪 Германия-1"
+  - DOMAIN-KEYWORD,avatar.roblox,WARPServer
+  - DOMAIN-KEYWORD,contentdelivery.roblox,WARPServer
+  - DOMAIN-KEYWORD,images.rbxcdn,WARPServer
+  - DOMAIN-KEYWORD,tr.rbxcdn,WARPServer
+  - DOMAIN-KEYWORD,thumbnails.roblox,WARPServer
+  - PROCESS-NAME,uTorrent.exe,VPN
+  - PROCESS-NAME,Rambox.exe,DIRECT
+  - DOMAIN-KEYWORD,streamelements,WARPServer
+  - PROCESS-NAME,yt-dlp.exe,WARP
+  - PROCESS-NAME,parsec.exe,DIRECT
+  - PROCESS-NAME,Zapret.exe,DIRECT
+  - DOMAIN-KEYWORD,warframe.market,WARP
+  - PROCESS-NAME,EpicWebHelper.exe,WARP
+  - PROCESS-NAME,EpicGamesLauncher.exe,WARP
   #- PROCESS-NAME,obs64.exe,WARP
-  - PROCESS-NAME,hf.exe,WARP
-  - PROCESS-NAME,python.exe,WARP
-  - PROCESS-NAME,obs-browser-page.exe,WARPServer
-  - PROCESS-NAME,PEAK.exe,WARP
-  - PROCESS-NAME,Rambox.exe,WARP
-  #- PROCESS-NAME,RiotClientServices.exe,WARP
+#Игры
+  - PROCESS-NAME,NuclearNightmare-Win64-Shipping.exe,WARP
+  - PROCESS-NAME,Warframe.x64.exe,DIRECT
+  - PROCESS-NAME,RobloxPlayerBeta.exe,DIRECT
   - PROCESS-NAME,prismlauncher.exe,WARP
   - PROCESS-NAME,VotV-Win64-Shipping.exe,DIRECT
-  - DOMAIN-KEYWORD,streamelements,WARPServer
-  - DOMAIN-KEYWORD,donationalerts.com,WARPServer
-  #- PROCESS-NAME,java.exe,WARPServer
-  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,DIRECT
-  - PROCESS-NAME,yt-dlp.exe,WARP
-  - PROCESS-NAME,PenguinHotel-Win64-Shipping.exe,WARPServer
-  - PROCESS-NAME,telegram.exe,WARPServer
-  - PROCESS-NAME,parsec.exe,DIRECT
+  - PROCESS-NAME,DeadByDaylight.exe,DIRECT
+  - DOMAIN-KEYWORD,warframe.com,DIRECT
+  - PROCESS-NAME,REPO.exe,DIRECT
+  - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,DIRECT
+  - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,DIRECT
   #- PROCESS-NAME,java.exe,WARP
   - PROCESS-NAME,DOOMx64.exe,WARP
   - PROCESS-NAME,RPM-RolePlay.exe,WARP
-  - PROCESS-NAME,Zapret.exe,DIRECT
-  - DOMAIN-KEYWORD,warframe.market,WARP
-  - PROCESS-NAME,Warframe.x64.exe,DIRECT
-  #- DOMAIN-KEYWORD,api.warframe.com,zapas
-  - DOMAIN-KEYWORD,warframe.com,DIRECT
-  #- DOMAIN-KEYWORD,youtube.com,DIRECT
-  - PROCESS-NAME,DeadByDaylight.exe,DIRECT
-  - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,DIRECT
-  - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,DIRECT
-  - PROCESS-NAME,REPO.exe,DIRECT
-  - PROCESS-NAME,EpicWebHelper.exe,WARP
-  - PROCESS-NAME,EpicGamesLauncher.exe,WARP
-  - DOMAIN-KEYWORD,taptop.site,DIRECT
-  #- PROCESS-NAME,obs64.exe,WARP
+  #- PROCESS-NAME,PEAK.exe,WARP
+#VALORANT
+  - "PROCESS-NAME,Riot Client.exe,WARP"
+  - PROCESS-NAME,RiotClient.exe,WARP
+  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,VPN
+  - PROCESS-NAME,RiotClientServices.exe,WARP
+#YouTube
+  - DOMAIN-KEYWORD,youtube.com,DIRECT
+  - DOMAIN-KEYWORD,ytimg,WARPServer
+  - DOMAIN-KEYWORD,ggpht,WARPServer
+  - DOMAIN-KEYWORD,googleusercontent,WARPServer
+  - DOMAIN-KEYWORD,googlevideo,DIRECT
 #Отдельные правила для исполняемых файлов файлов
   - RULE-SET,RulesVPNexe,WARPServer
 #Правила для прямых соединений
@@ -173,4 +172,4 @@ rules:
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
 #Discord
-  #- PROCESS-NAME,discord.exe,WARP
+  - PROCESS-NAME,discord.exe,WARP
