@@ -87,7 +87,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     use:
       - 'WARPServers'
-    filter: "Германия_2"          
+    filter: "Германия_2"  
 
 rule-providers:
   RulesZapas:
@@ -119,13 +119,14 @@ rule-providers:
     interval: 21600  
 
 rules: 
-#Персональные правила  
+#Персональные правила 
   #- PROCESS-NAME,obs-browser-page.exe,WARPServer
-  - "DOMAIN-KEYWORD,openport,🇩🇪 Германия-1"
+  #- "DOMAIN-KEYWORD,openport,🇩🇪 Германия-1"
   - DOMAIN-KEYWORD,avatar.roblox,WARPServer
   - DOMAIN-KEYWORD,contentdelivery.roblox,WARPServer
   - DOMAIN-KEYWORD,images.rbxcdn,WARPServer
   - DOMAIN-KEYWORD,tr.rbxcdn,WARPServer
+  - DOMAIN-KEYWORD,skinsrestorer,WARPServer
   - DOMAIN-KEYWORD,thumbnails.roblox,WARPServer
   - PROCESS-NAME,uTorrent.exe,VPN
   - PROCESS-NAME,Rambox.exe,DIRECT
