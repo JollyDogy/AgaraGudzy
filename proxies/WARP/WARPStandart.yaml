@@ -34,21 +34,6 @@ warp-common2: &warp-common2
   dns: [1.1.1.1, 1.0.0.1, 2606:4700:4700::1111, 2606:4700:4700::1001]
 
 proxies:
-- name: "[⭐] 188.114.99.224:1002"
-  <<: *warp-common
-  server: 188.114.99.224
-  port: 1002
-
-- name: "162.159.195.3:4500"
-  <<: *warp-common
-  server: 162.159.195.3
-  port: 4500
-
-- name: "162.159.195.5:1701"
-  <<: *warp-common
-  server: 162.159.195.5
-  port: 1701
-
 - name: "Стандартный 1"
   <<: *warp-common
   server: 162.159.192.1
