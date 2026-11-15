@@ -4,7 +4,6 @@ payload:
   - PROCESS-NAME,MWOClient.exe
   - PROCESS-NAME,Sky.exe
   - PROCESS-NAME,osu!.exe
-  - PROCESS-NAME,avp.exe
   - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe
   - PROCESS-NAME,REPO.exe
   - PROCESS-NAME,SlimeRancher2.exe
