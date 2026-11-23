@@ -32,21 +32,11 @@ proxy-groups:
 
   - name: WARP
     type: fallback
-    interval: 90
+    interval: 210
     hidden: false
     url: http://speed.cloudflare.com/
     use:
       - WARPStandart
-
-#Отдельный скрипт для минимального пинга Discord
-  - name: Discord
-    type: url-test
-    interval: 20
-    tolerance: 8
-    hidden: true
-    url: http://gateway-us-east1-d.discord.gg
-    proxies:
-      - WARP
 
 #WARPserver
   - name: WARPServer
@@ -56,12 +46,10 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     icon: https://cdn.jsdelivr.net/gh/JollyDogy/AgaraGudzy/icon/WhiteList.png
     proxies:
-      - '🇵🇱 Польша-1'
+      - '🇵🇱 Польша'
       - '🇩🇪 Германия'
-      - '🇵🇱 Польша-2'
-      - '🇩🇪 Германия-2'
 
-  - name: '🇵🇱 Польша-1'
+  - name: '🇵🇱 Польша'
     type: fallback
     interval: 90
     hidden: true
@@ -69,15 +57,6 @@ proxy-groups:
     use:
       - 'WARPServers'
     filter: "Польша"
-
-  - name: '🇵🇱 Польша-2'
-    type: fallback
-    interval: 90
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - 'WARPServers'
-    filter: "Польша_2"    
 
   - name: '🇩🇪 Германия'
     type: fallback
@@ -87,15 +66,6 @@ proxy-groups:
     use:
       - 'WARPServers'
     filter: "Германия"
-    
-  - name: '🇩🇪 Германия-2'
-    type: fallback
-    interval: 90
-    hidden: true
-    url: http://www.gstatic.com/generate_204
-    use:
-      - 'WARPServers'
-    filter: "Германия_2"          
 
 rule-providers:
   RulesZapas:
@@ -128,23 +98,44 @@ rule-providers:
 
 rules:
 #Персональные правила
-  - PROCESS-NAME,VALORANT-Win64-Shipping.exe,DIRECT
-  - PROCESS-NAME,telegram.exe,WARPServer
+#WEB
+  - DOMAIN-KEYWORD,textures.minecraft.net,WARPServer
+  - DOMAIN-KEYWORD,avatar.roblox,WARPServer
+  - DOMAIN-KEYWORD,contentdelivery.roblox,WARPServer
+  - DOMAIN-KEYWORD,images.rbxcdn,WARPServer
+  - DOMAIN-KEYWORD,tr.rbxcdn,WARPServer
   - DOMAIN-KEYWORD,epicgames.dev,WARP
   - DOMAIN-KEYWORD,epicgames.com,WARP
   - DOMAIN-KEYWORD,bhvrdbd.com,WARP
   - DOMAIN-KEYWORD,warframe.market,WARP
-  - PROCESS-NAME,Warframe.x64.exe,DIRECT
   #- DOMAIN-KEYWORD,api.warframe.com,WARPServer
   - DOMAIN-KEYWORD,warframe.com,DIRECT
-  - PROCESS-NAME,Zapret.exe,DIRECT
-  #- DOMAIN-KEYWORD,youtube.com,DIRECT
+#Игры
+  - PROCESS-NAME,RobloxPlayerBeta.exe,DIRECT
+  - PROCESS-NAME,prismlauncher.exe,WARP
+  - PROCESS-NAME,Warframe.x64.exe,DIRECT
   - PROCESS-NAME,DeadByDaylight.exe,WARP
   - PROCESS-NAME,DeadByDaylight-Win64-Shipping.exe,WARP
   - PROCESS-NAME,PropWitchHuntModule-Win64-Shipping.exe,DIRECT
   - PROCESS-NAME,REPO.exe,DIRECT
+#Kalorant
+  #- PROCESS-NAME,VALORANT-Win64-Shipping.exe,VPN
+  - "PROCESS-NAME,Riot Client.exe,WARP"
+  - PROCESS-NAME,RiotClient.exe,WARP
+  - PROCESS-NAME,RiotClientServices.exe,WARP
+#Проги
+  - PROCESS-NAME,uTorrent.exe,VPN
+  - PROCESS-NAME,parsec.exe,DIRECT
   #- PROCESS-NAME,EpicWebHelper.exe,DIRECT
   #- PROCESS-NAME,EpicGamesLauncher.exe,DIRECT
+  - PROCESS-NAME,telegram.exe,WARPServer
+  - PROCESS-NAME,Zapret.exe,DIRECT
+#Youtube
+  # DOMAIN-KEYWORD,youtube.com,DIRECT
+  - DOMAIN-KEYWORD,ytimg,WARPServer
+  - DOMAIN-KEYWORD,ggpht,WARPServer
+  - DOMAIN-KEYWORD,googleusercontent,WARPServer
+  #- DOMAIN-KEYWORD,googlevideo,DIRECT
 #Отдельные правила для исполняемых файлов файлов 
   - RULE-SET,RulesVPNexe,WARPServer
 #Правила для прямых соединений
@@ -154,4 +145,4 @@ rules:
 #Основные правила для обхода
   - RULE-SET,RulesVPN,VPN
 #Discord
-  - PROCESS-NAME,discord.exe,WARP
+  #- PROCESS-NAME,discord.exe,WARP
